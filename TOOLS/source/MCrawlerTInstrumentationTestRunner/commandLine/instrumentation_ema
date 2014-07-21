@@ -1,0 +1,39 @@
+exporter SgdInstrumentationTestRunner en tant que jar:
+ant -buildfile ../SgdInstrumentationTestRunner/build.xml clean release
+
+ajouter dans le path du projet test
+
+specifier l'instrumentation suivante : 
+Dans le Manifest: 
+<instrumentation
+        android:name="fr.openium.sgdInstrumentationTestRunner.SgdInstrumentationTestRunner"
+        android:targetPackage="fr.openium.example.exampleforsgd" />
+        
+Dans le build xml: 
+<property name="test.runner" value="fr.openium.sgdInstrumentationTestRunner.SgdInstrumentationTestRunner" />   
+<import file="${sdk.dir}/tools/ant/build.xml" />
+
+Lancer le test pour une  première couverture : 
+-ant emma debug install test 
+
+
+generer les rapports
+java -cp /Users/Stassia/android-sdks/tools/lib/emma.jar emma report -r html -in ../../sgdExample/bin/coverage.em,../../sgdExample/bin/coverage.ec
+
+
+reinstaller (uniquement le test) 
+uninstall package test
+//modifier une petite partie
+ant debug
+install bin/packagage)debug
+
+lancer un test direct:
+1 classe
+adb shell am instrument -e class fr.openium.example.exampleforsgd.test.ExampleTest -e coverage true -w fr.openium.example.exampleforsgd.test/fr.openium.sgdInstrumentationTestRunner.SgdInstrumentationTestRunner
+
+touts les test
+adb shell am instrument -e class fr.openium.example.exampleforsgd.test.ExampleTest -e coverage true -w fr.openium.example.exampleforsgd.test/fr.openium.sgdInstrumentationTestRunner.SgdInstrumentationTestRunner
+
+
+Merger tous les rapports
+java -cp /Users/Stassia/android-sdks/tools/lib/emma.jar emma report -r html -in ../../sgdExample/bin/coverage.em,../../sgdExample/bin/coverage.ec, ........

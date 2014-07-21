@@ -1,0 +1,48 @@
+Choose & remove any splitter (S) in W
+Case S is a simple splitter composed only of B
+For each α∈A
+Construct I={X |∃X∈P∧X =X∩T−1[B]≠φ}
+11α
+//i.e., I is a set of those blocks in P that are going to
+be splitted by B
+For each block X in I:
+Compute X = X ∩ T −1[B] 1α
+Compute X =X−T−1[B] 2α
+Compute map infoB
+Check (X,X1,X2) & Update P and W (if required):
+If ((X1==0) || (X2==0))
+Do nothing! //No split
+If ((X1>0) && (X2>0)) Remove X from P.
+Add X1 to P.
+Add X2 to P.
+Add (X,X1,X2) to W.
+
+
+
+Case S is a compound splitter composed of (B,Bi,Bii) // B = Bi ∪ Bii ,
+assume |Bi|<|Bii| For each α∈A
+Construct I={X|X∈P∧X⊆T−1[B]} α
+//i.e., I is a set of those blocks in P that are going to be splitted by S
+// NB: P is already refined w.r.t. B.
+Calculate map infoBi
+For each block X in I:
+Compute (X1,X2,X3) as follows:
+X1: Set of states in X that goes to Bi but not to Bii with action α.
+X2: Set of states in X that goes to Bii but not to Bi with action α.
+X3: Set of states in X that goes to both Bi and Bii.
+// This 3 subblocks are calculated directly from infoB and infoB1 as follows:
+For each state s in block X:
+If (infoBi[s][α]== infoB[s][α])
+Add s to X1
+infoBii[s][α]=0 If (infoBi[s][α]== 0)
+Add s to X2
+infoBii[s][α]=infoB[s][α]
+If ((infoBi[s][α]> 0) &&( infoBi[s][α]<
+infoB[s][α] ))
+Add s to X3
+infoBii[s][α]=infoB[s][α]- infoBi[s][α]
+Check (X1,X2,X3) & Update P and W (if required): If ((X==X1) || (X==X2)|| (X==X3))
+                           Do nothing! //No split
+                      Else
+Replace X in P by non-null X1,X2,X3
+Add nun-null X1,X2,X3 to W in the same way as in the simple splitter case, except that if all X1,X2,X3 are non-null add the following to W: (X,X1,X23),(X23,X2,X3)

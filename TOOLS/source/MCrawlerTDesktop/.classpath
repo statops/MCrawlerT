@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry exported="true" kind="lib" path="libs/specGen.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/android.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/codemodel-2.4.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/robotium-solo-4.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/commons-io-2.4.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/AllPairs.jar"/>
+	<classpathentry kind="lib" path="libs/gs-algo-1.3-SNAPSHOT-last.jar"/>
+	<classpathentry kind="lib" path="libs/gs-core-1.3-SNAPSHOT-last.jar"/>
+	<classpathentry kind="lib" path="libs/gs-ui-1.3-SNAPSHOT-last.jar"/>
+	<classpathentry kind="lib" path="/Users/Stassia/Documents/Scen-genWorkSpace/Bissimilation/libs/bsh-2.0b4.jar"/>
+	<classpathentry kind="lib" path="/Users/Stassia/Documents/Scen-genWorkSpace/Bissimilation/libs/castor-1.3.3-RC2-commons.jar"/>
+	<classpathentry kind="lib" path="/Users/Stassia/Documents/Scen-genWorkSpace/Bissimilation/libs/castor-1.3.3-RC2-core.jar"/>
+	<classpathentry kind="lib" path="/Users/Stassia/Documents/Scen-genWorkSpace/Bissimilation/libs/castor-1.3.3-RC2-jdo.jar"/>
+	<classpathentry kind="lib" path="/Users/Stassia/Documents/Scen-genWorkSpace/Bissimilation/libs/castor-1.3.3-RC2-xml.jar"/>
+	<classpathentry kind="lib" path="/Users/Stassia/Documents/Scen-genWorkSpace/Bissimilation/libs/castor-1.3.3-RC2.jar"/>
+	<classpathentry kind="lib" path="/Users/Stassia/Documents/Scen-genWorkSpace/Bissimilation/libs/cglib-nodep-2.2.jar"/>
+	<classpathentry kind="lib" path="/Users/Stassia/Documents/Scen-genWorkSpace/Bissimilation/libs/client-server-2013.09.13.16.52.06.jar"/>
+	<classpathentry kind="lib" path="/Users/Stassia/Documents/Scen-genWorkSpace/Bissimilation/libs/commons-lang-2.6.jar"/>
+	<classpathentry kind="lib" path="/Users/Stassia/Documents/Scen-genWorkSpace/Bissimilation/libs/commons-logging-1.1.jar"/>
+	<classpathentry kind="lib" path="/Users/Stassia/Documents/Scen-genWorkSpace/Bissimilation/libs/commons-logging-adapters-1.1.jar"/>
+	<classpathentry kind="lib" path="/Users/Stassia/Documents/Scen-genWorkSpace/Bissimilation/libs/commons-logging-api-1.1.jar"/>
+	<classpathentry kind="lib" path="/Users/Stassia/Documents/Scen-genWorkSpace/Bissimilation/libs/commons-math-2.2.jar"/>
+	<classpathentry kind="lib" path="/Users/Stassia/Documents/Scen-genWorkSpace/Bissimilation/libs/corese-3.0.14.jar"/>
+	<classpathentry kind="lib" path="/Users/Stassia/Documents/Scen-genWorkSpace/Bissimilation/libs/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="/Users/Stassia/Documents/Scen-genWorkSpace/Bissimilation/libs/drmsim-brite-2013.09.13.16.52.06.jar"/>
+	<classpathentry kind="lib" path="/Users/Stassia/Documents/Scen-genWorkSpace/Bissimilation/libs/drwin-2013.09.13.16.52.06.jar"/>
+	<classpathentry kind="lib" path="/Users/Stassia/Documents/Scen-genWorkSpace/Bissimilation/libs/epsgraphics.jar"/>
+	<classpathentry kind="lib" path="/Users/Stassia/Documents/Scen-genWorkSpace/Bissimilation/libs/Experiments-2013.09.13.16.52.06.jar"/>
+	<classpathentry kind="lib" path="/Users/Stassia/Documents/Scen-genWorkSpace/Bissimilation/libs/Google-KShortestPath-2012.10.22.17.03.08.jar"/>
+	<classpathentry kind="lib" path="/Users/Stassia/Documents/Scen-genWorkSpace/Bissimilation/libs/graphstream.old.jar"/>
+	<classpathentry kind="lib" path="/Users/Stassia/Documents/Scen-genWorkSpace/Bissimilation/libs/grph-2013.09.16.16.36.08.jar"/>
+	<classpathentry kind="lib" path="/Users/Stassia/Documents/Scen-genWorkSpace/Bissimilation/libs/hppc-0.4.1.jar"/>
+	<classpathentry kind="lib" path="/Users/Stassia/Documents/Scen-genWorkSpace/Bissimilation/libs/jalinopt-2013.09.13.16.52.06.jar"/>
+	<classpathentry kind="lib" path="/Users/Stassia/Documents/Scen-genWorkSpace/Bissimilation/libs/jaseto-2013.09.13.16.52.06.jar"/>
+	<classpathentry kind="lib" path="/Users/Stassia/Documents/Scen-genWorkSpace/Bissimilation/libs/java4unix-2013.09.13.16.52.06.jar"/>
+	<classpathentry kind="lib" path="/Users/Stassia/Documents/Scen-genWorkSpace/Bissimilation/libs/javafarm-2013.09.13.16.52.06.jar"/>
+	<classpathentry kind="lib" path="/Users/Stassia/Documents/Scen-genWorkSpace/Bissimilation/libs/javailp-1.2a.jar"/>
+	<classpathentry kind="lib" path="/Users/Stassia/Documents/Scen-genWorkSpace/Bissimilation/libs/jdom-1.1.jar"/>
+	<classpathentry kind="lib" path="/Users/Stassia/Documents/Scen-genWorkSpace/Bissimilation/libs/jettison-1.2.jar"/>
+	<classpathentry kind="lib" path="/Users/Stassia/Documents/Scen-genWorkSpace/Bissimilation/libs/jfig-bean.jar"/>
+	<classpathentry kind="lib" path="/Users/Stassia/Documents/Scen-genWorkSpace/Bissimilation/libs/jgrapht-jdk1.6.jar"/>
+	<classpathentry kind="lib" path="/Users/Stassia/Documents/Scen-genWorkSpace/Bissimilation/libs/jline-1.0.jar"/>
+	<classpathentry kind="lib" path="/Users/Stassia/Documents/Scen-genWorkSpace/Bissimilation/libs/joda-time-1.6.jar"/>
+	<classpathentry kind="lib" path="/Users/Stassia/Documents/Scen-genWorkSpace/Bissimilation/libs/json-20080701.jar"/>
+	<classpathentry kind="lib" path="/Users/Stassia/Documents/Scen-genWorkSpace/Bissimilation/libs/jython.jar"/>
+	<classpathentry kind="lib" path="/Users/Stassia/Documents/Scen-genWorkSpace/Bissimilation/libs/kxml2-2.3.0.jar"/>
+	<classpathentry kind="lib" path="/Users/Stassia/Documents/Scen-genWorkSpace/Bissimilation/libs/kxml2-min-2.3.0.jar"/>
+	<classpathentry kind="lib" path="/Users/Stassia/Documents/Scen-genWorkSpace/Bissimilation/libs/mail.jar"/>
+	<classpathentry kind="lib" path="/Users/Stassia/Documents/Scen-genWorkSpace/Bissimilation/libs/oodes-2013.09.13.16.52.06.jar"/>
+	<classpathentry kind="lib" path="/Users/Stassia/Documents/Scen-genWorkSpace/Bissimilation/libs/PDFRenderer.jar"/>
+	<classpathentry kind="lib" path="/Users/Stassia/Documents/Scen-genWorkSpace/Bissimilation/libs/stax-1.2.0.jar"/>
+	<classpathentry kind="lib" path="/Users/Stassia/Documents/Scen-genWorkSpace/Bissimilation/libs/stax-api-1.0.1.jar"/>
+	<classpathentry kind="lib" path="/Users/Stassia/Documents/Scen-genWorkSpace/Bissimilation/libs/toools-2013.09.13.16.52.06.jar"/>
+	<classpathentry kind="lib" path="/Users/Stassia/Documents/Scen-genWorkSpace/Bissimilation/libs/up-2013.09.13.16.52.06.jar"/>
+	<classpathentry kind="lib" path="/Users/Stassia/Documents/Scen-genWorkSpace/Bissimilation/libs/wstx-asl-3.2.7.jar"/>
+	<classpathentry kind="lib" path="/Users/Stassia/Documents/Scen-genWorkSpace/Bissimilation/libs/xmlpull-1.1.3.1.jar"/>
+	<classpathentry kind="lib" path="/Users/Stassia/Documents/Scen-genWorkSpace/Bissimilation/libs/xom-1.1.jar"/>
+	<classpathentry kind="lib" path="/Users/Stassia/Documents/Scen-genWorkSpace/Bissimilation/libs/xpp3_min-1.1.4c.jar"/>
+	<classpathentry kind="lib" path="/Users/Stassia/Documents/Scen-genWorkSpace/Bissimilation/libs/xstream-1.4.4.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/TreeModelMinimisation"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/MCrawlerTAndroidKit"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/MCrawlerTJUNITTranslator"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/TaskPoolManager"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/sgaDesktop"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

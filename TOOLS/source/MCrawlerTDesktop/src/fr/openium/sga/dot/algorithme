@@ -1,0 +1,12 @@
+Algorithme de lecture du scenario
+
+
+à prtir de l'activité principale AP.
+i=0;
+j=0;
+
+lire les transition (tr_i)
+dotSrcj=tr_i.src;
+dotDetj=tr_i.dest;
+dotLabel=somme(tr_i.actions);
+

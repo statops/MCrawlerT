@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. -->
+<project basedir="." default="build" name="sgd">
+    <property environment="env"/>
+    <property name="ECLIPSE_HOME" value="/Users/Stassia/Documents/eclipse"/>
+    <property name="junit.output.dir" value="junit"/>
+    <property name="sgdAndroidKit.location" value="../sgdAndroidKit"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.6"/>
+    <property name="source" value="1.6"/>
+    <path id="JUnit 4.libraryclasspath">
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.junit_4.8.2.v4_8_2_v20110321-1705/junit.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.hamcrest.core_1.1.0.v20090501071000.jar"/>
+    </path>
+    <path id="Android 4.2.2.libraryclasspath">
+        <pathelement location="../../../android-sdks/platforms/android-17/android.jar"/>
+    </path>
+    <path id="Android Private Libraries.libraryclasspath">
+        <pathelement location="../sgdAndroidKit/libs/AllPairs.jar"/>
+        <pathelement location="../sgdAndroidKit/libs/robotium-solo-4.0.jar"/>
+        <pathelement location="../sgdAndroidKit/libs/commons-io-2.4.jar"/>
+        <pathelement location="../sgdAndroidKit/libs/android-support-v4.jar"/>
+    </path>
+    <path id="Android Dependencies.libraryclasspath"/>
+    <path id="sgdAndroidKit.classpath">
+        <pathelement location="${sgdAndroidKit.location}/bin/classes"/>
+        <path refid="Android 4.2.2.libraryclasspath"/>
+        <path refid="Android Private Libraries.libraryclasspath"/>
+        <pathelement location="${sgdAndroidKit.location}/libs/commons-io-2.4.jar"/>
+        <pathelement location="${sgdAndroidKit.location}/libs/robotium-solo-4.0.jar"/>
+        <pathelement location="${sgdAndroidKit.location}/libs/AllPairs.jar"/>
+        <path refid="Android Dependencies.libraryclasspath"/>
+    </path>
+    <path id="sgd.classpath">
+        <pathelement location="bin"/>
+        <path refid="JUnit 4.libraryclasspath"/>
+        <pathelement location="libs/specGen.jar"/>
+        <pathelement location="libs/android.jar"/>
+        <pathelement location="libs/codemodel-2.4.jar"/>
+        <pathelement location="libs/robotium-solo-4.0.jar"/>
+        <pathelement location="libs/commons-io-2.4.jar"/>
+        <pathelement location="libs/AllPairs.jar"/>
+        <path refid="sgdAndroidKit.classpath"/>
+    </path>
+    <target name="init">
+        <mkdir dir="bin"/>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="src">
+                <exclude name="**/*.ucls"/>
+                <exclude name="**/*.useq"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="bin"/>
+    </target>
+    <target depends="clean" name="cleanall">
+        <ant antfile="build.xml" dir="${sgdAndroidKit.location}" inheritAll="false" target="clean"/>
+    </target>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects">
+        <ant antfile="build.xml" dir="${sgdAndroidKit.location}" inheritAll="false" target="build-project"/>
+    </target>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" source="${source}" target="${target}">
+            <src path="src"/>
+            <classpath refid="sgd.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target name="CommandTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="fr.openium.sga.Tests.CommandTest" todir="${junit.output.dir}"/>
+            <classpath refid="sgd.classpath"/>
+        </junit>
+    </target>
+    <target name="CrawlThreadTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="fr.openium.sga.Tests.CrawlThreadTest" todir="${junit.output.dir}"/>
+            <classpath refid="sgd.classpath"/>
+        </junit>
+    </target>
+    <target name="Emma">
+        <java classname="fr.openium.sga.emmatest.Emma" failonerror="true" fork="yes">
+            <arg line="-tp /Users/Stassia/Documents/Scen-genWorkSpace/SgdExampleTest -p /Users/Stassia/Documents/Scen-genWorkSpace/sgdExample -sdk /Users/Stassia/android-sdks -coverage 70 -arv /Users/Stassia/Documents/Scen-genWorkSpace/sgd/TestData/testData.xml -tpackage fr.openium.example.exampleforsgd.test -emu emulator-5554"/>
+            <classpath refid="sgd.classpath"/>
+        </java>
+    </target>
+    <target name="GenerateTraces">
+        <java classname="fr.openium.sga.dot.GenerateTraces" failonerror="true" fork="yes">
+            <arg line="-dotDirectory /Users/Stassia/Documents/Scen-genWorkSpace/sgd/out/dot -xml /Users/Stassia/Documents/Scen-genWorkSpace/sgd/out/Scenario/out20.xml -tracenumber 30"/>
+            <classpath refid="sgd.classpath"/>
+        </java>
+    </target>
+    <target name="RandomValueParserTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="fr.openium.sga.Tests.RandomValueParserTest" todir="${junit.output.dir}"/>
+            <classpath refid="sgd.classpath"/>
+        </junit>
+    </target>
+    <target name="ScenarioGeneratorTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="fr.openium.sga.Tests.ScenarioGeneratorTest" todir="${junit.output.dir}"/>
+            <classpath refid="sgd.classpath"/>
+        </junit>
+    </target>
+    <target name="ScenarioToDotTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="fr.openium.sga.Tests.ScenarioToDotTest" todir="${junit.output.dir}"/>
+            <classpath refid="sgd.classpath"/>
+        </junit>
+    </target>
+    <target name="SgdCodeGen">
+        <java classname="fr.openium.sga.codegen.SgdCodeGen" failonerror="true" fork="yes">
+            <arg line="-manifest /Users/Stassia/Documents/Scen-genWorkSpace/sgdExample/AndroidManifest.xml -tp /Users/Stassia/Documents/Scen-genWorkSpace/SgdExampleTest -pn 10"/>
+            <classpath refid="sgd.classpath"/>
+        </java>
+    </target>
+    <target name="SgUtilsTest (2)">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="fr.openium.sga.Tests.SgUtilsTest" todir="${junit.output.dir}"/>
+            <classpath refid="sgd.classpath"/>
+        </junit>
+    </target>
+    <target name="junitreport">
+        <junitreport todir="${junit.output.dir}">
+            <fileset dir="${junit.output.dir}">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report format="frames" todir="${junit.output.dir}"/>
+        </junitreport>
+    </target>
+</project>

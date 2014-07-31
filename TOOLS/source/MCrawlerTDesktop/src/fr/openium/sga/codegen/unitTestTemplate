@@ -1,0 +1,17 @@
+	static {
+		try {
+			Main = Class.forName(LAUNCHER_ACTIVITY_FULL_CLASSNAME);
+		} catch (ClassNotFoundException e) {
+			throw new RuntimeException(e);
+		}
+	}
+	public MainTest() {
+		super(TARGET_PACKAGE_ID, Main);
+	}
+	
+  protected void setUp() throws Exception 
+	{
+		PACKAGE_ID=TARGET_PACKAGE_ID;
+		super.setPairwiseSequenceNumber(""+ PAIR_SEQUENCE );
+		super.setUp();
+	}

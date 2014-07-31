@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. -->
+<project basedir="." default="build" name="sga">
+    <property environment="env"/>
+    <property name="ECLIPSE_HOME" value="C:/Users/Utilisateur/Desktop/OPENIUM/eclipse-SDK-4.2-win32-x86_64/eclipse"/>
+    <property name="sgd.location" value="../sgd"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.6"/>
+    <property name="source" value="1.6"/>
+    <path id="Android 4.2.libraryclasspath">
+        <pathelement location="C:/Users/Utilisateur/Desktop/OPENIUM/androidSdk/platforms/android-17/android.jar"/>
+    </path>
+    <path id="Android Dependencies.libraryclasspath">
+        <pathelement location="libs/sgd.jar"/>
+        <pathelement location="libs/android-support-v4.jar"/>
+    </path>
+    <path id="JUnit 4.libraryclasspath">
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.junit_4.10.0.v4_10_0_v20120426-0900/junit.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.hamcrest.core_1.1.0.v20090501071000.jar"/>
+    </path>
+    <path id="sgd.classpath">
+        <pathelement location="${sgd.location}/bin"/>
+        <path refid="JUnit 4.libraryclasspath"/>
+        <pathelement location="${sgd.location}/libs/specGen.jar"/>
+        <pathelement location="${sgd.location}/libs/android.jar"/>
+        <pathelement location="${sgd.location}/libs/codemodel-2.4.jar"/>
+        <pathelement location="${sgd.location}/libs/robotium-solo-4.0.jar"/>
+        <pathelement location="${sgd.location}/libs/commons-io-2.4.jar"/>
+        <pathelement location="${sgd.location}/libs/AllPairs.jar"/>
+    </path>
+    <path id="sga.classpath">
+        <pathelement location="bin/classes"/>
+        <path refid="Android 4.2.libraryclasspath"/>
+        <path refid="Android Dependencies.libraryclasspath"/>
+        <path refid="sgd.classpath"/>
+        <pathelement location="libs/sgd.jar"/>
+    </path>
+    <target name="init">
+        <mkdir dir="bin/classes"/>
+        <copy includeemptydirs="false" todir="bin/classes">
+            <fileset dir="src">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin/classes">
+            <fileset dir="gen">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="bin/classes"/>
+    </target>
+    <target depends="clean" name="cleanall">
+        <ant antfile="build.xml" dir="${sgd.location}" inheritAll="false" target="clean"/>
+    </target>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects">
+        <ant antfile="build.xml" dir="${sgd.location}" inheritAll="false" target="build-project"/>
+    </target>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="bin/classes" includeantruntime="false" source="${source}" target="${target}">
+            <src path="src"/>
+            <src path="gen"/>
+            <classpath refid="sga.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+</project>

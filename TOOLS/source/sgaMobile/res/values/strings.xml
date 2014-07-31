@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">sga</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">No operation to be performed for the moment, please call the activity with the appropriate parameters. Thank You.</string>
+    <string name="extra_package">package</string>
+    <string name="extra_sdcardPath">/mnt/sdcard/testResults/path</string>
+    <string name="action_name">sga.intent.action.LAUNCHTEST</string>
+    <string name="nTime">n</string>
+    <string name="testResults">/testResults</string>
+    <string name="out">/out.xml</string>
+    <string name="sdcard_path1">/mnt/sdcard</string>
+    <string name="sdcard_path2">/sdcard</string>
+    <string name="okfile">/OK</string>
+    <string name="sgdInstrumentation">android.test.InstrumentationTestRunner</string>
+    <string name="coveragecommand">am instrument -e coverage true</string>
+</resources>

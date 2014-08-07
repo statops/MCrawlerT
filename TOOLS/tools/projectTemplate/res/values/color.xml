@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">@color/android:black</color>
+	<color name="white">#ffffffff</color>
+	<color name="transparent">@color/android:transparent</color>
+	<color name="black_75_opacity">#bf000000</color>
+	<color name="black_40_opacity">#66000000</color>
+	<color name="list_text">#ffc3c0c0</color>
+	<color name="orange">#ff6b4f</color>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Simple Converter</string>
+    <string name="meter">Meter  </string>
+    <string name="feet">Feet  </string>
+    <string name="liter">Liter  </string>
+    <string name="inch">Cubic inch  </string>
+    <string name="euro">Euro  </string>
+    <string name="dollar">Dollar  </string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+</resources>

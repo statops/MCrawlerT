@@ -97,6 +97,12 @@ public class Emma {
 					+ (System.currentTimeMillis() - time) / 1000 + " sec ");
 		}
 		exec_time = (System.currentTimeMillis() - time) / 1000;
+        if (mResult == null) {
+			if (Config.DEBUG) {
+				System.out.println("No Model is saved : (mResult==null)");
+			}
+			return;
+		}
 		try {
 			display_result();
 		} catch (NullPointerException e) {

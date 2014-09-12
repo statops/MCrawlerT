@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project basedir="." default="build" name="STSDisplayer">
+    <property environment="env"/>
+    <import file="../build.xml" />
+        <path id="sgdAndroidKit.classpath">
+        <pathelement location="${STSDisplayer.location}/${lib.dir}/sgdAndroidKit.jar"/>
+        </path>
+        <path id="STSDisplayer.classpath">
+            <pathelement location="${build.dir}"/>
+            <path refid="Bissimilation.classpath"/>
+            <path refid="sgdAndroidKit.classpath"/>
+            <pathelement location="${STSDisplayer.location}/${lib.dir}/android.jar"/>
+            <pathelement location="$${STSDisplayer.location}/{lib.dir}/biss.jar"/>
+         </path>
+    <target name="init">
+        <mkdir dir="${build.dir}"/>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="src">
+                <exclude name="**/*.ucls"/>
+                <exclude name="**/*.useq"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="${build.dir}"/>
+    </target>
+    <target depends="clean" name="cleanall">
+        <ant antfile="build.xml" dir="${Bissimilation.location}" inheritAll="false" target="clean"/>
+        <ant antfile="build.xml" dir="${sgdAndroidKit.location}" inheritAll="false" target="clean"/>
+    </target>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects">
+        <ant antfile="build.xml" dir="${Bissimilation.location}" inheritAll="false" target="build-project">
+            <propertyset>
+                <propertyref name="build.compiler"/>
+            </propertyset>
+        </ant>
+        <copy todir="${lib.dir}">
+            <fileset dir="${Bissimilation.location}/${build.dir}/${jar.dir}">
+                <include name="**/biss.jar"/>
+            </fileset>
+        </copy>
+        <ant antfile="build.xml" dir="${sgdAndroidKit.location}" inheritAll="false" target="build-project">
+            <propertyset>
+                <propertyref name="build.compiler"/>
+            </propertyset>
+        </ant>
+        <copy todir="${lib.dir}">
+            <fileset dir="${sgdAndroidKit.location}/${build.dir}">
+                <include name="**/sgdAndroidKit.jar"/>
+            </fileset>
+        </copy>
+    </target>
+    <target depends="init,build-subprojects" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" source="${source}" target="${target}">
+            <src path="src"/>
+            <classpath refid="STSDisplayer.classpath"/>
+        </javac>
+    </target>
+    <target name="make_jar" depends="clean,build-project">
+    <jar basedir="${build.dir}"  jarfile="${build.dir}/jar/STSDisplayer.jar" includes="**/*.*">
+    <manifest>
+     <attribute name="Main-Class" value="fr.sga.sts.Main"/>
+    </manifest>
+    <zipgroupfileset dir="${lib.dir}" includes="*.jar"/>
+    </jar>
+    <copy todir="${build.dir}/jar">
+      <fileset dir="${lib.dir}">
+        <include name="**/*.jar"/>
+        <include name="**/*.zip"/>
+      </fileset>
+    </copy>
+    <copy todir="${build.dir}/jar">
+      <fileset dir="${Bissimilation.location}/libs/">
+        <include name="**/*.jar"/>
+        <include name="**/*.zip"/>
+      </fileset>
+    </copy>
+     </target>
+    <target name="Main">
+        <java classname="fr.sga.sts.Main" failonerror="true" fork="yes">
+            <arg line="${main.args}"/>
+            <classpath refid="STSDisplayer.classpath"/>
+        </java>
+    </target>
+</project>

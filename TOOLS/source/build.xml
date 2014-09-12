@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="sgdAndroidKit" default="build">
+    <property environment="env" />
+    <condition property="sdk.args" value="${env.ANDROID_HOME}">
+        <isset property="env.ANDROID_HOME" />
+    </condition> 
+    <!-- Must be given in argument -->
+   
+    <fail
+    message="android is missing."
+    unless="sdk.args"/>
+    
+    <property name="all.project.dir" value="../TOOLS/source/McrawlerTLibs"/>
+    <property name="SDK_HOME" value="${sdk.args}"/>
+        
+    <!-- projects directories -->
+    <property name="Bissimilation.location" value="${all.project.dir}/TreeModelMinimisation"/>
+    <property name="sgaDesktop.location" value="${all.project.dir}/sgaDesktop"/>
+    <property name="sgdAndroidKit.location" value="${all.project.dir}/MCrawlerTAndroidKit"/>
+    <property name="TaskPoolJava.location" value="${all.project.dir}/TaskPoolManager"/>
+    <property name="sgdJunitTranslator.location" value="${all.project.dir}/MCrawlerTJUNITTranslator"/>
+    <property name="sgd.location" value="${all.project.dir}/MCrawlerTDesktop"/>
+    <property name="sga.location" value="${all.project.dir}/sgaMobile"/>
+    <property name="STSDisplayer.location" value="${all.project.dir}/STSDisplayer"/>
+    <property name="inittools.location" value="${all.project.dir}/tools"/>
+    <!-- output directory for tools -->
+    <property name="tools.args" value="${all.project.dir}/McrawlerT"/>
+    
+    <property name="junit.output.dir" value="junit"/>
+    <property name="src.dir" value="src" />
+    <property name="lib.dir" value="libs" />
+    <property name="build.dir" value="bin"/>
+    <property name="jar.dir" value="jar"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.6"/>
+    <property name="source" value="1.6"/>
+    <property name="main.args" value=""/>
+	
+	<!-- libs for build -->
+	<property name="mcrawlert.libs" value="${all.project.dir}/McrawlerTLibs"/>
+	<property name="mcrawlert.libs.graph" value="${mcrawlert.libs}/graph"/>
+	<property name="mcrawlert.libs.robotium" value="${mcrawlert.libs}/robotium"/>
+	<property name="mcrawlert.libs.utils" value="${mcrawlert.libs}/utils"/>
+    <property name="ECLIPSE_HOME" value="${mcrawlert.libs}/eclipse"/>
+	<fail
+	    message="android is missing."
+	    unless="ECLIPSE_HOME"/>
+	 
+    <path id="Bissimilation.classpath">
+        <pathelement location="${Bissimilation.location}/bin"/>
+        <pathelement location="${mcrawlert.libs.graph}/bsh-2.0b4.jar"/>
+        <pathelement location="${mcrawlert.libs.graph}/castor-1.3.3-RC2-commons.jar"/>
+        <pathelement location="${mcrawlert.libs.graph}/castor-1.3.3-RC2-core.jar"/>
+        <pathelement location="${mcrawlert.libs.graph}/castor-1.3.3-RC2-jdo.jar"/>
+        <pathelement location="${mcrawlert.libs.graph}/castor-1.3.3-RC2-xml.jar"/>
+        <pathelement location="${mcrawlert.libs.graph}/castor-1.3.3-RC2.jar"/>
+        <pathelement location="${mcrawlert.libs.graph}/cglib-nodep-2.2.jar"/>
+        <pathelement location="${mcrawlert.libs.graph}/client-server-2013.09.13.16.52.06.jar"/>
+        <pathelement location="${mcrawlert.libs.graph}/commons-lang-2.6.jar"/>
+        <pathelement location="${mcrawlert.libs.graph}/commons-logging-1.1.jar"/>
+        <pathelement location="${mcrawlert.libs.graph}/commons-logging-adapters-1.1.jar"/>
+        <pathelement location="${mcrawlert.libs.graph}/commons-logging-api-1.1.jar"/>
+        <pathelement location="${mcrawlert.libs.graph}/commons-math-2.2.jar"/>
+        <pathelement location="${mcrawlert.libs.graph}/corese-3.0.14.jar"/>
+        <pathelement location="${mcrawlert.libs.graph}/dom4j-1.6.1.jar"/>
+        <pathelement location="${mcrawlert.libs.graph}/drmsim-brite-2013.09.13.16.52.06.jar"/>
+        <pathelement location="${mcrawlert.libs.graph}/drwin-2013.09.13.16.52.06.jar"/>
+        <pathelement location="${mcrawlert.libs.graph}/epsgraphics.jar"/>
+        <pathelement location="${mcrawlert.libs.graph}/Experiments-2013.09.13.16.52.06.jar"/>
+        <pathelement location="${mcrawlert.libs.graph}/Google-KShortestPath-2012.10.22.17.03.08.jar"/>
+        <pathelement location="${mcrawlert.libs.graph}/graphstream.old.jar"/>
+        <pathelement location="${mcrawlert.libs.graph}/grph-2013.09.16.16.36.08.jar"/>
+        <pathelement location="${mcrawlert.libs.graph}/hppc-0.4.1.jar"/>
+        <pathelement location="${mcrawlert.libs.graph}/jalinopt-2013.09.13.16.52.06.jar"/>
+        <pathelement location="${mcrawlert.libs.graph}/jaseto-2013.09.13.16.52.06.jar"/>
+        <pathelement location="${mcrawlert.libs.graph}/java4unix-2013.09.13.16.52.06.jar"/>
+        <pathelement location="${mcrawlert.libs.graph}/javafarm-2013.09.13.16.52.06.jar"/>
+        <pathelement location="${mcrawlert.libs.graph}/javailp-1.2a.jar"/>
+        <pathelement location="${mcrawlert.libs.graph}/jdom-1.1.jar"/>
+        <pathelement location="${mcrawlert.libs.graph}/jettison-1.2.jar"/>
+        <pathelement location="${mcrawlert.libs.graph}/jfig-bean.jar"/>
+        <pathelement location="${mcrawlert.libs.graph}/jgrapht-jdk1.6.jar"/>
+        <pathelement location="${mcrawlert.libs.graph}/jline-1.0.jar"/>
+        <pathelement location="${mcrawlert.libs.graph}/joda-time-1.6.jar"/>
+        <pathelement location="${mcrawlert.libs.graph}/json-20080701.jar"/>
+        <pathelement location="${mcrawlert.libs.graph}/jython.jar"/>
+        <pathelement location="${mcrawlert.libs.graph}/kxml2-2.3.0.jar"/>
+        <pathelement location="${mcrawlert.libs.graph}/kxml2-min-2.3.0.jar"/>
+        <pathelement location="${mcrawlert.libs.graph}/mail.jar"/>
+        <pathelement location="${mcrawlert.libs.graph}/oodes-2013.09.13.16.52.06.jar"/>
+        <pathelement location="${mcrawlert.libs.graph}/PDFRenderer.jar"/>
+        <pathelement location="${mcrawlert.libs.graph}/stax-1.2.0.jar"/>
+        <pathelement location="${mcrawlert.libs.graph}/stax-api-1.0.1.jar"/>
+        <pathelement location="${mcrawlert.libs.graph}/toools-2013.09.13.16.52.06.jar"/>
+        <pathelement location="${mcrawlert.libs.graph}/up-2013.09.13.16.52.06.jar"/>
+        <pathelement location="${mcrawlert.libs.graph}/wstx-asl-3.2.7.jar"/>
+        <pathelement location="${mcrawlert.libs.graph}/xmlpull-1.1.3.1.jar"/>
+        <pathelement location="${mcrawlert.libs.graph}/xom-1.1.jar"/>
+        <pathelement location="${mcrawlert.libs.graph}/xpp3_min-1.1.4c.jar"/>
+        <pathelement location="${mcrawlert.libs.graph}/xstream-1.4.4.jar"/>
+    </path>
+    
+    <path id="sgdAndroidKit.libs">
+        <pathelement location="${mcrawlert.libs.robotium}/robotium-solo-5.0.1.jar"/>
+        <pathelement location="${mcrawlert.libs.robotium}/robotium-solo-5.0.1-javadoc.jar"/>
+        <pathelement location="${mcrawlert.libs.utils}/AllPairs.jar"/>
+        <pathelement location="${mcrawlert.libs.utils}/commons-io-2.4.jar"/>
+        <pathelement location="${mcrawlert.libs.utils}/android-support-v4.jar"/>
+    </path>
+     
+    <path id="JUnit 4.libraryclasspath">
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.junit_4.8.2.v4_8_2_v20110321-1705/junit.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.hamcrest.core_1.1.0.v20090501071000.jar"/>
+    </path>
+    
+    <target name="build"> </target>
+    
+    <target depends="check-paths" name="cleanall" if ="no.path">
+        <ant antfile="build.xml" dir="${Bissimilation.location}" inheritAll="false" target="clean"/>
+        <ant antfile="build.xml" dir="${sgaDesktop.location}" inheritAll="false" target="clean"/>
+        <ant antfile="build.xml" dir="${sgdAndroidKit.location}" inheritAll="false" target="clean"/>
+        <ant antfile="build.xml" dir="${TaskPoolJava.location}" inheritAll="false" target="clean"/>
+        <ant antfile="build.xml" dir="${sgdJunitTranslator.location}" inheritAll="false" target="clean"/>
+    </target>
+    
+    <target name="check-paths" depends="check-eclipse" if="no.path">
+        <echo message="Path does not exist"/>
+        <fail message="please set ${ECLIPSE_HOME}"/>       
+    </target>
+    
+    <target name="check-eclipse">
+        <condition property="no.path">
+            <not>
+            <available file="${ECLIPSE_HOME}"/>
+            </not>
+        </condition>
+    </target>
+    <target name="check-biss">
+        <condition property="no.biss">
+        <available file="${mcrawlert.libs.graph}"/>
+        </condition>
+    </target>
+    
+</project>

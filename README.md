@@ -22,19 +22,14 @@ Requirements for the execution of MCrawlerT:
 Quick Start:
 
 0. Check out the project and go to TOOLS/source
-
 1. Unzip the tools library available in  https://www.dropbox.com/sh/lkabg121duddkwq/AADA55vVegJ85fi2sl2GRXCza?dl=0 into the source directory (source/MCrawlerTLibs)
-
 2. Launch the following script to build the main and its sub-projects: 
-- android update lib-project -p droid/sgdAndroidKit
-- android update lib-project -p droid/sga
-- ant -buildfile droid/sgd/build.xml -Dsdk.args="../adt-bundle-mac-x86_64-20140321/sdk" -Dall.project.dir="../" -Dtools.args="McrawlerT"  generate_tools
-
+ android update lib-project -p droid/sgdAndroidKit
+ android update lib-project -p droid/sga
+ ant -buildfile droid/sgd/build.xml -Dsdk.args="../adt-bundle-mac-x86_64-20140321/sdk" -Dall.project.dir="../" -Dtools.args="McrawlerT"  generate_tools
 Absolute path of the following files must be set as ant arguments: the android sdk, the project directory and the output directory name 'e.g: McrawlerT'.
-
 3. Copy all the content of the checked out source/tools in your tool's directory
 You must have the following files in your tool directory: 
-
 - apktool
 - KEYSTORE
 - libs
@@ -43,13 +38,10 @@ You must have the following files in your tool directory:
 - scripts
 - sgd
 - stsDisplayer
-
 4. A system variable called MCRAWLERT must be set to the MCrwalerT tool path. 
-
 5. Export environment variables, then call the script mct.sh.
 A simple export.sh file where a list of useful runtime information must be filled.
 Examples are available in the 'exemples' repertory 
-
 6. For more detailed, please refer to wiki.pdf file. 
 
 

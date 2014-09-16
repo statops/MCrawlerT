@@ -30,14 +30,14 @@ Quick Start:
 Absolute path of the following files must be set as ant arguments: the android sdk, the project directory and the output directory name 'e.g: McrawlerT'.
 3. Copy all the content of the checked out source/tools in your tool's directory
 You must have the following files in your tool directory: 
-- apktool
-- KEYSTORE
-- libs
-- projectTemplate
-- sga.apk
-- scripts
-- sgd
-- stsDisplayer
+(1) apktool
+(2) KEYSTORE
+(3) libs
+(4) projectTemplate
+(5) sga.apk
+(6) scripts
+(7) sgd
+(8) stsDisplayer
 4. A system variable called MCRAWLERT must be set to the MCrwalerT tool path. 
 5. Export environment variables, then call the script mct.sh.
 A simple export.sh file where a list of useful runtime information must be filled.

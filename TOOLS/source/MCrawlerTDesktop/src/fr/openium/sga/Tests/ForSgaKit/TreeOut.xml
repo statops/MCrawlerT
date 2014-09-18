@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scenario version="1">
+<alphabet>
+<action name="check box"/>
+<action name="editText"/>
+<action name=""/>
+<action name="click button"/>
+<action name="click imageview"/>
+<action name="schroll"/>
+<action name="click item"/>
+</alphabet>
+<states initial="MainActivity_0" id="0">
+<state name="activityNameY" id="4" type="src" time="12:06" end="false" ue="false">
+<widget name="List 2" type="ListView" posX="2" posY="4" visibility="true" enable="true" pressed="true" shown="true" selected="false" value="" longClickable="" clickable="" dirty="" focusable="" focus="" ineditMode="" verticalScrollBarEnabled="" inputType=""/>
+</state>
+<state name="activityNameX" id="2" type="dest" time="12:04" end="false" ue="false">
+<widget name="List 1" type="ListView" posX="25" posY="40" visibility="true" enable="true" pressed="true" shown="true" selected="false" value="" longClickable="" clickable="" dirty="" focusable="" focus="" ineditMode="" verticalScrollBarEnabled="" inputType=""/>
+<widget name="EditText 1" type="Edit Text" posX="20" posY="30" visibility="true" enable="true" pressed="true" shown="true" selected="false" value="" longClickable="" clickable="" dirty="" focusable="" focus="" ineditMode="" verticalScrollBarEnabled="" inputType=""/>
+<widget name="bouton X" type="bouton" posX="25" posY="36" visibility="true" enable="true" pressed="true" shown="true" selected="false" value="" longClickable="" clickable="" dirty="" focusable="" focus="" ineditMode="" verticalScrollBarEnabled="" inputType=""/>
+</state>
+<state name="MainActivity_0" id="1" type="src" time="12:02" end="false" ue="false">
+<widget name="bouton 1" type="button" posX="36" posY="38" visibility="true" enable="true" pressed="true" shown="true" selected="false" value="" longClickable="" clickable="" dirty="" focusable="" focus="" ineditMode="" verticalScrollBarEnabled="" inputType=""/>
+<widget name="bouton 0" type="button" posX="@10" posY="11" visibility="true" enable="true" pressed="true" shown="true" selected="false" value="" longClickable="" clickable="" dirty="" focusable="" focus="" ineditMode="" verticalScrollBarEnabled="" inputType=""/>
+</state>
+<state name="END" id="4" type="dest" time="12:09" end="false" ue="false"/>
+<state name="activityNameY" id="2" type="dest" time="12:05" end="true" ue="false">
+<widget name="List 2" type="ListView" posX="2" posY="4" visibility="true" enable="true" pressed="true" shown="true" selected="false" value="" longClickable="" clickable="" dirty="" focusable="" focus="" ineditMode="" verticalScrollBarEnabled="" inputType=""/>
+</state>
+<state name="activityNameX" id="0" type="dest" time="12:01" end="true" ue="false">
+<widget name="List 1" type="ListView" posX="25" posY="40" visibility="true" enable="true" pressed="true" shown="true" selected="false" value="" longClickable="" clickable="" dirty="" focusable="" focus="" ineditMode="" verticalScrollBarEnabled="" inputType=""/>
+<widget name="EditText 1" type="Edit" posX="20" posY="30" visibility="true" enable="true" pressed="true" shown="true" selected="false" value="" longClickable="" clickable="" dirty="" focusable="" focus="" ineditMode="" verticalScrollBarEnabled="" inputType=""/>
+<widget name="bouton X" type="bouton" posX="25" posY="36" visibility="true" enable="true" pressed="true" shown="true" selected="false" value="" longClickable="" clickable="" dirty="" focusable="" focus="" ineditMode="" verticalScrollBarEnabled="" inputType=""/>
+</state>
+<state name="MainActivity_0" id="0" type="src" time="12:01" end="false" ue="false">
+<widget name="bouton 1" type="button" posX="25" posY="36" visibility="true" enable="true" pressed="true" shown="true" selected="false" value="" longClickable="" clickable="" dirty="" focusable="" focus="" ineditMode="" verticalScrollBarEnabled="" inputType=""/>
+<widget name="bouton 0" type="button" posX="25" posY="36" visibility="true" enable="true" pressed="true" shown="true" selected="false" value="" longClickable="" clickable="" dirty="" focusable="" focus="" ineditMode="" verticalScrollBarEnabled="" inputType=""/>
+</state>
+<state name="activityNameX" id="1" type="dest" time="12:03" end="false" ue="false">
+<widget name="List 1" type="ListView" posX="25" posY="40" visibility="true" enable="true" pressed="true" shown="true" selected="false" value="" longClickable="" clickable="" dirty="" focusable="" focus="" ineditMode="" verticalScrollBarEnabled="" inputType=""/>
+<widget name="EditText 1" type="Edit Text" posX="20" posY="30" visibility="true" enable="true" pressed="true" shown="true" selected="false" value="" longClickable="" clickable="" dirty="" focusable="" focus="" ineditMode="" verticalScrollBarEnabled="" inputType=""/>
+<widget name="bouton X" type="bouton" posX="25" posY="36" visibility="true" enable="true" pressed="true" shown="true" selected="false" value="" longClickable="" clickable="" dirty="" focusable="" focus="" ineditMode="" verticalScrollBarEnabled="" inputType=""/>
+</state>
+<state name="END" id="0" type="dest" time="12:015" end="false" ue="false"/>
+</states>
+<transitions id="3" name=""/>
+<transitions id="1" name=""/>
+<transitions id="0" name=""/>
+</Scenario>

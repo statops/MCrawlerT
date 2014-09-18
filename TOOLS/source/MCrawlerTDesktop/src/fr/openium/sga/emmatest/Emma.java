@@ -4,7 +4,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
-
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
@@ -12,13 +12,14 @@ import java.util.List;
 import javax.xml.parsers.ParserConfigurationException;
 
 import kit.Command.DeletCommand;
-import kit.Command.PullCommand;
 import kit.Config.Config;
+import kit.Intent.MCrawlerTIntent;
+import kit.Intent.StreamException;
 import kit.Scenario.Scenario;
 import kit.Scenario.ScenarioData;
 import kit.Scenario.ScenarioGenerator;
 import kit.Utils.SgUtils;
-import org.apache.commons.io.FileUtils;
+
 import org.xml.sax.SAXException;
 
 import fr.openium.JunitTestCasesGenerator;
@@ -26,13 +27,13 @@ import fr.openium.sga.ConfigApp;
 import fr.openium.sga.Main;
 import fr.openium.sga.ThreadSleeper;
 import fr.openium.sga.Utils.ActivityCoverageUtils;
-import fr.openium.sga.bissimulation.SgaGraph;
-import fr.openium.sga.dot.model.Refinement;
+import fr.openium.sga.Utils.Utils;
+
 import fr.openium.sga.reporter.ModelReporter;
 import fr.openium.sga.result.CrawlResult;
+import fr.openium.sga.richModel.LauncherMultipleIntent;
 import fr.openium.sga.strategy.AbstractStrategy;
 import fr.openium.sga.strategy.StrategyFactory;
-import fr.openium.specification.xml.StreamException;
 
 /**
  * Launch a test project with Emma
@@ -53,6 +54,8 @@ public class Emma {
 	public static Long exec_time;
 	public static Long device_exec_time = 0L;
 	public static long init_time;
+	public static CrawlResult mResult;
+	public static HashMap<MCrawlerTIntent, CrawlResult> mResults;
 
 	/**
 	 * help
@@ -88,30 +91,59 @@ public class Emma {
 		out_directory = new File(env.getOutDirectory());
 		model_directory = new File(env.getScenarioDirectory());
 		path_file_directory = new File(env.getPathDirectory());
+		// coverage_directory = new File(env.getCoveragePath());
 
 		Long time = System.currentTimeMillis();
 		init_time = time;
-		mResult = mcurrent_strategy.getResult();
+		getResults();
+		exec_time = (System.currentTimeMillis() - time) / 1000;
 		if (ConfigApp.DEBUG) {
 			System.out.println("Test execution time : "
 					+ (System.currentTimeMillis() - time) / 1000 + " sec ");
 		}
-		exec_time = (System.currentTimeMillis() - time) / 1000;
-        if (mResult == null) {
+		if (mResults != null) {
+			for (MCrawlerTIntent intent : mResults.keySet()) {
+				mResult = mResults.get(intent);
+				SgdEnvironnement tempenv = env.clone();
+				tempenv.setOutDirectory(mResult.getUe().getPath());
+				out_directory = new File(tempenv.getOutDirectory());
+				model_directory = new File(out_directory.getPath()
+						+ ConfigApp.SCENARII);
+				postTasks(tempenv);
+			}
+			return;
+		}
+
+		if (mResult == null && (mResults == null || mResults.isEmpty())) {
 			if (Config.DEBUG) {
 				System.out.println("No Model is saved : (mResult==null)");
 			}
 			return;
 		}
+		postTasks(env);
+		System.exit(0);
+	}
+
+	private static void getResults() throws Exception {
+		if (mcurrent_strategy instanceof LauncherMultipleIntent) {
+			mResults = ((LauncherMultipleIntent) mcurrent_strategy)
+					.getListResults();
+			return;
+		}
+		mResult = mcurrent_strategy.getResult();
+	}
+
+	private static void postTasks(SgdEnvironnement env)
+			throws FileNotFoundException, SAXException, IOException,
+			StreamException, ParserConfigurationException,
+			CloneNotSupportedException {
 		try {
-			display_result();
+			// display_result();
 		} catch (NullPointerException e) {
 			System.err
 					.println("No result to display, please check error on the device \n Please, check if the test package's name matches \n (2) SgdInstrumentationTestRunner may not be setted \n aut may not be installed \n generic class may not be created \n (5) a right version of sga.apk may not be installed ");
 			// System.exit(-1);
 		}
-
-		// System.exit(-1);
 
 		/**
 		 * save model
@@ -124,51 +156,36 @@ public class Emma {
 
 		// save_and_display_paths(true, true);
 
-		/**
-		 * vue de l'ensemble des chemin
-		 */
-		if (ConfigApp.DEBUG) {
-			System.out.println("Test execution time : "
-					+ (System.currentTimeMillis() - time) / 1000 + " sec ");
-		}
-		// display_all_bissimiled_path();
-
-		if (ConfigApp.DEBUG) {
-			System.out.println("Test execution time : "
-					+ (System.currentTimeMillis() - time) / 1000 + " sec ");
-		}
-
 		save_and_display_paths(true, false);
 		/**
 		 * generate test cases for each path
 		 */
-		
 
 		generateJunitModelValidation(env);
 		display_recap(env);
 
-		generateCrashTest(env,mResult.getScenarioData());
+		generateCrashTest(env, mResult.getScenarioData());
 
 		if (ConfigApp.DEBUG) {
 			System.out.println("end");
 		}
-		System.exit(-1);
+
 	}
-	public static void generateCrashTest(SgdEnvironnement env) throws CloneNotSupportedException
-	{
-		generateCrashTest(env,env.getModel());
-	}
-			
-	public static ArrayList<String> generateCrashTest(SgdEnvironnement env,
-			ScenarioData treeModel)
+
+	public static void generateCrashTest(SgdEnvironnement env)
 			throws CloneNotSupportedException {
+		generateCrashTest(env, env.getModel());
+	}
+
+	public static ArrayList<String> generateCrashTest(SgdEnvironnement env,
+			ScenarioData treeModel) throws CloneNotSupportedException {
 
 		File outputFile = new File(env.getOutDirectory() + File.separator
 				+ Config.JUNITDIRECTORY);
 		if (!outputFile.exists()) {
 			outputFile.mkdirs();
 		}
-		
+
 		return generateCrashTest(env, outputFile, treeModel);
 
 	}
@@ -214,32 +231,26 @@ public class Emma {
 		} else
 			info("Test number : "
 					+ mResult.getScenarioData().getTransitions().size());
-		if (!mResult.getScenarioData().getTransitions().isEmpty()) {
-			info("State number before biss: "
-					+ mResult.getInigraph().getVertices().size());
-			info("State number after biss: "
-					+ mResult.getFinalGraph().getVertices().size());
-		}
+		/*
+		 * if (!mResult.getScenarioData().getTransitions().isEmpty()) {
+		 * info("State number before biss: " +
+		 * mResult.getInigraph().getVertices().size());
+		 * info("State number after biss: " +
+		 * mResult.getFinalGraph().getVertices().size()); }
+		 */
 
 		ActivityCoverageUtils util = new ActivityCoverageUtils(
 				env.getManifestfilePath(), env.getFinalModelPath());
 		info("Activity coverage: " + util.getActivityCoverage());
+		// env.setCoveragePath(coverage_directory.getPath());
 		ModelReporter report = new ModelReporter(env, mResult, "" + exec_time);
 		report.generate();
 	}
 
-	private static void display_result() {
-		mResult.getInigraph().display();
-		mResult.getFinalGraph().display();
-	}
-
-	@SuppressWarnings("unused")
-	private static void display_all_bissimiled_path() {
-		Refinement ref = new Refinement(mResult.getPathList());
-		SgaGraph graph[] = ref.computeBissModel();
-		graph[0].display();
-		graph[1].display();
-	}
+	/*
+	 * private static void display_result() { mResult.getInigraph().display();
+	 * //mResult.getFinalGraph().display(); }
+	 */
 
 	private static void save_and_display_paths(boolean display, boolean save) {
 		if (!display && !save) {
@@ -250,9 +261,7 @@ public class Emma {
 			path_file_directory.mkdirs();
 		}
 		for (ScenarioData path : mResult.getPathList()) {
-			if (display) {
-				display(path);
-			}
+
 			if (save) {
 				save_path(path);
 
@@ -272,29 +281,27 @@ public class Emma {
 		if (path != null && path.getInitialState() != null) {
 			new ScenarioGenerator(out_directory.getPath() + File.separator
 					+ ConfigApp.PATH + "_").generateXml(path);
-			savegeneric_file(new File(out_directory.getPath() + File.separator
-					+ ConfigApp.PATH + "_"), path_file_directory, ".xml");
+			Utils.savegeneric_file(new File(out_directory.getPath()
+					+ File.separator + ConfigApp.PATH + "_"),
+					path_file_directory, ".xml");
 		}
-	}
-
-	/**
-	 * @param path
-	 */
-	private static void display(ScenarioData path) {
-		Refinement ref = new Refinement(path);
-		SgaGraph graph = ref.generate_graphe(path);
-		graph.display();
 	}
 
 	private static void save_model() {
 		if (!model_directory.exists()) {
 			model_directory.mkdirs();
 		}
+		if (mResult == null) {
+			if (Config.DEBUG) {
+				System.out.println("No Model is saved : (mResult==null)");
+			}
+			return;
+		}
 		if (mResult.getScenarioData() != null) {
 			new ScenarioGenerator(out_directory.getPath()
 					+ ConfigApp.OutXMLPath).generateXml(mResult
 					.getScenarioData());
-			savegeneric_file(new File(out_directory.getPath()
+			Utils.savegeneric_file(new File(out_directory.getPath()
 					+ ConfigApp.OUTPATH), model_directory, ".xml");
 		}
 	}
@@ -438,38 +445,8 @@ public class Emma {
 		return env;
 	}
 
-	public static CrawlResult mResult;
-
-	public static void savegeneric_file(File file, File directory) {
-		savegeneric_file(file, directory, null);
-	}
-
 	private static boolean pair(int length) {
 		return Main.pair(length);
-	}
-
-	protected static void refine_save_Scenario(String outDirectory) {
-		File Outdirectory = new File(outDirectory);
-		File ScenarioDirectory = new File(Outdirectory + ConfigApp.SCENARII);
-		File[] scenarioDataFiles = ScenarioDirectory.listFiles();
-		Refinement refinement_operation = new Refinement(scenarioDataFiles);
-		SgaGraph[] result = refinement_operation.computeBissModel();
-		result[1].display();
-		result[0].display();
-		/**
-		 * enregistrer sous forme dot
-		 */
-		try {
-			FileUtils.writeStringToFile(new File(Outdirectory
-					+ ConfigApp.SCENARIO_REFINED_FILE), result[1].toDot(),
-					Config.UTF8, false);
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		savegeneric_file(new File(Outdirectory
-				+ ConfigApp.SCENARIO_REFINED_FILE), new File(Outdirectory
-				+ ConfigApp.DOT_DIRECTORY));
-
 	}
 
 	public static void info(Object logs) {
@@ -505,8 +482,9 @@ public class Emma {
 		return mResult;
 	}
 
-	public static void delete_File_onDevice(String valueInTestResults,
-			SgdEnvironnement env, ThreadSleeper sleeper) {
+	public static synchronized void delete_File_onDevice(
+			String valueInTestResults, SgdEnvironnement env,
+			ThreadSleeper sleeper) {
 
 		info("delete file :"
 				+ new DeletCommand(env.getSdkPath() + File.separator
@@ -516,159 +494,10 @@ public class Emma {
 		sleeper.sleepMedium();
 	}
 
-	public static void pull(String valueInTestResults, SgdEnvironnement env) {
-		pull(valueInTestResults, env, env.getOutDirectory());
-	}
-
-	/**
-	 * 
-	 * @param valueInTestResults
-	 *            : path stored in ConfigApp.DEVICETESTRESULTS
-	 * @param env
-	 *            :
-	 * @param outDirectory
-	 *            : the destination directory
-	 */
-	public static void pull(String valueInTestResults, SgdEnvironnement env,
-			String outDirectory) {
-		pull(valueInTestResults, outDirectory, env.getAdb(), env.getDevice());
-	}
-
-	/**
-	 * 
-	 * @param valueInTestResults
-	 * @param outDirectory
-	 * @param adb
-	 * @param device
-	 */
-	public static void pull(String valueInTestResults, String outDirectory,
-			String adb, String device) {
-		File out = new File(outDirectory);
-		PullCommand pull = new PullCommand(adb, device,
-				ConfigApp.DEVICETESTRESULTS + "/" + valueInTestResults,
-				out.getPath());
-		pull.execute();
-		new ThreadSleeper().sleepMedium();
-	}
-
-	public static boolean limit_time_isReached(Long initTime, Long timLimit) {
-		return (System.currentTimeMillis() - initTime) > timLimit;
-	}
-
-	public static void save_generic_ok(SgdEnvironnement envToCheck, File ok) {
-		File okDirectory = new File(envToCheck.getOutDirectory()
-				+ ConfigApp.OkDirectory);
-		savegeneric_file(ok, okDirectory);
-
-	}
-
-	public static void save_genericTime(SgdEnvironnement envToCheck) {
-		pull(ConfigApp.TIME, envToCheck);
-		savegeneric_file(new File(envToCheck.getOutDirectory() + File.separator
-				+ ConfigApp.TimeDirectory + File.separator + ConfigApp.TIME),
-				new File(envToCheck.getOutDirectory() + File.separator
-						+ ConfigApp.TimeDirectory));
-
-	}
-
-	public static void save_generic_rv_done(SgdEnvironnement envToCheck) {
-		File rv_done_directory = new File(envToCheck.getAllTestDataPath())
-				.getParentFile();
-		File rv_done = new File(envToCheck.getOutDirectory() + ConfigApp.RVDONE);
-		pull(ConfigApp.RVDONE, envToCheck);
-		savegeneric_file(rv_done, rv_done_directory);
-
-	}
-
-	/**
-	 * @param file
-	 * @param mTree_directory
-	 * @param extension
-	 */
-	public static void savegeneric_file(File file, File directory, String ext) {
-		if (!file.exists()) {
-			info(" File does not exist " + file.getPath());
-			return;
-		}
-		if (!directory.exists()) {
-			if (ConfigApp.DEBUG) {
-				System.out.println("savegeneric_file");
-				System.out.println("create Directory : " + directory.getPath());
-
-			}
-			directory.mkdirs();
-		}
-		try {
-			if (directory.listFiles().length != 0) {
-
-				int i = 0;
-				do {
-					if (new File(directory + File.separator + file.getName()
-							+ i + ((ext == null) ? "" : ext)).exists()) {
-						i++;
-					} else {
-						if (file.renameTo(new File(file.getAbsolutePath() + i
-								+ ((ext == null) ? "" : ext)))) {
-							file = new File(file.getAbsolutePath() + i
-									+ ((ext == null) ? "" : ext));
-						}
-						break;
-					}
-				} while (true);
-
-			}
-			FileUtils.copyFileToDirectory(file, directory, true);
-		} catch (IOException e) {
-			throw new Error(" [error]: File " + file.getName()
-					+ " is not saved, " + e.getMessage());
-
-		} finally {
-			info(" File " + file.getName() + " is available in: "
-					+ directory.getPath());
-			file.delete();
-		}
-	}
-
-	/**
-	 * @param string
-	 * @param outDirectory
-	 * @param ext
-	 */
-	public static void savegeneric_file(String fileNme, String outDirectory,
-			String ext) {
-		savegeneric_file(new File(fileNme), new File(outDirectory), ext);
-
-	}
-
-	public static void save_non_generic(File file, File directory) {
-		if (!file.exists()) {
-			info(" File does not exist " + file.getPath());
-			return;
-		}
-		if (!directory.exists()) {
-			directory.mkdirs();
-		}
-		try {
-			FileUtils.copyFileToDirectory(file, directory, true);
-		} catch (IOException e) {
-			throw new Error(" [error]: Scenario is not saved, "
-					+ e.getMessage());
-
-		} finally {
-			info(" File " + file.getName() + " vailable in: "
-					+ directory.getPath());
-			file.delete();
-		}
-	}
-
-	public static String getTime() {
-
-		return "" + (System.currentTimeMillis() - init_time);
-	}
-
 	public static ArrayList<String> generateCrashTest(SgdEnvironnement env,
-			File outputFile, ScenarioData treeModel) throws CloneNotSupportedException {
-		
+			File outputFile, ScenarioData treeModel)
+			throws CloneNotSupportedException {
+
 		ArrayList<String> testName = new ArrayList<String>();
 		if (treeModel == null) {
 			return testName;

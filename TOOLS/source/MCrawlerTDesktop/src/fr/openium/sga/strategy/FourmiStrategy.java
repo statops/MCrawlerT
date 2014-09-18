@@ -15,7 +15,8 @@ public class FourmiStrategy extends AntStrategy {
 	 */
 	public FourmiStrategy(SgdEnvironnement env, String initActivity) {
 		super(env, initActivity);
-		mResult = new CrawlResult(new File(mSgdEnvironnement.getOutDirectory()), this);
+		mResult = new CrawlResult(
+				new File(mSgdEnvironnement.getOutDirectory()), this);
 	}
 
 	/**
@@ -24,8 +25,9 @@ public class FourmiStrategy extends AntStrategy {
 	 * @return
 	 */
 	public int getRank(State st, ScenarioData path) {
-		return ((path != null && path.getTransitions() != null && !path.getTransitions().isEmpty()) ? path
-				.getTransitions().size() : DEFAULT_RANK);
+		return ((path != null && path.getTransitions() != null && !path
+				.getTransitions().isEmpty()) ? path.getTransitions().size()
+				: DEFAULT_RANK);
 	}
 
 }

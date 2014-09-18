@@ -8,7 +8,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.StringTokenizer;
 import java.util.logging.Level;
-import java.util.logging.Logger;
 
 import org.apache.commons.io.FileUtils;
 
@@ -17,6 +16,7 @@ import fr.openium.sga.SecurityTesting.BruteForceTest.BruteForceManager;
 import fr.openium.sga.SecurityTesting.INJTest.INJRequestTaskManager;
 import fr.openium.sga.SecurityTesting.StressTest.StressTaskManager;
 import fr.openium.sga.Utils.ActivityCoverageUtils;
+import fr.openium.sga.Utils.Utils;
 import fr.openium.sga.codegen.SgdCodeGen;
 import fr.openium.sga.displayer.Displayer;
 import fr.openium.sga.emmatest.Emma;
@@ -147,7 +147,7 @@ public class Main {
 		if (args[0].equals("bruteForce")) {
 			if (ConfigApp.DEBUG) {
 				info(TAG);
-				System.out.println("inj");
+				System.out.println("bruteForce");
 			}
 			BruteForceManager.main(args);
 			return;
@@ -168,15 +168,11 @@ public class Main {
 			info(TAG);
 			System.out.println("Exit");
 		}
-		System.exit(-1);
+		System.exit(0);
 	}
 
-	private static Logger mMainLogger = Logger.getLogger("EmmaLogger");
-
 	public static void info(String string) {
-		if (ConfigApp.DEBUG) {
-			mMainLogger.log(Level.INFO, string);
-		}
+		Utils.info(string);
 
 	}
 
@@ -198,7 +194,7 @@ public class Main {
 	 */
 	public static void errorLog(String string) {
 		if (ConfigApp.DEBUG) {
-			mMainLogger.log(Level.SEVERE, string);
+			Utils.getLogger().log(Level.SEVERE, string);
 		}
 
 	}

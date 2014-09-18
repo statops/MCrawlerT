@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete 2 elements from project &apos;sgaDesktop&apos;&#x0A;- Original project: &apos;sgaDesktop&apos;&#x0A;- Original elements:&#x0A;     commons-io-2.4.jar&#x0A;     sgdandroidkit.jar" description="Delete elements" element1="libs/commons-io-2.4.jar" element2="libs/sgdandroidkit.jar" elements="0" flags="589830" id="org.eclipse.jdt.ui.delete" resources="2" stamp="1406803051691" subPackages="false" version="1.0"/>
+</session>

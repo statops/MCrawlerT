@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/sgdAndroidKit"/>
-	<classpathentry kind="lib" path="libs/android.jar"/>
-	<classpathentry kind="lib" path="libs/codemodel-2.4.jar"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry exported="true" kind="lib" path="libs/android.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/codemodel-2.4.jar"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/MCrawlerTAndroidKit"/>
+	<classpathentry exported="true" kind="lib" path="/McrawlerTLibs/robotium/robotium-solo-5.0.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

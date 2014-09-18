@@ -1,6 +1,7 @@
 package fr.openium.sga.strategy;
 
 import fr.openium.sga.emmatest.SgdEnvironnement;
+import fr.openium.sga.richModel.LauncherMultipleIntent;
 
 public class StrategyFactory {
 	protected static AbstractStrategy mcurrent_strategy;
@@ -24,6 +25,9 @@ public class StrategyFactory {
 			break;
 		case AbstractStrategy.LOGGING_STRATEGY_ID:
 			mcurrent_strategy = new SemanticStrategy(env, null);
+			break;
+		case IntentLauncherStrategy._STRATEGY_ID:
+			mcurrent_strategy = new LauncherMultipleIntent(env);
 			break;
 		default:
 			throw new IllegalStateException("unknown strategy");

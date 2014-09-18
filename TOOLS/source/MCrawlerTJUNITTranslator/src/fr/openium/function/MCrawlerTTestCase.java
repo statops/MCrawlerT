@@ -40,7 +40,7 @@ public class MCrawlerTTestCase extends AbstractCrawler {
 	protected void setUp() throws Exception {
 		mVariable = new MCrawlerVariable();
 		super.setUp();
-		if (!waitForActivity(INITIAL_STATE_ACTIVITY_FULL_CLASSNAME)) {
+		if (!waitTargetActivity(INITIAL_STATE_ACTIVITY_FULL_CLASSNAME)) {
 			assertTrue("Unreached activity " + INITIAL_STATE_ACTIVITY_FULL_CLASSNAME, false);
 		}
 	}

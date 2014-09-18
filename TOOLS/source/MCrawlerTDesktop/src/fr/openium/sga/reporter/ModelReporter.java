@@ -2,17 +2,16 @@ package fr.openium.sga.reporter;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.FilenameFilter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.Iterator;
 
-import javax.annotation.Generated;
 import javax.xml.parsers.ParserConfigurationException;
 
 import kit.Config.Config;
+import kit.Intent.StreamException;
 import kit.Scenario.Action;
 import kit.Scenario.Scenario;
 import kit.Scenario.ScenarioData;
@@ -28,7 +27,6 @@ import fr.openium.sga.emmatest.Emma;
 import fr.openium.sga.emmatest.EmmaParser;
 import fr.openium.sga.emmatest.SgdEnvironnement;
 import fr.openium.sga.result.CrawlResult;
-import fr.openium.specification.xml.StreamException;
 
 /**
  * Write all output from Model
@@ -179,7 +177,7 @@ public class ModelReporter extends AbstractReport {
 	public void finish() throws IOException {
 		newSection();
 		FileUtils.writeLines(outpuFile, Config.UTF8, contents, true);
-
+		System.out.println("report is available in " + outpuFile.getPath());
 	}
 
 	public void newSection() {
@@ -196,9 +194,9 @@ public class ModelReporter extends AbstractReport {
 		return content;
 	}
 
-	public void generate() throws FileNotFoundException, SAXException,
-			IOException, StreamException, ParserConfigurationException,
-			CloneNotSupportedException {
+	public void generate() throws SAXException, IOException,
+			ParserConfigurationException, CloneNotSupportedException,
+			StreamException {
 
 		/**
 		 * add packageName
@@ -216,12 +214,12 @@ public class ModelReporter extends AbstractReport {
 						: ""
 								+ (result.getScenarioData().getTransitions()
 										.size() + 1)));
-
-		this.add(ModelReporter.CODE_COVERAGE, "" + env.readCoverage());
 		ActivityCoverageUtils actCov = new ActivityCoverageUtils(
 				env.getManifestfilePath(), env.getFinalModelPath());
 		this.add(ModelReporter.ACTIVITY_COVERAGE, actCov.getActivityCoverage()
 				+ " %");
+		this.add(ModelReporter.CODE_COVERAGE, "" + env.readCoverage());
+
 		HashSet<String> errorNumber = SgUtils.get_error_number(result
 				.getScenarioData());
 		this.add(ModelReporter.ERROR_NUMBER, "" + errorNumber.size());
@@ -279,6 +277,10 @@ public class ModelReporter extends AbstractReport {
 		result.setScenarioData(model);
 		ModelReporter reporter = new ModelReporter(env, result, null);
 		reporter.generate();
+		TextTestReporter treporter = new TextTestReporter(model,
+				new File(env.getOutDirectory() + File.separator
+						+ TextTestReporter.IOSTS));
+		treporter.generate();
 	}
 
 }

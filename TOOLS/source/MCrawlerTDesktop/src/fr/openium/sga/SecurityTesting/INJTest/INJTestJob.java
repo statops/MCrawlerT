@@ -21,6 +21,7 @@ import org.apache.commons.io.FileUtils;
 import fr.openium.sga.ConfigApp;
 import fr.openium.sga.ThreadSleeper;
 import fr.openium.sga.SecurityTesting.AbstractTest.AbstractTaskManager.SPReport;
+import fr.openium.sga.Utils.Utils;
 import fr.openium.sga.emmatest.Emma;
 import fr.openium.sga.emmatest.SgdEnvironnement;
 import fr.openium.sga.strategy.Emulator_checker;
@@ -110,31 +111,11 @@ public class INJTestJob extends AbstractMobileCrawler implements Runnable,
 					+ tp.getId()
 					+ "===========================================");
 		}
-		do {
-			if (testIsfinshed) {
-				Emma.delete_File_onDevice(ConfigApp.OkPath, mSgdEnvironnement,
-						mSleeper);
-				if (ConfigApp.DEBUG) {
-					System.out
-							.println("===========================================launch sga :"
-									+ tp.getId()
-									+ "===========================================");
-				}
-				mSgdEnvironnement.launchSga_class_defined();
-				if (ConfigApp.DEBUG) {
-					System.out
-							.println("=========================================== end of launch sga :"
-									+ tp.getId()
-									+ "===========================================");
-				}
-				set_sga_is_finished(false);
-				checkIfTestOnDeviceIsFinished();
-			}
-			mSleeper.sleepLong();
-			if (Emma.limit_time_isReached(initTime, Emma.TIME_LIMITE)) {
-				break;
-			}
-		} while (!testIsfinshed);
+		try {
+			launchInjJob(tp, initTime);
+		} catch (InterruptedException e1) {
+			e1.printStackTrace();
+		}
 		if (ConfigApp.DEBUG) {
 			System.out
 					.println("===========================================: "
@@ -157,6 +138,48 @@ public class INJTestJob extends AbstractMobileCrawler implements Runnable,
 			System.out.println("Job is finished");
 		}
 		// mTaskManager.update(null);
+	}
+
+	private void launchInjJob(TaskPoolThread tp, Long initTime)
+			throws InterruptedException {
+		do {
+			launchSga(tp);
+		} while (!testIsfinshed);
+
+	}
+
+	protected void launchSga(TaskPoolThread tp) throws InterruptedException {
+		if (isTestFinished()) {
+			Emma.delete_File_onDevice(ConfigApp.OkPath, mSgdEnvironnement,
+					mSleeper);
+			launchSgaWithClassDefined();
+			checkIfTestOnDeviceIsFinished();
+		} else {
+			if (ConfigApp.DEBUG) {
+				System.out.println(".");
+			}
+		}
+
+	}
+
+	protected void launchSgaWithClassDefined() throws InterruptedException {
+		// in a thread
+		new Thread() {
+			@Override
+			public void run() {
+				mSgdEnvironnement.launchSga_class_defined();
+				/*
+				 * notify emulator checker if finished
+				 */
+				remoteState = true;
+			};
+		}.start();
+		Thread.sleep(100);
+		set_sga_is_finished(false);
+	}
+
+	private synchronized boolean isTestFinished() {
+		return testIsfinshed;
 	}
 
 	/**
@@ -191,9 +214,9 @@ public class INJTestJob extends AbstractMobileCrawler implements Runnable,
 	}
 
 	private void pullOutputFromDevice() {
-		Emma.pull(ConfigApp.OutXMLPath, mSgdEnvironnement);
-		Emma.pull(Config.error, mSgdEnvironnement);
-		Emma.pull(Config.EXECUTED_EVENTS, mSgdEnvironnement);
+		Utils.pull(ConfigApp.OutXMLPath, mSgdEnvironnement);
+		Utils.pull(Config.error, mSgdEnvironnement);
+		Utils.pull(Config.EXECUTED_EVENTS, mSgdEnvironnement);
 
 	}
 
@@ -225,7 +248,7 @@ public class INJTestJob extends AbstractMobileCrawler implements Runnable,
 	private void translateScenarioOutput(SPReport injReport) throws IOException {
 		File outFile = new File(mSgdEnvironnement.getOutDirectory()
 				+ ConfigApp.OutXMLPath);
-		Emma.save_non_generic(outFile,
+		Utils.save_non_generic(outFile,
 				new File(mSgdEnvironnement.getScenarioDirectory()));
 		File scenario_outFile = new File(
 				mSgdEnvironnement.getScenarioDirectory() + ConfigApp.OutXMLPath);
@@ -238,15 +261,20 @@ public class INJTestJob extends AbstractMobileCrawler implements Runnable,
 				// return;
 			} else {
 
-				ScenarioData reached_states = ScenarioParser
-						.parse(scenario_outFile);
+				ScenarioData reached_states = null;
+				try {
+					reached_states = ScenarioParser.parse(scenario_outFile);
+				} catch (Exception sax) {
+					addError(injReport, sax.getMessage());
+					return;
+				}
+
 				if (reached_states == null) {
 					addError(injReport, "out.xml is null");
 					// injReport.setErrorDescription("out.xml is null");
 					// mManager.updateResult(injReport);
 					// return;
-				}
-				if (SgUtils.path_contains_error(reached_states)) {
+				} else if (SgUtils.path_contains_error(reached_states)) {
 					ArrayList<Transition> VulTr = SgUtils
 							.contains_error(reached_states);
 					setVerdict(injReport, true);
@@ -375,6 +403,11 @@ public class INJTestJob extends AbstractMobileCrawler implements Runnable,
 	public void interrupted() {
 		// TODO Auto-generated method stub
 
+	}
+
+	@Override
+	public boolean remoteTestState() {
+		return remoteState;
 	}
 
 }

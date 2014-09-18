@@ -11,17 +11,16 @@ import java.util.HashSet;
 
 import javax.xml.parsers.ParserConfigurationException;
 
+import kit.Intent.AndroidManifestComponent;
+import kit.Intent.AndroidManifestParser;
+import kit.Intent.ManifestData;
+import kit.Intent.StreamException;
 import kit.Scenario.Scenario;
 import kit.Scenario.ScenarioData;
 import kit.Scenario.ScenarioParser;
 import kit.Scenario.State;
 
 import org.xml.sax.SAXException;
-
-import fr.openium.components.ActivityComponent;
-import fr.openium.specification.xml.AndroidManifestParser;
-import fr.openium.specification.xml.ManifestData;
-import fr.openium.specification.xml.StreamException;
 
 /**
  * @author Stassia
@@ -75,13 +74,17 @@ public class ActivityCoverageUtils {
 	 * @return
 	 */
 	private int getTotalActivity() {
-		System.out.println("Total activity "
-				+ mManifestData.getActivities().size() + " :");
-		for (ActivityComponent act : mManifestData.getActivities()) {
-			System.out.println(act.getName());
-		}
+		int number = 0;
+		for (AndroidManifestComponent act : mManifestData.getComponents()) {
+			if (act.getType().equalsIgnoreCase(
+					AndroidManifestComponent.typeElement.ACTIVITY)) {
+				System.out.println(act.getName());
+				number++;
+			}
 
-		return mManifestData.getActivities().size();
+		}
+		System.out.println("Total activity :" + number);
+		return number;
 	}
 
 	/**

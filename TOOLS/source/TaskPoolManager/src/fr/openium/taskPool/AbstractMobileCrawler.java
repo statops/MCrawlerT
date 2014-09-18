@@ -1,11 +1,10 @@
 package fr.openium.taskPool;
 
-
-
-
-public abstract class AbstractMobileCrawler extends AbstractTaskPoolRunnable implements Priority, Comparable<AbstractMobileCrawler>{
+public abstract class AbstractMobileCrawler extends AbstractTaskPoolRunnable
+		implements Priority, Comparable<AbstractMobileCrawler> {
 	protected final ITask mTask;
 	protected ITaskManager<?> mTaskManager;
+	protected boolean remoteState = false;
 
 	public AbstractMobileCrawler(ITask tasks) {
 		mTask = tasks;

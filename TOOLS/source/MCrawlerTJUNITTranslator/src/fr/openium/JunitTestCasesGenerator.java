@@ -40,6 +40,13 @@ public class JunitTestCasesGenerator extends AbstractJuniGenerator {
 	}
 
 	/**
+	 * input Path object , output JUNIT testCases
+	 * 
+	 * 
+	 * exemple:
+	 * 
+	 */
+	/**
 	 * 
 	 * 
 	 * @param output

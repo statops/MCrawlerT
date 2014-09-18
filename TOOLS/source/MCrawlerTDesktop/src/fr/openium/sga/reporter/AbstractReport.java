@@ -8,8 +8,6 @@ import javax.xml.parsers.ParserConfigurationException;
 
 import org.xml.sax.SAXException;
 
-import fr.openium.specification.xml.StreamException;
-
 abstract class AbstractReport {
 
 	protected final File outpuFile;
@@ -24,7 +22,6 @@ abstract class AbstractReport {
 
 	public static final String PATH_TO_REACH_LOCATION = "Path to reach the target location ";
 
-
 	public AbstractReport(File output) throws IOException {
 		outpuFile = output;
 		if (!outpuFile.exists()) {
@@ -33,7 +30,7 @@ abstract class AbstractReport {
 	}
 
 	public abstract void generate() throws FileNotFoundException, SAXException,
-			IOException, StreamException, ParserConfigurationException,
-			CloneNotSupportedException;
+			IOException, ParserConfigurationException,
+			CloneNotSupportedException, kit.Intent.StreamException;
 
 }

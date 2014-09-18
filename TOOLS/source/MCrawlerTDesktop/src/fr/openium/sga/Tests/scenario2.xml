@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scenario version="1">
+	<authors>
+		<author name="MainActivity_0" />
+	</authors>
+	<alphabet>
+		<action name="click button" />
+		<action name="click item" />
+		<action name="click imageview" />
+		<action name="" />
+		<action name="check box" />
+		<action name="editText" />
+	</alphabet>
+
+	<states initial="MainActivity_0">
+	    <state name="MainActivity_0">
+			<widget name="bouton 0" type="button" />
+			<widget name="bouton 1" type="button" />
+		</state>
+		<state name="activityNameZ">
+			<widget name="bouton X" type="bouton" />
+			<widget name="EditText 1" type="Edit Text" />
+			<widget name="List 1" type="ListView" />
+		</state>
+		<state name="activityNameY" final="yes">
+			<widget name="bouton Y1" type="bouton" final="yes" />
+			<widget name="bouton Y2" type="bouton" />
+		</state>
+		<state name="END" />
+		<state name="MainActivity_0">
+			<widget name="bouton 0" type="button" />
+			<widget name="bouton 1" type="button" />
+		</state>
+		<state name="activityNameY" final="yes">
+			<widget name="bouton Y1" type="bouton" final="yes" />
+			<widget name="bouton Y2" type="bouton" />
+		</state>
+	</states>
+	
+</Scenario>

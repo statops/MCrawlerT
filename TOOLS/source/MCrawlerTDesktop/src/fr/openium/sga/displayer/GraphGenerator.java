@@ -73,10 +73,7 @@ public class GraphGenerator {
 
 	}
 
-	public View getStoryboard() {
-		// for (int i = 0; i < cssStyle.getMAxLevel(); i++) {
-		// centralize(i);
-		// }
+	public View getStoryboard() {	
 		/**
 		 * centrer les images etage par étage
 		 */
@@ -105,7 +102,20 @@ public class GraphGenerator {
 				System.out.println("xy: " + xy[0].toString() + "  "
 						+ xy[1].toString());
 			} while (edges.hasNext());
+			// add screenshot attribute
 
+		}
+		switch (cssStyle.getStoryBoardType()) {
+		case TREE_TYPE:
+			graph.addAttribute("ui", cssStyle.getRobotium() + File.separator
+					+ "tree.png");
+			break;
+		case SIMPLE_TYPE:
+			graph.addAttribute("ui", cssStyle.getRobotium() + File.separator
+					+ "storyboard.png");
+			break;
+		default:
+			throw new IllegalStateException("No type of storyboard defined");
 		}
 
 		Viewer viewer = new Viewer(graph,
@@ -121,7 +131,6 @@ public class GraphGenerator {
 		finalState = false;
 		if (state == null)
 			throw new NullPointerException("Il faut renseigner l'�l�ment");
-
 		String stateId;
 		if (state.isDest()) {
 			stateId = state.getId();
@@ -417,8 +426,7 @@ public class GraphGenerator {
 
 	public void createTreeGraph(Transition path) throws NullPointerException,
 			IOException, Exception {
-		if (graph.getEdge(path.getId())!=null)
-		{
+		if (graph.getEdge(path.getId()) != null) {
 			return;
 		}
 		System.out.println("Before All path: "
@@ -442,7 +450,7 @@ public class GraphGenerator {
 		System.out.println("edge id: " + String.valueOf(path.getId()));
 		System.out.println("All: " + sourceId + "   " + path.getId() + "  "
 				+ path.getDest().getId());
-		
+
 		graph.addEdge(String.valueOf(path.getId()), sourceId, path.getDest()
 				.clone().getId(), true);
 		graph.getEdge(String.valueOf(path.getId())).setAttribute("ui.label",
@@ -454,20 +462,21 @@ public class GraphGenerator {
 
 	}
 
-	private void addState(String sourceId) throws IOException, IdAlreadyInUseException {
-		
+	private void addState(String sourceId) throws IOException,
+			IdAlreadyInUseException {
+
 		if (sourceId == null)
 			throw new NullPointerException("Il faut renseigner l'�l�ment");
 
-		String stateId=sourceId;	
+		String stateId = sourceId;
 		if (graph.getNode(sourceId) != null)
 			return;
 		cssStyle.addState(sourceId);
 		graph.addNode(stateId);
-		graph.getNode(stateId).addAttribute("ui.class", "id" + stateId);	
+		graph.getNode(stateId).addAttribute("ui.class", "id" + stateId);
 		graph.addAttribute("ui.stylesheet",
 				StyleConverter.convert(new File(cssStyle.getStylesheet())));
-		
+
 	}
 
 	private void ajustTreeNode(String sourceId, String destId) {
@@ -504,13 +513,12 @@ public class GraphGenerator {
 		return id.substring(0, index);
 	}
 
-	public void exportStoryboard(String path) throws NullPointerException {
+	public void _exportStoryboard(String path) throws NullPointerException {
 		if (path == null)
 			throw new NullPointerException(
 					"Il faut renseigner le chemin de sortie pour l'export du soryboard.");
 
-		graph.addAttribute("ui.screenshot", "screen.png");
-
+		graph.addAttribute("ui.screenshot", path + "screen.png");
 	}
 
 	public void saveStoryboardInFile(String path) throws NullPointerException,

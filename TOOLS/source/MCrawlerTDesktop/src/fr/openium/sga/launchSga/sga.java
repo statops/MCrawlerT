@@ -1,6 +1,6 @@
 package fr.openium.sga.launchSga;
 
-import fr.openium.automaticOperation.AntManager;
+import kit.Command.AntManager;
 import fr.openium.sga.ConfigApp;
 
 public class sga {
@@ -84,9 +84,11 @@ public class sga {
 						+ ConfigApp.ACTION
 						+ " -e package "
 						+ mTestProjectPackage
-						+ (mClassTest != null ? (" -e class " + mClassTest) : "")
+						+ (mClassTest != null ? (" -e class " + mClassTest)
+								: "")
 						+ (mStop_if_Error_Indication != null ? (" -e stopError " + mStop_if_Error_Indication)
-								: "") + " -e n " + nTimes + " -n " + ConfigApp.ACTIVITYLAUNCHER;
+								: "") + " -e n " + nTimes + " -n "
+						+ ConfigApp.ACTIVITYLAUNCHER;
 				System.out.print("Command:" + command);
 				ant.exec(command);
 				if (ant.getStdErr() != null) {

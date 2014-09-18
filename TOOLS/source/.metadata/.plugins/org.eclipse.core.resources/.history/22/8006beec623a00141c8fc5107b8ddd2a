@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RandomValue>
+	<string>	
+		<value>ok</value>
+		<value>-----------</value>
+	</string>
+	<int>
+                <value>12355</value>
+		
+	</int>
+    <semantic>
+		<value>mail</value>
+		<value>register </value>
+		<value>ID</value>
+		<value>User Id</value>
+        <value>Sign</value>	
+	</semantic>
+	<password>
+                <value>tPasswwd10</value>
+                <value>test1010</value>
+                
+	</password>
+	<inj>
+		<!-- <value>;INSERT INTO {table} ({column 1}) VALUES ({'data' 1}); </value> -->
+		<value>';INSERT INTO {table} VALUES ({'data' 3}); </value>
+		<value>';INSERT INTO {table} ({column 3}) VALUES ({'data' 3});
+		</value>
+		<value>';DROP TABLE * ;</value>
+		<!-- <value>\';DROP TABLE *; </value> -->
+		<value>\';DROP TABLE {table} ;</value>
+		<value>';SELECT ({column 3}) FROM {table 1}; </value>
+		<value>';SELECT * FROM {table 1}; </value>
+		<!-- <value>;SELECT * FROM {table 1}; </value> -->
+		<value> UNION SELECT * FROM {table 1}; </value>
+		<value>' UNION SELECT * FROM {table 1}; </value>
+		<value>{data}' AND 1=1'</value>
+		<value>{data} ' OR 1=1--'</value>
+		<value>{data}' OR 1=1--;</value>
+		<value>{data}' OR '1'='1</value>
+		<!-- <value>{data} 'OR \'1\'=\'1\'</value> -->
+		<value>' AND ({column 1})=({values 1})</value>
+		<value> 1=1'</value>
+		<value>0x7fff_ffff_ffff_ffffL</value>
+        <value>' or 1=1</value>
+        <value>1 OR 1==1 --</value>
+        <value>1 OR 1==1 --</value>
+        <value>'</value>
+        <value>sleep(10)</value>
+        <value>{data} UNION SELECT null,null,null FROM {table} </value>
+        <value>{data}' UNION SELECT null,null,null FROM {table} </value>
+        <value>“or 1=1/*</value>
+        <value>“or 1=1;%00</value>
+        <value>‘)or(‘a’=’a’–</value>
+        <value>{data}‘)or(‘a’=’a’–</value>
+        <value>‘or”=’</value>
+        <value>“or</value>
+        <value>user ()</value>  
+        <value>ORACLE: select user from dual;</value>  
+        <value>user_name()</value>        
+	</inj>
+	<mail>
+	<value>test@yahoo.fr</value>
+	<value>test1010</value>	
+	</mail>
+    <logging>
+	<value>test@yahoo.fr</value>	
+    <value>test1010</value>	
+	</logging>
+	<stress>
+		<value>%</value>
+		<value>+++</value>
+		<value>@*</value>
+		<value> '</value>
+		<value>8950355</value>
+		<value>-32768 </value>
+		<value>32768 </value>
+		<value> % s</value>
+		<value> % d % s % x</value>
+		<value> --------</value>
+		<value> 65535</value>
+		<value>2147483647</value>
+		<value>4294967295</value>
+		<value>–2147483648</value>
+		<value>–1</value>
+		<value>!</value>
+		<value>null</value>
+		<value>0x7fff_ffff_ffff_ffffL</value>
+		<value>0xFF_EC_DE_5E</value>
+		<value>3.14_15F</value>
+		<value>0b11010010_01101001_10010100_10010010</value>
+		<value>#</value>
+		<value>/*</value>
+		<value>'\0'</value>
+		<value>""</value>
+		<value>$</value>
+		<value>!</value>
+		<value>%d%d%D%D%d % x</value>
+	</stress>
+</RandomValue>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scenario version="1">
+	<authors>
+		<author name="MainActivity_0" />
+	</authors>
+	<alphabet>
+		<action name="click button" />
+		<action name="click item" />
+		<action name="click imageview" />
+		<action name="" />
+		<action name="check box" />
+		<action name="editText" />
+		<action name="schroll" />
+	</alphabet>
+	<states initial="fr.openium.example.exampleforsgd.MainActivity"
+		id="2">
+		<state name="fr.openium.example.exampleforsgd.ButtonActivity"
+			id="2" type="dest" time="" end="false">
+			<widget name="fr.openium.example.exampleforsgd:id/radioButton1"
+				type="android.widget.Button" posX="" posY="" visibility="0" enable="true"
+				pressed="false" shown="true" selected="false" value="" />
+			<widget name="fr.openium.example.exampleforsgd:id/button1"
+				type="android.widget.Button" posX="" posY="" visibility="0" enable="true"
+				pressed="false" shown="true" selected="false" value="" />
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Clique de 2 type de boutton diff�rent" />
+		</state>
+		<state name="fr.openium.example.exampleforsgd.MainActivity" id="2"
+			type="source" time="" end="false">
+			<widget name="fr.openium.example.exampleforsgd:id/e5" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="erft@wanadoo.fr" />
+			<widget name="fr.openium.example.exampleforsgd:id/e4" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="0" />
+			<widget name="fr.openium.example.exampleforsgd:id/b1" type="android.widget.Button"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="fr.openium.example.exampleforsgd:id/e3" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="test" />
+			<widget name="fr.openium.example.exampleforsgd:id/e2" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="world" />
+			<widget name="fr.openium.example.exampleforsgd:id/e1" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="00000" />
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="ExampleForSgd: Formulaire 1" />
+		</state>
+		<state name="fr.openium.example.exampleforsgd.CheckboxActivity"
+			id="5" type="dest" time="" end="false">
+			<widget name="fr.openium.example.exampleforsgd:id/textView1"
+				type="android.widget.TextView" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="true" selected="false"
+				value="Check box status" />
+			<widget name="fr.openium.example.exampleforsgd:id/checkBox1"
+				type="android.widget.CheckBox" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="true" selected="false" value="" />
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Check Box Test" />
+		</state>
+		<state name="fr.openium.example.exampleforsgd.ButtonActivity"
+			id="5" type="source" time="" end="false">
+			<widget name="fr.openium.example.exampleforsgd:id/radioButton1"
+				type="android.widget.Button" posX="" posY="" visibility="0" enable="true"
+				pressed="false" shown="true" selected="false" value="" />
+			<widget name="fr.openium.example.exampleforsgd:id/button1"
+				type="android.widget.Button" posX="" posY="" visibility="0" enable="true"
+				pressed="false" shown="true" selected="false" value="" />
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Clique de 2 type de boutton diff�rent" />
+		</state>
+	</states>
+	<transitions id="0" name="">
+		<transition id="2"
+			source="fr.openium.example.exampleforsgd.MainActivity" dest="fr.openium.example.exampleforsgd.ButtonActivity">
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e4" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="0" />
+			</action>
+			<action name="click button">
+				<widget name="fr.openium.example.exampleforsgd:id/b1" type="Button"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="" />
+			</action>
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e1" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="00000" />
+			</action>
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e3" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="test" />
+			</action>
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e2" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="world" />
+			</action>
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e5" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="erft@wanadoo.fr" />
+			</action>
+		</transition>
+		<transition id="5"
+			source="fr.openium.example.exampleforsgd.ButtonActivity" dest="fr.openium.example.exampleforsgd.CheckboxActivity">
+			<action name="click button">
+				<widget name="fr.openium.example.exampleforsgd:id/button1"
+					type="Button" posX="" posY="" visibility="" enable="" pressed=""
+					shown="" selected="" value="" />
+			</action>
+		</transition>
+	</transitions>
+</Scenario>

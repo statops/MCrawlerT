@@ -7,9 +7,12 @@ import java.io.IOException;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Observable;
+import java.util.Observer;
 
 import javax.xml.parsers.ParserConfigurationException;
 
+import kit.Command.AntManager;
 import kit.Command.DeletCommand;
 import kit.Command.InstallCommand;
 import kit.Command.InstrumentationCommand;
@@ -23,15 +26,15 @@ import kit.Scenario.ScenarioParser;
 import org.apache.commons.io.FileUtils;
 import org.xml.sax.SAXException;
 
-import fr.openium.automaticOperation.AntManager;
 import fr.openium.sga.ConfigApp;
 import fr.openium.sga.ThreadSleeper;
+import fr.openium.sga.Utils.Utils;
 import fr.openium.sga.command.Command;
 import fr.openium.sga.datamanagement.Datamanager;
 import fr.openium.sga.launchSga.sga;
 import fr.openium.sgaDesktop.Sga;
 
-public class SgdEnvironnement implements Cloneable, Serializable {
+public class SgdEnvironnement implements Cloneable, Serializable, Observer {
 
 	/**
 	 * 
@@ -181,7 +184,7 @@ public class SgdEnvironnement implements Cloneable, Serializable {
 	}
 
 	public void setOutDirectory(String out) {
-		this.mOutDirectory = out;
+		mOutDirectory = out;
 
 	}
 
@@ -428,23 +431,6 @@ public class SgdEnvironnement implements Cloneable, Serializable {
 		// checkError(ant);
 	}
 
-	@SuppressWarnings("unused")
-	private void checkError(AntManager ant) throws Exception {
-		Emma.info(Exception.class.getSimpleName());
-
-		if (ant.getStdErr() != null
-				&& ant.getStdErr().contains(Exception.class.getSimpleName())) {
-			Emma.info("" + ant.getStdErr());
-			return;
-		}
-
-		if (ant.getStdErr() != null) {
-			Emma.info("[error] :" + ant.getStdErr());
-			throw new Exception("Error occured during testing");
-		}
-
-	}
-
 	public void pullCoverageAndGenerateReport() {
 		File coverage = new File(mOutDirectory
 				+ ConfigApp.DESKTOP_COVERAGE_DIRECTORY);
@@ -477,7 +463,7 @@ public class SgdEnvironnement implements Cloneable, Serializable {
 			if (!coverage.getPath().equalsIgnoreCase(
 					principal_coverage.getPath())) {
 				for (int i = 0; i < f.length; i++) {
-					Emma.savegeneric_file(f[i], principal_coverage, null);
+					Utils.savegeneric_file(f[i], principal_coverage, null);
 				}
 				f = principal_coverage.listFiles();
 			}
@@ -556,6 +542,8 @@ public class SgdEnvironnement implements Cloneable, Serializable {
 	}
 
 	private Long mCurrentEmmaValue = 0L;
+	Long previousClassCoverage = 0L;
+	Long previousLineCoverage = 0L;
 
 	protected void readEmma(File coverage) {
 		EmmaParser pa = new EmmaParser();
@@ -566,7 +554,7 @@ public class SgdEnvironnement implements Cloneable, Serializable {
 			Emma.info("Method : " + pa.getMethodCoverage());
 			Emma.info("Line : " + pa.getLineCoverage());
 			Emma.info("Block : " + pa.getBlockCoverage());
-			mCurrentEmmaValue = Long.parseLong(pa.getClassCoverage().substring(
+			mCurrentEmmaValue = Long.parseLong(pa.getLineCoverage().substring(
 					0, pa.getLineCoverage().indexOf("%") - 1));
 			Emma.info("EMMA value = " + mCurrentEmmaValue);
 		} catch (SAXException e) {
@@ -581,13 +569,22 @@ public class SgdEnvironnement implements Cloneable, Serializable {
 		 * 
 		 */
 		if (coverage.exists()) {
-			Emma.savegeneric_file(coverage.getPath(), getCoveragePath(), null);
+			Utils.savegeneric_file(coverage.getPath(), getCoveragePath(), null);
 		}
 		Emma.info("Delete  " + coverage.getPath() + "  " + coverage.delete());
 	}
 
 	public String readCoverage() throws SAXException, IOException,
 			ParserConfigurationException {
+		/**
+		 * read coverag
+		 */
+
+		if (Config.DEBUG) {
+			System.out.println("read coverage:");
+			System.out.println(mCoveragePath);
+
+		}
 		EmmaParser pa = new EmmaParser();
 
 		/**
@@ -602,18 +599,62 @@ public class SgdEnvironnement implements Cloneable, Serializable {
 			}
 		};
 		File[] listFile = new File(mCoveragePath).listFiles(covFilter);
-		String _coverage_value = "\n";
+		String _coverage_value = "cannot read";
+		if (listFile.length > 0) {
+			if (Config.DEBUG) {
+				System.out.println("read coverage file: ");
+				// System.out.println(listFile[0]);
+			}
+
+			pa.parse(listFile[0], null);
+			previousClassCoverage = Long.parseLong(pa.getClassCoverage()
+					.substring(0, pa.getClassCoverage().indexOf("%") - 1));
+			previousLineCoverage = Long.parseLong(pa.getLineCoverage()
+					.substring(0, pa.getLineCoverage().indexOf("%") - 1));
+			_coverage_value = " class coverage  " + (pa.getClassCoverage())
+					+ " line coverage  " + (pa.getLineCoverage()) + "\n";
+		}
 
 		for (File coverage : listFile) {
-			pa.parse(coverage, null);
+			if (Config.DEBUG) {
+				System.out.println("read coverage file: ");
+				System.out.println(coverage);
+			}
 
-			_coverage_value = " " + _coverage_value + " class coverage  "
-					+ (pa.getClassCoverage()) + " line coverage  "
-					+ (pa.getLineCoverage()) + "\n";
+			pa.parse(coverage, null);
+			if (solveCoverage(pa)) {
+				_coverage_value = " class coverage  " + (pa.getClassCoverage())
+						+ " line coverage  " + (pa.getLineCoverage()) + "\n";
+			}
 
 		}
+
+		System.out.println(_coverage_value);
 		return _coverage_value;
 
+	}
+
+	private boolean solveCoverage(EmmaParser pa) {
+
+		mCurrentEmmaValue = Long.parseLong(pa.getLineCoverage().substring(0,
+				pa.getLineCoverage().indexOf("%") - 1));
+		if (Config.DEBUG) {
+			System.out.println("LineCoverage() " + mCurrentEmmaValue);
+		}
+		if (mCurrentEmmaValue > previousLineCoverage) {
+			previousLineCoverage = mCurrentEmmaValue;
+			return true;
+		}
+		mCurrentEmmaValue = Long.parseLong(pa.getClassCoverage().substring(0,
+				pa.getClassCoverage().indexOf("%") - 1));
+		if (Config.DEBUG) {
+			System.out.println("ClassCoverage()" + mCurrentEmmaValue);
+		}
+		if (mCurrentEmmaValue > previousClassCoverage) {
+			previousClassCoverage = mCurrentEmmaValue;
+			return true;
+		}
+		return false;
 	}
 
 	public boolean isTestDataCoverageLimitReached() {
@@ -1020,7 +1061,6 @@ public class SgdEnvironnement implements Cloneable, Serializable {
 				+ ConfigApp.ADBPATH, getDevice(), mOutDirectory
 				+ File.separator + "temp", ConfigApp.DEVICETESTRESULTS);
 		push.execute();
-
 	}
 
 	private String mCP;
@@ -1164,4 +1204,13 @@ public class SgdEnvironnement implements Cloneable, Serializable {
 		}
 		this.mDicoPath = dicoPath;
 	}
+
+	private boolean mSga = false;
+
+	@Override
+	public void update(Observable arg0, Object arg1) {
+		mSga = true;
+
+	}
+
 }

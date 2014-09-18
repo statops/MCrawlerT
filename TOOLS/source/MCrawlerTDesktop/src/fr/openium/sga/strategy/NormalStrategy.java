@@ -1,25 +1,22 @@
 package fr.openium.sga.strategy;
 
 import java.io.File;
-import java.io.IOException;
-
-import kit.Config.Config;
 import kit.Scenario.ScenarioData;
 import kit.Scenario.State;
 
-import org.apache.commons.io.FileUtils;
-
 import fr.openium.sga.ConfigApp;
 import fr.openium.sga.ThreadSleeper;
+import fr.openium.sga.Utils.Utils;
 import fr.openium.sga.bissimulation.SgaGraph;
-import fr.openium.sga.dot.model.Refinement;
 import fr.openium.sga.emmatest.Emma;
 import fr.openium.sga.emmatest.SgdEnvironnement;
 import fr.openium.sga.result.CrawlResult;
 
-public class NormalStrategy extends AbstractStrategy implements IStrategy, IEmulateur_Client {
+public class NormalStrategy extends AbstractStrategy implements IStrategy,
+		IEmulateur_Client {
 
 	private static final int MAX_TREE_SIZE = 100;
+	private boolean remoteTestState;
 
 	public NormalStrategy(SgdEnvironnement environment) {
 		super(environment);
@@ -33,7 +30,8 @@ public class NormalStrategy extends AbstractStrategy implements IStrategy, IEmul
 
 	@Override
 	public CrawlResult getResult() throws Exception {
-		mResult = new CrawlResult(new File(mSgdEnvironnement.getOutDirectory()), this);
+		mResult = new CrawlResult(
+				new File(mSgdEnvironnement.getOutDirectory()), this);
 		/**
 		 * Creation d'un seul thread, un runnable
 		 */
@@ -65,21 +63,25 @@ public class NormalStrategy extends AbstractStrategy implements IStrategy, IEmul
 					break;
 				}
 
-				if (mResult != null && mResult.getScenarioData() != null
+				if (mResult != null
+						&& mResult.getScenarioData() != null
 						&& !mResult.getScenarioData().isEmpty()
 						&& mResult.getScenarioData().getTrees().size() > MAX_TREE_SIZE) {
 					break;
 				}
 				if (mResult != null && mResult.getScenarioData() != null
-						&& !mResult.getScenarioData().isEmpty() && mResult.getListNewStates().size() == 0) {
+						&& !mResult.getScenarioData().isEmpty()
+						&& mResult.getListNewStates().size() == 0) {
 					break;
 				}
 
 				if (testIsfinshed) {
 					final_operation(mSgdEnvironnement);
 					info("TEST NUMBER " + mOccurrence++);
-					Emma.delete_File_onDevice(ConfigApp.OkPath, mSgdEnvironnement, mSleeper);
+					Emma.delete_File_onDevice(ConfigApp.OkPath,
+							mSgdEnvironnement, mSleeper);
 					mSgdEnvironnement.launchSga_class_defined();
+					remoteTestState = true;
 					set_sga_is_finished(false);
 					checkIfTestOnDeviceIsFinished(mSgdEnvironnement);
 				}
@@ -87,14 +89,15 @@ public class NormalStrategy extends AbstractStrategy implements IStrategy, IEmul
 				 * couverture mis à jour toutes les 10 secondes
 				 */
 				mSleeper.sleepLong();
-				if (Emma.limit_time_isReached(initTime, Emma.TIME_LIMITE)) {
+				if (Utils.limit_time_isReached(initTime, Emma.TIME_LIMITE)) {
 					pull(ConfigApp.OutXMLPath, mSgdEnvironnement);
 					// mResult.setGraph(final_operation(mSgdEnvironnement));
 					mSgdEnvironnement.pullCoverageAndGenerateReport();
 					break;
 				}
 
-			} while (mSgdEnvironnement.getCoverageLimit() > mSgdEnvironnement.getCurrentCoverage());
+			} while (mSgdEnvironnement.getCoverageLimit() > mSgdEnvironnement
+					.getCurrentCoverage());
 
 		}
 		// mResult.setScenarioData(mScenarioData)
@@ -126,24 +129,25 @@ public class NormalStrategy extends AbstractStrategy implements IStrategy, IEmul
 		if (scenarioDataFiles.length == 0) {
 			return null;
 		}
-		Refinement refinement_operation = new Refinement(scenarioDataFiles);
-		SgaGraph[] result = refinement_operation.computeBissModel();
-		result[1].display();
-		result[0].display();
-		mResult.setScenarioData(refinement_operation.getScenarioData());
+		/*
+		 * Refinement refinement_operation = new Refinement(scenarioDataFiles);
+		 * SgaGraph[] result = refinement_operation.computeBissModel();
+		 * result[1].display(); result[0].display();
+		 */
+		// mResult.setScenarioData(refinement_operation.getScenarioData());
 		/**
 		 * enregistrer sous forme dot
 		 */
-		try {
-			FileUtils.writeStringToFile(new File(Outdirectory + ConfigApp.SCENARIO_REFINED_FILE),
-					result[1].toDot(), Config.UTF8, false);
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		save(new File(Outdirectory + ConfigApp.SCENARIO_REFINED_FILE), new File(Outdirectory
-				+ ConfigApp.DOT_DIRECTORY), ".dot");
+		/*
+		 * try { FileUtils.writeStringToFile(new File(Outdirectory +
+		 * ConfigApp.SCENARIO_REFINED_FILE), result[1].toDot(), Config.UTF8,
+		 * false); } catch (IOException e) { e.printStackTrace(); }
+		 */
+		save(new File(Outdirectory + ConfigApp.SCENARIO_REFINED_FILE),
+				new File(Outdirectory + ConfigApp.DOT_DIRECTORY), ".dot");
 
-		return result[1];
+		// return result[1];
+		return null;
 
 	}
 
@@ -177,7 +181,8 @@ public class NormalStrategy extends AbstractStrategy implements IStrategy, IEmul
 		 */
 		Emma.delete_File_onDevice(ConfigApp.OkPath, mSgdEnvironnement, mSleeper);
 		/** save ok file */
-		File ok = new File(mSgdEnvironnement.getOutDirectory() + ConfigApp.OkPath);
+		File ok = new File(mSgdEnvironnement.getOutDirectory()
+				+ ConfigApp.OkPath);
 		save_ok(mSgdEnvironnement, ok);
 		/** save rv_done file file */
 		save_rv_done_directory(mSgdEnvironnement);
@@ -202,6 +207,11 @@ public class NormalStrategy extends AbstractStrategy implements IStrategy, IEmul
 	public int getRank(State st, ScenarioData path) {
 		// TODO Auto-generated method stub
 		return 0;
+	}
+
+	@Override
+	public boolean remoteTestState() {
+		return remoteTestState;
 	}
 
 }

@@ -9,9 +9,8 @@ import kit.Scenario.ScenarioGenerator;
 import kit.Scenario.State;
 import kit.Utils.SgUtils;
 import fr.openium.sga.ConfigApp;
+import fr.openium.sga.Utils.Utils;
 import fr.openium.sga.bissimulation.SgaGraph;
-import fr.openium.sga.dot.model.Refinement;
-import fr.openium.sga.emmatest.Emma;
 import fr.openium.sga.strategy.AbstractStrategy;
 import fr.openium.sga.threadPool.CrawlerTask;
 import fr.openium.taskPool.IResultReceiver;
@@ -27,6 +26,7 @@ public class CrawlResult implements IResultReceiver {
 	private SgaGraph mInitGraph;
 	private long mCoverage;
 	private ScenarioData mScenarioData;
+	private File mPath_parent;
 	private File mPath_directory;
 	private File mTree_directory;
 	private AbstractStrategy mStrategyType;
@@ -40,6 +40,7 @@ public class CrawlResult implements IResultReceiver {
 
 	public CrawlResult(File path, AbstractStrategy strategy) {
 		mScenarioData = null;
+		mPath_parent = new File(path.getPath());
 		mTree_directory = new File(path.getPath() + ConfigApp.SCENARII);
 		mPath_directory = new File(path.getPath() + File.separator
 				+ ConfigApp.PATH);
@@ -51,12 +52,11 @@ public class CrawlResult implements IResultReceiver {
 
 	}
 
-	public SgaGraph getFinalGraph() {
-		if (mGraph == null) {
-			return new Refinement(mScenarioData).generate_graphe(mScenarioData);
-		}
-		return mGraph;
-	}
+	/*
+	 * public SgaGraph getFinalGraph() { if (mGraph == null) { //return new
+	 * Refinement(mScenarioData).generate_graphe(mScenarioData); return null; }
+	 * return mGraph; }
+	 */
 
 	public void setGraph(SgaGraph Graph) {
 		if (Graph != null)
@@ -341,16 +341,7 @@ public class CrawlResult implements IResultReceiver {
 		if (path != null) {
 			mScenarioData.add_(path, true);
 		}
-		display_current_tree();
-	}
-
-	private void display_current_tree() {
-		if (mScenarioData != null) {
-			SgaGraph graph = new Refinement(mScenarioData)
-					.generate_graphe(mScenarioData);
-			graph.display();
-		}
-
+		// display_current_tree();
 	}
 
 	public ArrayList<ScenarioData> getPathList() {
@@ -393,7 +384,7 @@ public class CrawlResult implements IResultReceiver {
 		}
 		String temp = new File("").getAbsolutePath() + File.separator + "_out";
 		new ScenarioGenerator(temp).generateXml(mScenarioData);
-		Emma.savegeneric_file(new File(temp), mTree_directory, ".xml");
+		Utils.savegeneric_file(new File(temp), mTree_directory, ".xml");
 	}
 
 	/**
@@ -405,7 +396,7 @@ public class CrawlResult implements IResultReceiver {
 		}
 		String temp = new File("").getAbsolutePath() + File.separator + "_path";
 		new ScenarioGenerator(temp).generateXml(path);
-		Emma.savegeneric_file(new File(temp), mPath_directory, ".xml");
+		Utils.savegeneric_file(new File(temp), mPath_directory, ".xml");
 	}
 
 	/**
@@ -427,8 +418,8 @@ public class CrawlResult implements IResultReceiver {
 		return mScenarioData;
 	}
 
-	public void setScenarioData(ScenarioData mScenarioData) {
-		this.mScenarioData = mScenarioData;
+	public void setScenarioData(ScenarioData scen) {
+		this.mScenarioData = scen;
 	}
 
 	public void compute_bissimilation() {
@@ -442,11 +433,10 @@ public class CrawlResult implements IResultReceiver {
 					.println("No graph is computed because transitions are null or empty");
 			return;
 		}
-		Refinement biss = new Refinement(mScenarioData);
-		SgaGraph[] result = biss.computeBissModel();
-		mGraph = result[1];
-		mInitGraph = result[0];
-
+		/*
+		 * Refinement biss = new Refinement(mScenarioData); SgaGraph[] result =
+		 * biss.computeBissModel(); mGraph = result[1]; mInitGraph = result[0];
+		 */
 		// mGraph=biss.generate_graphe(mScenarioData);
 		// mInitGraph=biss.generate_graphe(mScenarioData);
 	}
@@ -468,11 +458,11 @@ public class CrawlResult implements IResultReceiver {
 			}
 		}
 		availability = true;
-		compute_bissimilation();
+		// compute_bissimilation();
 		// if (mGraph != null) {
 		// mGraph.display();
 		// }
-		System.err.println("current time: " + Emma.getTime());
+
 		return tasks;
 	}
 
@@ -507,6 +497,10 @@ public class CrawlResult implements IResultReceiver {
 
 	public AbstractStrategy getStrategyType() {
 		return mStrategyType;
+	}
+
+	public File getUe() {
+		return mPath_parent;
 	}
 
 }

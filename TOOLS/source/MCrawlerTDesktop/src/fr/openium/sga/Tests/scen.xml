@@ -1,0 +1,2302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scenario version="0">
+	<alphabet>
+		<action name="click button" />
+		<action name="" />
+		<action name="click imageview" />
+		<action name="click listview" />
+	</alphabet>
+	<states initial="com.rechild.advancedtaskkiller.AdvancedTaskKiller"
+		id="16">
+		<state name="com.rechild.advancedtaskkiller.NewSettings" id="47"
+			type="source" time="12:05:55" end="false">
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Advanced Task Killer Free" />
+			<widget name="android:id/list" type="android.widget.ListView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/summary" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false"
+				value="Ignore service and front apps automatically. Otherwise they would display as green text, you can Long Press on them and Force Stop them." />
+			<widget name="android:id/checkbox" type="android.widget.CheckBox"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="false" pressed="false" shown="true"
+				selected="false" value="Auto Kill Frequency" />
+			<widget name="android:id/summary" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="false" pressed="false" shown="true"
+				selected="false"
+				value="If you choose When screen off, it need restart to apply the change." />
+		</state>
+		<state name="com.rechild.advancedtaskkiller.AdvancedTaskKiller"
+			id="12" type="dest" time="" end="false">
+			<widget name="android:id/icon" type="android.widget.ImageView"
+				posX="" posY="" visibility="8" enable="true" pressed="false" shown="false"
+				selected="false" value="" />
+			<widget name="android:id/alertTitle" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="false"
+				selected="false" value="" />
+			<widget name="android:id/titleDivider" type="android.widget.ImageView"
+				posX="" posY="" visibility="8" enable="true" pressed="false" shown="false"
+				selected="false" value="" />
+			<widget name="com.rechild.advancedtaskkiller:id/TextView01"
+				type="android.widget.TextView" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="true" selected="false"
+				value="Please tell us more detail about your issue, so we can address it ASAP." />
+			<widget name="com.rechild.advancedtaskkiller:id/editErrorMessage"
+				type="android.widget.EditText" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="true" selected="false" value="" />
+			<widget name="android:id/button1" type="android.widget.Button"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Send via email" />
+			<widget name="android:id/button3" type="android.widget.Button"
+				posX="" posY="" visibility="8" enable="true" pressed="false" shown="false"
+				selected="false" value="" />
+			<widget name="android:id/button2" type="android.widget.Button"
+				posX="" posY="" visibility="8" enable="true" pressed="false" shown="false"
+				selected="false" value="" />
+		</state>
+		<state name="com.rechild.advancedtaskkiller.AdvancedTaskKiller"
+			id="27" type="source" time="11:59:37" end="false">
+			<widget name="android:id/icon" type="android.widget.ImageView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/alertTitle" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="About" />
+			<widget name="android:id/titleDivider" type="android.widget.ImageView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/button1" type="android.widget.Button"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="OK" />
+			<widget name="android:id/button3" type="android.widget.Button"
+				posX="" posY="" visibility="8" enable="true" pressed="false" shown="false"
+				selected="false" value="" />
+			<widget name="android:id/button2" type="android.widget.Button"
+				posX="" posY="" visibility="8" enable="true" pressed="false" shown="false"
+				selected="false" value="" />
+		</state>
+		<state name="com.rechild.advancedtaskkiller.NewSettings" id="11"
+			type="dest" time="" end="false">
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Advanced Task Killer Free" />
+			<widget name="android:id/list" type="android.widget.ListView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="true" value="Auto Start" />
+			<widget name="android:id/summary" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="true" value="Start up automatically when restart your phone" />
+			<widget name="android:id/checkbox" type="android.widget.CheckBox"
+				posX="" posY="" visibility="0" enable="true" pressed="true" shown="true"
+				selected="true" value="" />
+			<widget name="android:id/summary" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Show icon on notification bar to switch easily" />
+			<widget name="android:id/checkbox" type="android.widget.CheckBox"
+				posX="" posY="" visibility="0" enable="true" pressed="true" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/checkbox" type="android.widget.CheckBox"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+		</state>
+		<state name="com.rechild.advancedtaskkiller.NewSettings" id="48"
+			type="source" time="12:02:57" end="false">
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Advanced Task Killer Free" />
+			<widget name="android:id/list" type="android.widget.ListView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/summary" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false"
+				value="Ignore service and front apps automatically. Otherwise they would display as green text, you can Long Press on them and Force Stop them." />
+			<widget name="android:id/checkbox" type="android.widget.CheckBox"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="false" pressed="false" shown="true"
+				selected="false" value="Auto Kill Frequency" />
+			<widget name="android:id/summary" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="false" pressed="false" shown="true"
+				selected="false"
+				value="If you choose When screen off, it need restart to apply the change." />
+		</state>
+		<state name="com.rechild.advancedtaskkiller.NewSettings" id="19"
+			type="source" time="11:56:41" end="false">
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Advanced Task Killer Free" />
+			<widget name="android:id/list" type="android.widget.ListView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="true" value="Auto Start" />
+			<widget name="android:id/summary" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="true" value="Start up automatically when restart your phone" />
+			<widget name="android:id/checkbox" type="android.widget.CheckBox"
+				posX="" posY="" visibility="0" enable="true" pressed="true" shown="true"
+				selected="true" value="" />
+			<widget name="android:id/summary" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Show icon on notification bar to switch easily" />
+			<widget name="android:id/checkbox" type="android.widget.CheckBox"
+				posX="" posY="" visibility="0" enable="true" pressed="true" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/checkbox" type="android.widget.CheckBox"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+		</state>
+		<state name="com.rechild.advancedtaskkiller.NewSettings" id="40"
+			type="dest" time="" end="true">
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Advanced Task Killer Free" />
+			<widget name="android:id/list" type="android.widget.ListView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/summary" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Start up automatically when restart your phone" />
+			<widget name="android:id/checkbox" type="android.widget.CheckBox"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="true" value="Show Notification" />
+			<widget name="android:id/summary" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="true" value="Show icon on notification bar to switch easily" />
+			<widget name="android:id/checkbox" type="android.widget.CheckBox"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="true" value="" />
+			<widget name="android:id/checkbox" type="android.widget.CheckBox"
+				posX="" posY="" visibility="0" enable="true" pressed="true" shown="true"
+				selected="false" value="" />
+		</state>
+		<state name="com.rechild.advancedtaskkiller.NewSettings" id="52"
+			type="dest" time="" end="true">
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Advanced Task Killer Free" />
+			<widget name="android:id/list" type="android.widget.ListView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="true" value="Auto Start" />
+			<widget name="android:id/summary" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="true" value="Start up automatically when restart your phone" />
+			<widget name="android:id/checkbox" type="android.widget.CheckBox"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="true" value="" />
+			<widget name="android:id/summary" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Show icon on notification bar to switch easily" />
+			<widget name="android:id/checkbox" type="android.widget.CheckBox"
+				posX="" posY="" visibility="0" enable="true" pressed="true" shown="true"
+				selected="false" value="" />
+		</state>
+		<state name="com.rechild.advancedtaskkiller.AdvancedTaskKiller"
+			id="28" type="source" time="12:00:06" end="false">
+			<widget name="android:id/icon" type="android.widget.ImageView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/alertTitle" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="About" />
+			<widget name="android:id/titleDivider" type="android.widget.ImageView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/button1" type="android.widget.Button"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="OK" />
+			<widget name="android:id/button3" type="android.widget.Button"
+				posX="" posY="" visibility="8" enable="true" pressed="false" shown="false"
+				selected="false" value="" />
+			<widget name="android:id/button2" type="android.widget.Button"
+				posX="" posY="" visibility="8" enable="true" pressed="false" shown="false"
+				selected="false" value="" />
+		</state>
+		<state name="end" id="16" type="dest" time="" end="true" />
+		<state name="com.rechild.advancedtaskkiller.NewSettings" id="46"
+			type="source" time="12:01:40" end="false">
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Advanced Task Killer Free" />
+			<widget name="android:id/list" type="android.widget.ListView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/summary" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false"
+				value="Ignore service and front apps automatically. Otherwise they would display as green text, you can Long Press on them and Force Stop them." />
+			<widget name="android:id/checkbox" type="android.widget.CheckBox"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="false" pressed="false" shown="true"
+				selected="false" value="Auto Kill Frequency" />
+			<widget name="android:id/summary" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="false" pressed="false" shown="true"
+				selected="false"
+				value="If you choose When screen off, it need restart to apply the change." />
+		</state>
+		<state name="com.rechild.advancedtaskkiller.HelpActivity" id="31"
+			type="source" time="12:02:38" end="false">
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Advanced Task Killer Free" />
+		</state>
+		<state name="com.rechild.advancedtaskkiller.NewSettings" id="49"
+			type="dest" time="" end="true">
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Advanced Task Killer Free" />
+			<widget name="android:id/list" type="android.widget.ListView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/summary" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false"
+				value="Ignore service and front apps automatically. Otherwise they would display as green text, you can Long Press on them and Force Stop them." />
+			<widget name="android:id/checkbox" type="android.widget.CheckBox"
+				posX="" posY="" visibility="0" enable="true" pressed="true" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="false" pressed="false" shown="true"
+				selected="false" value="Auto Kill Frequency" />
+			<widget name="android:id/summary" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="false" pressed="false" shown="true"
+				selected="false"
+				value="If you choose When screen off, it need restart to apply the change." />
+		</state>
+		<state name="com.rechild.advancedtaskkiller.NewSettings" id="41"
+			type="dest" time="" end="false">
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Advanced Task Killer Free" />
+			<widget name="android:id/list" type="android.widget.ListView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="true" value="Auto Start" />
+			<widget name="android:id/summary" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="true" value="Start up automatically when restart your phone" />
+			<widget name="android:id/checkbox" type="android.widget.CheckBox"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="true" value="" />
+			<widget name="android:id/summary" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Show icon on notification bar to switch easily" />
+			<widget name="android:id/checkbox" type="android.widget.CheckBox"
+				posX="" posY="" visibility="0" enable="true" pressed="true" shown="true"
+				selected="false" value="" />
+		</state>
+		<state name="com.rechild.advancedtaskkiller.NewSettings" id="40"
+			type="source" time="12:03:23" end="false">
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Advanced Task Killer Free" />
+			<widget name="android:id/list" type="android.widget.ListView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/summary" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false"
+				value="Ignore service and front apps automatically. Otherwise they would display as green text, you can Long Press on them and Force Stop them." />
+			<widget name="android:id/checkbox" type="android.widget.CheckBox"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="false" pressed="false" shown="true"
+				selected="false" value="Auto Kill Frequency" />
+			<widget name="android:id/summary" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="false" pressed="false" shown="true"
+				selected="false"
+				value="If you choose When screen off, it need restart to apply the change." />
+		</state>
+		<state name="com.rechild.advancedtaskkiller.NewSettings" id="43"
+			type="source" time="12:07:06" end="false">
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Advanced Task Killer Free" />
+			<widget name="android:id/list" type="android.widget.ListView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/summary" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false"
+				value="Ignore service and front apps automatically. Otherwise they would display as green text, you can Long Press on them and Force Stop them." />
+			<widget name="android:id/checkbox" type="android.widget.CheckBox"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="false" pressed="false" shown="true"
+				selected="false" value="Auto Kill Frequency" />
+			<widget name="android:id/summary" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="false" pressed="false" shown="true"
+				selected="false"
+				value="If you choose When screen off, it need restart to apply the change." />
+		</state>
+		<state name="com.rechild.advancedtaskkiller.AdvancedTaskKiller"
+			id="16" type="source" time="11:54:22" end="false">
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Available Memory: 701M  " />
+			<widget name="com.rechild.advancedtaskkiller:id/btnCheck"
+				type="android.widget.Button" posX="" posY="" visibility="8" enable="true"
+				pressed="false" shown="false" selected="false" value="Check" />
+			<widget name="com.rechild.advancedtaskkiller:id/btn_task"
+				type="android.widget.Button" posX="" posY="" visibility="0" enable="true"
+				pressed="false" shown="true" selected="false" value="KILL selected apps" />
+			<widget name="com.rechild.advancedtaskkiller:id/listbody"
+				type="android.widget.ListView" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="true" selected="false" value="" />
+			<widget name="com.rechild.advancedtaskkiller:id/list_icon"
+				type="android.widget.ImageView" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="true" selected="false" value="" />
+			<widget name="com.rechild.advancedtaskkiller:id/list_iconCheck"
+				type="android.widget.ImageView" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="true" selected="false" value="" />
+			<widget name="com.rechild.advancedtaskkiller:id/list_name"
+				type="android.widget.TextView" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="true" selected="false"
+				value="Advanced Task Killer Free" />
+		</state>
+		<state name="com.rechild.advancedtaskkiller.NewSettings" id="35"
+			type="source" time="12:08:58" end="false">
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Advanced Task Killer Free" />
+			<widget name="android:id/list" type="android.widget.ListView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/summary" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false"
+				value="Ignore service and front apps automatically. Otherwise they would display as green text, you can Long Press on them and Force Stop them." />
+			<widget name="android:id/checkbox" type="android.widget.CheckBox"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="false" pressed="false" shown="true"
+				selected="false" value="Auto Kill Frequency" />
+			<widget name="android:id/summary" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="false" pressed="false" shown="true"
+				selected="false"
+				value="If you choose When screen off, it need restart to apply the change." />
+		</state>
+		<state name="com.rechild.advancedtaskkiller.AdvancedTaskKiller"
+			id="23" type="dest" time="" end="true">
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Available Memory: 207M  " />
+			<widget name="com.rechild.advancedtaskkiller:id/btnCheck"
+				type="android.widget.Button" posX="" posY="" visibility="8" enable="true"
+				pressed="false" shown="false" selected="false" value="Check" />
+			<widget name="com.rechild.advancedtaskkiller:id/btn_task"
+				type="android.widget.Button" posX="" posY="" visibility="0" enable="true"
+				pressed="false" shown="true" selected="false" value="KILL selected apps" />
+			<widget name="com.rechild.advancedtaskkiller:id/listbody"
+				type="android.widget.ListView" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="true" selected="false" value="" />
+			<widget name="com.rechild.advancedtaskkiller:id/list_icon"
+				type="android.widget.ImageView" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="true" selected="false" value="" />
+			<widget name="com.rechild.advancedtaskkiller:id/list_iconCheck"
+				type="android.widget.ImageView" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="true" selected="false" value="" />
+			<widget name="com.rechild.advancedtaskkiller:id/list_name"
+				type="android.widget.TextView" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="true" selected="false" value="Search" />
+		</state>
+		<state name="com.rechild.advancedtaskkiller.NewSettings" id="50"
+			type="source" time="12:05:10" end="false">
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Advanced Task Killer Free" />
+			<widget name="android:id/list" type="android.widget.ListView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/summary" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false"
+				value="Ignore service and front apps automatically. Otherwise they would display as green text, you can Long Press on them and Force Stop them." />
+			<widget name="android:id/checkbox" type="android.widget.CheckBox"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="false" pressed="false" shown="true"
+				selected="false" value="Auto Kill Frequency" />
+			<widget name="android:id/summary" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="false" pressed="false" shown="true"
+				selected="false"
+				value="If you choose When screen off, it need restart to apply the change." />
+		</state>
+		<state name="com.rechild.advancedtaskkiller.NewSettings" id="41"
+			type="source" time="12:01:14" end="false">
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Advanced Task Killer Free" />
+			<widget name="android:id/list" type="android.widget.ListView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/summary" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false"
+				value="Ignore service and front apps automatically. Otherwise they would display as green text, you can Long Press on them and Force Stop them." />
+			<widget name="android:id/checkbox" type="android.widget.CheckBox"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="false" pressed="false" shown="true"
+				selected="false" value="Auto Kill Frequency" />
+			<widget name="android:id/summary" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="false" pressed="false" shown="true"
+				selected="false"
+				value="If you choose When screen off, it need restart to apply the change." />
+		</state>
+		<state name="com.rechild.advancedtaskkiller.NewSettings" id="42"
+			type="source" time="12:02:31" end="false">
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Advanced Task Killer Free" />
+			<widget name="android:id/list" type="android.widget.ListView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/summary" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false"
+				value="Ignore service and front apps automatically. Otherwise they would display as green text, you can Long Press on them and Force Stop them." />
+			<widget name="android:id/checkbox" type="android.widget.CheckBox"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="false" pressed="false" shown="true"
+				selected="false" value="Auto Kill Frequency" />
+			<widget name="android:id/summary" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="false" pressed="false" shown="true"
+				selected="false"
+				value="If you choose When screen off, it need restart to apply the change." />
+		</state>
+		<state name="com.rechild.advancedtaskkiller.AdvancedTaskKiller"
+			id="28" type="dest" time="" end="true">
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Available Memory: 206M  " />
+			<widget name="com.rechild.advancedtaskkiller:id/btnCheck"
+				type="android.widget.Button" posX="" posY="" visibility="8" enable="true"
+				pressed="false" shown="false" selected="false" value="Check" />
+			<widget name="com.rechild.advancedtaskkiller:id/btn_task"
+				type="android.widget.Button" posX="" posY="" visibility="0" enable="true"
+				pressed="false" shown="true" selected="false" value="KILL selected apps" />
+			<widget name="com.rechild.advancedtaskkiller:id/listbody"
+				type="android.widget.ListView" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="true" selected="false" value="" />
+			<widget name="com.rechild.advancedtaskkiller:id/list_icon"
+				type="android.widget.ImageView" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="true" selected="false" value="" />
+			<widget name="com.rechild.advancedtaskkiller:id/list_iconCheck"
+				type="android.widget.ImageView" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="true" selected="false" value="" />
+			<widget name="com.rechild.advancedtaskkiller:id/list_name"
+				type="android.widget.TextView" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="true" selected="false" value="Search" />
+		</state>
+		<state name="com.rechild.advancedtaskkiller.AdvancedTaskKiller"
+			id="27" type="dest" time="" end="true">
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Available Memory: 208M  " />
+			<widget name="com.rechild.advancedtaskkiller:id/btnCheck"
+				type="android.widget.Button" posX="" posY="" visibility="8" enable="true"
+				pressed="false" shown="false" selected="false" value="Check" />
+			<widget name="com.rechild.advancedtaskkiller:id/btn_task"
+				type="android.widget.Button" posX="" posY="" visibility="0" enable="true"
+				pressed="false" shown="true" selected="false" value="KILL selected apps" />
+			<widget name="com.rechild.advancedtaskkiller:id/listbody"
+				type="android.widget.ListView" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="true" selected="false" value="" />
+			<widget name="com.rechild.advancedtaskkiller:id/list_icon"
+				type="android.widget.ImageView" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="true" selected="false" value="" />
+			<widget name="com.rechild.advancedtaskkiller:id/list_iconCheck"
+				type="android.widget.ImageView" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="true" selected="false" value="" />
+			<widget name="com.rechild.advancedtaskkiller:id/list_name"
+				type="android.widget.TextView" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="true" selected="false" value="Search" />
+		</state>
+		<state name="com.rechild.advancedtaskkiller.HelpActivity" id="30"
+			type="source" time="12:03:32" end="false">
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Advanced Task Killer Free" />
+		</state>
+		<state name="com.rechild.advancedtaskkiller.NewSettings" id="48"
+			type="dest" time="" end="true">
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Advanced Task Killer Free" />
+			<widget name="android:id/list" type="android.widget.ListView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/summary" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Start up automatically when restart your phone" />
+			<widget name="android:id/checkbox" type="android.widget.CheckBox"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="true" value="Show Notification" />
+			<widget name="android:id/summary" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="true" value="Show icon on notification bar to switch easily" />
+			<widget name="android:id/checkbox" type="android.widget.CheckBox"
+				posX="" posY="" visibility="0" enable="true" pressed="true" shown="true"
+				selected="true" value="" />
+			<widget name="android:id/checkbox" type="android.widget.CheckBox"
+				posX="" posY="" visibility="0" enable="true" pressed="true" shown="true"
+				selected="false" value="" />
+		</state>
+		<state name="com.rechild.advancedtaskkiller.NewSettings" id="52"
+			type="source" time="12:02:05" end="false">
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Advanced Task Killer Free" />
+			<widget name="android:id/list" type="android.widget.ListView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/summary" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false"
+				value="Ignore service and front apps automatically. Otherwise they would display as green text, you can Long Press on them and Force Stop them." />
+			<widget name="android:id/checkbox" type="android.widget.CheckBox"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="false" pressed="false" shown="true"
+				selected="false" value="Auto Kill Frequency" />
+			<widget name="android:id/summary" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="false" pressed="false" shown="true"
+				selected="false"
+				value="If you choose When screen off, it need restart to apply the change." />
+		</state>
+		<state name="com.rechild.advancedtaskkiller.AdvancedTaskKiller"
+			id="15" type="source" time="11:54:00" end="false">
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Available Memory: 701M  " />
+			<widget name="com.rechild.advancedtaskkiller:id/btnCheck"
+				type="android.widget.Button" posX="" posY="" visibility="8" enable="true"
+				pressed="false" shown="false" selected="false" value="Check" />
+			<widget name="com.rechild.advancedtaskkiller:id/btn_task"
+				type="android.widget.Button" posX="" posY="" visibility="0" enable="true"
+				pressed="false" shown="true" selected="false" value="KILL selected apps" />
+			<widget name="com.rechild.advancedtaskkiller:id/listbody"
+				type="android.widget.ListView" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="true" selected="false" value="" />
+			<widget name="com.rechild.advancedtaskkiller:id/list_icon"
+				type="android.widget.ImageView" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="true" selected="false" value="" />
+			<widget name="com.rechild.advancedtaskkiller:id/list_iconCheck"
+				type="android.widget.ImageView" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="true" selected="false" value="" />
+			<widget name="com.rechild.advancedtaskkiller:id/list_name"
+				type="android.widget.TextView" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="true" selected="false"
+				value="Advanced Task Killer Free" />
+		</state>
+		<state name="com.rechild.advancedtaskkiller.NewSettings" id="18"
+			type="source" time="11:56:06" end="false">
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Advanced Task Killer Free" />
+			<widget name="android:id/list" type="android.widget.ListView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="true" value="Auto Start" />
+			<widget name="android:id/summary" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="true" value="Start up automatically when restart your phone" />
+			<widget name="android:id/checkbox" type="android.widget.CheckBox"
+				posX="" posY="" visibility="0" enable="true" pressed="true" shown="true"
+				selected="true" value="" />
+			<widget name="android:id/summary" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Show icon on notification bar to switch easily" />
+			<widget name="android:id/checkbox" type="android.widget.CheckBox"
+				posX="" posY="" visibility="0" enable="true" pressed="true" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/checkbox" type="android.widget.CheckBox"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+		</state>
+		<state name="com.rechild.advancedtaskkiller.NewSettings" id="49"
+			type="source" time="12:04:31" end="false">
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Advanced Task Killer Free" />
+			<widget name="android:id/list" type="android.widget.ListView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/summary" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false"
+				value="Ignore service and front apps automatically. Otherwise they would display as green text, you can Long Press on them and Force Stop them." />
+			<widget name="android:id/checkbox" type="android.widget.CheckBox"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="false" pressed="false" shown="true"
+				selected="false" value="Auto Kill Frequency" />
+			<widget name="android:id/summary" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="false" pressed="false" shown="true"
+				selected="false"
+				value="If you choose When screen off, it need restart to apply the change." />
+		</state>
+		<state name="com.rechild.advancedtaskkiller.AdvancedTaskKiller"
+			id="21" type="source" time="11:57:27" end="false">
+			<widget name="android:id/icon" type="android.widget.ImageView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/alertTitle" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="About" />
+			<widget name="android:id/titleDivider" type="android.widget.ImageView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/button1" type="android.widget.Button"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="OK" />
+			<widget name="android:id/button3" type="android.widget.Button"
+				posX="" posY="" visibility="8" enable="true" pressed="false" shown="false"
+				selected="false" value="" />
+			<widget name="android:id/button2" type="android.widget.Button"
+				posX="" posY="" visibility="8" enable="true" pressed="false" shown="false"
+				selected="false" value="" />
+		</state>
+		<state name="com.rechild.advancedtaskkiller.AdvancedTaskKiller"
+			id="21" type="dest" time="" end="true">
+			<widget name="android:id/icon" type="android.widget.ImageView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/alertTitle" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="About" />
+			<widget name="android:id/titleDivider" type="android.widget.ImageView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/button1" type="android.widget.Button"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="OK" />
+			<widget name="android:id/button3" type="android.widget.Button"
+				posX="" posY="" visibility="8" enable="true" pressed="false" shown="false"
+				selected="false" value="" />
+			<widget name="android:id/button2" type="android.widget.Button"
+				posX="" posY="" visibility="8" enable="true" pressed="false" shown="false"
+				selected="false" value="" />
+		</state>
+		<state name="com.rechild.advancedtaskkiller.AdvancedTaskKiller"
+			id="14" type="source" time="11:53:36" end="false">
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Available Memory: 701M  " />
+			<widget name="com.rechild.advancedtaskkiller:id/btnCheck"
+				type="android.widget.Button" posX="" posY="" visibility="8" enable="true"
+				pressed="false" shown="false" selected="false" value="Check" />
+			<widget name="com.rechild.advancedtaskkiller:id/btn_task"
+				type="android.widget.Button" posX="" posY="" visibility="0" enable="true"
+				pressed="false" shown="true" selected="false" value="KILL selected apps" />
+			<widget name="com.rechild.advancedtaskkiller:id/listbody"
+				type="android.widget.ListView" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="true" selected="false" value="" />
+			<widget name="com.rechild.advancedtaskkiller:id/list_icon"
+				type="android.widget.ImageView" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="true" selected="false" value="" />
+			<widget name="com.rechild.advancedtaskkiller:id/list_iconCheck"
+				type="android.widget.ImageView" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="true" selected="false" value="" />
+			<widget name="com.rechild.advancedtaskkiller:id/list_name"
+				type="android.widget.TextView" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="true" selected="false"
+				value="Advanced Task Killer Free" />
+		</state>
+		<state name="com.rechild.advancedtaskkiller.NewSettings" id="51"
+			type="source" time="12:06:30" end="false">
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Advanced Task Killer Free" />
+			<widget name="android:id/list" type="android.widget.ListView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/summary" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false"
+				value="Ignore service and front apps automatically. Otherwise they would display as green text, you can Long Press on them and Force Stop them." />
+			<widget name="android:id/checkbox" type="android.widget.CheckBox"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="false" pressed="false" shown="true"
+				selected="false" value="Auto Kill Frequency" />
+			<widget name="android:id/summary" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="false" pressed="false" shown="true"
+				selected="false"
+				value="If you choose When screen off, it need restart to apply the change." />
+		</state>
+		<state name="end" id="17" type="dest" time="" end="true" />
+		<state name="com.rechild.advancedtaskkiller.AdvancedTaskKiller"
+			id="25" type="dest" time="" end="true">
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Available Memory: 209M  " />
+			<widget name="com.rechild.advancedtaskkiller:id/btnCheck"
+				type="android.widget.Button" posX="" posY="" visibility="8" enable="true"
+				pressed="false" shown="false" selected="false" value="Check" />
+			<widget name="com.rechild.advancedtaskkiller:id/btn_task"
+				type="android.widget.Button" posX="" posY="" visibility="0" enable="true"
+				pressed="false" shown="true" selected="false" value="KILL selected apps" />
+			<widget name="com.rechild.advancedtaskkiller:id/listbody"
+				type="android.widget.ListView" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="true" selected="false" value="" />
+			<widget name="com.rechild.advancedtaskkiller:id/list_icon"
+				type="android.widget.ImageView" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="true" selected="false" value="" />
+			<widget name="com.rechild.advancedtaskkiller:id/list_iconCheck"
+				type="android.widget.ImageView" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="true" selected="false" value="" />
+			<widget name="com.rechild.advancedtaskkiller:id/list_name"
+				type="android.widget.TextView" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="true" selected="false" value="Flashlight" />
+		</state>
+		<state name="com.rechild.advancedtaskkiller.AdvancedTaskKiller"
+			id="22" type="source" time="11:57:19" end="false">
+			<widget name="android:id/icon" type="android.widget.ImageView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/alertTitle" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="About" />
+			<widget name="android:id/titleDivider" type="android.widget.ImageView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/button1" type="android.widget.Button"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="OK" />
+			<widget name="android:id/button3" type="android.widget.Button"
+				posX="" posY="" visibility="8" enable="true" pressed="false" shown="false"
+				selected="false" value="" />
+			<widget name="android:id/button2" type="android.widget.Button"
+				posX="" posY="" visibility="8" enable="true" pressed="false" shown="false"
+				selected="false" value="" />
+		</state>
+		<state name="com.rechild.advancedtaskkiller.AdvancedTaskKiller"
+			id="22" type="dest" time="" end="true">
+			<widget name="android:id/icon" type="android.widget.ImageView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/alertTitle" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="About" />
+			<widget name="android:id/titleDivider" type="android.widget.ImageView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/button1" type="android.widget.Button"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="OK" />
+			<widget name="android:id/button3" type="android.widget.Button"
+				posX="" posY="" visibility="8" enable="true" pressed="false" shown="false"
+				selected="false" value="" />
+			<widget name="android:id/button2" type="android.widget.Button"
+				posX="" posY="" visibility="8" enable="true" pressed="false" shown="false"
+				selected="false" value="" />
+		</state>
+		<state name="end" id="19" type="dest" time="" end="true" />
+		<state name="com.rechild.advancedtaskkiller.AdvancedTaskKiller"
+			id="20" type="source" time="11:58:42" end="false">
+			<widget name="android:id/icon" type="android.widget.ImageView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/alertTitle" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="About" />
+			<widget name="android:id/titleDivider" type="android.widget.ImageView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/button1" type="android.widget.Button"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="OK" />
+			<widget name="android:id/button3" type="android.widget.Button"
+				posX="" posY="" visibility="8" enable="true" pressed="false" shown="false"
+				selected="false" value="" />
+			<widget name="android:id/button2" type="android.widget.Button"
+				posX="" posY="" visibility="8" enable="true" pressed="false" shown="false"
+				selected="false" value="" />
+		</state>
+		<state name="com.rechild.advancedtaskkiller.NewSettings" id="50"
+			type="dest" time="" end="true">
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Advanced Task Killer Free" />
+			<widget name="android:id/list" type="android.widget.ListView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/summary" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false"
+				value="Ignore service and front apps automatically. Otherwise they would display as green text, you can Long Press on them and Force Stop them." />
+			<widget name="android:id/checkbox" type="android.widget.CheckBox"
+				posX="" posY="" visibility="0" enable="true" pressed="true" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="false" pressed="false" shown="true"
+				selected="false" value="Auto Kill Frequency" />
+			<widget name="android:id/summary" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="false" pressed="false" shown="true"
+				selected="false"
+				value="If you choose When screen off, it need restart to apply the change." />
+		</state>
+		<state name="com.rechild.advancedtaskkiller.AdvancedTaskKiller"
+			id="23" type="source" time="12:00:34" end="false">
+			<widget name="android:id/icon" type="android.widget.ImageView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/alertTitle" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="About" />
+			<widget name="android:id/titleDivider" type="android.widget.ImageView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/button1" type="android.widget.Button"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="OK" />
+			<widget name="android:id/button3" type="android.widget.Button"
+				posX="" posY="" visibility="8" enable="true" pressed="false" shown="false"
+				selected="false" value="" />
+			<widget name="android:id/button2" type="android.widget.Button"
+				posX="" posY="" visibility="8" enable="true" pressed="false" shown="false"
+				selected="false" value="" />
+		</state>
+		<state name="com.rechild.advancedtaskkiller.AdvancedTaskKiller"
+			id="0" type="source" time="11:48:21" end="false">
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Available Memory: 210M  " />
+			<widget name="com.rechild.advancedtaskkiller:id/btnCheck"
+				type="android.widget.Button" posX="" posY="" visibility="8" enable="true"
+				pressed="false" shown="false" selected="false" value="Check" />
+			<widget name="com.rechild.advancedtaskkiller:id/btn_task"
+				type="android.widget.Button" posX="" posY="" visibility="0" enable="true"
+				pressed="false" shown="true" selected="false" value="KILL selected apps" />
+			<widget name="com.rechild.advancedtaskkiller:id/listbody"
+				type="android.widget.ListView" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="true" selected="false" value="" />
+			<widget name="com.rechild.advancedtaskkiller:id/list_icon"
+				type="android.widget.ImageView" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="true" selected="false" value="" />
+			<widget name="com.rechild.advancedtaskkiller:id/list_iconCheck"
+				type="android.widget.ImageView" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="true" selected="false" value="" />
+			<widget name="com.rechild.advancedtaskkiller:id/list_name"
+				type="android.widget.TextView" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="true" selected="false"
+				value="Advanced Task Killer Free" />
+		</state>
+		<state name="com.rechild.advancedtaskkiller.AdvancedTaskKiller"
+			id="0" type="source" time="11:48:21" end="false">
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Available Memory: 210M  " />
+			<widget name="com.rechild.advancedtaskkiller:id/btnCheck"
+				type="android.widget.Button" posX="" posY="" visibility="8" enable="true"
+				pressed="false" shown="false" selected="false" value="Check" />
+			<widget name="com.rechild.advancedtaskkiller:id/btn_task"
+				type="android.widget.Button" posX="" posY="" visibility="0" enable="true"
+				pressed="false" shown="true" selected="false" value="KILL selected apps" />
+			<widget name="com.rechild.advancedtaskkiller:id/listbody"
+				type="android.widget.ListView" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="true" selected="false" value="" />
+			<widget name="com.rechild.advancedtaskkiller:id/list_icon"
+				type="android.widget.ImageView" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="true" selected="false" value="" />
+			<widget name="com.rechild.advancedtaskkiller:id/list_iconCheck"
+				type="android.widget.ImageView" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="true" selected="false" value="" />
+			<widget name="com.rechild.advancedtaskkiller:id/list_name"
+				type="android.widget.TextView" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="true" selected="false"
+				value="Advanced Task Killer Free" />
+		</state>
+		<state name="com.rechild.advancedtaskkiller.AdvancedTaskKiller"
+			id="0" type="dest" time="" end="true">
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Available Memory: 700M  " />
+			<widget name="com.rechild.advancedtaskkiller:id/btnCheck"
+				type="android.widget.Button" posX="" posY="" visibility="8" enable="true"
+				pressed="false" shown="false" selected="false" value="Check" />
+			<widget name="com.rechild.advancedtaskkiller:id/btn_task"
+				type="android.widget.Button" posX="" posY="" visibility="0" enable="true"
+				pressed="false" shown="true" selected="false" value="KILL selected apps" />
+			<widget name="com.rechild.advancedtaskkiller:id/listbody"
+				type="android.widget.ListView" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="true" selected="false" value="" />
+			<widget name="com.rechild.advancedtaskkiller:id/list_icon"
+				type="android.widget.ImageView" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="true" selected="false" value="" />
+			<widget name="com.rechild.advancedtaskkiller:id/list_iconCheck"
+				type="android.widget.ImageView" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="true" selected="false" value="" />
+			<widget name="com.rechild.advancedtaskkiller:id/list_name"
+				type="android.widget.TextView" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="true" selected="false"
+				value="Advanced Task Killer Free" />
+		</state>
+		<state name="com.rechild.advancedtaskkiller.AdvancedTaskKiller"
+			id="25" type="source" time="11:57:34" end="false">
+			<widget name="android:id/icon" type="android.widget.ImageView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/alertTitle" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="About" />
+			<widget name="android:id/titleDivider" type="android.widget.ImageView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/button1" type="android.widget.Button"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="OK" />
+			<widget name="android:id/button3" type="android.widget.Button"
+				posX="" posY="" visibility="8" enable="true" pressed="false" shown="false"
+				selected="false" value="" />
+			<widget name="android:id/button2" type="android.widget.Button"
+				posX="" posY="" visibility="8" enable="true" pressed="false" shown="false"
+				selected="false" value="" />
+		</state>
+		<state name="com.rechild.advancedtaskkiller.NewSettings" id="44"
+			type="source" time="12:07:42" end="false">
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Advanced Task Killer Free" />
+			<widget name="android:id/list" type="android.widget.ListView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/summary" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false"
+				value="Ignore service and front apps automatically. Otherwise they would display as green text, you can Long Press on them and Force Stop them." />
+			<widget name="android:id/checkbox" type="android.widget.CheckBox"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="false" pressed="false" shown="true"
+				selected="false" value="Auto Kill Frequency" />
+			<widget name="android:id/summary" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="false" pressed="false" shown="true"
+				selected="false"
+				value="If you choose When screen off, it need restart to apply the change." />
+		</state>
+		<state name="com.rechild.advancedtaskkiller.AdvancedTaskKiller"
+			id="26" type="dest" time="" end="true">
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Available Memory: 205M  " />
+			<widget name="com.rechild.advancedtaskkiller:id/btnCheck"
+				type="android.widget.Button" posX="" posY="" visibility="8" enable="true"
+				pressed="false" shown="false" selected="false" value="Check" />
+			<widget name="com.rechild.advancedtaskkiller:id/btn_task"
+				type="android.widget.Button" posX="" posY="" visibility="0" enable="true"
+				pressed="false" shown="true" selected="false" value="KILL selected apps" />
+			<widget name="com.rechild.advancedtaskkiller:id/listbody"
+				type="android.widget.ListView" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="true" selected="false" value="" />
+			<widget name="com.rechild.advancedtaskkiller:id/list_icon"
+				type="android.widget.ImageView" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="true" selected="false" value="" />
+			<widget name="com.rechild.advancedtaskkiller:id/list_iconCheck"
+				type="android.widget.ImageView" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="true" selected="false" value="" />
+			<widget name="com.rechild.advancedtaskkiller:id/list_name"
+				type="android.widget.TextView" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="true" selected="false" value="Search" />
+		</state>
+		<state name="com.rechild.advancedtaskkiller.NewSettings" id="47"
+			type="dest" time="" end="true">
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Advanced Task Killer Free" />
+			<widget name="android:id/list" type="android.widget.ListView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/summary" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false"
+				value="Ignore service and front apps automatically. Otherwise they would display as green text, you can Long Press on them and Force Stop them." />
+			<widget name="android:id/checkbox" type="android.widget.CheckBox"
+				posX="" posY="" visibility="0" enable="true" pressed="true" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="false" pressed="false" shown="true"
+				selected="false" value="Auto Kill Frequency" />
+			<widget name="android:id/summary" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="false" pressed="false" shown="true"
+				selected="false"
+				value="If you choose When screen off, it need restart to apply the change." />
+		</state>
+		<state name="end" id="15" type="dest" time="" end="true" />
+		<state name="com.rechild.advancedtaskkiller.NewSettings" id="51"
+			type="dest" time="" end="true">
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Advanced Task Killer Free" />
+			<widget name="android:id/list" type="android.widget.ListView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/summary" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false"
+				value="Ignore service and front apps automatically. Otherwise they would display as green text, you can Long Press on them and Force Stop them." />
+			<widget name="android:id/checkbox" type="android.widget.CheckBox"
+				posX="" posY="" visibility="0" enable="true" pressed="true" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="false" pressed="false" shown="true"
+				selected="false" value="Auto Kill Frequency" />
+			<widget name="android:id/summary" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="false" pressed="false" shown="true"
+				selected="false"
+				value="If you choose When screen off, it need restart to apply the change." />
+		</state>
+		<state name="com.rechild.advancedtaskkiller.NewSettings" id="45"
+			type="source" time="12:03:51" end="false">
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Advanced Task Killer Free" />
+			<widget name="android:id/list" type="android.widget.ListView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/summary" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false"
+				value="Ignore service and front apps automatically. Otherwise they would display as green text, you can Long Press on them and Force Stop them." />
+			<widget name="android:id/checkbox" type="android.widget.CheckBox"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="false" pressed="false" shown="true"
+				selected="false" value="Auto Kill Frequency" />
+			<widget name="android:id/summary" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="false" pressed="false" shown="true"
+				selected="false"
+				value="If you choose When screen off, it need restart to apply the change." />
+		</state>
+		<state name="com.rechild.advancedtaskkiller.NewSettings" id="42"
+			type="dest" time="" end="false">
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Advanced Task Killer Free" />
+			<widget name="android:id/list" type="android.widget.ListView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/summary" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Start up automatically when restart your phone" />
+			<widget name="android:id/checkbox" type="android.widget.CheckBox"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="true" value="Show Notification" />
+			<widget name="android:id/summary" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="true" value="Show icon on notification bar to switch easily" />
+			<widget name="android:id/checkbox" type="android.widget.CheckBox"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="true" value="" />
+			<widget name="android:id/checkbox" type="android.widget.CheckBox"
+				posX="" posY="" visibility="0" enable="true" pressed="true" shown="true"
+				selected="false" value="" />
+		</state>
+		<state name="com.rechild.advancedtaskkiller.HelpActivity" id="32"
+			type="dest" time="" end="true">
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Advanced Task Killer Free" />
+		</state>
+		<state name="com.rechild.advancedtaskkiller.HelpActivity" id="32"
+			type="source" time="12:05:09" end="false">
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Advanced Task Killer Free" />
+			<widget name="com.rechild.advancedtaskkiller:id/tvHelp" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false"
+				value="*New feature*&#10;1. Why I have some green items on running list?&#10;Those apps are services and front apps. They cannot be killed directly in Android 2.2 and later version. You can Long Press on it and choose 'Force Stop' on the menu to force stop them. For Android 2.2 users, we suggest you go to settings to ignore them if they don't consume resources very much.&#10;&#10;2. What is the 'Check' button?&#10;This is used to check if your phone has any issues. Since this is a new feature, we don't have many checking items yet. You can open it and tap 'Battery Usage Summary' to check which part consume battery a lot by yourself, then you would know which one is consuming your battery. So killing apps consuming battery would help you to save your battery life.&#10;&#10;*General help*&#10;&#10;1. How to use it (for new users to quick start)?&#10;It is pretty simple. Open this tool and take a look at the running applications list? Uncheck some apps you don't want to kill (such as Advanced Task Killer and some system apps) Tap the button 'Kill selected apps', it will kill all applications checked.&#10;&#10;2. How to use it (for new users to do more)?&#10;If you don't want to kill any application, you can tap it on the running applications list. Then it's checking box will turn to gray.    &#10;&#10;3. Why there are programs running that I haven't used or even opened?&#10;Some applications will start up once you turn on your phone or be invoked by some events.&#10;&#10;4. What is ignore list/ignore?&#10;Ignore list is for you to ignore some applications you don't want to kill. If you long press on the application listed on the main screen of ATK, the menu will pop up, then you can select 'Ignore', the application would be moved to ignore list. When you tap 'Kill selected apps', it won't be killed any more.&#10;&#10;5. What is default action for long press&#10;You can set your default action for long press and click on the settings. The system default action for long press is pop-menu. That means you when you long press on the application(displays on the running applications list), a pop-menu would shows up. For example, if you want to switch to the application after you long press on it, you can set the default action of long press to 'Switch to'. &#10;&#10;6. What is Auto-Kill&#10;We don't suggest people use auto kill. Abusing auto kill might consume more resources.&#10;If you want to kill apps automatically you need to choose one of auto-kill level&#10;1. Safe: Only kill the apps aren't running but still consume memory.&#10;2. Aggressive: Kill the apps running background and apps aren't running.&#10;3. Crazy: All apps except for apps you are using with.&#10;You should be able to see Auto Kill information shows on the title, like 'Auto-Kill: 12:20'. That means auto kill will start at 12:20, you can also change the frequency to impact the auto kill start time. If you encounter any issues in security level low, you can kill them one by one to find out which one cuase these issues, then you can uncheck or ignore it.&#10;&#10;7. What is Security Level&#10;We suggest people keep it as 'High'. Changing security level might cause some issues, if you don't know your phone well. &#10;You can set it to low to show more apps, but you need know more about the apps to decide which one you need to ignore. " />
+		</state>
+		<state name="com.rechild.advancedtaskkiller.AdvancedTaskKiller"
+			id="13" type="source" time="11:53:24" end="false">
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Available Memory: 701M  " />
+			<widget name="com.rechild.advancedtaskkiller:id/btnCheck"
+				type="android.widget.Button" posX="" posY="" visibility="8" enable="true"
+				pressed="false" shown="false" selected="false" value="Check" />
+			<widget name="com.rechild.advancedtaskkiller:id/btn_task"
+				type="android.widget.Button" posX="" posY="" visibility="0" enable="true"
+				pressed="false" shown="true" selected="false" value="KILL selected apps" />
+			<widget name="com.rechild.advancedtaskkiller:id/listbody"
+				type="android.widget.ListView" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="true" selected="false" value="" />
+			<widget name="com.rechild.advancedtaskkiller:id/list_icon"
+				type="android.widget.ImageView" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="true" selected="false" value="" />
+			<widget name="com.rechild.advancedtaskkiller:id/list_iconCheck"
+				type="android.widget.ImageView" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="true" selected="false" value="" />
+			<widget name="com.rechild.advancedtaskkiller:id/list_name"
+				type="android.widget.TextView" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="true" selected="false"
+				value="Advanced Task Killer Free" />
+		</state>
+		<state name="com.rechild.advancedtaskkiller.AdvancedTaskKiller"
+			id="24" type="dest" time="" end="true">
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Available Memory: 207M  " />
+			<widget name="com.rechild.advancedtaskkiller:id/btnCheck"
+				type="android.widget.Button" posX="" posY="" visibility="8" enable="true"
+				pressed="false" shown="false" selected="false" value="Check" />
+			<widget name="com.rechild.advancedtaskkiller:id/btn_task"
+				type="android.widget.Button" posX="" posY="" visibility="0" enable="true"
+				pressed="false" shown="true" selected="false" value="KILL selected apps" />
+			<widget name="com.rechild.advancedtaskkiller:id/listbody"
+				type="android.widget.ListView" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="true" selected="false" value="" />
+			<widget name="com.rechild.advancedtaskkiller:id/list_icon"
+				type="android.widget.ImageView" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="true" selected="false" value="" />
+			<widget name="com.rechild.advancedtaskkiller:id/list_iconCheck"
+				type="android.widget.ImageView" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="true" selected="false" value="" />
+			<widget name="com.rechild.advancedtaskkiller:id/list_name"
+				type="android.widget.TextView" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="true" selected="false" value="Search" />
+		</state>
+		<state name="com.rechild.advancedtaskkiller.AdvancedTaskKiller"
+			id="24" type="source" time="11:59:10" end="false">
+			<widget name="android:id/icon" type="android.widget.ImageView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/alertTitle" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="About" />
+			<widget name="android:id/titleDivider" type="android.widget.ImageView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/button1" type="android.widget.Button"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="OK" />
+			<widget name="android:id/button3" type="android.widget.Button"
+				posX="" posY="" visibility="8" enable="true" pressed="false" shown="false"
+				selected="false" value="" />
+			<widget name="android:id/button2" type="android.widget.Button"
+				posX="" posY="" visibility="8" enable="true" pressed="false" shown="false"
+				selected="false" value="" />
+		</state>
+		<state name="com.rechild.advancedtaskkiller.HelpActivity" id="13"
+			type="dest" time="" end="false">
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Advanced Task Killer Free" />
+		</state>
+		<state name="com.rechild.advancedtaskkiller.HelpActivity" id="29"
+			type="dest" time="" end="true">
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Advanced Task Killer Free" />
+			<widget name="com.rechild.advancedtaskkiller:id/tvHelp" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false"
+				value="*New feature*&#10;1. Why I have some green items on running list?&#10;Those apps are services and front apps. They cannot be killed directly in Android 2.2 and later version. You can Long Press on it and choose 'Force Stop' on the menu to force stop them. For Android 2.2 users, we suggest you go to settings to ignore them if they don't consume resources very much.&#10;&#10;2. What is the 'Check' button?&#10;This is used to check if your phone has any issues. Since this is a new feature, we don't have many checking items yet. You can open it and tap 'Battery Usage Summary' to check which part consume battery a lot by yourself, then you would know which one is consuming your battery. So killing apps consuming battery would help you to save your battery life.&#10;&#10;*General help*&#10;&#10;1. How to use it (for new users to quick start)?&#10;It is pretty simple. Open this tool and take a look at the running applications list? Uncheck some apps you don't want to kill (such as Advanced Task Killer and some system apps) Tap the button 'Kill selected apps', it will kill all applications checked.&#10;&#10;2. How to use it (for new users to do more)?&#10;If you don't want to kill any application, you can tap it on the running applications list. Then it's checking box will turn to gray.    &#10;&#10;3. Why there are programs running that I haven't used or even opened?&#10;Some applications will start up once you turn on your phone or be invoked by some events.&#10;&#10;4. What is ignore list/ignore?&#10;Ignore list is for you to ignore some applications you don't want to kill. If you long press on the application listed on the main screen of ATK, the menu will pop up, then you can select 'Ignore', the application would be moved to ignore list. When you tap 'Kill selected apps', it won't be killed any more.&#10;&#10;5. What is default action for long press&#10;You can set your default action for long press and click on the settings. The system default action for long press is pop-menu. That means you when you long press on the application(displays on the running applications list), a pop-menu would shows up. For example, if you want to switch to the application after you long press on it, you can set the default action of long press to 'Switch to'. &#10;&#10;6. What is Auto-Kill&#10;We don't suggest people use auto kill. Abusing auto kill might consume more resources.&#10;If you want to kill apps automatically you need to choose one of auto-kill level&#10;1. Safe: Only kill the apps aren't running but still consume memory.&#10;2. Aggressive: Kill the apps running background and apps aren't running.&#10;3. Crazy: All apps except for apps you are using with.&#10;You should be able to see Auto Kill information shows on the title, like 'Auto-Kill: 12:20'. That means auto kill will start at 12:20, you can also change the frequency to impact the auto kill start time. If you encounter any issues in security level low, you can kill them one by one to find out which one cuase these issues, then you can uncheck or ignore it.&#10;&#10;7. What is Security Level&#10;We suggest people keep it as 'High'. Changing security level might cause some issues, if you don't know your phone well. &#10;You can set it to low to show more apps, but you need know more about the apps to decide which one you need to ignore. " />
+		</state>
+		<state name="com.rechild.advancedtaskkiller.NewSettings" id="44"
+			type="dest" time="" end="true">
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Advanced Task Killer Free" />
+			<widget name="android:id/list" type="android.widget.ListView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/summary" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false"
+				value="Ignore service and front apps automatically. Otherwise they would display as green text, you can Long Press on them and Force Stop them." />
+			<widget name="android:id/checkbox" type="android.widget.CheckBox"
+				posX="" posY="" visibility="0" enable="true" pressed="true" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="false" pressed="false" shown="true"
+				selected="false" value="Auto Kill Frequency" />
+			<widget name="android:id/summary" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="false" pressed="false" shown="true"
+				selected="false"
+				value="If you choose When screen off, it need restart to apply the change." />
+		</state>
+		<state name="com.rechild.advancedtaskkiller.NewSettings" id="39"
+			type="source" time="11:58:54" end="false">
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Advanced Task Killer Free" />
+			<widget name="android:id/list" type="android.widget.ListView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/summary" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false"
+				value="Ignore service and front apps automatically. Otherwise they would display as green text, you can Long Press on them and Force Stop them." />
+			<widget name="android:id/checkbox" type="android.widget.CheckBox"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="false" pressed="false" shown="true"
+				selected="false" value="Auto Kill Frequency" />
+			<widget name="android:id/summary" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="false" pressed="false" shown="true"
+				selected="false"
+				value="If you choose When screen off, it need restart to apply the change." />
+		</state>
+		<state name="com.rechild.advancedtaskkiller.HelpActivity" id="33"
+			type="source" time="12:05:40" end="false">
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Advanced Task Killer Free" />
+			<widget name="com.rechild.advancedtaskkiller:id/tvHelp" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false"
+				value="*New feature*&#10;1. Why I have some green items on running list?&#10;Those apps are services and front apps. They cannot be killed directly in Android 2.2 and later version. You can Long Press on it and choose 'Force Stop' on the menu to force stop them. For Android 2.2 users, we suggest you go to settings to ignore them if they don't consume resources very much.&#10;&#10;2. What is the 'Check' button?&#10;This is used to check if your phone has any issues. Since this is a new feature, we don't have many checking items yet. You can open it and tap 'Battery Usage Summary' to check which part consume battery a lot by yourself, then you would know which one is consuming your battery. So killing apps consuming battery would help you to save your battery life.&#10;&#10;*General help*&#10;&#10;1. How to use it (for new users to quick start)?&#10;It is pretty simple. Open this tool and take a look at the running applications list? Uncheck some apps you don't want to kill (such as Advanced Task Killer and some system apps) Tap the button 'Kill selected apps', it will kill all applications checked.&#10;&#10;2. How to use it (for new users to do more)?&#10;If you don't want to kill any application, you can tap it on the running applications list. Then it's checking box will turn to gray.    &#10;&#10;3. Why there are programs running that I haven't used or even opened?&#10;Some applications will start up once you turn on your phone or be invoked by some events.&#10;&#10;4. What is ignore list/ignore?&#10;Ignore list is for you to ignore some applications you don't want to kill. If you long press on the application listed on the main screen of ATK, the menu will pop up, then you can select 'Ignore', the application would be moved to ignore list. When you tap 'Kill selected apps', it won't be killed any more.&#10;&#10;5. What is default action for long press&#10;You can set your default action for long press and click on the settings. The system default action for long press is pop-menu. That means you when you long press on the application(displays on the running applications list), a pop-menu would shows up. For example, if you want to switch to the application after you long press on it, you can set the default action of long press to 'Switch to'. &#10;&#10;6. What is Auto-Kill&#10;We don't suggest people use auto kill. Abusing auto kill might consume more resources.&#10;If you want to kill apps automatically you need to choose one of auto-kill level&#10;1. Safe: Only kill the apps aren't running but still consume memory.&#10;2. Aggressive: Kill the apps running background and apps aren't running.&#10;3. Crazy: All apps except for apps you are using with.&#10;You should be able to see Auto Kill information shows on the title, like 'Auto-Kill: 12:20'. That means auto kill will start at 12:20, you can also change the frequency to impact the auto kill start time. If you encounter any issues in security level low, you can kill them one by one to find out which one cuase these issues, then you can uncheck or ignore it.&#10;&#10;7. What is Security Level&#10;We suggest people keep it as 'High'. Changing security level might cause some issues, if you don't know your phone well. &#10;You can set it to low to show more apps, but you need know more about the apps to decide which one you need to ignore. " />
+		</state>
+		<state name="com.rechild.advancedtaskkiller.NewSettings" id="18"
+			type="dest" time="" end="false">
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Advanced Task Killer Free" />
+			<widget name="android:id/list" type="android.widget.ListView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/summary" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false"
+				value="Ignore service and front apps automatically. Otherwise they would display as green text, you can Long Press on them and Force Stop them." />
+			<widget name="android:id/checkbox" type="android.widget.CheckBox"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="false" pressed="false" shown="true"
+				selected="false" value="Auto Kill Frequency" />
+			<widget name="android:id/summary" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="false" pressed="false" shown="true"
+				selected="false"
+				value="If you choose When screen off, it need restart to apply the change." />
+		</state>
+		<state name="com.rechild.advancedtaskkiller.HelpActivity" id="34"
+			type="source" time="12:06:06" end="false">
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Advanced Task Killer Free" />
+			<widget name="com.rechild.advancedtaskkiller:id/tvHelp" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false"
+				value="*New feature*&#10;1. Why I have some green items on running list?&#10;Those apps are services and front apps. They cannot be killed directly in Android 2.2 and later version. You can Long Press on it and choose 'Force Stop' on the menu to force stop them. For Android 2.2 users, we suggest you go to settings to ignore them if they don't consume resources very much.&#10;&#10;2. What is the 'Check' button?&#10;This is used to check if your phone has any issues. Since this is a new feature, we don't have many checking items yet. You can open it and tap 'Battery Usage Summary' to check which part consume battery a lot by yourself, then you would know which one is consuming your battery. So killing apps consuming battery would help you to save your battery life.&#10;&#10;*General help*&#10;&#10;1. How to use it (for new users to quick start)?&#10;It is pretty simple. Open this tool and take a look at the running applications list? Uncheck some apps you don't want to kill (such as Advanced Task Killer and some system apps) Tap the button 'Kill selected apps', it will kill all applications checked.&#10;&#10;2. How to use it (for new users to do more)?&#10;If you don't want to kill any application, you can tap it on the running applications list. Then it's checking box will turn to gray.    &#10;&#10;3. Why there are programs running that I haven't used or even opened?&#10;Some applications will start up once you turn on your phone or be invoked by some events.&#10;&#10;4. What is ignore list/ignore?&#10;Ignore list is for you to ignore some applications you don't want to kill. If you long press on the application listed on the main screen of ATK, the menu will pop up, then you can select 'Ignore', the application would be moved to ignore list. When you tap 'Kill selected apps', it won't be killed any more.&#10;&#10;5. What is default action for long press&#10;You can set your default action for long press and click on the settings. The system default action for long press is pop-menu. That means you when you long press on the application(displays on the running applications list), a pop-menu would shows up. For example, if you want to switch to the application after you long press on it, you can set the default action of long press to 'Switch to'. &#10;&#10;6. What is Auto-Kill&#10;We don't suggest people use auto kill. Abusing auto kill might consume more resources.&#10;If you want to kill apps automatically you need to choose one of auto-kill level&#10;1. Safe: Only kill the apps aren't running but still consume memory.&#10;2. Aggressive: Kill the apps running background and apps aren't running.&#10;3. Crazy: All apps except for apps you are using with.&#10;You should be able to see Auto Kill information shows on the title, like 'Auto-Kill: 12:20'. That means auto kill will start at 12:20, you can also change the frequency to impact the auto kill start time. If you encounter any issues in security level low, you can kill them one by one to find out which one cuase these issues, then you can uncheck or ignore it.&#10;&#10;7. What is Security Level&#10;We suggest people keep it as 'High'. Changing security level might cause some issues, if you don't know your phone well. &#10;You can set it to low to show more apps, but you need know more about the apps to decide which one you need to ignore. " />
+		</state>
+		<state name="com.rechild.advancedtaskkiller.NewSettings" id="37"
+			type="dest" time="" end="true">
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Advanced Task Killer Free" />
+			<widget name="android:id/list" type="android.widget.ListView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/summary" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false"
+				value="Ignore service and front apps automatically. Otherwise they would display as green text, you can Long Press on them and Force Stop them." />
+			<widget name="android:id/checkbox" type="android.widget.CheckBox"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="false" pressed="false" shown="true"
+				selected="false" value="Auto Kill Frequency" />
+			<widget name="android:id/summary" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="false" pressed="false" shown="true"
+				selected="false"
+				value="If you choose When screen off, it need restart to apply the change." />
+		</state>
+		<state name="com.rechild.advancedtaskkiller.NewSettings" id="37"
+			type="source" time="12:08:18" end="false">
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Advanced Task Killer Free" />
+			<widget name="android:id/list" type="android.widget.ListView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/summary" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false"
+				value="Ignore service and front apps automatically. Otherwise they would display as green text, you can Long Press on them and Force Stop them." />
+			<widget name="android:id/checkbox" type="android.widget.CheckBox"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="false" pressed="false" shown="true"
+				selected="false" value="Auto Kill Frequency" />
+			<widget name="android:id/summary" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="false" pressed="false" shown="true"
+				selected="false"
+				value="If you choose When screen off, it need restart to apply the change." />
+		</state>
+		<state name="com.rechild.advancedtaskkiller.HelpActivity" id="33"
+			type="dest" time="" end="true">
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Advanced Task Killer Free" />
+		</state>
+		<state name="com.rechild.advancedtaskkiller.HelpActivity" id="31"
+			type="dest" time="" end="false">
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Advanced Task Killer Free" />
+			<widget name="com.rechild.advancedtaskkiller:id/tvHelp" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false"
+				value="*New feature*&#10;1. Why I have some green items on running list?&#10;Those apps are services and front apps. They cannot be killed directly in Android 2.2 and later version. You can Long Press on it and choose 'Force Stop' on the menu to force stop them. For Android 2.2 users, we suggest you go to settings to ignore them if they don't consume resources very much.&#10;&#10;2. What is the 'Check' button?&#10;This is used to check if your phone has any issues. Since this is a new feature, we don't have many checking items yet. You can open it and tap 'Battery Usage Summary' to check which part consume battery a lot by yourself, then you would know which one is consuming your battery. So killing apps consuming battery would help you to save your battery life.&#10;&#10;*General help*&#10;&#10;1. How to use it (for new users to quick start)?&#10;It is pretty simple. Open this tool and take a look at the running applications list? Uncheck some apps you don't want to kill (such as Advanced Task Killer and some system apps) Tap the button 'Kill selected apps', it will kill all applications checked.&#10;&#10;2. How to use it (for new users to do more)?&#10;If you don't want to kill any application, you can tap it on the running applications list. Then it's checking box will turn to gray.    &#10;&#10;3. Why there are programs running that I haven't used or even opened?&#10;Some applications will start up once you turn on your phone or be invoked by some events.&#10;&#10;4. What is ignore list/ignore?&#10;Ignore list is for you to ignore some applications you don't want to kill. If you long press on the application listed on the main screen of ATK, the menu will pop up, then you can select 'Ignore', the application would be moved to ignore list. When you tap 'Kill selected apps', it won't be killed any more.&#10;&#10;5. What is default action for long press&#10;You can set your default action for long press and click on the settings. The system default action for long press is pop-menu. That means you when you long press on the application(displays on the running applications list), a pop-menu would shows up. For example, if you want to switch to the application after you long press on it, you can set the default action of long press to 'Switch to'. &#10;&#10;6. What is Auto-Kill&#10;We don't suggest people use auto kill. Abusing auto kill might consume more resources.&#10;If you want to kill apps automatically you need to choose one of auto-kill level&#10;1. Safe: Only kill the apps aren't running but still consume memory.&#10;2. Aggressive: Kill the apps running background and apps aren't running.&#10;3. Crazy: All apps except for apps you are using with.&#10;You should be able to see Auto Kill information shows on the title, like 'Auto-Kill: 12:20'. That means auto kill will start at 12:20, you can also change the frequency to impact the auto kill start time. If you encounter any issues in security level low, you can kill them one by one to find out which one cuase these issues, then you can uncheck or ignore it.&#10;&#10;7. What is Security Level&#10;We suggest people keep it as 'High'. Changing security level might cause some issues, if you don't know your phone well. &#10;You can set it to low to show more apps, but you need know more about the apps to decide which one you need to ignore. " />
+		</state>
+		<state name="com.rechild.advancedtaskkiller.AdvancedTaskKiller"
+			id="20" type="dest" time="" end="true">
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Available Memory: 208M  " />
+			<widget name="com.rechild.advancedtaskkiller:id/btnCheck"
+				type="android.widget.Button" posX="" posY="" visibility="8" enable="true"
+				pressed="false" shown="false" selected="false" value="Check" />
+			<widget name="com.rechild.advancedtaskkiller:id/btn_task"
+				type="android.widget.Button" posX="" posY="" visibility="0" enable="true"
+				pressed="false" shown="true" selected="false" value="KILL selected apps" />
+			<widget name="com.rechild.advancedtaskkiller:id/listbody"
+				type="android.widget.ListView" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="true" selected="false" value="" />
+			<widget name="com.rechild.advancedtaskkiller:id/list_icon"
+				type="android.widget.ImageView" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="true" selected="false" value="" />
+			<widget name="com.rechild.advancedtaskkiller:id/list_iconCheck"
+				type="android.widget.ImageView" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="true" selected="false" value="" />
+			<widget name="com.rechild.advancedtaskkiller:id/list_name"
+				type="android.widget.TextView" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="true" selected="false" value="Search" />
+		</state>
+		<state name="com.rechild.advancedtaskkiller.NewSettings" id="43"
+			type="dest" time="" end="true">
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Advanced Task Killer Free" />
+			<widget name="android:id/list" type="android.widget.ListView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/summary" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false"
+				value="Ignore service and front apps automatically. Otherwise they would display as green text, you can Long Press on them and Force Stop them." />
+			<widget name="android:id/checkbox" type="android.widget.CheckBox"
+				posX="" posY="" visibility="0" enable="true" pressed="true" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="false" pressed="false" shown="true"
+				selected="false" value="Auto Kill Frequency" />
+			<widget name="android:id/summary" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="false" pressed="false" shown="true"
+				selected="false"
+				value="If you choose When screen off, it need restart to apply the change." />
+		</state>
+		<state name="com.rechild.advancedtaskkiller.NewSettings" id="39"
+			type="dest" time="" end="false">
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Advanced Task Killer Free" />
+			<widget name="android:id/list" type="android.widget.ListView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/summary" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false"
+				value="Ignore service and front apps automatically. Otherwise they would display as green text, you can Long Press on them and Force Stop them." />
+			<widget name="android:id/checkbox" type="android.widget.CheckBox"
+				posX="" posY="" visibility="0" enable="true" pressed="true" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="false" pressed="false" shown="true"
+				selected="false" value="Auto Kill Frequency" />
+			<widget name="android:id/summary" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="false" pressed="false" shown="true"
+				selected="false"
+				value="If you choose When screen off, it need restart to apply the change." />
+		</state>
+		<state name="com.rechild.advancedtaskkiller.AdvancedTaskKiller"
+			id="2" type="dest" time="" end="true">
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Available Memory: 700M  " />
+			<widget name="com.rechild.advancedtaskkiller:id/btnCheck"
+				type="android.widget.Button" posX="" posY="" visibility="8" enable="true"
+				pressed="false" shown="false" selected="false" value="Check" />
+			<widget name="com.rechild.advancedtaskkiller:id/btn_task"
+				type="android.widget.Button" posX="" posY="" visibility="0" enable="true"
+				pressed="false" shown="true" selected="false" value="KILL selected apps" />
+			<widget name="com.rechild.advancedtaskkiller:id/listbody"
+				type="android.widget.ListView" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="true" selected="false" value="" />
+			<widget name="com.rechild.advancedtaskkiller:id/list_icon"
+				type="android.widget.ImageView" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="true" selected="false" value="" />
+			<widget name="com.rechild.advancedtaskkiller:id/list_iconCheck"
+				type="android.widget.ImageView" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="true" selected="false" value="" />
+			<widget name="com.rechild.advancedtaskkiller:id/list_name"
+				type="android.widget.TextView" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="true" selected="false"
+				value="Advanced Task Killer Free" />
+		</state>
+		<state name="com.rechild.advancedtaskkiller.AdvancedTaskKiller"
+			id="2" type="source" time="11:50:05" end="false">
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Available Memory: 701M  " />
+			<widget name="com.rechild.advancedtaskkiller:id/btnCheck"
+				type="android.widget.Button" posX="" posY="" visibility="8" enable="true"
+				pressed="false" shown="false" selected="false" value="Check" />
+			<widget name="com.rechild.advancedtaskkiller:id/btn_task"
+				type="android.widget.Button" posX="" posY="" visibility="0" enable="true"
+				pressed="false" shown="true" selected="false" value="KILL selected apps" />
+			<widget name="com.rechild.advancedtaskkiller:id/listbody"
+				type="android.widget.ListView" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="true" selected="false" value="" />
+			<widget name="com.rechild.advancedtaskkiller:id/list_icon"
+				type="android.widget.ImageView" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="true" selected="false" value="" />
+			<widget name="com.rechild.advancedtaskkiller:id/list_iconCheck"
+				type="android.widget.ImageView" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="true" selected="false" value="" />
+			<widget name="com.rechild.advancedtaskkiller:id/list_name"
+				type="android.widget.TextView" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="true" selected="false"
+				value="Advanced Task Killer Free" />
+		</state>
+		<state name="com.rechild.advancedtaskkiller.NewSettings" id="36"
+			type="dest" time="" end="true">
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Advanced Task Killer Free" />
+			<widget name="android:id/list" type="android.widget.ListView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/summary" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false"
+				value="Ignore service and front apps automatically. Otherwise they would display as green text, you can Long Press on them and Force Stop them." />
+			<widget name="android:id/checkbox" type="android.widget.CheckBox"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="false" pressed="false" shown="true"
+				selected="false" value="Auto Kill Frequency" />
+			<widget name="android:id/summary" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="false" pressed="false" shown="true"
+				selected="false"
+				value="If you choose When screen off, it need restart to apply the change." />
+		</state>
+		<state name="com.rechild.advancedtaskkiller.NewSettings" id="36"
+			type="source" time="12:08:39" end="false">
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Advanced Task Killer Free" />
+			<widget name="android:id/list" type="android.widget.ListView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/summary" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false"
+				value="Ignore service and front apps automatically. Otherwise they would display as green text, you can Long Press on them and Force Stop them." />
+			<widget name="android:id/checkbox" type="android.widget.CheckBox"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="false" pressed="false" shown="true"
+				selected="false" value="Auto Kill Frequency" />
+			<widget name="android:id/summary" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="false" pressed="false" shown="true"
+				selected="false"
+				value="If you choose When screen off, it need restart to apply the change." />
+		</state>
+		<state name="com.rechild.advancedtaskkiller.HelpActivity" id="34"
+			type="dest" time="" end="true">
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Advanced Task Killer Free" />
+		</state>
+		<state name="end" id="0" type="dest" time="" end="true" />
+		<state name="com.rechild.advancedtaskkiller.AdvancedTaskKiller"
+			id="12" type="source" time="11:52:58" end="false">
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Available Memory: 701M  " />
+			<widget name="com.rechild.advancedtaskkiller:id/btnCheck"
+				type="android.widget.Button" posX="" posY="" visibility="8" enable="true"
+				pressed="false" shown="false" selected="false" value="Check" />
+			<widget name="com.rechild.advancedtaskkiller:id/btn_task"
+				type="android.widget.Button" posX="" posY="" visibility="0" enable="true"
+				pressed="false" shown="true" selected="false" value="KILL selected apps" />
+			<widget name="com.rechild.advancedtaskkiller:id/listbody"
+				type="android.widget.ListView" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="true" selected="false" value="" />
+			<widget name="com.rechild.advancedtaskkiller:id/list_icon"
+				type="android.widget.ImageView" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="true" selected="false" value="" />
+			<widget name="com.rechild.advancedtaskkiller:id/list_iconCheck"
+				type="android.widget.ImageView" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="true" selected="false" value="" />
+			<widget name="com.rechild.advancedtaskkiller:id/list_name"
+				type="android.widget.TextView" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="true" selected="false"
+				value="Advanced Task Killer Free" />
+		</state>
+		<state name="com.rechild.advancedtaskkiller.AdvancedTaskKiller"
+			id="17" type="source" time="11:55:54" end="false">
+			<widget name="android:id/button2" type="android.widget.Button"
+				posX="" posY="" visibility="8" enable="true" pressed="false" shown="false"
+				selected="false" value="" />
+			<widget name="android:id/button3" type="android.widget.Button"
+				posX="" posY="" visibility="8" enable="true" pressed="false" shown="false"
+				selected="false" value="" />
+			<widget name="android:id/button1" type="android.widget.Button"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Send via email" />
+			<widget name="com.rechild.advancedtaskkiller:id/editErrorMessage"
+				type="android.widget.EditText" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="true" selected="false" value="" />
+			<widget name="com.rechild.advancedtaskkiller:id/TextView01"
+				type="android.widget.TextView" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="true" selected="false"
+				value="Please tell us more detail about your issue, so we can address it ASAP." />
+			<widget name="android:id/titleDivider" type="android.widget.ImageView"
+				posX="" posY="" visibility="8" enable="true" pressed="false" shown="false"
+				selected="false" value="" />
+			<widget name="android:id/alertTitle" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="false"
+				selected="false" value="" />
+			<widget name="android:id/icon" type="android.widget.ImageView"
+				posX="" posY="" visibility="8" enable="true" pressed="false" shown="false"
+				selected="false" value="" />
+		</state>
+		<state name="com.rechild.advancedtaskkiller.NewSettings" id="38"
+			type="dest" time="" end="true">
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Advanced Task Killer Free" />
+			<widget name="android:id/list" type="android.widget.ListView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="true" value="Auto Start" />
+			<widget name="android:id/summary" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="true" value="Start up automatically when restart your phone" />
+			<widget name="android:id/checkbox" type="android.widget.CheckBox"
+				posX="" posY="" visibility="0" enable="true" pressed="true" shown="true"
+				selected="true" value="" />
+			<widget name="android:id/summary" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Show icon on notification bar to switch easily" />
+			<widget name="android:id/checkbox" type="android.widget.CheckBox"
+				posX="" posY="" visibility="0" enable="true" pressed="true" shown="true"
+				selected="false" value="" />
+		</state>
+		<state name="com.rechild.advancedtaskkiller.HelpActivity" id="30"
+			type="dest" time="" end="true">
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Advanced Task Killer Free" />
+			<widget name="com.rechild.advancedtaskkiller:id/tvHelp" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false"
+				value="*New feature*&#10;1. Why I have some green items on running list?&#10;Those apps are services and front apps. They cannot be killed directly in Android 2.2 and later version. You can Long Press on it and choose 'Force Stop' on the menu to force stop them. For Android 2.2 users, we suggest you go to settings to ignore them if they don't consume resources very much.&#10;&#10;2. What is the 'Check' button?&#10;This is used to check if your phone has any issues. Since this is a new feature, we don't have many checking items yet. You can open it and tap 'Battery Usage Summary' to check which part consume battery a lot by yourself, then you would know which one is consuming your battery. So killing apps consuming battery would help you to save your battery life.&#10;&#10;*General help*&#10;&#10;1. How to use it (for new users to quick start)?&#10;It is pretty simple. Open this tool and take a look at the running applications list? Uncheck some apps you don't want to kill (such as Advanced Task Killer and some system apps) Tap the button 'Kill selected apps', it will kill all applications checked.&#10;&#10;2. How to use it (for new users to do more)?&#10;If you don't want to kill any application, you can tap it on the running applications list. Then it's checking box will turn to gray.    &#10;&#10;3. Why there are programs running that I haven't used or even opened?&#10;Some applications will start up once you turn on your phone or be invoked by some events.&#10;&#10;4. What is ignore list/ignore?&#10;Ignore list is for you to ignore some applications you don't want to kill. If you long press on the application listed on the main screen of ATK, the menu will pop up, then you can select 'Ignore', the application would be moved to ignore list. When you tap 'Kill selected apps', it won't be killed any more.&#10;&#10;5. What is default action for long press&#10;You can set your default action for long press and click on the settings. The system default action for long press is pop-menu. That means you when you long press on the application(displays on the running applications list), a pop-menu would shows up. For example, if you want to switch to the application after you long press on it, you can set the default action of long press to 'Switch to'. &#10;&#10;6. What is Auto-Kill&#10;We don't suggest people use auto kill. Abusing auto kill might consume more resources.&#10;If you want to kill apps automatically you need to choose one of auto-kill level&#10;1. Safe: Only kill the apps aren't running but still consume memory.&#10;2. Aggressive: Kill the apps running background and apps aren't running.&#10;3. Crazy: All apps except for apps you are using with.&#10;You should be able to see Auto Kill information shows on the title, like 'Auto-Kill: 12:20'. That means auto kill will start at 12:20, you can also change the frequency to impact the auto kill start time. If you encounter any issues in security level low, you can kill them one by one to find out which one cuase these issues, then you can uncheck or ignore it.&#10;&#10;7. What is Security Level&#10;We suggest people keep it as 'High'. Changing security level might cause some issues, if you don't know your phone well. &#10;You can set it to low to show more apps, but you need know more about the apps to decide which one you need to ignore. " />
+		</state>
+		<state name="com.rechild.advancedtaskkiller.NewSettings" id="38"
+			type="source" time="11:59:20" end="false">
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Advanced Task Killer Free" />
+			<widget name="android:id/list" type="android.widget.ListView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/summary" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false"
+				value="Ignore service and front apps automatically. Otherwise they would display as green text, you can Long Press on them and Force Stop them." />
+			<widget name="android:id/checkbox" type="android.widget.CheckBox"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="false" pressed="false" shown="true"
+				selected="false" value="Auto Kill Frequency" />
+			<widget name="android:id/summary" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="false" pressed="false" shown="true"
+				selected="false"
+				value="If you choose When screen off, it need restart to apply the change." />
+		</state>
+		<state name="com.rechild.advancedtaskkiller.AdvancedTaskKiller"
+			id="26" type="source" time="11:58:15" end="false">
+			<widget name="android:id/icon" type="android.widget.ImageView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/alertTitle" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="About" />
+			<widget name="android:id/titleDivider" type="android.widget.ImageView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/button1" type="android.widget.Button"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="OK" />
+			<widget name="android:id/button3" type="android.widget.Button"
+				posX="" posY="" visibility="8" enable="true" pressed="false" shown="false"
+				selected="false" value="" />
+			<widget name="android:id/button2" type="android.widget.Button"
+				posX="" posY="" visibility="8" enable="true" pressed="false" shown="false"
+				selected="false" value="" />
+		</state>
+		<state name="com.rechild.advancedtaskkiller.AdvancedTaskKiller"
+			id="14" type="dest" time="" end="false">
+			<widget name="android:id/icon" type="android.widget.ImageView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/alertTitle" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="About" />
+			<widget name="android:id/titleDivider" type="android.widget.ImageView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/button1" type="android.widget.Button"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="OK" />
+			<widget name="android:id/button3" type="android.widget.Button"
+				posX="" posY="" visibility="8" enable="true" pressed="false" shown="false"
+				selected="false" value="" />
+			<widget name="android:id/button2" type="android.widget.Button"
+				posX="" posY="" visibility="8" enable="true" pressed="false" shown="false"
+				selected="false" value="" />
+		</state>
+		<state name="com.rechild.advancedtaskkiller.AdvancedTaskKiller"
+			id="1" type="dest" time="" end="true">
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Available Memory: 700M  " />
+			<widget name="com.rechild.advancedtaskkiller:id/btnCheck"
+				type="android.widget.Button" posX="" posY="" visibility="8" enable="true"
+				pressed="false" shown="false" selected="false" value="Check" />
+			<widget name="com.rechild.advancedtaskkiller:id/btn_task"
+				type="android.widget.Button" posX="" posY="" visibility="0" enable="true"
+				pressed="false" shown="true" selected="false" value="KILL selected apps" />
+			<widget name="com.rechild.advancedtaskkiller:id/listbody"
+				type="android.widget.ListView" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="true" selected="false" value="" />
+			<widget name="com.rechild.advancedtaskkiller:id/list_icon"
+				type="android.widget.ImageView" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="true" selected="false" value="" />
+			<widget name="com.rechild.advancedtaskkiller:id/list_iconCheck"
+				type="android.widget.ImageView" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="true" selected="false" value="" />
+			<widget name="com.rechild.advancedtaskkiller:id/list_name"
+				type="android.widget.TextView" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="true" selected="false"
+				value="Advanced Task Killer Free" />
+		</state>
+		<state name="com.rechild.advancedtaskkiller.AdvancedTaskKiller"
+			id="1" type="source" time="11:49:48" end="false">
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Available Memory: 701M  " />
+			<widget name="com.rechild.advancedtaskkiller:id/btnCheck"
+				type="android.widget.Button" posX="" posY="" visibility="8" enable="true"
+				pressed="false" shown="false" selected="false" value="Check" />
+			<widget name="com.rechild.advancedtaskkiller:id/btn_task"
+				type="android.widget.Button" posX="" posY="" visibility="0" enable="true"
+				pressed="false" shown="true" selected="false" value="KILL selected apps" />
+			<widget name="com.rechild.advancedtaskkiller:id/listbody"
+				type="android.widget.ListView" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="true" selected="false" value="" />
+			<widget name="com.rechild.advancedtaskkiller:id/list_icon"
+				type="android.widget.ImageView" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="true" selected="false" value="" />
+			<widget name="com.rechild.advancedtaskkiller:id/list_iconCheck"
+				type="android.widget.ImageView" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="true" selected="false" value="" />
+			<widget name="com.rechild.advancedtaskkiller:id/list_name"
+				type="android.widget.TextView" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="true" selected="false"
+				value="Advanced Task Killer Free" />
+		</state>
+		<state name="com.rechild.advancedtaskkiller.AdvancedTaskKiller"
+			id="11" type="source" time="11:52:47" end="false">
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Available Memory: 701M  " />
+			<widget name="com.rechild.advancedtaskkiller:id/btnCheck"
+				type="android.widget.Button" posX="" posY="" visibility="8" enable="true"
+				pressed="false" shown="false" selected="false" value="Check" />
+			<widget name="com.rechild.advancedtaskkiller:id/btn_task"
+				type="android.widget.Button" posX="" posY="" visibility="0" enable="true"
+				pressed="false" shown="true" selected="false" value="KILL selected apps" />
+			<widget name="com.rechild.advancedtaskkiller:id/listbody"
+				type="android.widget.ListView" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="true" selected="false" value="" />
+			<widget name="com.rechild.advancedtaskkiller:id/list_icon"
+				type="android.widget.ImageView" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="true" selected="false" value="" />
+			<widget name="com.rechild.advancedtaskkiller:id/list_iconCheck"
+				type="android.widget.ImageView" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="true" selected="false" value="" />
+			<widget name="com.rechild.advancedtaskkiller:id/list_name"
+				type="android.widget.TextView" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="true" selected="false"
+				value="Advanced Task Killer Free" />
+		</state>
+		<state name="com.rechild.advancedtaskkiller.NewSettings" id="45"
+			type="dest" time="" end="false">
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Advanced Task Killer Free" />
+			<widget name="android:id/list" type="android.widget.ListView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/summary" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false"
+				value="Ignore service and front apps automatically. Otherwise they would display as green text, you can Long Press on them and Force Stop them." />
+			<widget name="android:id/checkbox" type="android.widget.CheckBox"
+				posX="" posY="" visibility="0" enable="true" pressed="true" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="false" pressed="false" shown="true"
+				selected="false" value="Auto Kill Frequency" />
+			<widget name="android:id/summary" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="false" pressed="false" shown="true"
+				selected="false"
+				value="If you choose When screen off, it need restart to apply the change." />
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="true" value="Security Level" />
+			<widget name="android:id/summary" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="true" value="Set security level to low to show more apps, need restart" />
+		</state>
+		<state name="com.rechild.advancedtaskkiller.HelpActivity" id="29"
+			type="source" time="12:03:05" end="false">
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Advanced Task Killer Free" />
+		</state>
+		<state name="com.rechild.advancedtaskkiller.NewSettings" id="35"
+			type="dest" time="" end="false">
+			<widget name="android:id/icon" type="android.widget.ImageView"
+				posX="" posY="" visibility="8" enable="true" pressed="false" shown="false"
+				selected="false" value="" />
+			<widget name="android:id/alertTitle" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Security Level" />
+			<widget name="android:id/titleDivider" type="android.widget.ImageView"
+				posX="" posY="" visibility="8" enable="true" pressed="false" shown="false"
+				selected="false" value="" />
+			<widget name="android:id/select_dialog_listview" type="android.widget.ListView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/text1" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="High" />
+			<widget name="android:id/button1" type="android.widget.Button"
+				posX="" posY="" visibility="8" enable="true" pressed="false" shown="false"
+				selected="false" value="" />
+			<widget name="android:id/button3" type="android.widget.Button"
+				posX="" posY="" visibility="8" enable="true" pressed="false" shown="false"
+				selected="false" value="" />
+			<widget name="android:id/button2" type="android.widget.Button"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Cancel" />
+		</state>
+		<state name="com.rechild.advancedtaskkiller.NewSettings" id="46"
+			type="dest" time="" end="true">
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Advanced Task Killer Free" />
+			<widget name="android:id/list" type="android.widget.ListView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="true" value="Auto Start" />
+			<widget name="android:id/summary" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="true" value="Start up automatically when restart your phone" />
+			<widget name="android:id/checkbox" type="android.widget.CheckBox"
+				posX="" posY="" visibility="0" enable="true" pressed="true" shown="true"
+				selected="true" value="" />
+			<widget name="android:id/summary" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Show icon on notification bar to switch easily" />
+			<widget name="android:id/checkbox" type="android.widget.CheckBox"
+				posX="" posY="" visibility="0" enable="true" pressed="true" shown="true"
+				selected="false" value="" />
+		</state>
+	</states>
+	<transitions id="51" name="" />
+	<transitions id="44" name="">
+		<transition id="42" source="com.rechild.advancedtaskkiller.NewSettings"
+			dest="com.rechild.advancedtaskkiller.NewSettings">
+			<action name="menu">
+				<widget name="3" type="MenuView" posX="" posY="" visibility=""
+					enable="" pressed="" shown="" selected="" value="" />
+			</action>
+		</transition>
+	</transitions>
+	<transitions id="25" name="">
+		<transition id="28"
+			source="com.rechild.advancedtaskkiller.AdvancedTaskKiller" dest="com.rechild.advancedtaskkiller.AdvancedTaskKiller">
+			<action name="menu">
+				<widget name="4" type="MenuView" posX="" posY="" visibility=""
+					enable="" pressed="" shown="" selected="" value="" />
+			</action>
+		</transition>
+	</transitions>
+	<transitions id="34" name="" />
+	<transitions id="30" name="" />
+	<transitions id="20" name="">
+		<transition id="25"
+			source="com.rechild.advancedtaskkiller.AdvancedTaskKiller" dest="com.rechild.advancedtaskkiller.AdvancedTaskKiller">
+			<action name="click button">
+				<widget name="android:id/button1" type="Button" posX="" posY=""
+					visibility="" enable="" pressed="" shown="" selected="" value="" />
+			</action>
+		</transition>
+	</transitions>
+	<transitions id="10" name="">
+		<transition id="1"
+			source="com.rechild.advancedtaskkiller.AdvancedTaskKiller" dest="com.rechild.advancedtaskkiller.AdvancedTaskKiller">
+			<action name="click imageview">
+				<widget name="com.rechild.advancedtaskkiller:id/list_icon"
+					type="ImageView" posX="" posY="" visibility="" enable="" pressed=""
+					shown="" selected="" value="" />
+			</action>
+		</transition>
+	</transitions>
+	<transitions id="49" name="" />
+	<transitions id="16" name="">
+		<transition id="19" source="com.rechild.advancedtaskkiller.NewSettings"
+			dest="com.rechild.advancedtaskkiller.NewSettings">
+			<action name="check box">
+				<widget name="android:id/checkbox" type="CheckBox" posX=""
+					posY="" visibility="" enable="" pressed="" shown="" selected=""
+					value="" />
+			</action>
+		</transition>
+	</transitions>
+	<transitions id="9" name="">
+		<transition id="2"
+			source="com.rechild.advancedtaskkiller.AdvancedTaskKiller" dest="com.rechild.advancedtaskkiller.AdvancedTaskKiller">
+			<action name="click imageview">
+				<widget name="com.rechild.advancedtaskkiller:id/list_iconCheck"
+					type="ImageView" posX="" posY="" visibility="" enable="" pressed=""
+					shown="" selected="" value="" />
+			</action>
+		</transition>
+	</transitions>
+	<transitions id="35" name="">
+		<transition id="35" source="com.rechild.advancedtaskkiller.NewSettings"
+			dest="com.rechild.advancedtaskkiller.NewSettings">
+			<action name="click listview">
+				<widget name="9" type="ListViewElement" posX="" posY=""
+					visibility="" enable="" pressed="" shown="" selected="" value="" />
+			</action>
+		</transition>
+		<transition id="36" source="com.rechild.advancedtaskkiller.NewSettings"
+			dest="com.rechild.advancedtaskkiller.NewSettings">
+			<action name="click listview">
+				<widget name="8" type="ListViewElement" posX="" posY=""
+					visibility="" enable="" pressed="" shown="" selected="" value="" />
+			</action>
+		</transition>
+		<transition id="37" source="com.rechild.advancedtaskkiller.NewSettings"
+			dest="com.rechild.advancedtaskkiller.NewSettings">
+			<action name="click listview">
+				<widget name="7" type="ListViewElement" posX="" posY=""
+					visibility="" enable="" pressed="" shown="" selected="" value="" />
+			</action>
+		</transition>
+	</transitions>
+	<transitions id="5" name="">
+		<transition id="0"
+			source="com.rechild.advancedtaskkiller.AdvancedTaskKiller" dest="com.rechild.advancedtaskkiller.AdvancedTaskKiller">
+			<action name="click button">
+				<widget name="com.rechild.advancedtaskkiller:id/btn_task"
+					type="Button" posX="" posY="" visibility="" enable="" pressed=""
+					shown="" selected="" value="" />
+			</action>
+		</transition>
+	</transitions>
+	<transitions id="0" name="" />
+	<transitions id="55" name="">
+		<transition id="49" source="com.rechild.advancedtaskkiller.NewSettings"
+			dest="com.rechild.advancedtaskkiller.NewSettings">
+			<action name="click listview">
+				<widget name="1" type="ListViewElement" posX="" posY=""
+					visibility="" enable="" pressed="" shown="" selected="" value="" />
+			</action>
+		</transition>
+	</transitions>
+	<transitions id="40" name="" />
+	<transitions id="45" name="" />
+	<transitions id="50" name="">
+		<transition id="46" source="com.rechild.advancedtaskkiller.NewSettings"
+			dest="com.rechild.advancedtaskkiller.NewSettings">
+			<action name="menu">
+				<widget name="1" type="MenuView" posX="" posY="" visibility=""
+					enable="" pressed="" shown="" selected="" value="" />
+			</action>
+		</transition>
+	</transitions>
+	<transitions id="39" name="">
+		<transition id="39" source="com.rechild.advancedtaskkiller.NewSettings"
+			dest="com.rechild.advancedtaskkiller.NewSettings">
+			<action name="check box">
+				<widget name="android:id/checkbox" type="CheckBox" posX=""
+					posY="" visibility="" enable="" pressed="" shown="" selected=""
+					value="" />
+			</action>
+		</transition>
+	</transitions>
+	<transitions id="26" name="" />
+	<transitions id="31" name="">
+		<transition id="32"
+			source="com.rechild.advancedtaskkiller.HelpActivity" dest="com.rechild.advancedtaskkiller.HelpActivity">
+			<action name="menu">
+				<widget name="0" type="MenuView" posX="" posY="" visibility=""
+					enable="" pressed="" shown="" selected="" value="" />
+			</action>
+		</transition>
+	</transitions>
+	<transitions id="21" name="" />
+	<transitions id="15" name="" />
+	<transitions id="8" name="">
+		<transition id="16"
+			source="com.rechild.advancedtaskkiller.AdvancedTaskKiller" dest="end">
+			<action name="menu">
+				<widget name="5" type="MenuView" posX="" posY="" visibility=""
+					enable="" pressed="" shown="" selected="" value="" />
+			</action>
+		</transition>
+	</transitions>
+	<transitions id="11" name="">
+		<transition id="14"
+			source="com.rechild.advancedtaskkiller.AdvancedTaskKiller" dest="com.rechild.advancedtaskkiller.AdvancedTaskKiller">
+			<action name="menu">
+				<widget name="3" type="MenuView" posX="" posY="" visibility=""
+					enable="" pressed="" shown="" selected="" value="" />
+			</action>
+		</transition>
+	</transitions>
+	<transitions id="1" name="" />
+	<transitions id="19" name="">
+		<transition id="24"
+			source="com.rechild.advancedtaskkiller.AdvancedTaskKiller" dest="com.rechild.advancedtaskkiller.AdvancedTaskKiller">
+			<action name="menu">
+				<widget name="2" type="MenuView" posX="" posY="" visibility=""
+					enable="" pressed="" shown="" selected="" value="" />
+			</action>
+		</transition>
+	</transitions>
+	<transitions id="4" name="">
+		<transition id="11"
+			source="com.rechild.advancedtaskkiller.AdvancedTaskKiller" dest="com.rechild.advancedtaskkiller.NewSettings">
+			<action name="menu">
+				<widget name="0" type="MenuView" posX="" posY="" visibility=""
+					enable="" pressed="" shown="" selected="" value="" />
+			</action>
+		</transition>
+	</transitions>
+	<transitions id="36" name="" />
+	<transitions id="54" name="">
+		<transition id="48" source="com.rechild.advancedtaskkiller.NewSettings"
+			dest="com.rechild.advancedtaskkiller.NewSettings">
+			<action name="menu">
+				<widget name="4" type="MenuView" posX="" posY="" visibility=""
+					enable="" pressed="" shown="" selected="" value="" />
+			</action>
+		</transition>
+	</transitions>
+	<transitions id="46" name="">
+		<transition id="43" source="com.rechild.advancedtaskkiller.NewSettings"
+			dest="com.rechild.advancedtaskkiller.NewSettings">
+			<action name="click listview">
+				<widget name="5" type="ListViewElement" posX="" posY=""
+					visibility="" enable="" pressed="" shown="" selected="" value="" />
+			</action>
+		</transition>
+	</transitions>
+	<transitions id="29" name="">
+		<transition id="31"
+			source="com.rechild.advancedtaskkiller.HelpActivity" dest="com.rechild.advancedtaskkiller.HelpActivity">
+			<action name="menu">
+				<widget name="3" type="MenuView" posX="" posY="" visibility=""
+					enable="" pressed="" shown="" selected="" value="" />
+			</action>
+		</transition>
+	</transitions>
+	<transitions id="41" name="">
+		<transition id="40" source="com.rechild.advancedtaskkiller.NewSettings"
+			dest="com.rechild.advancedtaskkiller.NewSettings">
+			<action name="menu">
+				<widget name="5" type="MenuView" posX="" posY="" visibility=""
+					enable="" pressed="" shown="" selected="" value="" />
+			</action>
+		</transition>
+	</transitions>
+	<transitions id="2" name="" />
+	<transitions id="53" name="">
+		<transition id="47" source="com.rechild.advancedtaskkiller.NewSettings"
+			dest="com.rechild.advancedtaskkiller.NewSettings">
+			<action name="click listview">
+				<widget name="3" type="ListViewElement" posX="" posY=""
+					visibility="" enable="" pressed="" shown="" selected="" value="" />
+			</action>
+		</transition>
+	</transitions>
+	<transitions id="42" name="">
+		<transition id="41" source="com.rechild.advancedtaskkiller.NewSettings"
+			dest="com.rechild.advancedtaskkiller.NewSettings">
+			<action name="menu">
+				<widget name="0" type="MenuView" posX="" posY="" visibility=""
+					enable="" pressed="" shown="" selected="" value="" />
+			</action>
+		</transition>
+	</transitions>
+	<transitions id="58" name="">
+		<transition id="52" source="com.rechild.advancedtaskkiller.NewSettings"
+			dest="com.rechild.advancedtaskkiller.NewSettings">
+			<action name="menu">
+				<widget name="2" type="MenuView" posX="" posY="" visibility=""
+					enable="" pressed="" shown="" selected="" value="" />
+			</action>
+		</transition>
+	</transitions>
+	<transitions id="32" name="">
+		<transition id="33"
+			source="com.rechild.advancedtaskkiller.HelpActivity" dest="com.rechild.advancedtaskkiller.HelpActivity">
+			<action name="menu">
+				<widget name="1" type="MenuView" posX="" posY="" visibility=""
+					enable="" pressed="" shown="" selected="" value="" />
+			</action>
+		</transition>
+	</transitions>
+	<transitions id="13" name="">
+		<transition id="17"
+			source="com.rechild.advancedtaskkiller.AdvancedTaskKiller" dest="end">
+			<action name="click button">
+				<widget name="android:id/button1" type="Button" posX="" posY=""
+					visibility="" enable="" pressed="" shown="" selected="" value="" />
+				<error
+					name="&#10;com.rechild.advancedtaskkillert.test.MainTest:INSTRUMENTATION_RESULT: shortMsg=android.content.ActivityNotFoundException&#10;INSTRUMENTATION_RESULT: longMsg=android.content.ActivityNotFoundException: No Activity found to handle Intent { act=android.intent.action.SEND typ=message/rfc882 (has extras) }&#10;INSTRUMENTATION_CODE: 0&#10;" />
+			</action>
+			<action name="edit text">
+				<widget name="com.rechild.advancedtaskkiller:id/editErrorMessage"
+					type="EditText" posX="" posY="" visibility="" enable="" pressed=""
+					shown="" selected="" value="limos10" />
+			</action>
+		</transition>
+	</transitions>
+	<transitions id="47" name="">
+		<transition id="44" source="com.rechild.advancedtaskkiller.NewSettings"
+			dest="com.rechild.advancedtaskkiller.NewSettings">
+			<action name="click listview">
+				<widget name="6" type="ListViewElement" posX="" posY=""
+					visibility="" enable="" pressed="" shown="" selected="" value="" />
+			</action>
+		</transition>
+	</transitions>
+	<transitions id="12" name="" />
+	<transitions id="18" name="">
+		<transition id="23"
+			source="com.rechild.advancedtaskkiller.AdvancedTaskKiller" dest="com.rechild.advancedtaskkiller.AdvancedTaskKiller">
+			<action name="menu">
+				<widget name="5" type="MenuView" posX="" posY="" visibility=""
+					enable="" pressed="" shown="" selected="" value="" />
+			</action>
+		</transition>
+	</transitions>
+	<transitions id="7" name="">
+		<transition id="13"
+			source="com.rechild.advancedtaskkiller.AdvancedTaskKiller" dest="com.rechild.advancedtaskkiller.HelpActivity">
+			<action name="menu">
+				<widget name="2" type="MenuView" posX="" posY="" visibility=""
+					enable="" pressed="" shown="" selected="" value="" />
+			</action>
+		</transition>
+	</transitions>
+	<transitions id="28" name="">
+		<transition id="30"
+			source="com.rechild.advancedtaskkiller.HelpActivity" dest="com.rechild.advancedtaskkiller.HelpActivity">
+			<action name="menu">
+				<widget name="5" type="MenuView" posX="" posY="" visibility=""
+					enable="" pressed="" shown="" selected="" value="" />
+			</action>
+		</transition>
+	</transitions>
+	<transitions id="22" name="">
+		<transition id="26"
+			source="com.rechild.advancedtaskkiller.AdvancedTaskKiller" dest="com.rechild.advancedtaskkiller.AdvancedTaskKiller">
+			<action name="menu">
+				<widget name="0" type="MenuView" posX="" posY="" visibility=""
+					enable="" pressed="" shown="" selected="" value="" />
+			</action>
+		</transition>
+	</transitions>
+	<transitions id="37" name="" />
+	<transitions id="24" name="" />
+	<transitions id="3" name="">
+		<transition id="12"
+			source="com.rechild.advancedtaskkiller.AdvancedTaskKiller" dest="com.rechild.advancedtaskkiller.AdvancedTaskKiller">
+			<action name="menu">
+				<widget name="1" type="MenuView" posX="" posY="" visibility=""
+					enable="" pressed="" shown="" selected="" value="" />
+			</action>
+		</transition>
+	</transitions>
+	<transitions id="52" name="" />
+	<transitions id="57" name="">
+		<transition id="51" source="com.rechild.advancedtaskkiller.NewSettings"
+			dest="com.rechild.advancedtaskkiller.NewSettings">
+			<action name="click listview">
+				<widget name="4" type="ListViewElement" posX="" posY=""
+					visibility="" enable="" pressed="" shown="" selected="" value="" />
+			</action>
+		</transition>
+	</transitions>
+	<transitions id="43" name="" />
+	<transitions id="33" name="">
+		<transition id="34"
+			source="com.rechild.advancedtaskkiller.HelpActivity" dest="com.rechild.advancedtaskkiller.HelpActivity">
+			<action name="menu">
+				<widget name="2" type="MenuView" posX="" posY="" visibility=""
+					enable="" pressed="" shown="" selected="" value="" />
+			</action>
+		</transition>
+	</transitions>
+	<transitions id="14" name="">
+		<transition id="18" source="com.rechild.advancedtaskkiller.NewSettings"
+			dest="com.rechild.advancedtaskkiller.NewSettings">
+			<action name="check box">
+				<widget name="android:id/checkbox" type="CheckBox" posX=""
+					posY="" visibility="" enable="" pressed="" shown="" selected=""
+					value="" />
+			</action>
+		</transition>
+	</transitions>
+	<transitions id="48" name="">
+		<transition id="45" source="com.rechild.advancedtaskkiller.NewSettings"
+			dest="com.rechild.advancedtaskkiller.NewSettings">
+			<action name="click listview">
+				<widget name="0" type="ListViewElement" posX="" posY=""
+					visibility="" enable="" pressed="" shown="" selected="" value="" />
+			</action>
+		</transition>
+	</transitions>
+	<transitions id="17" name="">
+		<transition id="20"
+			source="com.rechild.advancedtaskkiller.AdvancedTaskKiller" dest="com.rechild.advancedtaskkiller.AdvancedTaskKiller">
+			<action name="menu">
+				<widget name="1" type="MenuView" posX="" posY="" visibility=""
+					enable="" pressed="" shown="" selected="" value="" />
+			</action>
+		</transition>
+		<transition id="21"
+			source="com.rechild.advancedtaskkiller.AdvancedTaskKiller" dest="com.rechild.advancedtaskkiller.AdvancedTaskKiller">
+			<action name="click imageview">
+				<widget name="android:id/titleDivider" type="ImageView" posX=""
+					posY="" visibility="" enable="" pressed="" shown="" selected=""
+					value="" />
+			</action>
+		</transition>
+		<transition id="22"
+			source="com.rechild.advancedtaskkiller.AdvancedTaskKiller" dest="com.rechild.advancedtaskkiller.AdvancedTaskKiller">
+			<action name="click imageview">
+				<widget name="android:id/icon" type="ImageView" posX="" posY=""
+					visibility="" enable="" pressed="" shown="" selected="" value="" />
+			</action>
+		</transition>
+	</transitions>
+	<transitions id="56" name="">
+		<transition id="50" source="com.rechild.advancedtaskkiller.NewSettings"
+			dest="com.rechild.advancedtaskkiller.NewSettings">
+			<action name="click listview">
+				<widget name="2" type="ListViewElement" posX="" posY=""
+					visibility="" enable="" pressed="" shown="" selected="" value="" />
+			</action>
+		</transition>
+	</transitions>
+	<transitions id="6" name="">
+		<transition id="15"
+			source="com.rechild.advancedtaskkiller.AdvancedTaskKiller" dest="end">
+			<action name="menu">
+				<widget name="4" type="MenuView" posX="" posY="" visibility=""
+					enable="" pressed="" shown="" selected="" value="" />
+			</action>
+		</transition>
+	</transitions>
+	<transitions id="38" name="">
+		<transition id="38" source="com.rechild.advancedtaskkiller.NewSettings"
+			dest="com.rechild.advancedtaskkiller.NewSettings" />
+	</transitions>
+	<transitions id="23" name="">
+		<transition id="27"
+			source="com.rechild.advancedtaskkiller.AdvancedTaskKiller" dest="com.rechild.advancedtaskkiller.AdvancedTaskKiller">
+			<action name="menu">
+				<widget name="3" type="MenuView" posX="" posY="" visibility=""
+					enable="" pressed="" shown="" selected="" value="" />
+			</action>
+		</transition>
+	</transitions>
+	<transitions id="27" name="">
+		<transition id="29"
+			source="com.rechild.advancedtaskkiller.HelpActivity" dest="com.rechild.advancedtaskkiller.HelpActivity">
+			<action name="menu">
+				<widget name="4" type="MenuView" posX="" posY="" visibility=""
+					enable="" pressed="" shown="" selected="" value="" />
+			</action>
+		</transition>
+	</transitions>
+</Scenario>

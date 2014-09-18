@@ -21,6 +21,7 @@ import fr.openium.sga.ConfigApp;
 import fr.openium.sga.ThreadSleeper;
 import fr.openium.sga.SecurityTesting.AbstractTest.AbstractTaskManager.SPReport;
 import fr.openium.sga.SecurityTesting.AbstractTest.AbstractTestTask;
+import fr.openium.sga.Utils.Utils;
 import fr.openium.sga.emmatest.Emma;
 import fr.openium.sga.emmatest.SgdEnvironnement;
 import fr.openium.sga.strategy.Emulator_checker;
@@ -112,53 +113,65 @@ public class StressTestJob extends AbstractMobileCrawler implements Runnable,
 					+ tp.getId()
 					+ "===========================================");
 		}
-		do {
-			if (testIsfinshed) {
-				Emma.delete_File_onDevice(ConfigApp.OkPath, mSgdEnvironnement,
-						mSleeper);
-				if (ConfigApp.DEBUG) {
-					System.out
-							.println("===========================================launch sga :"
-									+ tp.getId()
-									+ "===========================================");
-				}
-				mSgdEnvironnement.launchSga_class_defined();
-				if (ConfigApp.DEBUG) {
-					System.out
-							.println("=========================================== end of launch sga :"
-									+ tp.getId()
-									+ "===========================================");
-				}
-				set_sga_is_finished(false);
-				checkIfTestOnDeviceIsFinished();
-			}
-			mSleeper.sleepLong();
-			if (Emma.limit_time_isReached(initTime, Emma.TIME_LIMITE)) {
-				break;
-			}
-		} while (!testIsfinshed);
-		if (ConfigApp.DEBUG) {
-			System.out
-					.println("===========================================: "
-							+ tp.getId()
-							+ " test on device is finished ===========================================");
+		try {
+			launchStressJob(tp, initTime);
+		} catch (InterruptedException e1) {
+			e1.printStackTrace();
 		}
-
 		try {
 			check_stress_result();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+
 		if (ConfigApp.DEBUG) {
 			System.out
-					.println("=========================================== end: "
-							+ tp.getId()
-							+ "===========================================");
-		}
-		if (ConfigApp.DEBUG) {
-			System.out.println("Job is finished");
+					.println("=========================================== Job is finished  "
+							+ tp.getId());
 		}
 		// mTaskManager.update(null);
+	}
+
+	private void launchStressJob(TaskPoolThread tp, Long initTime)
+			throws InterruptedException {
+		do {
+			launchSga(tp);
+		} while (!testIsfinshed);
+
+	}
+
+	protected void launchSga(TaskPoolThread tp) throws InterruptedException {
+		if (isTestFinished()) {
+			Emma.delete_File_onDevice(ConfigApp.OkPath, mSgdEnvironnement,
+					mSleeper);
+			launchSgaWithClassDefined();
+			checkIfTestOnDeviceIsFinished();
+		} else {
+			if (ConfigApp.DEBUG) {
+				System.out.println(".");
+			}
+		}
+
+	}
+
+	private synchronized boolean isTestFinished() {
+		return testIsfinshed;
+	}
+
+	protected void launchSgaWithClassDefined() throws InterruptedException {
+		// in a thread
+		new Thread() {
+			@Override
+			public void run() {
+				mSgdEnvironnement.launchSga_class_defined();
+				/*
+				 * notify emulator checker if finished
+				 */
+				remoteState = true;
+			};
+		}.start();
+		Thread.sleep(100);
+		set_sga_is_finished(false);
 	}
 
 	/**
@@ -168,9 +181,9 @@ public class StressTestJob extends AbstractMobileCrawler implements Runnable,
 	 */
 	private void check_stress_result() throws IOException {
 
-		Emma.pull(ConfigApp.OutXMLPath, mSgdEnvironnement);
-		Emma.pull(Config.error, mSgdEnvironnement);
-		Emma.pull(Config.EXECUTED_EVENTS, mSgdEnvironnement);
+		Utils.pull(ConfigApp.OutXMLPath, mSgdEnvironnement);
+		Utils.pull(Config.error, mSgdEnvironnement);
+		Utils.pull(Config.EXECUTED_EVENTS, mSgdEnvironnement);
 		AbstractTestTask temp = ((StressTask) mTask);
 
 		File erroFile = new File(mSgdEnvironnement.getOutDirectory()
@@ -211,7 +224,7 @@ public class StressTestJob extends AbstractMobileCrawler implements Runnable,
 
 		File outFile = new File(mSgdEnvironnement.getOutDirectory()
 				+ ConfigApp.OutXMLPath);
-		Emma.save_non_generic(outFile,
+		Utils.save_non_generic(outFile,
 				new File(mSgdEnvironnement.getScenarioDirectory()));
 		File scenario_outFile = new File(
 				mSgdEnvironnement.getScenarioDirectory() + ConfigApp.OutXMLPath);
@@ -311,6 +324,11 @@ public class StressTestJob extends AbstractMobileCrawler implements Runnable,
 	public void interrupted() {
 		// TODO Auto-generated method stub
 
+	}
+
+	@Override
+	public synchronized boolean remoteTestState() {
+		return remoteState;
 	}
 
 }

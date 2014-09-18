@@ -17,6 +17,7 @@ public class EmulatorManager implements Runnable {
 	private final int mTask;
 	private String mPackageName;
 	private String OFFLINE = "offline";
+	private String DEVICE = "device";
 
 	/**
 	 * 
@@ -31,7 +32,8 @@ public class EmulatorManager implements Runnable {
 	 *            , if GET_AVAILABLE_EMULATEUR_WITHOUT_A_PACKAGE_RUNNING give
 	 *            the package name to check else give null
 	 */
-	public EmulatorManager(String sdk, IResultReceiver result, int task, String packageName) {
+	public EmulatorManager(String sdk, IResultReceiver result, int task,
+			String packageName) {
 		mSdk_adb = sdk;
 		mResult = result;
 		mTask = task;
@@ -54,7 +56,8 @@ public class EmulatorManager implements Runnable {
 		String[] command = new String[] { mSdk_adb, GET_DEVICE_LIST };
 
 		try {
-			ProcessBuilder getEmulator_list_process = new ProcessBuilder(command);
+			ProcessBuilder getEmulator_list_process = new ProcessBuilder(
+					command);
 			Process p = getEmulator_list_process.start();
 			ArrayList<String> output = readProcessOutput(p);
 			ArrayList<String> deviceList = new ArrayList<String>();
@@ -86,8 +89,8 @@ public class EmulatorManager implements Runnable {
 	}
 
 	private boolean isNotOffLine(String deviceStatus) {
-
-		return !deviceStatus.equalsIgnoreCase(OFFLINE);
+		// return !deviceStatus.equalsIgnoreCase(OFFLINE);
+		return deviceStatus.equalsIgnoreCase(DEVICE);
 	}
 
 	public ArrayList<String> getList_Available_Emulator_without_Package() {

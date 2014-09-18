@@ -7,6 +7,11 @@ import java.io.InputStream;
 
 import javax.xml.parsers.ParserConfigurationException;
 
+import kit.Intent.AndroidManifestComponent;
+import kit.Intent.AndroidManifestParser;
+import kit.Intent.MCrawlerTIntent;
+import kit.Intent.ManifestData;
+import kit.Intent.StreamException;
 import kit.Utils.SgUtils;
 
 import org.xml.sax.SAXException;
@@ -19,18 +24,14 @@ import com.sun.codemodel.JExpr;
 import com.sun.codemodel.JMod;
 import com.sun.codemodel.JVar;
 
-import fr.openium.components.ActivityComponent;
 import fr.openium.sga.ConfigApp;
 import fr.openium.sga.SecurityTesting.BruteForceTest.BruteForceManager;
 import fr.openium.sga.SecurityTesting.INJTest.INJRandomTaskManager;
 import fr.openium.sga.SecurityTesting.INJTest.INJRequestTaskManager;
 import fr.openium.sga.SecurityTesting.StressTest.StressTaskManager;
 import fr.openium.sga.strategy.AbstractStrategy;
+import fr.openium.sga.strategy.IntentLauncherStrategy;
 import fr.openium.sga.strategy.NormalStrategy;
-import fr.openium.specification.xml.AndroidManifestParser;
-import fr.openium.specification.xml.ManifestData;
-import fr.openium.specification.xml.ManifestData.Intent;
-import fr.openium.specification.xml.StreamException;
 
 public class ScenarioCodeGen {
 	private ManifestData mManifestdata = null;
@@ -57,7 +58,7 @@ public class ScenarioCodeGen {
 		}
 		try {
 			InputStream manifestStream = new FileInputStream(manifestXml);
-			this.mManifestdata = AndroidManifestParser.parse(manifestStream);
+			mManifestdata = AndroidManifestParser.parse(manifestStream);
 		} catch (SAXException e) {
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -88,10 +89,10 @@ public class ScenarioCodeGen {
 		if (mLauncherActivity != null) {
 			ActivityName = mLauncherActivity;
 		} else
-			for (ActivityComponent act : mManifestdata.getActivities()) {
-				for (Intent intent : act.getIntent()) {
-					if (intent.getAction().equalsIgnoreCase(MAIN)
-							&& intent.getCategory().contains(LAUNCHER)) {
+			for (AndroidManifestComponent act : mManifestdata.getComponents()) {
+				for (MCrawlerTIntent intent : act.getIntent()) {
+					if (intent.getActions().contains(MAIN)
+							&& intent.getCategories().contains(LAUNCHER)) {
 						ActivityName = act.getName();
 						break;
 					}
@@ -145,6 +146,10 @@ public class ScenarioCodeGen {
 		case BruteForceManager._STRATEGY_ID:
 			SgdTestCase = cm.ref(kit.BruteForce.BruteForceRunner.class);
 			testName = ConfigApp.BRUTEFORCE_TEST;
+			break;
+		case IntentLauncherStrategy._STRATEGY_ID:
+			SgdTestCase = cm.ref(kit.TestRunner.IntentRunner.class);
+			testName = ConfigApp.INTENTCRAWLER_TEST;
 			break;
 		default:
 			throw new NullPointerException(
@@ -228,7 +233,6 @@ public class ScenarioCodeGen {
 
 	public void setLauncherActivity(String launchActivity) {
 		mLauncherActivity = launchActivity;
-
 	}
 
 }

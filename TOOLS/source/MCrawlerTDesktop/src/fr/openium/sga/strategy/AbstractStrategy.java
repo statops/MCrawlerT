@@ -7,7 +7,7 @@ import java.util.logging.Logger;
 import kit.Scenario.ScenarioData;
 import kit.Scenario.State;
 import fr.openium.sga.ConfigApp;
-import fr.openium.sga.emmatest.Emma;
+import fr.openium.sga.Utils.Utils;
 import fr.openium.sga.emmatest.SgdEnvironnement;
 import fr.openium.sga.result.CrawlResult;
 
@@ -46,21 +46,21 @@ public abstract class AbstractStrategy {
 	}
 
 	protected static void save(File file, File directory, String ext) {
-		Emma.savegeneric_file(file, directory, ext);
+		Utils.savegeneric_file(file, directory, ext);
 	}
 
 	protected static void save_ok(SgdEnvironnement envToCheck, File ok) {
-		Emma.save_generic_ok(envToCheck, ok);
+		Utils.save_generic_ok(envToCheck, ok);
 
 	}
 
 	protected void save_time(SgdEnvironnement envToCheck) {
-		Emma.save_genericTime(envToCheck);
+		Utils.save_genericTime(envToCheck);
 
 	}
 
 	protected void save_rv_done_directory(SgdEnvironnement envToCheck) {
-		Emma.save_generic_rv_done(envToCheck);
+		Utils.save_generic_rv_done(envToCheck);
 
 	}
 
@@ -71,26 +71,31 @@ public abstract class AbstractStrategy {
 	 * @throws InterruptedException
 	 */
 	protected void pull(String valueInTestResults, SgdEnvironnement env) {
-		Emma.pull(valueInTestResults, env);
+		Utils.pull(valueInTestResults, env);
 	}
 
 	protected void pullScenario(SgdEnvironnement envToCheck) {
-		File ScenarioDirectory = new File(envToCheck.getOutDirectory() + ConfigApp.SCENARII);
-		File outxml = new File(envToCheck.getOutDirectory() + ConfigApp.OutXMLPath);
+		File ScenarioDirectory = new File(envToCheck.getOutDirectory()
+				+ ConfigApp.SCENARII);
+		File outxml = new File(envToCheck.getOutDirectory()
+				+ ConfigApp.OutXMLPath);
 		pull(ConfigApp.OutXMLPath, envToCheck);
 		save(outxml, ScenarioDirectory, ".xml");
 	}
 
 	protected void pullMobileSystemObservers(SgdEnvironnement envToCheck) {
-		File sgdMobileSystemObserversDirectory = new File(envToCheck.getOutDirectory()
-				+ ConfigApp.SGD_OBSERVATION_REPORT_DIRECTORY);
+		File sgdMobileSystemObserversDirectory = new File(
+				envToCheck.getOutDirectory()
+						+ ConfigApp.SGD_OBSERVATION_REPORT_DIRECTORY);
 		if (sgdMobileSystemObserversDirectory.exists()) {
 			sgdMobileSystemObserversDirectory.mkdirs();
 		}
-		pull(envToCheck, ConfigApp.SGD_OBSERVATION_REPORT_DIRECTORY, sgdMobileSystemObserversDirectory);
+		pull(envToCheck, ConfigApp.SGD_OBSERVATION_REPORT_DIRECTORY,
+				sgdMobileSystemObserversDirectory);
 	}
 
-	protected void pull(SgdEnvironnement envToCheck, String sgdObservationReportDirectory,
+	protected void pull(SgdEnvironnement envToCheck,
+			String sgdObservationReportDirectory,
 			File sgdMobileSystemObserversDirectory) {
 		pull(sgdObservationReportDirectory, envToCheck);
 		pull(sgdMobileSystemObserversDirectory.getPath(), envToCheck);

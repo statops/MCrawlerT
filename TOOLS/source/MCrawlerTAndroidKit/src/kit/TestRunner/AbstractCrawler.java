@@ -50,8 +50,7 @@ import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.ScrollView;
 
-import com.robotium.solo.RobotiumUtils;
-import com.robotium.solo.Solo;
+
 
 /**
  * @author Stassia

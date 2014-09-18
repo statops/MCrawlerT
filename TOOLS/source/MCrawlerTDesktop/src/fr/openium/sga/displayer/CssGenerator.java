@@ -67,7 +67,7 @@ public class CssGenerator {
 		 * add an initState
 		 */
 
-		State init_State = mTree.getInitialState(true);
+		State init_State = getInitialState();
 		if (init_State == null) {
 			throw new NullPointerException("No initial state");
 		}
@@ -91,6 +91,20 @@ public class CssGenerator {
 		 */
 		Collections.sort(uniqueState, new StateComparator());
 
+	}
+
+	private State getInitialState() {
+		State st = mTree.getInitialState(true);
+		if (st == null) {
+			if (!mTree.getTransitions().isEmpty()) {
+				ArrayList<Transition> Edges = mTree.getTransitions();
+				Collections.sort(Edges, new TransitionIdComparator());
+				Transition tr = Edges.get(Edges.size() - 1);
+				st = tr.getSource();
+				st.setInit(true);
+			}
+		}
+		return st;
 	}
 
 	private void setCssFile() throws NullPointerException, IOException,
@@ -172,14 +186,13 @@ public class CssGenerator {
 
 	private StringBuilder addImage(StringBuilder argument, State state) {
 		String imagePath = _getScreen(state);
-		if (imagePath == null) {
-			argument.append("}\n\n");
-			return argument;
-		}
-		argument.append("fill-mode: image-scaled;\n")
-				.append("fill-image: url('").append(imagePath).append("');\n")
-				.append("}\n\n");
-		return argument;
+		/*
+		 * if (imagePath == null) { argument.append("}\n\n"); return argument; }
+		 * argument.append("fill-mode: image-scaled;\n")
+		 * .append("fill-image: url('").append(imagePath).append("');\n")
+		 * .append("}\n\n"); return argument;
+		 */
+		return addImage(argument, imagePath, 2);
 	}
 
 	private void defaultNode() throws IOException, CloneNotSupportedException {
@@ -288,6 +301,18 @@ public class CssGenerator {
 		}
 		return file.getAbsolutePath();
 		// return pathScreen.toString();
+	}
+
+	private String _getScreen(String stateID) {
+		StringBuilder pathScreen = new StringBuilder();
+
+		pathScreen.append(mRobotium + File.separator).append(Scenario.SOURCE)
+				.append("_").append(stateID).append(".jpg");
+		File file = new File(pathScreen.toString());
+		if (!file.exists()) {
+			return null;
+		}
+		return file.getAbsolutePath();
 	}
 
 	private void close() throws IOException {
@@ -417,20 +442,13 @@ public class CssGenerator {
 	}
 
 	private StringBuilder addImage(StringBuilder argument, String sourceId) {
-		StringBuilder pathScreen = new StringBuilder();
-		String imagePath;
-		/**
-		 * nom du fichier en fonction du type de l'état
-		 */
-		pathScreen.append(mRobotium + File.separator).append(Scenario.SOURCE)
-				.append("_").append(sourceId).append(".jpg");
-		File file = new File(pathScreen.toString());
+		String imagePath = _getScreen(sourceId);
+		return addImage(argument, imagePath, 1);
 
-		if (!file.exists()) {
-			imagePath = null;
-		}
-		imagePath = file.getAbsolutePath();
-		// return pathScreen.toString();
+	}
+
+	private StringBuilder addImage(StringBuilder argument, String imagePath,
+			int ind) {
 		if (imagePath == null) {
 			argument.append("}\n\n");
 			return argument;
@@ -439,6 +457,11 @@ public class CssGenerator {
 				.append("fill-image: url('").append(imagePath).append("');\n")
 				.append("}\n\n");
 		return argument;
+
+	}
+
+	public String getRobotium() {
+		return mRobotium;
 	}
 
 }

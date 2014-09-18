@@ -23,7 +23,7 @@ public class CrawlerTask implements ITask, Comparable<CrawlerTask> {
 	public CrawlerTask(String ActivityNAme, HashSet<Widget> wigs, ScenarioData path, boolean env, int rank) {
 		/*
 		 * 
-		 * à gerer si Acti,wigs, path sont null
+		 *  gerer si Acti,wigs, path sont null
 		 */
 		mActivityName = ActivityNAme;
 		mWigets = wigs;

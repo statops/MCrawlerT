@@ -80,8 +80,8 @@ public class Storyboard extends Observable implements Observer {
 		return graph.getStoryboard();
 	}
 
-	public void exportGraph(String path) {
-		graph.exportStoryboard(path);
+	public void _exportGraph(String path) {
+		graph._exportStoryboard(path);
 	}
 
 	public Graph getGraph() {

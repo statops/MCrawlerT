@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RandomValue >
+<string value=" test,0">
+	<value>test</value>
+	<value>0</value>
+</string>
+<int>
+	<value>1</value>
+	<value>2</value>
+</int>
+<password>
+	<value>$$$</value>
+	<value>***</value>
+</password>
+<mail>
+	<value>st@op.fr</value>
+</mail>
+</RandomValue>

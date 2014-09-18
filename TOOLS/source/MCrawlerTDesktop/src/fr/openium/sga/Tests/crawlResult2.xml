@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scenario version="0">
+	<alphabet>
+		<action name="" />
+		<action name="click button" />
+		<action name="edit text" />
+	</alphabet>
+	<states initial="fr.openium.example.exampleforsgd.MainActivity"
+		id="0">
+		<state name="fr.openium.example.exampleforsgd.MainActivity" id="0"
+			type="source" time="15:28:03" end="false">
+			<widget name="fr.openium.example.exampleforsgd:id/e5" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="fr.openium.example.exampleforsgd:id/e4" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="fr.openium.example.exampleforsgd:id/b1" type="android.widget.Button"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="fr.openium.example.exampleforsgd:id/e3" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="fr.openium.example.exampleforsgd:id/e2" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="fr.openium.example.exampleforsgd:id/e1" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="ExampleForSgd: Formulaire 1" />
+		</state>
+	</states>
+</Scenario>

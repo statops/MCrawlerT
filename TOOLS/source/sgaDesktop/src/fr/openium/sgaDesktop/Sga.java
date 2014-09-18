@@ -6,20 +6,20 @@ package fr.openium.sgaDesktop;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Observable;
 
+import kit.Command.AntManager;
 import kit.Command.PullCommand;
 import kit.Command.PushCommand;
 import kit.Config.Config;
 
 import org.apache.commons.io.FileUtils;
 
-import fr.openium.automaticOperation.AntManager;
-
 /**
  * @author Stassia
  * 
  */
-public class Sga {
+public class Sga extends Observable {
 
 	private static final String TAG = Sga.class.getName();
 	private String mTestClassName;
@@ -35,8 +35,9 @@ public class Sga {
 	public static final String SGA_PACKAGE = "fr.openium.sga";
 	private String mAdb;
 
-	public Sga(String testClassName, String stopIfError, String _package, int times, String sdcard,
-			String emulator, String threadID, String adb) {
+	public Sga(String testClassName, String stopIfError, String _package,
+			int times, String sdcard, String emulator, String threadID,
+			String adb) {
 		mTestClassName = testClassName;
 		mStopIfError = stopIfError;
 		mPackage = _package;
@@ -105,7 +106,7 @@ public class Sga {
 		}
 		// lancer Sga normalement
 		startRemoteTester();
-		// lancer le test et envoyer la reponse ˆ l'intentService
+		// lancer le test et envoyer la reponse a l'intentService
 		String out = "";
 
 		do {
@@ -120,6 +121,10 @@ public class Sga {
 		if (ConfigApp.DEBUG) {
 			System.out.println("test on Device finished");
 		}
+		/**
+		 * broadcast to receiver
+		 */
+		notifyObservers();
 		return out;
 	}
 
@@ -131,8 +136,9 @@ public class Sga {
 		if (ConfigApp.DEBUG) {
 			System.out.println("launchInstrument");
 		}
-		String commandLine = mAdb + " -s " + mEmulator + COVERAGECOMMAND + " -w -e class " + mTestClassName
-				+ " " + mPackage + "/" + INSTRUMENTATION;
+		String commandLine = mAdb + " -s " + mEmulator + COVERAGECOMMAND
+				+ " -w -e class " + mTestClassName + " " + mPackage + "/"
+				+ INSTRUMENTATION;
 
 		if (ConfigApp.DEBUG) {
 			System.out.println("start test on Device");
@@ -173,7 +179,8 @@ public class Sga {
 		}
 
 		FileUtils.write(toPush, out, Config.UTF8, false);
-		PushCommand com = new PushCommand(mAdb, mEmulator, toPush.getPath(), deviceSdcard);
+		PushCommand com = new PushCommand(mAdb, mEmulator, toPush.getPath(),
+				deviceSdcard);
 		boolean val = com.execute();
 		// Thread.sleep(5000);
 		// toPush.delete();
@@ -194,7 +201,8 @@ public class Sga {
 		 */
 		boolean crashIndicator = false;
 		boolean stopError = Boolean.parseBoolean(mStopIfError);
-		if ((mStopIfError != null && (!stopError)) && !report_not_contain_crash_(out)) {
+		if ((mStopIfError != null && (!stopError))
+				&& !report_not_contain_crash_(out)) {
 			/**
 			 * wait crash file
 			 */
@@ -215,7 +223,8 @@ public class Sga {
 						break;
 					}
 					if (ConfigApp.DEBUG) {
-						System.out.println("Waiting crash file for :" + (n * 5000) + "  secondes");
+						System.out.println("Waiting crash file for :"
+								+ (n * 5000) + "  secondes");
 					}
 				} while (!crashIndicator);
 			}
@@ -235,7 +244,8 @@ public class Sga {
 	 * @return
 	 */
 	public static boolean report_not_contain_crash_(String out) {
-		if (out.contains(Excp) || out.contains(Crash) || out.contains(Process_Crash) || out.contains(Crashed)) {
+		if (out.contains(Excp) || out.contains(Crash)
+				|| out.contains(Process_Crash) || out.contains(Crashed)) {
 			return false;
 		} else
 			return true;
@@ -311,13 +321,26 @@ public class Sga {
 		return mStdOut;
 	}
 
+	/**
+	 * launch sga
+	 * 
+	 * @throws InterruptedException
+	 */
 	private void startRemoteTester() throws InterruptedException {
 		AntManager ant = new AntManager();
-		String command = mAdb + " -s " + mEmulator + " shell am start -a " + ConfigApp.ACTION
-				+ " -e package " + mPackage + (mTestClassName != null ? (" -e class " + mTestClassName) : "")
-				+ (mStopIfError != null ? (" -e stopError " + mStopIfError) : "") + " -e n " + nTimes
-				+ " -n " + ConfigApp.ACTIVITYLAUNCHER;
-		System.out.print("Command:" + command);
+		String command = mAdb
+				+ " -s "
+				+ mEmulator
+				+ " shell am start -a "
+				+ ConfigApp.ACTION
+				+ " -e package "
+				+ mPackage
+				+ (mTestClassName != null ? (" -e class " + mTestClassName)
+						: "")
+				+ (mStopIfError != null ? (" -e stopError " + mStopIfError)
+						: "") + " -e n " + nTimes + " -n "
+				+ ConfigApp.ACTIVITYLAUNCHER;
+		System.out.print("Command: " + command);
 		ant.exec(command);
 		if (ant.getStdErr() != null) {
 			throw new Error(ant.getStdErr());

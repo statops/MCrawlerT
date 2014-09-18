@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scenario version="1">
+	<authors>
+		<author name="MainActivity_0" />
+	</authors>
+	<alphabet>
+		<action name="click button" />
+		<action name="click item" />
+		<action name="click imageview" />
+		<action name="" />
+		<action name="check box" />
+		<action name="editText" />
+	</alphabet>
+	
+	<states initial="MainActivity_0">
+		<state name="MainActivity_0">
+			<widget name="bouton 0" type="button" />
+			<widget name="bouton 1" type="button" />
+		</state>
+		<state name="activityNameX">
+			<widget name="bouton X" type="bouton" />
+			<widget name="EditText 1" type="Edit Text" />
+			<widget name="List 1" type="ListView" />
+		</state>
+		<state name="activityNameY" final="yes">
+			<widget name="bouton Y1" type="bouton" final="yes" />
+			<widget name="bouton Y2" type="bouton" />
+		</state>
+		<state name="END" />
+	</states>
+	<transitions>
+		<transition source="MainActivity_0" dest="activityNameX">
+			<action name="click button">
+				<widget name="bouton 1" type="bouton"></widget>
+				<error name="exception"></error>
+			</action>
+			<action name="edit Text" value="1">
+				<widget name="edit1" type="editext"></widget>
+			</action>
+			
+			<action name="edit Text" value="2">
+				<widget name="edit1" type="editext"></widget>
+			</action>
+			
+			<action name="edit Text" value="n">
+				<widget name="edit2" type="editext" value="test 2"></widget>
+			</action>
+								
+		</transition>
+		<transition source="activityNameX" dest="activityNameY">
+			<action name="enter text">
+				<widget name="EditText 1" type="Edit Text" value="test 1"></widget>
+			</action>
+			<action name="click button">
+				<widget name="bouton X" type="bouton" ></widget>
+			</action>
+		</transition>
+		<transition source="activityNameX" dest="activityNameY">
+			<action name="click item">
+				<widget name="List 1" type="ListView"></widget>
+			</action>
+		</transition>
+		<transition source="MainActivity_0" dest="MainActivity_0">
+			<action name="check box">
+				<widget name="check box" type="check box"></widget>
+			</action>
+			<action name="click imageview">
+				<widget name="image 1" type="image"></widget>
+			</action>
+		</transition>
+		<transition source="activityNameY" dest="END">
+			<action name="click button">
+				<widget name="bouton Y1" type="bouton"></widget>
+				<error name="exception"></error>
+			</action>
+		</transition>
+	</transitions>
+</Scenario>

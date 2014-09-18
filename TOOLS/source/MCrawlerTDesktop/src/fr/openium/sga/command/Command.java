@@ -2,7 +2,7 @@ package fr.openium.sga.command;
 
 import java.io.File;
 
-import fr.openium.automaticOperation.AntManager;
+import kit.Command.AntManager;
 import fr.openium.sga.ConfigApp;
 import fr.openium.sga.emmatest.Emma;
 
@@ -18,7 +18,8 @@ public class Command {
 		 * -r html -in
 		 * ../../sgdExample/bin/coverage.em,../../sgdExample/bin/coverage.ec
 		 */
-		String javaEmma = ConfigApp.JAVA_CP + sdkPath + ConfigApp.EMMAJARPATH + File.separator + ConfigApp.EMMAXMLREPORT + fileTomerge[0];
+		String javaEmma = ConfigApp.JAVA_CP + sdkPath + ConfigApp.EMMAJARPATH
+				+ File.separator + ConfigApp.EMMAXMLREPORT + fileTomerge[0];
 		Emma.info("[Command]: " + javaEmma);
 		for (int i = 1; i < fileTomerge.length; i++) {
 			javaEmma = javaEmma + "," + fileTomerge[i];

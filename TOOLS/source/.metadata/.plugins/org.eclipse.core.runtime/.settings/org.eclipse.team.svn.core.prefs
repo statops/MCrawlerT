@@ -1,0 +1,5 @@
+#Thu Jul 31 12:20:48 CEST 2014
+eclipse.preferences.version=1
+repositories/e0e9ff549c1800141f90986b2436731f=e0e9ff549c1800141f90986b2436731f;https\://svn.openium.fr/scenario-gen;https\://svn.openium.fr/scenario-gen;branches;tags;trunk;true;;;;false;;;0
+externalMigrateFromAuthorizationDatabase/isMigrated=true
+migrateFromAuthorizationDatabase/isMigrated=true

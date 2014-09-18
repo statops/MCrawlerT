@@ -16,11 +16,11 @@
     <!-- projects directories -->
     <property name="Bissimilation.location" value="${all.project.dir}/TreeModelMinimisation"/>
     <property name="sgaDesktop.location" value="${all.project.dir}/sgaDesktop"/>
-    <property name="sgdAndroidKit.location" value="${all.project.dir}/MCrawlerTAndroidKit"/>
+    <property name="sgdAndroidKit.location" value="${all.project.dir}/sgdAndroidKit"/>
     <property name="TaskPoolJava.location" value="${all.project.dir}/TaskPoolManager"/>
     <property name="sgdJunitTranslator.location" value="${all.project.dir}/MCrawlerTJUNITTranslator"/>
     <property name="sgd.location" value="${all.project.dir}/MCrawlerTDesktop"/>
-    <property name="sga.location" value="${all.project.dir}/sgaMobile"/>
+    <property name="sga.location" value="${all.project.dir}/sga"/>
     <property name="STSDisplayer.location" value="${all.project.dir}/STSDisplayer"/>
     <property name="inittools.location" value="${all.project.dir}/tools"/>
     <!-- output directory for tools -->
@@ -107,7 +107,7 @@
         <pathelement location="${mcrawlert.libs.utils}/commons-io-2.4.jar"/>
         <pathelement location="${mcrawlert.libs.utils}/android-support-v4.jar"/>
     </path>
-     
+    
     <path id="JUnit 4.libraryclasspath">
         <pathelement location="${ECLIPSE_HOME}/plugins/org.junit_4.8.2.v4_8_2_v20110321-1705/junit.jar"/>
         <pathelement location="${ECLIPSE_HOME}/plugins/org.hamcrest.core_1.1.0.v20090501071000.jar"/>

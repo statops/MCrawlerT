@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 import kit.Scenario.ScenarioGenerator;
 import fr.openium.sga.ConfigApp;
-import fr.openium.sga.emmatest.Emma;
+import fr.openium.sga.Utils.Utils;
 import fr.openium.sga.emmatest.SgdEnvironnement;
 import fr.openium.sga.result.CrawlResult;
 import fr.openium.sga.threadPool.AndroidCrawler;
@@ -47,7 +47,7 @@ public abstract class AntStrategy extends AbstractStrategy {
 				: mSgdEnvironnement.getMaxTime();
 	}
 
-	//private static final String TAG = AntStrategy.class.getName();
+	// private static final String TAG = AntStrategy.class.getName();
 
 	@Override
 	public CrawlResult getResult() throws Exception {
@@ -104,7 +104,7 @@ public abstract class AntStrategy extends AbstractStrategy {
 			/*
 			 * }
 			 */
-			if (Emma.limit_time_isReached(initTime, MAX_TIME)) {
+			if (Utils.limit_time_isReached(initTime, MAX_TIME)) {
 				System.out.println("Time " + MAX_TIME + " seconds is reached");
 				/**
 				 * soft stop.
@@ -120,12 +120,12 @@ public abstract class AntStrategy extends AbstractStrategy {
 			try {
 				Thread.sleep(1000);
 				n = n + 1;
-				System.out.print("."); 
+				System.out.print(".");
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
 		} while (!taskState);
-		
+
 		System.out.println("Test, finished after" + n + " seconds");
 		/*
 		 * fin de crawl
@@ -134,24 +134,29 @@ public abstract class AntStrategy extends AbstractStrategy {
 		/*
 		 * Bissimulation
 		 */
-		mResult.compute_bissimilation();
+		try {
+			mResult.compute_bissimilation();
+		} catch (Exception graphEx) {
+			graphEx.printStackTrace();
+		}
+
 		/*
 		 * 
 		 */
-		/*for (String emulator : emManager.getList_Available_Emulator()) {
-			mSgdEnvironnement.setDevice(emulator);
-			if (!ConfigApp.DEBUG) {
-				// mSgdEnvironnement.finish();
-			}
-
-		}*/
+		/*
+		 * for (String emulator : emManager.getList_Available_Emulator()) {
+		 * mSgdEnvironnement.setDevice(emulator); if (!ConfigApp.DEBUG) { //
+		 * mSgdEnvironnement.finish(); }
+		 * 
+		 * }
+		 */
 		ScenarioGenerator gen = new ScenarioGenerator(
 				mSgdEnvironnement.getOutDirectory());
 		gen.generateXml(mResult.getScenarioData());
 		return mResult;
 	}
 
-	private ArrayList<AndroidCrawler> get_init_Tasks()
+	protected ArrayList<AndroidCrawler> get_init_Tasks()
 			throws CloneNotSupportedException, IOException {
 		/**
 		 * serialiser

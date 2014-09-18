@@ -7,7 +7,6 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.HashSet;
 
-import kit.RandomValue.RandomValue;
 import kit.RandomValue.RandomValueData;
 import kit.RandomValue.RandomValueParser;
 import kit.Scenario.ScenarioData;
@@ -33,17 +32,13 @@ public class SemanticStrategy extends AntStrategy {
 		mResult = new CrawlResult(
 				new File(mSgdEnvironnement.getOutDirectory()), this);
 	}
-	
+
 	public SemanticStrategy(SgdEnvironnement env) {
-		super(env,null);
+		super(env, null);
 		mResult = new CrawlResult(
 				new File(mSgdEnvironnement.getOutDirectory()), this);
 	}
 
-	
-	private static final String TAG = SemanticStrategy.class.getName();
-	
-	
 	public static LoggingSemantic getLoggingSemantic(String testData) {
 		System.out.println(" is in LoggingSemantic: ");
 		ArrayList<String> semantic = new ArrayList<String>();
@@ -52,7 +47,7 @@ public class SemanticStrategy extends AntStrategy {
 		 * � lire � partir d'un fichier
 		 */
 		RandomValueParser parser = new RandomValueParser();
-		data = parser.parse(new File (testData));
+		data = parser.parse(new File(testData));
 		if (data == null || data.isEmpty()) {
 			System.out.println("data==null");
 			semantic.add("file");
@@ -71,8 +66,6 @@ public class SemanticStrategy extends AntStrategy {
 		return sem;
 	}
 
-	
-	
 	private static LoggingSemantic getLoggingSemantic() {
 		return getLoggingSemantic(mSgdEnvironnement.getAllTestDataPath());
 	}

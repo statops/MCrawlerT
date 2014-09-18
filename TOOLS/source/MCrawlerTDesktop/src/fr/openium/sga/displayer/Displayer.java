@@ -6,6 +6,11 @@ import java.io.File;
 
 import javax.swing.JFrame;
 
+import org.graphstream.stream.file.FileSinkImages;
+import org.graphstream.stream.file.FileSinkImages.LayoutPolicy;
+import org.graphstream.stream.file.FileSinkImages.OutputType;
+import org.graphstream.stream.file.FileSinkImages.Resolutions;
+
 import kit.Scenario.ScenarioData;
 import kit.Scenario.ScenarioParser;
 
@@ -36,15 +41,14 @@ public class Displayer extends JFrame {
 				robotiumScreenShot, story_board_type, pad, x, y);
 
 		Component toDisplay = storyboard.getStoryBoard();
-		/*
-		 * FileSinkImages pic = new FileSinkImages(OutputType.PNG,
-		 * Resolutions.VGA);
-		 * 
-		 * pic.setLayoutPolicy(LayoutPolicy.COMPUTED_FULLY_AT_NEW_IMAGE);
-		 * pic.writeAll(storyboard.getGraph(),
-		 * robotiumScreenShot.getAbsolutePath
-		 * ()+File.separator+"storyBoard.png");
-		 */StoryBoardController c = new StoryBoardController(toDisplay);
+
+		FileSinkImages pic = new FileSinkImages(OutputType.PNG, Resolutions.VGA);
+		pic.setLayoutPolicy(LayoutPolicy.COMPUTED_FULLY_AT_NEW_IMAGE);
+		pic.writeAll(storyboard.getGraph(),
+				robotiumScreenShot.getAbsolutePath() + File.separator
+						+ story_board_type + "storyBoard.png");
+
+		StoryBoardController c = new StoryBoardController(toDisplay);
 		this.addWindowListener(c);
 		setMinimumSize(new Dimension(1200, 800));
 		setTitle("Story board of " + appName);
@@ -69,15 +73,17 @@ public class Displayer extends JFrame {
 		int pad = 30;
 		int x = 30;
 		int y = 45;
-		pad = (args.length>5 &&args[5] != null) ? Integer.parseInt(args[5]) : pad;
-		x = (args.length>6 && args[6] != null) ? Integer.parseInt(args[6]) : x;
-		y = (args.length>7 && args[7] != null) ? Integer.parseInt(args[7]) : y;
+		pad = (args.length > 5 && args[5] != null) ? Integer.parseInt(args[5])
+				: pad;
+		x = (args.length > 6 && args[6] != null) ? Integer.parseInt(args[6])
+				: x;
+		y = (args.length > 7 && args[7] != null) ? Integer.parseInt(args[7])
+				: y;
 
 		// Displayer fen = new Displayer(ScenarioParser.parse(new
 		// File(args[1])),
 		// args[2], new File(args[3]), Integer.parseInt(tree_type), pad, x, y,
 		// y);
-
 		Displayer window = new Displayer(
 				ScenarioParser.parse(new File(args[1])), args[2], new File(
 						args[3]), Integer.parseInt(tree_type), pad, x, y);

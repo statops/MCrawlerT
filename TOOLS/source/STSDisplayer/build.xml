@@ -10,7 +10,7 @@
             <path refid="Bissimilation.classpath"/>
             <path refid="sgdAndroidKit.classpath"/>
             <pathelement location="${STSDisplayer.location}/${lib.dir}/android.jar"/>
-            <pathelement location="$${STSDisplayer.location}/{lib.dir}/biss.jar"/>
+            <pathelement location="${STSDisplayer.location}/{lib.dir}/biss.jar"/>
          </path>
     <target name="init">
         <mkdir dir="${build.dir}"/>

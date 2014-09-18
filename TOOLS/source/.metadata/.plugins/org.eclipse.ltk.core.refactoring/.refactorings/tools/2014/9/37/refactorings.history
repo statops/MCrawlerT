@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;plugins&apos; to &apos;eclipse&apos;&#x0A;- Original project: &apos;tools&apos;&#x0A;- Destination element: &apos;eclipse&apos;&#x0A;- Original element: &apos;plugins&apos;" description="Copy folder" element1="eclipse/plugins" files="0" flags="589830" folders="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1410517709574" target="/McrawlerTLibs/eclipse" units="0" version="1.0"/>
+</session>

@@ -20,10 +20,11 @@ public class CrashStrategy extends AntStrategy implements IStrategy {
 	 */
 	public CrashStrategy(SgdEnvironnement env, String initactivity) {
 		super(env, initactivity);
-		mResult = new CrawlResult(new File(mSgdEnvironnement.getOutDirectory()), this);
+		mResult = new CrawlResult(
+				new File(mSgdEnvironnement.getOutDirectory()), this);
 	}
 
-	private static final String TAG = CrashStrategy.class.getName();
+	// private static final String TAG = CrashStrategy.class.getName();
 
 	/*
 	 * (non-Javadoc)

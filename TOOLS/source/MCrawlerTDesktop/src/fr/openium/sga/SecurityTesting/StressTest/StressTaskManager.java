@@ -18,6 +18,7 @@ import kit.Utils.SgUtils;
 import fr.openium.sga.ConfigApp;
 import fr.openium.sga.SecurityTesting.AbstractTest.AbstractTaskManager;
 import fr.openium.sga.SecurityTesting.AbstractTest.AbstractTestTask;
+import fr.openium.sga.Utils.Utils;
 import fr.openium.sga.emmatest.Emma;
 import fr.openium.sga.emmatest.SgdEnvironnement;
 import fr.openium.sga.reporter.StressTestReporter;
@@ -198,7 +199,7 @@ public class StressTaskManager extends AbstractTaskManager {
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
-			if (Emma.limit_time_isReached(initTime, MAX_TIME)) {
+			if (Utils.limit_time_isReached(initTime, MAX_TIME)) {
 				System.out.println("Time " + MAX_TIME + " seconds is reached");
 				tm.stop();
 				break;

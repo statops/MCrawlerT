@@ -1,0 +1,1126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scenario version="0">
+	<alphabet>
+		<action name="" />
+		<action name="click button" />
+		<action name="edit text" />
+	</alphabet>
+	<states initial="fr.openium.example.exampleforsgd.MainActivity"
+		id="0">
+		<state name="fr.openium.example.exampleforsgd.MainActivity" id="9"
+			type="dest" time="" end="true">
+			<widget name="fr.openium.example.exampleforsgd:id/e5" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="statops@yahoo.fr" />
+			<widget name="fr.openium.example.exampleforsgd:id/e4" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="crash" />
+			<widget name="fr.openium.example.exampleforsgd:id/b1" type="android.widget.Button"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="fr.openium.example.exampleforsgd:id/e3" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="openium@openum.fr" />
+			<widget name="fr.openium.example.exampleforsgd:id/e2" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="statops@yahoo.fr" />
+			<widget name="fr.openium.example.exampleforsgd:id/e1" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="0" />
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="ExampleForSgd: Formulaire 1" />
+		</state>
+		<state name="fr.openium.example.exampleforsgd.MainActivity" id="9"
+			type="source" time="" end="false">
+			<widget name="fr.openium.example.exampleforsgd:id/e5" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="statops@yahoo.fr" />
+			<widget name="fr.openium.example.exampleforsgd:id/e4" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="12021666666456" />
+			<widget name="fr.openium.example.exampleforsgd:id/b1" type="android.widget.Button"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="fr.openium.example.exampleforsgd:id/e3" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="openium" />
+			<widget name="fr.openium.example.exampleforsgd:id/e2" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="help" />
+			<widget name="fr.openium.example.exampleforsgd:id/e1" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="0" />
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="ExampleForSgd: Formulaire 1" />
+		</state>
+		<state name="fr.openium.example.exampleforsgd.ButtonActivity"
+			id="6" type="dest" time="" end="true">
+			<widget name="fr.openium.example.exampleforsgd:id/radioButton1"
+				type="android.widget.Button" posX="" posY="" visibility="0" enable="true"
+				pressed="false" shown="true" selected="false" value="" />
+			<widget name="fr.openium.example.exampleforsgd:id/button1"
+				type="android.widget.Button" posX="" posY="" visibility="0" enable="true"
+				pressed="false" shown="true" selected="false" value="" />
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Clique de 2 type de boutton différent" />
+		</state>
+		<state name="fr.openium.example.exampleforsgd.ButtonActivity"
+			id="2" type="dest" time="" end="false">
+			<widget name="fr.openium.example.exampleforsgd:id/radioButton1"
+				type="android.widget.Button" posX="" posY="" visibility="0" enable="true"
+				pressed="false" shown="true" selected="false" value="" />
+			<widget name="fr.openium.example.exampleforsgd:id/button1"
+				type="android.widget.Button" posX="" posY="" visibility="0" enable="true"
+				pressed="false" shown="true" selected="false" value="" />
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Clique de 2 type de boutton différent" />
+		</state>
+		<state name="fr.openium.example.exampleforsgd.MainActivity" id="4"
+			type="source" time="" end="false">
+			<widget name="fr.openium.example.exampleforsgd:id/e5" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="openium@openum.fr" />
+			<widget name="fr.openium.example.exampleforsgd:id/e4" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="12021666666456" />
+			<widget name="fr.openium.example.exampleforsgd:id/b1" type="android.widget.Button"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="fr.openium.example.exampleforsgd:id/e3" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="statops@yahoo.fr" />
+			<widget name="fr.openium.example.exampleforsgd:id/e2" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="openium" />
+			<widget name="fr.openium.example.exampleforsgd:id/e1" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="crash" />
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="ExampleForSgd: Formulaire 1" />
+		</state>
+		<state name="fr.openium.example.exampleforsgd.MainActivity" id="1"
+			type="dest" time="" end="false">
+			<widget name="fr.openium.example.exampleforsgd:id/e5" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="bar@example.com" />
+			<widget name="fr.openium.example.exampleforsgd:id/e4" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="crash" />
+			<widget name="fr.openium.example.exampleforsgd:id/b1" type="android.widget.Button"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="fr.openium.example.exampleforsgd:id/e3" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="ok" />
+			<widget name="fr.openium.example.exampleforsgd:id/e2" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="openium@openum.fr" />
+			<widget name="fr.openium.example.exampleforsgd:id/e1" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="crash" />
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="ExampleForSgd: Formulaire 1" />
+		</state>
+		<state name="fr.openium.example.exampleforsgd.MainActivity" id="1"
+			type="source" time="" end="false">
+			<widget name="fr.openium.example.exampleforsgd:id/e5" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="fr.openium.example.exampleforsgd:id/e4" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="fr.openium.example.exampleforsgd:id/b1" type="android.widget.Button"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="fr.openium.example.exampleforsgd:id/e3" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="fr.openium.example.exampleforsgd:id/e2" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="fr.openium.example.exampleforsgd:id/e1" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="ExampleForSgd: Formulaire 1" />
+		</state>
+		<state name="fr.openium.example.exampleforsgd.ButtonActivity"
+			id="8" type="dest" time="" end="true">
+			<widget name="fr.openium.example.exampleforsgd:id/radioButton1"
+				type="android.widget.Button" posX="" posY="" visibility="0" enable="true"
+				pressed="false" shown="true" selected="false" value="" />
+			<widget name="fr.openium.example.exampleforsgd:id/button1"
+				type="android.widget.Button" posX="" posY="" visibility="0" enable="true"
+				pressed="false" shown="true" selected="false" value="" />
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Clique de 2 type de boutton différent" />
+		</state>
+		<state name="fr.openium.example.exampleforsgd.MainActivity" id="7"
+			type="dest" time="" end="true">
+			<widget name="fr.openium.example.exampleforsgd:id/e5" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="statops@yahoo.fr" />
+			<widget name="fr.openium.example.exampleforsgd:id/e4" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="12021666666456" />
+			<widget name="fr.openium.example.exampleforsgd:id/b1" type="android.widget.Button"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="fr.openium.example.exampleforsgd:id/e3" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="openium" />
+			<widget name="fr.openium.example.exampleforsgd:id/e2" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="help" />
+			<widget name="fr.openium.example.exampleforsgd:id/e1" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="0" />
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="ExampleForSgd: Formulaire 1" />
+		</state>
+		<state name="fr.openium.example.exampleforsgd.MainActivity" id="7"
+			type="source" time="" end="false">
+			<widget name="fr.openium.example.exampleforsgd:id/e5" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="statops@yahoo.fr" />
+			<widget name="fr.openium.example.exampleforsgd:id/e4" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="0" />
+			<widget name="fr.openium.example.exampleforsgd:id/b1" type="android.widget.Button"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="fr.openium.example.exampleforsgd:id/e3" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="ok" />
+			<widget name="fr.openium.example.exampleforsgd:id/e2" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="openium" />
+			<widget name="fr.openium.example.exampleforsgd:id/e1" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="12021666666456" />
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="ExampleForSgd: Formulaire 1" />
+		</state>
+		<state name="fr.openium.example.exampleforsgd.MainActivity" id="8"
+			type="source" time="" end="false">
+			<widget name="fr.openium.example.exampleforsgd:id/e5" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="statops@yahoo.fr" />
+			<widget name="fr.openium.example.exampleforsgd:id/e4" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="12021666666456" />
+			<widget name="fr.openium.example.exampleforsgd:id/b1" type="android.widget.Button"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="fr.openium.example.exampleforsgd:id/e3" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="openium" />
+			<widget name="fr.openium.example.exampleforsgd:id/e2" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="help" />
+			<widget name="fr.openium.example.exampleforsgd:id/e1" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="0" />
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="ExampleForSgd: Formulaire 1" />
+		</state>
+		<state name="fr.openium.example.exampleforsgd.ButtonActivity"
+			id="4" type="dest" time="" end="true">
+			<widget name="fr.openium.example.exampleforsgd:id/radioButton1"
+				type="android.widget.Button" posX="" posY="" visibility="0" enable="true"
+				pressed="false" shown="true" selected="false" value="" />
+			<widget name="fr.openium.example.exampleforsgd:id/button1"
+				type="android.widget.Button" posX="" posY="" visibility="0" enable="true"
+				pressed="false" shown="true" selected="false" value="" />
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Clique de 2 type de boutton différent" />
+		</state>
+		<state name="end" id="0" type="" time="" end="true" />
+		<state name="fr.openium.example.exampleforsgd.MainActivity" id="6"
+			type="source" time="" end="false">
+			<widget name="fr.openium.example.exampleforsgd:id/e5" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="statops@yahoo.fr" />
+			<widget name="fr.openium.example.exampleforsgd:id/e4" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="0" />
+			<widget name="fr.openium.example.exampleforsgd:id/b1" type="android.widget.Button"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="fr.openium.example.exampleforsgd:id/e3" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="ok" />
+			<widget name="fr.openium.example.exampleforsgd:id/e2" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="openium" />
+			<widget name="fr.openium.example.exampleforsgd:id/e1" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="12021666666456" />
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="ExampleForSgd: Formulaire 1" />
+		</state>
+		<state name="fr.openium.example.exampleforsgd.MainActivity" id="5"
+			type="dest" time="" end="true">
+			<widget name="fr.openium.example.exampleforsgd:id/e5" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="statops@yahoo.fr" />
+			<widget name="fr.openium.example.exampleforsgd:id/e4" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="0" />
+			<widget name="fr.openium.example.exampleforsgd:id/b1" type="android.widget.Button"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="fr.openium.example.exampleforsgd:id/e3" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="ok" />
+			<widget name="fr.openium.example.exampleforsgd:id/e2" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="openium" />
+			<widget name="fr.openium.example.exampleforsgd:id/e1" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="12021666666456" />
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="ExampleForSgd: Formulaire 1" />
+		</state>
+		<state name="fr.openium.example.exampleforsgd.MainActivity" id="5"
+			type="source" time="" end="false">
+			<widget name="fr.openium.example.exampleforsgd:id/e5" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="openium@openum.fr" />
+			<widget name="fr.openium.example.exampleforsgd:id/e4" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="12021666666456" />
+			<widget name="fr.openium.example.exampleforsgd:id/b1" type="android.widget.Button"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="fr.openium.example.exampleforsgd:id/e3" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="statops@yahoo.fr" />
+			<widget name="fr.openium.example.exampleforsgd:id/e2" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="openium" />
+			<widget name="fr.openium.example.exampleforsgd:id/e1" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="crash" />
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="ExampleForSgd: Formulaire 1" />
+		</state>
+		<state name="fr.openium.example.exampleforsgd.MainActivity" id="2"
+			type="source" time="" end="false">
+			<widget name="fr.openium.example.exampleforsgd:id/e5" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="bar@example.com" />
+			<widget name="fr.openium.example.exampleforsgd:id/e4" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="crash" />
+			<widget name="fr.openium.example.exampleforsgd:id/b1" type="android.widget.Button"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="fr.openium.example.exampleforsgd:id/e3" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="ok" />
+			<widget name="fr.openium.example.exampleforsgd:id/e2" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="openium@openum.fr" />
+			<widget name="fr.openium.example.exampleforsgd:id/e1" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="crash" />
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="ExampleForSgd: Formulaire 1" />
+		</state>
+		<state name="fr.openium.example.exampleforsgd.MainActivity" id="10"
+			type="source" time="" end="false">
+			<widget name="fr.openium.example.exampleforsgd:id/e5" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="statops@yahoo.fr" />
+			<widget name="fr.openium.example.exampleforsgd:id/e4" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="crash" />
+			<widget name="fr.openium.example.exampleforsgd:id/b1" type="android.widget.Button"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="fr.openium.example.exampleforsgd:id/e3" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="openium@openum.fr" />
+			<widget name="fr.openium.example.exampleforsgd:id/e2" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="statops@yahoo.fr" />
+			<widget name="fr.openium.example.exampleforsgd:id/e1" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="0" />
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="ExampleForSgd: Formulaire 1" />
+		</state>
+		<state name="fr.openium.example.exampleforsgd.MainActivity" id="3"
+			type="dest" time="" end="true">
+			<widget name="fr.openium.example.exampleforsgd:id/e5" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="openium@openum.fr" />
+			<widget name="fr.openium.example.exampleforsgd:id/e4" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="12021666666456" />
+			<widget name="fr.openium.example.exampleforsgd:id/b1" type="android.widget.Button"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="fr.openium.example.exampleforsgd:id/e3" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="statops@yahoo.fr" />
+			<widget name="fr.openium.example.exampleforsgd:id/e2" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="openium" />
+			<widget name="fr.openium.example.exampleforsgd:id/e1" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="crash" />
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="ExampleForSgd: Formulaire 1" />
+		</state>
+		<state name="fr.openium.example.exampleforsgd.MainActivity" id="3"
+			type="source" time="" end="false">
+			<widget name="fr.openium.example.exampleforsgd:id/e5" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="bar@example.com" />
+			<widget name="fr.openium.example.exampleforsgd:id/e4" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="crash" />
+			<widget name="fr.openium.example.exampleforsgd:id/b1" type="android.widget.Button"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="fr.openium.example.exampleforsgd:id/e3" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="ok" />
+			<widget name="fr.openium.example.exampleforsgd:id/e2" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="openium@openum.fr" />
+			<widget name="fr.openium.example.exampleforsgd:id/e1" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="crash" />
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="ExampleForSgd: Formulaire 1" />
+		</state>
+		<state name="fr.openium.example.exampleforsgd.LoginActivity" id="10"
+			type="dest" time="" end="false">
+			<widget name="fr.openium.example.exampleforsgd:id/sign_in_button"
+				type="android.widget.Button" posX="" posY="" visibility="0" enable="true"
+				pressed="false" shown="true" selected="false" value="" />
+			<widget name="fr.openium.example.exampleforsgd:id/password"
+				type="android.widget.EditText" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="true" selected="false" value="" />
+			<widget name="fr.openium.example.exampleforsgd:id/email" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="statops@yahoo.fr" />
+			<widget name="fr.openium.example.exampleforsgd:id/login_status_message"
+				type="android.widget.TextView" posX="" posY="" visibility="0"
+				enable="true" pressed="false" shown="false" selected="false" value="Signing in…" />
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="Sign in Operation" />
+		</state>
+		<state name="fr.openium.example.exampleforsgd.MainActivity" id="0"
+			type="source" time="15:28:03" end="false">
+			<widget name="fr.openium.example.exampleforsgd:id/e5" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="fr.openium.example.exampleforsgd:id/e4" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="fr.openium.example.exampleforsgd:id/b1" type="android.widget.Button"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="fr.openium.example.exampleforsgd:id/e3" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="fr.openium.example.exampleforsgd:id/e2" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="fr.openium.example.exampleforsgd:id/e1" type="android.widget.EditText"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="" />
+			<widget name="android:id/title" type="android.widget.TextView"
+				posX="" posY="" visibility="0" enable="true" pressed="false" shown="true"
+				selected="false" value="ExampleForSgd: Formulaire 1" />
+		</state>
+	</states>
+	<transitions id="1,2" name="">
+		<transition id="1"
+			source="fr.openium.example.exampleforsgd.MainActivity" dest="fr.openium.example.exampleforsgd.MainActivity">
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e4" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="crash" />
+			</action>
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e1" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="crash" />
+			</action>
+			<action name="android.widget.TextView_: ExampleForSgd: Formulaire 1">
+				<widget name="android:id/title" type="android.widget.TextView"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="" />
+			</action>
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e3" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="ok" />
+			</action>
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e2" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="openium@openum.fr" />
+			</action>
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e5" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="bar@example.com" />
+			</action>
+		</transition>
+		<transition id="2"
+			source="fr.openium.example.exampleforsgd.MainActivity" dest="fr.openium.example.exampleforsgd.ButtonActivity">
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e4" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="crash" />
+			</action>
+			<action name="click button">
+				<widget name="fr.openium.example.exampleforsgd:id/b1" type="Button"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="" />
+			</action>
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e1" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="crash" />
+			</action>
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e3" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="ok" />
+			</action>
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e2" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="openium@openum.fr" />
+			</action>
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e5" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="bar@example.com" />
+			</action>
+		</transition>
+		<transition id="3"
+			source="fr.openium.example.exampleforsgd.MainActivity" dest="fr.openium.example.exampleforsgd.MainActivity">
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e4" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="12021666666456" />
+			</action>
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e1" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="crash" />
+			</action>
+			<action name="android.widget.TextView_: ExampleForSgd: Formulaire 1">
+				<widget name="android:id/title" type="android.widget.TextView"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="" />
+			</action>
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e3" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="statops@yahoo.fr" />
+			</action>
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e2" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="openium" />
+			</action>
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e5" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="openium@openum.fr" />
+			</action>
+		</transition>
+		<transition id="4"
+			source="fr.openium.example.exampleforsgd.MainActivity" dest="fr.openium.example.exampleforsgd.ButtonActivity">
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e4" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="12021666666456" />
+			</action>
+			<action name="click button">
+				<widget name="fr.openium.example.exampleforsgd:id/b1" type="Button"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="" />
+			</action>
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e1" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="crash" />
+			</action>
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e3" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="statops@yahoo.fr" />
+			</action>
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e2" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="openium" />
+			</action>
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e5" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="openium@openum.fr" />
+			</action>
+		</transition>
+		<transition id="5"
+			source="fr.openium.example.exampleforsgd.MainActivity" dest="fr.openium.example.exampleforsgd.MainActivity">
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e4" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="0" />
+			</action>
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e1" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="12021666666456" />
+			</action>
+			<action name="android.widget.TextView_: ExampleForSgd: Formulaire 1">
+				<widget name="android:id/title" type="android.widget.TextView"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="" />
+			</action>
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e3" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="ok" />
+			</action>
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e2" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="openium" />
+			</action>
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e5" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="statops@yahoo.fr" />
+			</action>
+		</transition>
+		<transition id="6"
+			source="fr.openium.example.exampleforsgd.MainActivity" dest="fr.openium.example.exampleforsgd.ButtonActivity">
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e4" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="0" />
+			</action>
+			<action name="click button">
+				<widget name="fr.openium.example.exampleforsgd:id/b1" type="Button"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="" />
+			</action>
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e1" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="12021666666456" />
+			</action>
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e3" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="ok" />
+			</action>
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e2" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="openium" />
+			</action>
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e5" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="statops@yahoo.fr" />
+			</action>
+		</transition>
+		<transition id="7"
+			source="fr.openium.example.exampleforsgd.MainActivity" dest="fr.openium.example.exampleforsgd.MainActivity">
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e4" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="12021666666456" />
+			</action>
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e1" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="0" />
+			</action>
+			<action name="android.widget.TextView_: ExampleForSgd: Formulaire 1">
+				<widget name="android:id/title" type="android.widget.TextView"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="" />
+			</action>
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e3" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="openium" />
+			</action>
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e2" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="help" />
+			</action>
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e5" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="statops@yahoo.fr" />
+			</action>
+		</transition>
+		<transition id="8"
+			source="fr.openium.example.exampleforsgd.MainActivity" dest="fr.openium.example.exampleforsgd.ButtonActivity">
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e4" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="12021666666456" />
+			</action>
+			<action name="click button">
+				<widget name="fr.openium.example.exampleforsgd:id/b1" type="Button"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="" />
+			</action>
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e1" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="0" />
+			</action>
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e3" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="openium" />
+			</action>
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e2" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="help" />
+			</action>
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e5" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="statops@yahoo.fr" />
+			</action>
+		</transition>
+		<transition id="9"
+			source="fr.openium.example.exampleforsgd.MainActivity" dest="fr.openium.example.exampleforsgd.MainActivity">
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e4" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="crash" />
+			</action>
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e1" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="0" />
+			</action>
+			<action name="android.widget.TextView_: ExampleForSgd: Formulaire 1">
+				<widget name="android:id/title" type="android.widget.TextView"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="" />
+			</action>
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e3" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="openium@openum.fr" />
+			</action>
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e2" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="statops@yahoo.fr" />
+			</action>
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e5" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="statops@yahoo.fr" />
+			</action>
+		</transition>
+		<transition id="10"
+			source="fr.openium.example.exampleforsgd.MainActivity" dest="end">
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e4" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="crash" />
+			</action>
+			<action name="click button">
+				<widget name="fr.openium.example.exampleforsgd:id/b1" type="Button"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="" />
+			</action>
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e1" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="0" />
+			</action>
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e3" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="openium@openum.fr" />
+			</action>
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e2" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="statops@yahoo.fr" />
+			</action>
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e5" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="statops@yahoo.fr" />
+			</action>
+		</transition>
+	</transitions>
+	<transitions id="1,1" name="">
+		<transition id="1"
+			source="fr.openium.example.exampleforsgd.MainActivity" dest="fr.openium.example.exampleforsgd.MainActivity">
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e4" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="crash" />
+			</action>
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e1" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="crash" />
+			</action>
+			<action name="android.widget.TextView_: ExampleForSgd: Formulaire 1">
+				<widget name="android:id/title" type="android.widget.TextView"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="" />
+			</action>
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e3" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="ok" />
+			</action>
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e2" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="openium@openum.fr" />
+			</action>
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e5" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="bar@example.com" />
+			</action>
+		</transition>
+		<transition id="2"
+			source="fr.openium.example.exampleforsgd.MainActivity" dest="fr.openium.example.exampleforsgd.ButtonActivity">
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e4" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="crash" />
+			</action>
+			<action name="click button">
+				<widget name="fr.openium.example.exampleforsgd:id/b1" type="Button"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="" />
+			</action>
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e1" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="crash" />
+			</action>
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e3" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="ok" />
+			</action>
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e2" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="openium@openum.fr" />
+			</action>
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e5" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="bar@example.com" />
+			</action>
+		</transition>
+		<transition id="3"
+			source="fr.openium.example.exampleforsgd.MainActivity" dest="fr.openium.example.exampleforsgd.MainActivity">
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e4" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="12021666666456" />
+			</action>
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e1" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="crash" />
+			</action>
+			<action name="android.widget.TextView_: ExampleForSgd: Formulaire 1">
+				<widget name="android:id/title" type="android.widget.TextView"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="" />
+			</action>
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e3" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="statops@yahoo.fr" />
+			</action>
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e2" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="openium" />
+			</action>
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e5" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="openium@openum.fr" />
+			</action>
+		</transition>
+		<transition id="4"
+			source="fr.openium.example.exampleforsgd.MainActivity" dest="fr.openium.example.exampleforsgd.ButtonActivity">
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e4" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="12021666666456" />
+			</action>
+			<action name="click button">
+				<widget name="fr.openium.example.exampleforsgd:id/b1" type="Button"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="" />
+			</action>
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e1" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="crash" />
+			</action>
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e3" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="statops@yahoo.fr" />
+			</action>
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e2" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="openium" />
+			</action>
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e5" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="openium@openum.fr" />
+			</action>
+		</transition>
+		<transition id="5"
+			source="fr.openium.example.exampleforsgd.MainActivity" dest="fr.openium.example.exampleforsgd.MainActivity">
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e4" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="0" />
+			</action>
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e1" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="12021666666456" />
+			</action>
+			<action name="android.widget.TextView_: ExampleForSgd: Formulaire 1">
+				<widget name="android:id/title" type="android.widget.TextView"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="" />
+			</action>
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e3" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="ok" />
+			</action>
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e2" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="openium" />
+			</action>
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e5" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="statops@yahoo.fr" />
+			</action>
+		</transition>
+		<transition id="6"
+			source="fr.openium.example.exampleforsgd.MainActivity" dest="fr.openium.example.exampleforsgd.ButtonActivity">
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e4" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="0" />
+			</action>
+			<action name="click button">
+				<widget name="fr.openium.example.exampleforsgd:id/b1" type="Button"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="" />
+			</action>
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e1" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="12021666666456" />
+			</action>
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e3" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="ok" />
+			</action>
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e2" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="openium" />
+			</action>
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e5" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="statops@yahoo.fr" />
+			</action>
+		</transition>
+		<transition id="7"
+			source="fr.openium.example.exampleforsgd.MainActivity" dest="fr.openium.example.exampleforsgd.MainActivity">
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e4" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="12021666666456" />
+			</action>
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e1" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="0" />
+			</action>
+			<action name="android.widget.TextView_: ExampleForSgd: Formulaire 1">
+				<widget name="android:id/title" type="android.widget.TextView"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="" />
+			</action>
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e3" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="openium" />
+			</action>
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e2" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="help" />
+			</action>
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e5" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="statops@yahoo.fr" />
+			</action>
+		</transition>
+		<transition id="8"
+			source="fr.openium.example.exampleforsgd.MainActivity" dest="fr.openium.example.exampleforsgd.ButtonActivity">
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e4" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="12021666666456" />
+			</action>
+			<action name="click button">
+				<widget name="fr.openium.example.exampleforsgd:id/b1" type="Button"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="" />
+			</action>
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e1" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="0" />
+			</action>
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e3" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="openium" />
+			</action>
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e2" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="help" />
+			</action>
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e5" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="statops@yahoo.fr" />
+			</action>
+		</transition>
+		<transition id="9"
+			source="fr.openium.example.exampleforsgd.MainActivity" dest="fr.openium.example.exampleforsgd.MainActivity">
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e4" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="crash" />
+			</action>
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e1" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="0" />
+			</action>
+			<action name="android.widget.TextView_: ExampleForSgd: Formulaire 1">
+				<widget name="android:id/title" type="android.widget.TextView"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="" />
+			</action>
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e3" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="openium@openum.fr" />
+			</action>
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e2" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="statops@yahoo.fr" />
+			</action>
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e5" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="statops@yahoo.fr" />
+			</action>
+		</transition>
+		<transition id="10"
+			source="fr.openium.example.exampleforsgd.MainActivity" dest="end">
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e4" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="crash" />
+			</action>
+			<action name="click button">
+				<widget name="fr.openium.example.exampleforsgd:id/b1" type="Button"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="" />
+			</action>
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e1" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="0" />
+			</action>
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e3" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="openium@openum.fr" />
+			</action>
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e2" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="statops@yahoo.fr" />
+			</action>
+			<action name="edit text">
+				<widget name="fr.openium.example.exampleforsgd:id/e5" type="EditText"
+					posX="" posY="" visibility="" enable="" pressed="" shown=""
+					selected="" value="statops@yahoo.fr" />
+			</action>
+		</transition>
+	</transitions>
+</Scenario>

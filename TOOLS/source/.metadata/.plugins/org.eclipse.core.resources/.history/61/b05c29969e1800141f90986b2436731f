@@ -1,0 +1,64 @@
+/**
+ * 
+ */
+package test;
+
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
+
+import java.io.File;
+import java.io.IOException;
+
+import kit.Command.PullCommand;
+import kit.Config.Config;
+
+import org.junit.Test;
+
+import fr.openium.sgaDesktop.Sga;
+
+/**
+ * @author Stassia
+ * 
+ */
+public class SgaTest {
+	private static final String TAG = SgaTest.class.getName();
+
+	@Test
+	public void test10() throws IOException, InterruptedException {
+		Sga sga = new Sga("fr.openium.converterexample.test.MainTest", "false",
+				"fr.openium.converterexample.test", 1, "/mnt/sdcard/testResults", "emulator-5554", "1",
+				"/Users/Stassia/android-sdks/platform-tools/adb");
+
+		assertNotNull(sga.launchTest());
+		// check OK file
+		Thread.sleep(5000);
+		Thread.sleep(5000);
+		Thread.sleep(5000);
+		Thread.sleep(5000);
+		PullCommand pull = new PullCommand("/Users/Stassia/android-sdks/platform-tools/adb", "emulator-5554",
+				"/mnt/sdcard/testResults/OK", Config.CURRENT_DIRECTORY);
+		pull.execute();
+		assertTrue("Check if sga is installed",
+				new File(Config.CURRENT_DIRECTORY + File.separator + "OK").exists());
+
+	}
+
+	@Test
+	public void test19() throws IOException, InterruptedException {
+		Sga sga = new Sga("fr.openium.converterexample.test.MainTest", "true",
+				"fr.openium.converterexample.*******", 1, "/mnt/sdcard/testResults", "emulator-5554", "1",
+				"/Users/Stassia/android-sdks/platform-tools/adb");
+
+		assertNotNull(sga.launchTest());
+		// check OK file
+		Thread.sleep(5000);
+		Thread.sleep(5000);
+		Thread.sleep(5000);
+		PullCommand pull = new PullCommand("/Users/Stassia/android-sdks/platform-tools/adb", "emulator-5554",
+				"/mnt/sdcard/testResults/OK", Config.CURRENT_DIRECTORY);
+		pull.execute();
+		assertTrue(new File(Config.CURRENT_DIRECTORY + File.separator + "OK").exists());
+
+	}
+
+}

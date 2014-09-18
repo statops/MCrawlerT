@@ -4,8 +4,6 @@ import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 
-import org.apache.commons.io.FileUtils;
-
 import kit.Command.PushCommand;
 import kit.Config.Config;
 import kit.Scenario.ScenarioData;
@@ -14,9 +12,12 @@ import kit.Scenario.ScenarioParser;
 import kit.Scenario.State;
 import kit.Utils.SgUtils;
 
+import org.apache.commons.io.FileUtils;
+
 import fr.openium.sga.ConfigApp;
 import fr.openium.sga.ThreadSleeper;
 import fr.openium.sga.SecurityTesting.AbstractTest.AbstractTestTask;
+import fr.openium.sga.Utils.Utils;
 import fr.openium.sga.emmatest.Emma;
 import fr.openium.sga.emmatest.SgdEnvironnement;
 import fr.openium.sga.strategy.Emulator_checker;
@@ -73,14 +74,16 @@ public class BruteForceJob extends AbstractMobileCrawler implements Runnable,
 				Emma.delete_File_onDevice(ConfigApp.OkPath, mSgdEnvironnement,
 						mSleeper);
 				mSgdEnvironnement.launchSga_class_defined();
+
 				set_sga_is_finished(false);
+				remoteState = true;
 				checkIfTestOnDeviceIsFinished();
 			}
 			mSleeper.sleepLong();
-			if (Emma.limit_time_isReached(initTime, Emma.TIME_LIMITE)) {
-				break;
-			}
-		} while (!testIsfinshed);
+			/*
+			 * if (Utils.limit_time_isReached(initTime, Emma.TIME_LIMITE)) {
+			 * break; }
+			 */} while (!testIsfinshed);
 
 		try {
 			check_brute_result();
@@ -94,8 +97,9 @@ public class BruteForceJob extends AbstractMobileCrawler implements Runnable,
 
 	}
 
-	private void generateBruteEventsAndPushTasksToDevice() throws IOException,NullPointerException {
-		
+	private void generateBruteEventsAndPushTasksToDevice() throws IOException,
+			NullPointerException {
+
 		BruteForceTask task = (BruteForceTask) mTask;
 		ScenarioData scen = task.getPath();
 		if (scen == null) {
@@ -106,14 +110,16 @@ public class BruteForceJob extends AbstractMobileCrawler implements Runnable,
 		 * 
 		 */
 		BruteForceEventsGenerator genData = new BruteForceEventsGenerator(
-				task.getTargetState(), new File (mSgdEnvironnement.getAllTestDataPath()),
-				new File (mSgdEnvironnement.getDicoPath()),mSgdEnvironnement.getStressMaxEvent());	
+				task.getTargetState(), new File(
+						mSgdEnvironnement.getAllTestDataPath()), new File(
+						mSgdEnvironnement.getDicoPath()),
+				mSgdEnvironnement.getStressMaxEvent());
 		genData.generateBrutForceTest(mSgdEnvironnement.getBruteEventFile());
 
 		String output = (mSgdEnvironnement.getScenarioDirectory() + ConfigApp.OutXMLPath);
 		System.out.println("output file" + output);
 		new ScenarioGenerator(output).generateXml(scen);
-		
+
 		/**
 		 * push event
 		 */
@@ -164,12 +170,13 @@ public class BruteForceJob extends AbstractMobileCrawler implements Runnable,
 		/**
 		 * initDirectoryname with thread targetStateId
 		 */
-		System.out.println("initLocalDirectory() of thread number: " + Thread.currentThread().getId());
+		System.out.println("initLocalDirectory() of thread number: "
+				+ Thread.currentThread().getId());
 		BruteForceTask btask = (BruteForceTask) mTask;
 		State targetState = SgUtils.get_last_state(btask.getPath());
 		String toBruteId = (targetState == null ? ""
 				+ Thread.currentThread().getId() : targetState.getId());
-		System.out.println("to Brute id "+ toBruteId);
+		System.out.println("to Brute id " + toBruteId);
 		System.out.println(toBruteId);
 		mSgdEnvironnement.init(toBruteId);
 
@@ -200,16 +207,17 @@ public class BruteForceJob extends AbstractMobileCrawler implements Runnable,
 		}
 		BruteForceReport report = buildReport(temp);
 		mBruteForceManager.updateResult(report);
-		//mSgdEnvironnement.initRemoteDirectory();
+		// mSgdEnvironnement.initRemoteDirectory();
 
 	}
 
-	private BruteForceReport buildReport(AbstractTestTask temp) throws IOException {
+	private BruteForceReport buildReport(AbstractTestTask temp)
+			throws IOException {
 		ScenarioData destState = null;
 
 		File outFile = new File(mSgdEnvironnement.getOutDirectory()
 				+ ConfigApp.OutXMLPath);
-		Emma.save_non_generic(outFile,
+		Utils.save_non_generic(outFile,
 				new File(mSgdEnvironnement.getScenarioDirectory()));
 		File scenario_outFile = new File(
 				mSgdEnvironnement.getScenarioDirectory() + ConfigApp.OutXMLPath);
@@ -225,17 +233,20 @@ public class BruteForceJob extends AbstractMobileCrawler implements Runnable,
 		if (destState == null) {
 			return null;
 		}
-		
+
 		BruteForceReport report = new BruteForceReport(mBruteForceManager,
-				temp.getTargetState(), temp.getPath(), "", "", destState,mGeneratedSequence,(ArrayList<String>)FileUtils.readLines(new File (mSgdEnvironnement.getOutDirectory()
-				+File.separator+ Config.BRUTE_TIME), Config.UTF8));
+				temp.getTargetState(), temp.getPath(), "", "", destState,
+				mGeneratedSequence, (ArrayList<String>) FileUtils.readLines(
+						new File(mSgdEnvironnement.getOutDirectory()
+								+ File.separator + Config.BRUTE_TIME),
+						Config.UTF8));
 		return report;
 	}
 
 	private void pullingFromDevice() {
-		Emma.pull(Config.BRUTE_TIME, mSgdEnvironnement);
-		Emma.pull(ConfigApp.OutXMLPath, mSgdEnvironnement);
-		Emma.pull(Config.BRUTE_TIME, mSgdEnvironnement);
+		Utils.pull(Config.BRUTE_TIME, mSgdEnvironnement);
+		Utils.pull(ConfigApp.OutXMLPath, mSgdEnvironnement);
+		Utils.pull(Config.BRUTE_TIME, mSgdEnvironnement);
 		// Emma.pull(Config.error, mSgdEnvironnement);
 		// Emma.pull(Config.EXECUTED_EVENTS, mSgdEnvironnement);
 
@@ -244,7 +255,12 @@ public class BruteForceJob extends AbstractMobileCrawler implements Runnable,
 	@Override
 	public void interrupted() {
 		// TODO Auto-generated method stub
-		
+
+	}
+
+	@Override
+	public boolean remoteTestState() {
+		return remoteState;
 	}
 
 }

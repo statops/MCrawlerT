@@ -24,7 +24,7 @@ public class StressTestReporter extends AbstractReport {
 	public static final String NUMBER_OF_VULNERABLE_COMPONENT_CRASH = "Number of crash detected ";
 	public static final String NUMBER_OF_TESTED_STATE = "Number of tested location ";
 	public static final String STRESSREPORTFILE = "ReadableStressReport";
-
+	private static final String TEST_NUMBER = "Test Number";
 	protected final ArrayList<SPReport> crashReport;
 
 	public StressTestReporter(File output, ArrayList<SPReport> stressReport)
@@ -44,18 +44,19 @@ public class StressTestReporter extends AbstractReport {
 				+ getVulnerableComponentNumber());
 
 		newSection();
+		int testNumber = 1;
 		for (SPReport report : crashReport) {
-
-			add(STATE_NAME, report.getTargetState().getShortName());
-			add(CODE_COVERAGE, "" + report.getCode_coverage());
+			add(TEST_NUMBER, "" + testNumber++);
+			add(STATE_NAME, report.getTargetState().getShortName() );
+			add(CODE_COVERAGE, "" + report.getCode_coverage()+ "%");
 			add(VULNERABILTY_STATUS, getVulnerabilityStatus(report));
 			add(ERROR_DESCRIPTION, report.getMessage());
 			add(PATH_TO_REACH_LOCATION);
 			add(report.getPath());
+			newSection();
 			add(LIST_EVENT_DONE);
 			add(report.getExecutedEvents());
 			nextLine();
-
 		}
 
 		FileUtils.writeStringToFile(outpuFile, contents.toString(),

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="sgdAndroidKit" default="help">
+<project name="MCrawlerTAndroidKit" default="help">
 
     <!-- The local.properties file is created and updated by the 'android' tool.
          It contains the path to the SDK. It should *NOT* be checked into
          Version Control Systems. -->
     <property file="local.properties" />
-    <property name="all.project.dir" value="/Users/Stassia/Documents/MCRAWLERT/tools/TO_COMPILE"/>
-    <property name="sgdAndroidKit.location" value="${all.project.dir}/sgdAndroidKit"/>
+    <property name="all.project.dir" value=""/>
+    <property name="sgdAndroidKit.location" value="${all.project.dir}/MCrawlerTAndroidKit"/>
 
     <!-- The ant.properties file can be created by you. It is only edited by the
          'android' tool to add properties to it.

@@ -9,10 +9,10 @@ import kit.Scenario.ScenarioData;
 import kit.Scenario.ScenarioGenerator;
 import kit.Scenario.State;
 import kit.Utils.SgUtils;
-
 import fr.openium.sga.ConfigApp;
 import fr.openium.sga.SecurityTesting.AbstractTest.AbstractTaskManager;
 import fr.openium.sga.SecurityTesting.AbstractTest.AbstractTestTask;
+import fr.openium.sga.Utils.Utils;
 import fr.openium.sga.emmatest.Emma;
 import fr.openium.sga.emmatest.SgdEnvironnement;
 import fr.openium.sga.semantic.LoggingSemantic;
@@ -25,7 +25,7 @@ import fr.openium.taskPool.TaskManagerRunnable;
 public class BruteForceManager extends AbstractTaskManager {
 
 	public BruteForceManager(SgdEnvironnement env) {
-		super(env.getModel(),new File (env.getAllTestDataPath()), env);
+		super(env.getModel(), new File(env.getAllTestDataPath()), env);
 		/**
 		 * setup scenario generator to generate Paths
 		 */
@@ -96,7 +96,7 @@ public class BruteForceManager extends AbstractTaskManager {
 			tasksStateFinished = ((TaskManagerRunnable<BruteForceJob>) tm)
 					.isAllResultReceived();
 			waitBruteJobs(n);
-			if (Emma.limit_time_isReached(initTime, MAX_TIME)) {
+			if (Utils.limit_time_isReached(initTime, MAX_TIME)) {
 				System.out.println("Time " + MAX_TIME + " seconds is reached");
 				tm.stop();
 				break;
@@ -237,6 +237,13 @@ public class BruteForceManager extends AbstractTaskManager {
 		}
 
 		if (targetState.isFinal()) {
+			return false;
+		}
+
+		/**
+		 * has at least 1 editText
+		 */
+		if (!SgUtils.hasEditText(targetState)) {
 			return false;
 		}
 

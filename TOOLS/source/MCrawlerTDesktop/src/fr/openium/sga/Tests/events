@@ -1,0 +1,50 @@
+0*2*kit.TestRunner.MenuView* '
+1*fr.openium.converterexample:id/radio0*android.widget.RadioButton*d
+2*android:id/title*android.widget.TextView*null
+3*0*kit.TestRunner.MenuView*
+4*fr.openium.converterexample:id/ok*android.widget.Button*no
+5*fr.openium.converterexample:id/radio2*android.widget.RadioButton*null
+6*fr.openium.converterexample:id/radio1*android.widget.RadioButton*null
+7*fr.openium.converterexample:id/radio0*android.widget.RadioButton*
+8*fr.openium.converterexample:id/question*android.widget.EditText*d
+9*fr.openium.converterexample:id/radio1*android.widget.RadioButton*1=1'
+10*fr.openium.converterexample:id/question*android.widget.EditText*d
+11*fr.openium.converterexample:id/radio1*android.widget.RadioButton*%
+12*fr.openium.converterexample:id/radio2*android.widget.RadioButton* '
+13*fr.openium.converterexample:id/radio2*android.widget.RadioButton*+++
+14*fr.openium.converterexample:id/question*android.widget.EditText*d
+15*fr.openium.converterexample:id/radio1*android.widget.RadioButton*no
+16*fr.openium.converterexample:id/ok*android.widget.Button*
+17*fr.openium.converterexample:id/textView4*android.widget.TextView* '
+18*fr.openium.converterexample:id/textView4*android.widget.TextView*1=1'
+19*fr.openium.converterexample:id/radio1*android.widget.RadioButton*%
+20*fr.openium.converterexample:id/radio0*android.widget.RadioButton*+++
+21*fr.openium.converterexample:id/question*android.widget.EditText*1=1'
+22*fr.openium.converterexample:id/textView4*android.widget.TextView*%
+23*0*kit.TestRunner.MenuView*
+24*fr.openium.converterexample:id/textView4*android.widget.TextView*
+25*fr.openium.converterexample:id/ok*android.widget.Button*d
+26*1*kit.TestRunner.MenuView* '
+27*fr.openium.converterexample:id/ok*android.widget.Button*+++
+28*fr.openium.converterexample:id/EditText01*android.widget.TextView*d
+29*fr.openium.converterexample:id/radio2*android.widget.RadioButton*null
+30*1*kit.TestRunner.MenuView*d
+31*fr.openium.converterexample:id/radio2*android.widget.RadioButton*+++
+32*fr.openium.converterexample:id/question*android.widget.EditText*d
+33*2*kit.TestRunner.MenuView*1=1'
+34*1*kit.TestRunner.MenuView*null
+35*fr.openium.converterexample:id/radio1*android.widget.RadioButton*
+36*fr.openium.converterexample:id/textView3*android.widget.TextView*d
+37*android:id/title*android.widget.TextView*+++
+38*1*kit.TestRunner.MenuView*+++
+39*2*kit.TestRunner.MenuView*1=1'
+40*0*kit.TestRunner.MenuView*no
+41*fr.openium.converterexample:id/radio0*android.widget.RadioButton*+++
+42*0*kit.TestRunner.MenuView*1=1'
+43*1*kit.TestRunner.MenuView*%
+44*fr.openium.converterexample:id/textView4*android.widget.TextView* '
+45*fr.openium.converterexample:id/ok*android.widget.Button*
+46*0*kit.TestRunner.MenuView*+++
+47*0*kit.TestRunner.MenuView*1=1'
+48*fr.openium.converterexample:id/question*android.widget.EditText*%
+49*android:id/title*android.widget.TextView*+++

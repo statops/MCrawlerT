@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scenario version="1">
+	<authors>
+		<author name="MainActivity_0" />
+	</authors>
+	<alphabet>
+		<action name="click button" />
+		<action name="click item" />
+		<action name="click imageview" />
+		<action name="" />
+		<action name="check box" />
+		<action name="editText" />
+		<action name="schroll" />
+	</alphabet>
+	<states initial="MainActivity_0" id="0" type="" time="">
+	    
+		<state name="MainActivity_0" id="0" type="src" time="12:01" end="false">
+			<widget name="bouton 0" type="button" posX="25" posY="36"
+				visibility="true" enable="true" pressed="true" shown="true"
+				selected="false" value="" />
+			<widget name="bouton 1" type="button" posX="25" posY="36"
+				visibility="true" enable="true" pressed="true" shown="true"
+				selected="false" value="" />
+		</state>
+		<state name="activityNameX" id="0" type="dest" time="12:01">
+			<widget name="bouton X" type="bouton" posX="25" posY="36"
+				visibility="true" enable="true" pressed="true" shown="true"
+				selected="false" value="" />
+			<widget name="EditText 1" type="Edit" posX="20" posY="30"
+				visibility="true" enable="true" pressed="true" shown="true"
+				selected="false" value="" />
+			<widget name="List 1" type="ListView" posX="25" posY="40"
+				visibility="true" enable="true" pressed="true" shown="true"
+				selected="false" value="" />
+		</state>
+		<state name="END" id="0" type="dest" time="12:015" end="true" />
+		<state name="MainActivity_0" id="1" type="src" time="12:02" end="true">
+			<widget name="bouton 0" type="button" posX="@10" posY="11"
+				visibility="true" enable="true" pressed="true" shown="true"
+				selected="false" value="" />
+			<widget name="bouton 1" type="button" posX="36" posY="38"
+				visibility="true" enable="true" pressed="true" shown="true"
+				selected="false" value="" />
+		</state>
+		<state name="activityNameZ" id="1" type="dest" time="12:03">
+			<widget name="bouton X" type="bouton" posX="25" posY="36"
+				visibility="true" enable="true" pressed="true" shown="true"
+				selected="false" value="" />
+			<widget name="EditText 1" type="Edit Text" posX="20" posY="30"
+				visibility="true" enable="true" pressed="true" shown="true"
+				selected="false" value="" />
+			<widget name="List 1" type="ListView" posX="25" posY="40"
+				visibility="true" enable="true" pressed="true" shown="true"
+				selected="false" value="" />
+		</state>
+		<state name="activityNameZ" id="2" type="src" time="12:03">
+			<widget name="bouton X" type="bouton" posX="25" posY="36"
+				visibility="true" enable="true" pressed="true" shown="true"
+				selected="false" value="" />
+			<widget name="EditText 1" type="Edit Text" posX="20" posY="30"
+				visibility="true" enable="true" pressed="true" shown="true"
+				selected="false" value="" />
+			<widget name="List 1" type="ListView" posX="25" posY="40"
+				visibility="true" enable="true" pressed="true" shown="true"
+				selected="false" value="" />
+		</state>
+		<state name="activityNameX" id="2" type="dest" time="12:03">
+			<widget name="bouton X" type="bouton" posX="25" posY="36"
+				visibility="true" enable="true" pressed="true" shown="true"
+				selected="false" value="" />
+			<widget name="EditText 1" type="Edit Text" posX="20" posY="30"
+				visibility="true" enable="true" pressed="true" shown="true"
+				selected="false" value="" />
+			<widget name="List 1" type="ListView" posX="25" posY="40"
+				visibility="true" enable="true" pressed="true" shown="true"
+				selected="false" value="" />
+		</state>
+		<state name="activityNameX" id="3" type="src" time="12:04" end="true">
+			<widget name="bouton X" type="bouton" posX="25" posY="36"
+				visibility="true" enable="true" pressed="true" shown="true"
+				selected="false" value="" />
+			<widget name="EditText 1" type="Edit Text" posX="20" posY="30"
+				visibility="true" enable="true" pressed="true" shown="true"
+				selected="false" value="" />
+			<widget name="List 1" type="ListView" posX="25" posY="40"
+				visibility="true" enable="true" pressed="true" shown="true"
+				selected="false" value="" />
+		</state>
+		<state name="activityNameY" id="3" type="dest" time="12:06">
+			<widget name="List 2" type="ListView" posX="2" posY="4"
+				visibility="true" enable="true" pressed="true" shown="true"
+				selected="false" value="" />
+		</state>
+		<state name="activityNameY" id="4" type="src" time="12:06">
+			<widget name="List 2" type="ListView" posX="2" posY="4"
+				visibility="true" enable="true" pressed="true" shown="true"
+				selected="false" value="" />
+		</state>
+		<state name="END" id="4" type="dest" time="12:09">
+		</state>
+	</states>
+	<transitions id="0">
+		<transition source="MainActivity_0" dest="activityNameZ"
+			id="1">
+			<action name="click button">
+				<widget name="bouton 1" type="bouton" posX="25" posY="36"
+					visibility="true" enable="true" pressed="true" shown="true"
+					selected="false" value=""></widget>
+				<error name="exception"></error>
+			</action>
+			<action name="edit Text" value="1">
+				<widget name="edit1" type="editext" posX="25" posY="36"
+					visibility="true" enable="true" pressed="true" shown="true"
+					selected="false" value=""></widget>
+			</action>
+			<action name="edit Text">
+				<widget name="edit2" type="editext" posX="25" posY="36"
+					visibility="true" enable="true" pressed="true" shown="true"
+					selected="false" value="" />
+			</action>
+			<action name="edit Text">
+				<widget name="edit4" type="editext" posX="25" posY="36"
+					visibility="true" enable="true" pressed="true" shown="true"
+					selected="false" value="" />
+			</action>
+		</transition>
+		<transition source="activityNameX" dest="activityNameY" id="3">
+			<action name="edit Text" value="1">
+				<widget name="edit1" type="editext" posX="25" posY="36"
+					visibility="true" enable="true" pressed="true" shown="true"
+					selected="false" value=""></widget>
+			</action>
+			<action name="edit Text">
+				<widget name="edit2" type="editext" posX="25" posY="36"
+					visibility="true" enable="true" pressed="true" shown="true"
+					selected="false" value="" />
+			</action>
+			<action name="edit Text">
+				<widget name="edit4" type="editext" posX="25" posY="36"
+					visibility="true" enable="true" pressed="true" shown="true"
+					selected="false" value="" />
+			</action>
+		</transition>
+
+		<transition source="activityNameZ" dest="activityNameX" id="2">
+			<action name="edit Text" value="3">
+				<widget name="edit1" type="editext" posX="25" posY="36"
+					visibility="true" enable="true" pressed="true" shown="true"
+					selected="false" value=""></widget>
+			</action>
+			<action name="edit Text">
+				<widget name="edit2" type="editext" posX="25" posY="36"
+					visibility="true" enable="true" pressed="true" shown="true"
+					selected="false" value="" />
+			</action>
+			<action name="edit Text">
+				<widget name="edit4" type="editext" posX="25" posY="36"
+					visibility="true" enable="true" pressed="true" shown="true"
+					selected="false" value="" />
+			</action>
+		</transition>
+	</transitions>
+</Scenario>

@@ -33,6 +33,7 @@ cd TOOLS
 (c) ant -buildfile source/MCrawlerTDesktop/build.xml -Dsdk.args="$ANDROID_HOME" -Dall.project.dir="../" -Dtools.args="McrawlerT" generate_tools
 
 Absolute path of the following files must be set as ant arguments: the android sdk, the project directory and the output directory name 'e.g: McrawlerT'.
+
 3. Tools are available in source/MCrawlerTDesktop/McrawlerT
 You must have the following files in your tool directory: 
 (a) apktool

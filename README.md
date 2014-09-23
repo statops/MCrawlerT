@@ -25,7 +25,9 @@ Quick Start:
 2. Launch the following script to build the main and its sub-projects: 
 
 (a) android update lib-project -p source/sgdAndroidKit
-(b) android update lib-project -p source/sga
+
+(b) android update project -p source/sga
+
 (c) ant -buildfile droid/sgd/build.xml -Dsdk.args="../adt-bundle-mac-x86_64-20140321/sdk" -Dall.project.dir="../" -Dtools.args="McrawlerT"  generate_tools
 Absolute path of the following files must be set as ant arguments: the android sdk, the project directory and the output directory name 'e.g: McrawlerT'.
 3. Tools are available in source/MCrawlerTDesktop/McrawlerT

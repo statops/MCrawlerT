@@ -7828,3 +7828,128 @@ org.eclipse.ui.PartInitException: Could not create view: diagramTable
 
 !ENTRY org.eclipse.ui 4 4 2014-09-12 19:24:25.513
 !MESSAGE Invalid preference page path: XML Syntax
+!SESSION 2014-10-29 10:28:14.639 -----------------------------------------------
+eclipse.buildId=M20110909-1335
+java.version=1.6.0_65
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=cocoa, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -keyring /Users/Stassia/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86 -product org.eclipse.epp.package.java.product -data /Users/Stassia/Documents/MCRAWLERT/gitVersion/MCrawlerT/TOOLS/source -product org.eclipse.epp.package.java.product -keyring /Users/Stassia/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2014-10-29 10:28:27.324
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.emf.ecore 2 0 2014-10-29 10:28:39.514
+!MESSAGE Both 'org.eclipse.soa.sca.core.model' and 'org.eclipse.stp.sca' register a package for 'http://www.w3.org/2005/08/addressing'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2014-10-29 10:28:39.516
+!MESSAGE Both 'org.eclipse.soa.sca.core.model' and 'org.eclipse.stp.sca' register a package for 'http://schemas.xmlsoap.org/ws/2004/09/policy'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2014-10-29 10:28:39.625
+!MESSAGE Both 'org.eclipse.soa.sca.sca1_0.model' and 'org.eclipse.stp.sca' register a package for 'http://www.osoa.org/xmlns/sca/1.0'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2014-10-29 10:28:39.894
+!MESSAGE Both 'org.eclipse.soa.sca.sca1_1.model' and 'org.eclipse.stp.sca.csa' register a package for 'http://docs.oasis-open.org/ns/opencsa/sca/200912'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2014-10-29 10:28:39.947
+!MESSAGE Both 'org.eclipse.emf.ecore' and 'org.eclipse.stp.sca.csa' register a package for 'http://www.w3.org/XML/1998/namespace'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2014-10-29 10:28:39.948
+!MESSAGE Both 'org.eclipse.soa.sca.core.model' and 'org.eclipse.stp.sca.csa' register a package for 'http://www.w3.org/ns/wsdl-instance'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2014-10-29 10:28:40.072
+!MESSAGE Both 'org.eclipse.stp.sca' and 'org.eclipse.stp.sca.csa' register a package for 'http://www.w3.org/2005/08/addressing'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2014-10-29 10:28:40.172
+!MESSAGE Both 'org.eclipse.soa.sca.sca1_0.model' and 'org.eclipse.soa.sca.sca1_1.model' register an extension parser for 'composite'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2014-10-29 10:28:40.172
+!MESSAGE Both 'org.eclipse.soa.sca.core.model' and 'org.eclipse.stp.sca' register an extension parser for 'addressing'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2014-10-29 10:28:40.192
+!MESSAGE Both 'org.eclipse.soa.sca.core.model' and 'org.eclipse.stp.sca' register an extension parser for 'policy'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2014-10-29 10:28:40.209
+!MESSAGE Both 'org.eclipse.soa.sca.sca1_1.model' and 'org.eclipse.stp.sca' register an extension parser for 'composite'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2014-10-29 10:28:40.210
+!MESSAGE Both 'org.eclipse.soa.sca.core.model' and 'org.eclipse.stp.sca' register an extension parser for 'instance'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2014-10-29 10:28:40.317
+!MESSAGE Both 'org.eclipse.stp.sca' and 'org.eclipse.stp.sca.csa' register an extension parser for 'composite'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2014-10-29 10:28:40.317
+!MESSAGE Both 'org.eclipse.stp.sca' and 'org.eclipse.stp.sca.csa' register an extension parser for 'instance'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2014-10-29 10:28:40.317
+!MESSAGE Both 'org.eclipse.stp.sca' and 'org.eclipse.stp.sca.csa' register an extension parser for 'addressing'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2014-10-29 10:28:40.318
+!MESSAGE Both 'org.eclipse.soa.sca.sca1_0.diagram' and 'org.eclipse.stp.sca.csa.diagram' register an extension parser for 'composite_diagram'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2014-10-29 10:28:40.342
+!MESSAGE Both 'org.eclipse.stp.sca.csa.diagram' and 'org.eclipse.stp.sca.diagram' register an extension parser for 'composite_diagram'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2014-10-29 10:28:41.519
+!MESSAGE org.eclipse.soa.sca.sca1_0.model.sca.impl.ScaFactoryImpl cannot be cast to org.eclipse.stp.sca.ScaFactory
+!STACK 0
+java.lang.ClassCastException: org.eclipse.soa.sca.sca1_0.model.sca.impl.ScaFactoryImpl cannot be cast to org.eclipse.stp.sca.ScaFactory
+	at org.eclipse.stp.sca.impl.ScaFactoryImpl.init(ScaFactoryImpl.java:118)
+	at org.eclipse.stp.sca.ScaFactory.<clinit>(ScaFactory.java:29)
+	at org.eclipse.stp.sca.impl.ScaPackageImpl.<init>(ScaPackageImpl.java:696)
+	at org.eclipse.stp.sca.impl.ScaPackageImpl.init(ScaPackageImpl.java:730)
+	at org.eclipse.stp.sca.ScaPackage.<clinit>(ScaPackage.java:63)
+	at org.eclipse.stp.sca.policy.impl.PolicyPackageImpl.init(PolicyPackageImpl.java:144)
+	at org.eclipse.stp.sca.policy.PolicyPackage.<clinit>(PolicyPackage.java:62)
+	at sun.misc.Unsafe.ensureClassInitialized(Native Method)
+	at sun.reflect.UnsafeFieldAccessorFactory.newFieldAccessor(UnsafeFieldAccessorFactory.java:25)
+	at sun.reflect.ReflectionFactory.newFieldAccessor(ReflectionFactory.java:122)
+	at java.lang.reflect.Field.acquireFieldAccessor(Field.java:918)
+	at java.lang.reflect.Field.getFieldAccessor(Field.java:899)
+	at java.lang.reflect.Field.get(Field.java:358)
+	at org.eclipse.emf.ecore.plugin.RegistryReader$EPackageDescriptor.getEPackage(RegistryReader.java:279)
+	at org.eclipse.emf.ecore.impl.EPackageRegistryImpl.getEPackage(EPackageRegistryImpl.java:133)
+	at org.eclipse.soa.sca.sca1_0.model.sca.impl.ScaPackageImpl.init(ScaPackageImpl.java:771)
+	at org.eclipse.soa.sca.sca1_0.model.sca.ScaPackage.<clinit>(ScaPackage.java:62)
+	at org.eclipse.so.sca.sca1_0.model.edit.validation.Startup.earlyStartup(Startup.java:40)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:87)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:66)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$63.run(Workbench.java:2465)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.emf.ecore 2 0 2014-10-29 10:28:41.611
+!MESSAGE org.eclipse.stp.sca.policy.impl.PolicyFactoryImpl cannot be cast to org.eclipse.soa.sca.core.model.policy.PolicyFactory
+!STACK 0
+java.lang.ClassCastException: org.eclipse.stp.sca.policy.impl.PolicyFactoryImpl cannot be cast to org.eclipse.soa.sca.core.model.policy.PolicyFactory
+	at org.eclipse.soa.sca.core.model.policy.impl.PolicyFactoryImpl.init(PolicyFactoryImpl.java:42)
+	at org.eclipse.soa.sca.core.model.policy.PolicyFactory.<clinit>(PolicyFactory.java:26)
+	at org.eclipse.soa.sca.core.model.policy.impl.PolicyPackageImpl.<init>(PolicyPackageImpl.java:105)
+	at org.eclipse.soa.sca.core.model.policy.impl.PolicyPackageImpl.init(PolicyPackageImpl.java:131)
+	at org.eclipse.soa.sca.core.model.policy.PolicyPackage.<clinit>(PolicyPackage.java:61)
+	at org.eclipse.soa.sca.sca1_0.model.sca.impl.ScaPackageImpl.init(ScaPackageImpl.java:771)
+	at org.eclipse.soa.sca.sca1_0.model.sca.ScaPackage.<clinit>(ScaPackage.java:62)
+	at org.eclipse.so.sca.sca1_0.model.edit.validation.Startup.earlyStartup(Startup.java:40)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:87)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:66)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$63.run(Workbench.java:2465)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.emf.ecore 2 0 2014-10-29 10:28:42.726
+!MESSAGE org.eclipse.stp.sca.csa.instance.impl.InstanceFactoryImpl cannot be cast to org.eclipse.soa.sca.core.model.instance.InstanceFactory
+!STACK 0
+java.lang.ClassCastException: org.eclipse.stp.sca.csa.instance.impl.InstanceFactoryImpl cannot be cast to org.eclipse.soa.sca.core.model.instance.InstanceFactory
+	at org.eclipse.soa.sca.core.model.instance.impl.InstanceFactoryImpl.init(InstanceFactoryImpl.java:42)
+	at org.eclipse.soa.sca.core.model.instance.InstanceFactory.<clinit>(InstanceFactory.java:26)
+	at org.eclipse.soa.sca.core.model.instance.impl.InstancePackageImpl.<init>(InstancePackageImpl.java:63)
+	at org.eclipse.soa.sca.core.model.instance.impl.InstancePackageImpl.init(InstancePackageImpl.java:89)
+	at org.eclipse.soa.sca.core.model.instance.InstancePackage.<clinit>(InstancePackage.java:61)
+	at org.eclipse.soa.sca.sca1_0.model.sca.impl.ScaPackageImpl.init(ScaPackageImpl.java:772)
+	at org.eclipse.soa.sca.sca1_0.model.sca.ScaPackage.<clinit>(ScaPackage.java:62)
+	at org.eclipse.so.sca.sca1_0.model.edit.validation.Startup.earlyStartup(Startup.java:40)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:87)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:66)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$63.run(Workbench.java:2465)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)

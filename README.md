@@ -23,11 +23,18 @@ Quick Start:
 0. Check out the project and go to TOOLS/source
 1. Unzip the tools library available in  https://www.dropbox.com/sh/lkabg121duddkwq/AADA55vVegJ85fi2sl2GRXCza?dl=0 into the source directory (source/MCrawlerTLibs)
 2. Launch the following script to build the main and its sub-projects: 
-(a) android update lib-project -p droid/sgdAndroidKit
-(b) android update lib-project -p droid/sga
-(c) ant -buildfile droid/sgd/build.xml -Dsdk.args="../adt-bundle-mac-x86_64-20140321/sdk" -Dall.project.dir="../" -Dtools.args="McrawlerT"  generate_tools
+
+cd TOOLS 
+
+(a) android update lib-project -p source/sgdAndroidKit
+
+(b) android update project -p source/sga
+
+(c) ant -buildfile source/MCrawlerTDesktop/build.xml -Dsdk.args="$ANDROID_HOME" -Dall.project.dir="../" -Dtools.args="McrawlerT" generate_tools
+
 Absolute path of the following files must be set as ant arguments: the android sdk, the project directory and the output directory name 'e.g: McrawlerT'.
-3. Copy all the content of the checked out source/tools in your tool's directory
+
+3. Tools are available in source/MCrawlerTDesktop/McrawlerT
 You must have the following files in your tool directory: 
 (a) apktool
 (b) KEYSTORE

@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string-array name="graphTypes">
+		<item>Sista 30 dagarna</item>
+		<item>Sista 12 månaderna</item>
+	</string-array>
+
+	<string-array name="counterTypes">
+		<item>Totalt</item>
+		<item>Månadsvis</item>
+		<item>Förra månaden</item>
+		<item>Veckovis</item>
+		<item>Sista dagarna</item>
+		<item>Enskild dag</item>
+	</string-array>
+
+	<array name="counterTypesPos">
+		<item>0</item>
+		<item>1</item>
+		<item>5</item>
+		<item>4</item>
+		<item>2</item>
+		<item>3</item>
+	</array>
+
+	<string-array name="counterSingleDay">
+		<item>Idag</item>
+		<item>Igår</item>
+		<item>2 dagar sedan</item>
+		<item>3 dagar sedan</item>
+		<item>4 dagar sedan</item>
+		<item>5 dagar sedan</item>
+		<item>6 dagar sedan</item>
+		<item>7 dagar sedan</item>
+	</string-array>
+
+	<string-array name="counterLastDays">
+		<item>7 dagar</item>
+		<item>14 dagar</item>
+		<item>30 dagar</item>
+	</string-array>
+
+	<string-array name="counterMonthly">
+		<item>1 månad</item>
+		<item>2 månader</item>
+		<item>3 månader</item>
+		<item>4 månader</item>
+		<item>5 månader</item>
+		<item>6 månader</item>
+		<item>7 månader</item>
+		<item>8 månader</item>
+		<item>9 månader</item>
+		<item>10 månader</item>
+		<item>11 månader</item>
+		<item>12 månader</item>
+	</string-array>
+
+	<string-array name="counterWeeklyStart">
+		<item>Söndag</item>
+		<item>Måndag</item>
+		<item>Tisdag</item>
+		<item>Onsdag</item>
+		<item>Torsdag</item>
+		<item>Fredag</item>
+		<item>Lördag</item>
+	</string-array>
+
+	<string-array name="counterWeekly">
+		<item>1 vecka</item>
+		<item>2 veckor</item>
+		<item>3 veckor</item>
+		<item>4 veckor</item>
+	</string-array>
+
+	<string-array name="byteUnits">
+		<item>B</item>
+		<item>KB</item>
+		<item>MB</item>
+		<item>GB</item>
+		<item>TB</item>
+	</string-array>
+
+	<array name="byteValues">
+		<item>1</item>
+		<item>1024</item>
+		<item>1048576</item>
+		<item>1073741824</item>
+		<item>1099511627776</item>
+	</array>
+
+</resources>

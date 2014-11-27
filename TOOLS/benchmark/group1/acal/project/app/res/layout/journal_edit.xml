@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/JournalViewLayout"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@drawable/morphossbg"
+	android:baselineAligned="false"
+	android:orientation="vertical"
+	tools:context=".activity.JournalEdit" >
+	<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/JournalViewBelowTitleLayout"
+		android:layout_width="fill_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:background="#00000000"
+		android:orientation="horizontal" >
+		<!-- Color bar -->
+		<LinearLayout
+			android:id="@+id/JournalEditColourBar"
+			android:layout_width="13sp"
+			android:layout_height="fill_parent"
+			android:background="#704080f0" />
+		<!-- Color bar stops -->
+		<!-- content -->
+		<LinearLayout
+			android:id="@+id/JournalViewContentArea"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_gravity="right"
+			android:isScrollContainer="true"
+			android:orientation="vertical" >
+			<!-- journal name thingy -->
+			<EditText
+				android:id="@+id/JournalName"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:hint="@string/note_title_hint"
+				android:inputType="textCapSentences|textAutoCorrect|textEmailSubject"
+				android:paddingBottom="3sp"
+				android:paddingLeft="3sp"
+				android:textSize="26sp" />
+			<!-- journal name thingy end -->
+			<!-- journal date thingy -->
+			<LinearLayout
+				android:id="@+id/JournalDateLayout"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:paddingBottom="3sp" >
+				<TextView
+					android:id="@+id/JournalDateLabel"
+					style="@style/gen_label"
+					android:layout_width="50dp"
+					android:layout_height="wrap_content"
+					android:layout_marginRight="10sp"
+					android:gravity="center_vertical"
+					android:text="@string/JournalDatePrompt" />
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:background="@color/themed_button_colour" >
+					<Button
+						android:id="@+id/JournalDateTime"
+						style="@style/themed_button_big"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@string/placeholderDateAndTime" />
+				</LinearLayout>
+			</LinearLayout>
+			<!-- journal date thingy end -->
+			<!-- scroll view of note thingy -->
+			<ScrollView
+				android:layout_width="fill_parent"
+				android:layout_height="0dp"
+				android:layout_weight="1"
+				android:fillViewport="true"
+				android:paddingBottom="3sp" >
+				<EditText
+					android:id="@+id/JournalNotesContent"
+					style="@style/gen_content"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:gravity="top|left"
+					android:hint="@string/note_text_hint"
+					android:inputType="textMultiLine|textCapSentences|textLongMessage|textAutoCorrect"
+					android:minLines="4" />
+			</ScrollView>
+			<!-- scroll view of note thingy end -->
+			<!-- calandar select thingy -->
+			<LinearLayout
+				android:id="@+id/JournalCollectionLayout"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:paddingBottom="3sp" >
+				<!-- Repeats label and content -->
+				<TextView
+					android:id="@+id/JournalCollectionLabel"
+					style="@style/gen_label"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="left|center_vertical"
+					android:maxLines="1"
+					android:paddingRight="3sp"
+					android:text="@string/CollectionPrompt" />
+				<!-- Collection Selection Button -->
+				<LinearLayout
+					android:id="@+id/JournalEditCollectionLayout"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginRight="5sp"
+					android:background="@color/themed_button_colour" >
+					<Spinner
+						android:id="@+id/JournalEditCollectionSelect"
+						style="@style/themed_button_big"
+						android:layout_width="0dp"
+						android:layout_height="30sp"
+						android:layout_gravity="left|center_vertical"
+						android:layout_weight="1"
+						android:ellipsize="end"
+						android:maxLines="1" />
+				</LinearLayout>
+			</LinearLayout>
+			<!-- calandar select thingy end -->
+			<!-- actual button -->
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:baselineAligned="false" >
+				<LinearLayout
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:background="#00000000"
+					android:gravity="center"
+					android:padding="0sp" >
+					<LinearLayout
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:background="@color/themed_button_colour"
+						android:padding="0sp" >
+						<Button
+							android:id="@+id/journal_apply_button"
+							style="@style/themed_bottom_button"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_gravity="center"
+							android:includeFontPadding="true"
+							android:padding="0sp"
+							android:text="@string/Apply"
+							android:width="90sp" />
+					</LinearLayout>
+				</LinearLayout>
+				<LinearLayout
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:background="#00000000"
+					android:gravity="center"
+					android:padding="0sp" >
+					<LinearLayout
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:background="@color/themed_button_colour"
+						android:padding="0sp" >
+						<Button
+							android:id="@+id/journal_cancel_button"
+							style="@style/themed_bottom_button"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_gravity="center"
+							android:includeFontPadding="true"
+							android:padding="0sp"
+							android:text="@string/cancel"
+							android:width="90sp" />
+					</LinearLayout>
+				</LinearLayout>
+			</LinearLayout>
+			<!-- actual button stops -->
+			<!-- content end -->
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

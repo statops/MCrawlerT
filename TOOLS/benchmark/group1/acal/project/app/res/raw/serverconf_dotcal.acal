@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<acal xmlns="urn:com:morphoss:acalconfig">
+  <dav_server>
+    <friendly_name>dotCal.com</friendly_name>
+    <config_values>
+      <signup_url>https://dotcal.com/rusers/new_user_signup/</signup_url>
+      <supplied_user_url>https://caldav.dotcal.com/</supplied_user_url>
+      <active>1</active>
+    </config_values>
+  </dav_server>
+</acal>

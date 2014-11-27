@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@drawable/morphossbg" >
+	<LinearLayout
+		android:id="@+id/ButtonContainer"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:background="@color/themed_button_colour" >
+		<Button
+			android:id="@+id/FinishedWithUpgradeNotes"
+			style="@style/themed_bottom_button"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/newVersionSeen"
+			android:textSize="18sp" />
+	</LinearLayout>
+	<ScrollView
+		android:id="@+id/UpgradeScrollView"
+		android:layout_width="fill_parent"
+		android:layout_height="0px"
+		android:layout_above="@id/ButtonContainer"
+		android:layout_alignParentTop="true"
+		android:layout_weight="1" >
+		<WebView
+			android:id="@+id/UpgradeNotes"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:paddingLeft="10sp"
+			android:text="@string/newVersionSeen"
+			android:textColor="#300060"
+			android:textSize="18sp" />
+	</ScrollView>
+</RelativeLayout>

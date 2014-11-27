@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="appName">NetCounter</string>
+	<string name="appDescription">Network traffic counter</string>
+	<string name="appAuthor">by Cyril Jaquier</string>
+	<string name="appLoading">Загрузка...</string>
+	<string name="appRefresh">Обновить</string>
+
+	<string name="yes">Да</string>
+	<string name="no">Нет</string>
+	<string name="ok">ОК</string>
+	<string name="cancel">Отменить</string>
+	<string name="close">Закрыть</string>
+
+	<string name="helpTitle">Помощь</string>
+	<string name="helpClose">Закрыть</string>
+	<string name="helpText">
+		NetCounter сохраняет и обновляет данные об интернет трафике через определенный 
+		интервал времени. Процесс записи данных происходит в фоновом режиме
+		и автоматически запускается при включении вашего устройства.\n\nНесколько
+		счетчиков могут быть установлены для каждого типа интернет подключания. Счетчик это
+		вид отображения данных и вы можете удалять и восстанавливать его без потери
+		статистических данных.\n\nДля добавления нового счетчика нажмите на тип интернет подключения. Появится меню. Выберите \"Добавить счетчик\". Для удаления счетчика нажмите на него и держите, затем выберите \"Удалить счетчик\".\n\nДля изменения типа счетчика (\"Всего\", \"Последние 
+		дни\", \"Ежедневно\", \"Ежемесячно\"), нажмите и держите на него снова и затем 
+		выберите \"Изменить тип\".\n\nНекоторые счетчики позволяют выбрать период времени.
+		напр. Счетчик \"Ежедневно\" может показывать данные на \"Сегодня\" или
+		\"Вчера\". Просто выбирите необходимое значение для периода
+		времени.\n\nПредупреждения могут быть установлены для любого счетчика. При достижении установленного
+		значения трафика, на дисплее будет показано предупреждение.\n\nЧтобы обнулить
+		данные для типа интернет подключения, нажмите и держите его, затем выберите \"Обнулить все\". Эта процедура обнулит
+		<b>ВСЕ</b>
+		данные по данному типу интернет подключения! Подумайте перед тем как сделать это.\n\nВозможно
+		установить даты начала и конца периода отображения данных для
+		счетчика \"Ежемесячно\". Сейчас необходимо указывать только день месяца
+		и по умолчанию это 1-е число. Чтобы установить другое число, нажмите и держите на
+		счетчик \"Ежемесячно\" и выбирите \"Начальная дата\".\n\n
+	</string>
+	<string name="helpWhatsNew">
+		Этот <b>новый релиз</b> NetCounter включает новые изменения:\n\n
+		- Samsung I5700 (Spica) and Google Nexus One support.\n\n
+		- Updated Catalan translation. Thanks to Joan Montané.\n\n
+		- Added Swedish translation. Thanks to Tibor.\n\n
+		- Added "last month" counter as per users request.\n\n
+		- Hopefully fixed the CSV export issue on newer SDK.\n\n
+		Пожалуйста, <b>посетите интернет сайт</b> и <b>почитайте FAQ</b>.
+	</string>
+	<string name="aboutTitle">О программе</string>
+	<string name="aboutDonation">Оплатить</string>
+	<string name="aboutDonationUrl">https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=1662582</string>
+	<string name="aboutClose">Закрыть</string>
+	<string name="aboutHomepage">Интернет</string>
+	<string name="aboutHomepageUrl">http://www.jaqpot.net/netcounter/</string>
+	<string name="aboutText">
+		NetCounter v%1$s это программа учета интернет трафика с возможностью
+		изменения настройки счетчиков.\n\nДополнительная информация находится на сайте 
+		в интернете.\n\nКопирайт (C) 2009 Cyril Jaquier\n\nЭта программа распространяется для вашего удобства 
+		и без КАКИХ-ЛИБО ГАРАНТИЙ; без предполагаемой гарантии ТОВАРНОЙ ПРИГОДНОСТИ или 
+		ГОДНОСТИ ДЛЯ КОНКРЕТНОГО ИСПОЛЬЗОВАНИЯ. Детали лицензии смотрите в GNU General Public License.\n\nПиктограммы программы взяты с сайта Everaldo.com и распространяются по лицензии GPL.\n\nПеревод\n
+		Чешский: Petr Bláha &lt;pb@P3T3.org&gt;\n
+		Немецкий: Thomas Putschbach &lt;android@tpju.de&gt;\n
+		Итальянский: Fabio Bonomi Boseggia\n
+		Французский: Cyril Jaquier\n
+		Китайский традиционный: Bernie Garden\n
+		Русский: Dmitry Kutsenko @ergodroid\n\n
+	</string>
+
+	<string name="exportTitle">Экспорт в .csv</string>
+	<string name="exportSummary">Сохранить данные в файл .csv на карту SD</string>
+	<string name="exportSuccessful">Сохранение в %1$s завершено</string>
+	<string name="exportFailed">Произошел сбой при сохранении</string>
+	<string name="exportDialogTitle">Сохранение...</string>
+	<string name="exportDialogText">Дождитесь окончания сохранения</string>
+	
+	<string name="importTitle">Импорт из .csv</string>
+	<string name="importSummary">Загрузка данных из файла .csv с карты SD</string>
+	<string name="importSuccessful">Загрузка завершена</string>
+	<string name="importFailed">Произошел сбой при загрузке</string>
+	<string name="importDialogTitle">Загрузка...</string>
+	<string name="importDialogText">Дождитесь окончания загрузки</string>
+	<string name="importAlertText">Вы уверены, что хотите загрузить данные с карты SD?</string>
+
+	<string name="interfaceTypeCell">GPRS</string>
+	<string name="interfaceTypeWifi">Wi-Fi</string>
+	<string name="interfaceTypeBluetooth">Bluetooth</string>
+
+	<string name="menuInterfaceTitle">Интерфейс</string>
+	<string name="menuInterfaceAdd">Добавить счетчик</string>
+	<string name="menuInterfaceAddDone">Новый счетчик добавлен</string>
+	<string name="menuInterfaceReset">Обнулить все</string>
+	<string name="menuInterfaceResetDone">Обнуление завершено</string>
+	<string name="menuInterfaceGraph">Показать график</string>
+	
+	<string name="dialogInterfaceResetTitle">Обнуление</string>
+	<string name="dialogInterfaceResetText">Вы уверены?</string>
+	
+	<string name="menuCounterTitle">Счетчик</string>
+	<string name="menuCounterChange">Изменить тип </string>
+	<string name="menuCounterChangeDone">Тип изменен</string>
+	<string name="menuCounterRemove">Удалить счетчик</string>
+	<string name="menuCounterRemoveDone">Счетчик удален</string>
+	<string name="menuCounterStartDate">Начальная дата</string>
+	<string name="menuCounterStartDay">Начальный день</string>
+	<string name="menuCounterSetDuration">Период</string>
+	<string name="menuCounterSetAlert">Предупреждения</string>
+	
+	<string name="dialogCounterTypeTitle">Выберите тип счетчика</string>
+	<string name="dialogCounterDurationTitle">Выберите период</string>
+	<string name="dialogCounterMonthlyTitle">Выберите дату отчета</string>
+	<string name="dialogCounterMonthlyChanged">Дата изменена</string>
+	<string name="dialogCounterWeeklyTitle">Выберите день отчета</string>
+	<string name="dialogCounterWeeklyChanged">День изменен</string>
+	
+	<string name="dialogCounterLimitTitle">Установка ограничений</string>
+	<string name="dialogCounterLimitText">Установите ограничение. Чтобы отменить сотрите значение или поставьте 0.</string>
+	<string name="dialogCounterLimitWrong">Неправильный формат числа</string>
+	
+	<string name="dialogDetailsStartDate">Начало периода:</string>
+	<string name="dialogDetailsEndDate">Конец периода:</string>
+	<string name="dialogDetailsReceived">Получено:</string>
+	<string name="dialogDetailsSent">Отправлено:</string>
+	<string name="dialogDetailsTotal">Всего:</string>
+	<string name="dialogDetailsAlert">Ограничения:</string>
+	<string name="dialogDetailsByte">%1$s (%2$s%%)</string>
+	<string name="dialogDetailsNoAlert">не установлено</string>
+	
+	<!-- напр.: GPRS достиг ограничение в 100 Мб для "Всего"-->
+	<string name="notifyExceed">%1$s достиг ограничение %2$s %3$s для  %4$s</string>
+	<!-- напр.: GPRS достиг установленное ограничение-->
+	<string name="notifyExceedTitle">%1$s достиг установленное ограничение</string>
+
+	<!-- Preferences -->
+	<string name="preferences">Настройки</string>
+	<string name="prefsCategoryAdvancedTitle">Расширенные настройки</string>
+	<string name="prefsCatImportExportTitle">Экпорт / Импорт</string>
+	<string name="prefsCatImportExportSummary">Сохранение или загрузка данных на карте SD</string>
+	<string name="prefsWifiUpdateTitle">WiFi интервал обновлений</string>
+	<string name="prefsWifiUpdateSummaryOn">Обновлять каждый час. Экономит энергию, но менее точные данные</string>
+	<string name="prefsWifiUpdateSummaryOff">Обновлять каждые 30 сек. Больше энергии, но более точные данные</string>
+	<string name="prefsDebugTitle">Отладка</string>
+	<string name="prefsDebugSummary">Показывает тех.информацию в области уведомления</string>
+
+	<!-- Graph activity -->
+	<string name="graphReceivedLabel">Получено</string>
+	<string name="graphSentLabel">Отправлено</string>
+	<string name="graphYTitle">Кбайт</string>
+
+</resources>

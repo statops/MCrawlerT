@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/editboxlayout"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+  
+  　<ScrollView 
+    android:id="@+id/ScrollView01" 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    android:fastScrollEnabled="true"
+    android:fillViewport="true" 
+    android:fadingEdgeLength="30dip"
+     >
+<!--
+    android:background="#ffcccccc"
+    android:background="@android:drawable/ic_menu_search"
+ -->
+	<EditText
+	    android:id="@+id/editbox"
+	    android:editable="false"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:imeOptions="flagNoExtractUi"
+		android:focusableInTouchMode="true"
+	    android:gravity="top"
+	    android:background="#ffeeeeee"
+	    android:maxLength="16843104"
+	    
+	/>
+	</ScrollView>
+	<LinearLayout
+  		xmlns:android="http://schemas.android.com/apk/res/android"
+  		android:id="@+id/searchBox"
+  		android:orientation="horizontal"
+  		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content">
+	 	<ImageView  
+			android:id="@+id/FindBtn"  
+			android:layout_width="wrap_content"   
+			android:layout_height="wrap_content"  
+			android:src="@android:drawable/ic_menu_search"
+			android:clickable="true"
+			android:focusable="true"
+	    	android:scaleType="fitCenter"
+	    	android:layout_weight="1"
+	    	
+	    /> 
+<!-- 
+  		<EditText
+	    	android:id="@+id/editSearchWord"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:singleLine="true"
+			android:focusable="true"
+		/>
+  		<Button
+	    	android:id="@+id/btnFindBackward"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text="@string/btn_search_backward"
+		/>
+  		<Button
+	    	android:id="@+id/btnFindForward"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text="@string/btn_search_forward"
+		/>
+-->
+ 	<ImageView  
+		android:id="@+id/btnFindBackward"  
+		android:layout_width="wrap_content"   
+		android:layout_height="fill_parent"  
+		android:src="@android:drawable/ic_media_rew"
+		android:clickable="true"
+		android:focusable="true"
+	    android:scaleType="fitCenter"
+	    android:paddingLeft="10sp"
+	    android:paddingRight="10sp"
+		android:layout_weight="1"
+	    /> 
+ 	<ImageView  
+		android:id="@+id/btnFindForward"  
+		android:layout_width="wrap_content"   
+		android:layout_height="fill_parent"  
+		android:src="@android:drawable/ic_media_ff"
+		android:clickable="true"
+		android:focusable="true"
+	    android:scaleType="fitCenter"
+	    android:paddingLeft="10sp"
+	    android:paddingRight="10sp"
+		android:layout_weight="1"
+    /> 
+  
+  
+	</LinearLayout>
+
+
+</LinearLayout>

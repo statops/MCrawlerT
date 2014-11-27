@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.hectorone.multismssender" android:versionName="2.3" android:versionCode="13">
+	<application android:label="@string/app_name" android:icon="@drawable/multisms">
+		<activity android:name=".MultiSmsSender" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".PhoneNumberSelection"></activity>
+		<activity android:name="SelectGroupActivity"></activity>
+		<activity android:name="GroupEditActivity"></activity>
+		<activity android:name="SelectDeliveryActivity"></activity>
+		<activity android:name="ListEntryActivity"></activity>
+		<receiver android:name="MessageReceiver" android:enabled="true" >
+			<intent-filter>
+				<action android:name="com.hectorone.multismssender.SMS_RECEIVED"/>
+				<data android:mimeType="vnd.android.cursor.item/vnd.com.hectorone.multismssender.provider.entry"/>
+			</intent-filter>
+		</receiver>
+<provider android:authorities="com.hectorone.multismssender.provider" android:name=".DeliveryDbAdapter"></provider>
+</application>
+	<uses-sdk android:minSdkVersion="5" />
+	<uses-permission android:name="android.permission.READ_CONTACTS"></uses-permission>
+	<uses-permission android:name="android.permission.SEND_SMS"></uses-permission>
+	<uses-permission android:name="android.permission.RECEIVE_SMS"></uses-permission>
+	<uses-permission android:name="android.permission.WRITE_SMS"></uses-permission>
+	<uses-permission android:name="android.permission.READ_SMS"></uses-permission>
+</manifest> 

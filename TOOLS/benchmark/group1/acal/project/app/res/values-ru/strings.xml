@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Strings that should not be localised belong in unlocalisable_strings.xml -->
+<resources>
+<string name="theDayEachWeekStartsWith">Первый день недели</string>
+<string name="firstDayOfWeek">Первый день недели</string>
+<string name="ok">ОК</string>
+<string name="cancel">Отмена</string>
+<string name="appDescription">Календарь для Android сохраняет ваши события, задачи, заметки и контакты на удалённом CalDAV / CardDAV сервере, таком как DAViCal (Смотрите: www.davical.org)</string>
+<string name="Active">Активный</string>
+<string name="Add_Server">Добавить сервер</string>
+<string name="Authentication_Type">Тип авторизации</string>
+<string name="Name">Имя</string>
+<string name="Password">Пароль</string>
+<string name="Save">Сохранить</string>
+<string name="Settings">Настройки</string>
+<string name="Server_Name">Имя сервера</string>
+<string name="Colour">Цвет</string>
+<string name="Default_timezone">Временная зона по-умолчанию</string>
+<string name="Server_Path">Путь сервера</string>
+<string name="Server_Port">Порт сервера</string>
+<string name="Sync_collection_now">Синхронизировать сейчас</string>
+<string name="Disable_collection">Отключить коллекцию</string>
+<string name="The_authentication_type_used">Тип авторизации используемый сервером</string>
+<string name="The_password_to_use">Пароль используемый для авторизации на сервере</string>
+<string name="The_username_to_use">Имя пользователя используемое для авторизации на сервере</string>
+<string name="Username">Имя пользователя</string>
+<string name="Use_SSL">Использовать SSL</string>
+<string name="appActivityEventCreate">Новое событие</string>
+<string name="appActivityServerConfigList">Серверы</string>
+<string name="appActivityAddServerList">Шаблон сервера</string>
+<string name="appActivityCollectionConfigList">Календари и Контакты</string>
+<string name="appActivitySettings">Настройки</string>
+<string name="appActivityPreference">Настройки</string>
+<string name="Monday">Понедельник</string>
+<string name="Tuesday">Вторник</string>
+<string name="Wednesday">Среда</string>
+<string name="Thursday">Четверг</string>
+<string name="Friday">Пятница</string>
+<string name="Saturday">Суббота</string>
+<string name="Sunday">Воскресенье</string>
+<string name="Mon">Пн</string>
+<string name="Tue">Вт</string>
+<string name="January">Январь</string>
+<string name="February">Февраль</string>
+<string name="March">Март</string>
+<string name="April">Апрель</string>
+<string name="May">Май</string>
+<string name="June">Июнь</string>
+<string name="July">Июль</string>
+<string name="August">Август</string>
+<string name="September">Сентябрь</string>
+<string name="October">Октябрь</string>
+<string name="November">Ноябрь</string>
+<string name="December">Декабрь</string>
+	<!-- If the user is displaying AM/PM we need a single character to display e.g. 9a for 9:00am in the morning -->
+	<!-- If the user is displaying AM/PM we need a single character to display e.g. 1p for 1:00pm in the afternoon -->
+<string name="prefDefaultEventsCollection_Title">Календарь событий по-умолчанию</string>
+<string name="prefDefaultTasksCollection_Title">Календарь для зачад по-умолчанию</string>
+<string name="prefDefaultNotesCollection_Title">Календарь для заметок по-умолчанию</string>
+<string name="Today">Сегодня</string>
+<string name="Year">Год</string>
+<string name="Month">Месяц</string>
+<string name="Week">Неделя</string>
+<string name="Edit">Правка</string>
+<string name="Apply">Применить</string>
+<string name="Advanced">Расширенное</string>
+<string name="Add">Добавить</string>
+<string name="LocationPrompt">Где:</string>
+<string name="NotesPrompt">Заметки:</string>
+<string name="AllDayPrompt">Весь день:</string>
+<string name="FromPrompt">От:</string>
+<string name="UntilPrompt">Пока:</string>
+<string name="defaultCalendar">Календарь по-умолчанию</string>
+<string name="TwelveTwentyfour_PrefTitle">Использовать 24-часовой формат</string>
+<string name="EveryDay">Ежедневно</string>
+<string name="EveryWeek">Ежедневно</string>
+<string name="EveryMonth">Ежемесячно</string>
+<string name="EveryYear">Ежегодно</string>
+<string name="EveryNDays">Каждые %s дней</string>
+<string name="EveryNWeeks">Каждые %s недель</string>
+<string name="EveryNMonths">Каждые %s месяцев</string>
+<string name="EveryNYears">Каждые %s лет</string>
+<string name="EveryMonday">Каждый понедельник</string>
+<string name="EveryTuesday">Каждый вторник</string>
+<string name="EveryWednesday">Каждую среду</string>
+<string name="EveryThursday">Каждый четверг</string>
+<string name="EveryFriday">Каждую пятницу</string>
+<string name="EverySaturday">Каждую субботу</string>
+<string name="EverySunday">Каждое воскресенье</string>
+<string name="Saving">Сохранение...</string>
+<string name="Loading">Загрузка...</string>
+<string name="Deleting">Удаление...</string>
+<string name="ConfigureServer">Настроить сервер</string>
+<string name="errorConfigMustHaveName">У конфигурации должно быть имя.</string>
+<string name="errorConfigMustHaveUserName">Конфигурация должна содержать имя пользователя.</string>
+<string name="errorConfigMustHavePassword">Конфигурация должна содержать пароль.</string>
+<string name="errorConfigMustHaveURL">Конфигурация должна содержать домен или URL сервера.</string>
+<string name="Skip">Пропустить</string>
+<string name="Configure">Настроить</string>
+<string name="prefAllowSelfSignedCerts_PrefTitle">Разрешить самоподписанные сертификаты</string>
+<string name="prefAllowSelfSignedCerts_OnSummary">Разрешено</string>
+<string name="prefAllowSelfSignedCerts_OffSummary">Отклонено</string>
+<string name="SslCertificateError">Проблема при проверке SSL сертификата.</string>
+<string name="prefTzServerBaseUrl_Title">Адрес сервера временной зоны</string>
+<string name="note_title_hint">Дайте название вашей заметке</string>
+<string name="note_text_hint">Ввведите заметку здесь</string>
+<string name="event_name_hint">Введите имя для события</string>
+<string name="todo_name_hint">Введите имя вашей задачи</string>
+<string name="todo_description_hint">Введите описание вашей задачи</string>
+<string name="first_name_hint">Имя</string>
+<string name="surname_hint">Отчество</string>
+<string name="phone_prompt">Телефон</string>
+<string name="phone_hint">Телефон</string>
+<string name="email_prompt">Электронная почта</string>
+<string name="email_hint">Электронная почта</string>
+<string name="postal_address_prompt">Почтовый адрес</string>
+<string name="street_hint">Улица</string>
+<string name="city_hint">Город</string>
+<string name="country_hint">Страна</string>
+<string name="postcode_hint">Индекс</string>
+<string name="organisation_prompt">Организация</string>
+<string name="company_hint">Компания</string>
+<string name="job_title_hint">Заголовок</string>
+<string name="contact_picture_description">Картинка контакта</string>
+<string name="icon_add_description">Добавить</string>
+<string name="icon_delete_description">Удалить</string>
+<string name="Home">Дом</string>
+<string name="Work">Рабочий</string>
+<string name="Mobile">Мобильный</string>
+<string name="Other">Другое</string>
+<string name="WorkFax">Рабочий факс</string>
+<string name="HomeFax">Домашний факс</string>
+<string name="Pager">Пейджер</string>
+	<string-array name="phone_types">
+		<item>@string/Home</item>
+		<item>@string/Mobile</item>
+		<item>@string/Work</item>
+		<item>@string/WorkFax</item>
+		<item>@string/HomeFax</item>
+		<item>@string/Pager</item>
+		<item>@string/Other</item>
+		<item>@string/Custom</item>
+	</string-array>
+	<string-array name="email_types">
+		<item>@string/Home</item>
+		<item>@string/Work</item>
+		<item>@string/Other</item>
+		<item>@string/Custom</item>
+	</string-array>
+<string name="newJournalFromThis">Копировать в новую заметку</string>
+</resources>

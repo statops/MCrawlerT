@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:orientation="vertical" >
+	<ScrollView
+		android:id="@+id/DateTimeInputScroller"
+		android:layout_width="wrap_content"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:fillViewport="false" >
+		<!-- android:layout_alignParentTop="true" -->
+		<LinearLayout
+			android:id="@+id/DateTimeInputLayout"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:gravity="center_horizontal"
+			android:orientation="vertical" >
+			<DatePicker
+				android:id="@+id/datePicker"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:addStatesFromChildren="true" />
+			<RelativeLayout
+				android:id="@+id/checkBoxLayout"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content" >
+				<TimePicker
+					android:id="@+id/timePicker"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentLeft="true"
+					android:addStatesFromChildren="true" />
+				<CheckBox
+					android:id="@+id/DateTimeIsDate"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentRight="true"
+					android:text="@string/IsADate" />
+			</RelativeLayout>
+			<Spinner
+				android:id="@+id/DateTimeZoneSelect"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content" />
+		</LinearLayout>
+	</ScrollView>
+	<LinearLayout
+		android:id="@+id/OkCancelLayout"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="fill_horizontal|center_horizontal"
+		android:gravity="center_horizontal"
+		android:paddingTop="5sp" >
+		<!-- android:layout_alignParentBottom="true" -->
+		<Button
+			android:id="@+id/DateTimeSetButton"
+			android:layout_width="90sp"
+			android:layout_height="wrap_content"
+			android:text="@string/setButtonLabel" />
+		<Button
+			android:id="@+id/DateTimeCancelButton"
+			android:layout_width="90sp"
+			android:layout_height="wrap_content"
+			android:text="@string/cancel" />
+	</LinearLayout>
+</LinearLayout>

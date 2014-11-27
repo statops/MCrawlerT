@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Strings that should be localised belong in strings.xml -->
+<resources>
+	<string name="applyButton">applyButton</string>
+	<string name="cancelButton">cancelButton</string>
+	<string name="appName">aCal</string>
+	<string name="appNameTasks">aCalTasks</string>
+	<string name="appNameNotes">aCalNotes</string>
+	<string name="appActivityMonthView">aCal - Month View</string>
+	<string name="appActivityYearView">aCal - Year View</string>
+	<string name="appActivityWeekView">aCal - Week View</string>
+	<string name="AcalAccountType">com.morphoss.acal.AcalAccount</string>
+	<string name="davicalOrgTzUrl">http://tz.davical.org/tz.php</string>
+	<dimen name="MonthDayTextSize">14sp</dimen>
+	<color name="MonthDayFG">#001060</color>
+	<color name="MonthDayInMonthBG">#A0DDDDDD</color>
+	<color name="MonthDayOutMonthBG">#80AAAAAA</color>
+	<color name="MonthDayHighlightFG">#FFC00000</color>
+	<color name="MonthDayHighlightBG">#00FFFFFF</color>
+	<dimen name="MonthDayHighlightTextSize">18sp</dimen>
+	<color name="MonthDayHighlightBox">#FFE77720</color>
+	<color name="MonthDayTodayBox">#FF10D747</color>
+	<color name="DayEventFG">#103090</color>
+	<color name="DayEventBG">#50FFFFFF</color>
+	<dimen name="DayEventTextSize">14sp</dimen>
+	<color name="WeekViewMultiDayBG">#F0F0F0</color>
+	<color name="WeekViewMultiDayBorder">#333333</color>
+	<color name="WeekViewSidebarBG">#F0F0F0</color>
+	<color name="WeekViewSidebarBorder">#333333</color>
+	<color name="WeekViewDayGridBorder">#AAAAAA</color>
+	<color name="WeekViewDayGridWorkTimeBG">#90F6F6D0</color>
+	<color name="OverdueTask">#FFE03010</color>
+	<color name="CompletedTask">#FF007010</color>
+	<string name="placeholderDateAndTime">7:00pm, 29 October 2011</string>
+	<string name="empty"></string>
+</resources>

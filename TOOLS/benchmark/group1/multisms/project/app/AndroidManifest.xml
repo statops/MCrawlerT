@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="13" android:versionName="2.3" package="com.hectorone.multismssender">
+	<application android:icon="@drawable/multisms" android:label="@string/app_name">
+		<activity android:label="@string/app_name" android:name=".MultiSmsSender">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN"/>
+				<category android:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+		<activity android:name=".PhoneNumberSelection"/>
+		<activity android:name="SelectGroupActivity"/>
+		<activity android:name="GroupEditActivity"/>
+		<activity android:name="SelectDeliveryActivity"/>
+		<activity android:name="ListEntryActivity"/>
+		<receiver android:enabled="true" android:name="MessageReceiver">
+			<intent-filter>
+				<action android:name="com.hectorone.multismssender.SMS_RECEIVED"/>
+				<data android:mimeType="vnd.android.cursor.item/vnd.com.hectorone.multismssender.provider.entry"/>
+			</intent-filter>
+		</receiver>
+<provider android:authorities="com.hectorone.multismssender.provider" android:name=".DeliveryDbAdapter"/>
+<receiver android:name="com.hectorone.multismssender.EmmaInstrument.SMSInstrumentedReceiver">
+<intent-filter>
+<action android:name="edu.gatech.m3.emma.COLLECT_COVERAGE"/>
+</intent-filter>
+</receiver>
+<activity android:label="EmmaInstrumentationActivity" android:name="com.hectorone.multismssender.EmmaInstrument.InstrumentedActivity"/>
+</application>
+	<uses-sdk android:minSdkVersion="5"/>
+	<uses-permission android:name="android.permission.READ_CONTACTS"/>
+	<uses-permission android:name="android.permission.SEND_SMS"/>
+	<uses-permission android:name="android.permission.RECEIVE_SMS"/>
+	<uses-permission android:name="android.permission.WRITE_SMS"/>
+	<uses-permission android:name="android.permission.READ_SMS"/>
+<instrumentation android:handleProfiling="true" android:label="EmmaInstrumentation" android:name="com.hectorone.multismssender.EmmaInstrument.EmmaInstrumentation" android:targetPackage="com.hectorone.multismssender"/>
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+</manifest>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceCategory android:title="@string/category_autolink">
+		<CheckBoxPreference
+			android:key="@string/prefAutoLinkWebKey"
+			android:title="@string/prefAutoLinkWeb"
+			android:summary="@string/prefAutoLinkWebSummary"
+		/>
+		<CheckBoxPreference
+			android:key="@string/prefAutoLinkEmailKey"
+			android:title="@string/prefAutoLinkEmail"
+			android:summary="@string/prefAutoLinkEmailSummary"
+		/>
+		<CheckBoxPreference
+			android:key="@string/prefAutoLinkTelKey"
+			android:title="@string/prefAutoLinkTel"
+			android:summary="@string/prefAutoLinkTelSummary"
+		/>
+	</PreferenceCategory>
+</PreferenceScreen>

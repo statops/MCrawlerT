@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="net.jaqpot.netcounter" android:versionName="0.14.1"
+	android:versionCode="22">
+
+	<uses-sdk android:minSdkVersion="3" android:targetSdkVersion="4" />
+
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+	<supports-screens android:largeScreens="true"
+		android:normalScreens="true" android:smallScreens="true"
+		android:anyDensity="true" />
+
+	<application android:name="NetCounterApplication"
+		android:icon="@drawable/icon" android:label="@string/appName"
+		android:debuggable="false" android:description="@string/appDescription"
+		android:enabled="true">
+
+		<!--
+			<meta-data android:name="com.a0soft.gphone.aTrackDog.testVersion"
+			android:value="16" />
+		-->
+		<meta-data android:name="com.a0soft.gphone.aTrackDog.webURL"
+			android:value="http://www.jaqpot.net/netcounter" />
+
+		<activity android:name=".activity.NetCounterActivity"
+			android:label="@string/appName" android:launchMode="singleTask">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".activity.NetCounterPreferences"
+			android:label="@string/appName" />
+		<activity android:name=".activity.BarGraphActivity" />
+
+		<service android:name=".service.NetCounterService" />
+
+		<receiver android:name=".service.OnBootReceiver">
+			<intent-filter>
+				<action android:name="android.intent.action.BOOT_COMPLETED" />
+			</intent-filter>
+		</receiver>
+		<receiver android:name=".service.OnAlarmReceiver" />
+
+	</application>
+
+</manifest> 

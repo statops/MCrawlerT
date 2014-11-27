@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+
+	<com.morphoss.acal.widget.NumberPicker
+		android:id="@+id/NumberPicker"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" />
+	
+	<LinearLayout
+		android:id="@+id/NumberPickerButtons"
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:layout_weight="0">
+			
+		<LinearLayout
+			android:layout_width="fill_parent" 
+  			android:layout_height="wrap_content"
+  			android:layout_weight="1">			
+			
+			<Button 
+				android:id="@+id/NumberPickerOkButton" 
+				android:layout_height="wrap_content" 
+				android:layout_width="fill_parent"
+				android:text="@string/ok"/>
+				
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="fill_parent" 
+  			android:layout_height="wrap_content"
+  			android:layout_weight="1">
+			<Button 
+				android:id="@+id/NumberPickerCancelButton" 
+				android:layout_height="wrap_content" 
+				android:layout_width="fill_parent" 
+				android:text="@string/cancel"/>
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>
+

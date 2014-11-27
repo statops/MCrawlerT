@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string-array name="timer_list_entries">
+	<item>1 мин.</item>
+	<item>3 мин.</item>
+	<item>5 мин.</item>
+	<item>15 мин.</item>
+	<item>30 мин.</item>
+	<item>60 мин.</item>
+</string-array>
+<string-array name="charset_list_entries">
+	<item>UTF-8</item>
+	<item>Shift-JIS</item>
+	<item>Windows-1250</item>
+	<item>Windows-1251</item>
+	<item>GB18030</item>
+	<item>EUC-KR</item>
+	<item>ISO-2022-KR</item>
+</string-array>
+<string-array name="line_break_code_entries">
+	<item>Автоматически</item>
+	<item>CRLF (Windows)</item>
+	<item>LF (Linux/Android)</item>
+	<item>CR (Mac)</item>
+</string-array>
+<string-array name="typeface_entries">
+	<item>Обычный</item>
+	<item>Моноширинный</item>
+	<item>Без засечек</item>
+	<item>С засечками</item>
+</string-array>
+</resources>

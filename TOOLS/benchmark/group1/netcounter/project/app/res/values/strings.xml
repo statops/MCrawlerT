@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="appName">NetCounter</string>
+	<string name="appDescription">Network traffic counter</string>
+	<string name="appAuthor">by Cyril Jaquier</string>
+	<string name="appLoading">Loading...</string>
+	<string name="appRefresh">Refresh</string>
+	<string name="appWhatsNew">What\'s new?</string>
+
+	<string name="yes">Yes</string>
+	<string name="no">No</string>
+	<string name="ok">Ok</string>
+	<string name="cancel">Cancel</string>
+	<string name="close">Close</string>
+
+	<string name="helpTitle">Help</string>
+	<string name="helpClose">Close</string>
+	<string name="helpText">
+		NetCounter saves and updates its statistics at regular interval into a
+		database. The service which records the data runs in the background
+		and is automatically started if you restart your device.\n\nSeveral
+		counters can be defined for each network interface. A counter is a
+		view over the data so you can delete and recreate counters without any
+		lose of information.\n\nIn order to add a new counter, long click on
+		the interface item. A context menu appears. Just select \"Add a
+		counter\". To remove the counter, long click on it and select \"Remove
+		counter\".\n\nTo change the type of the counter (\"Total\", \"Last
+		days\", \"Single day\", \"Monthly\"), long click on it again and
+		select \"Change type\".\n\nSome counters support a duration value.
+		E.g. the \"Single day\" counter can be used to show a \"Today\" or a
+		\"Yesterday\" counter. Just set the duration to the appropriate
+		value.\n\nAn alert can be defined for each counter. If the defined
+		value is exceeded, a notification will be displayed.\n\nTo reset all
+		data for an interface, long click on the interface and select \"Reset
+		all\". This will erase
+		<b>ALL</b>
+		the data of the interface so think twice before you click.\n\nIt is
+		possible to define the start date of your data plan for the
+		\"Monthly\" counter. Currently, only the day of the month is needed
+		and defaults to the 1th. To set another date, long click on the
+		\"Monthly\" counter and select \"Set start date\".\n\n
+	</string>
+	<string name="helpWhatsNew">
+		This <b>new release</b> of NetCounter features the following changes:\n\n
+		- Improved Dutch translation. Thanks to Bram Schoenmakers.\n\n
+		- Updated Swedish translation. Thanks to Tibor Baranyi.\n\n
+		- Network interfaces should be automatically discovered now. Should work for most devices.
+		Contact me if yours does not. Thanks to everyone who submitted a patch to support
+		their devices (Matti, Jon, Tristan, Samuel, Bram, Marco, Thilo and many others)\n\n
+		Please, also <b>visit the website</b> and <b>read the FAQ</b>.
+	</string>
+
+	<string name="aboutTitle">About</string>
+	<string name="aboutDonation">Donate</string>
+	<string name="aboutDonationUrl">https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=1662582</string>
+	<string name="aboutClose">Close</string>
+	<string name="aboutHomepage">Homepage</string>
+	<string name="aboutHomepageUrl">http://www.jaqpot.net/netcounter/</string>
+	<string name="aboutText">
+		NetCounter v%1$s is a simple network traffic counter with
+		user-configurable counters.\n\nFor further information, please visit
+		the homepage.\n\nCopyright (C) 2009 Cyril Jaquier\n\nThis program is
+		distributed in the hope that it will be useful, but WITHOUT ANY
+		WARRANTY; without even the implied warranty of MERCHANTABILITY or
+		FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License
+		for more details.\n\nThe application icons are from Everaldo.com and
+		are distributed under LGPL.\n\nTranslations\n
+		Czech: Petr Bláha &lt;pb@P3T3.org&gt;\n
+		German: Thomas Putschbach &lt;android@tpju.de&gt;\n
+		Italian: Fabio Bonomi Boseggia\n
+		French: Cyril Jaquier\n
+		Chinese Traditional: Bernie Garden\n\n
+	</string>
+
+	<string name="exportTitle">Export to .csv</string>
+	<string name="exportSummary">Export all data to a .csv file on the SD card</string>
+	<string name="exportSuccessful">Export to %1$s successful</string>
+	<string name="exportFailed">Export failed</string>
+	<string name="exportDialogTitle">Exporting...</string>
+	<string name="exportDialogText">Please wait while exporting data</string>
+	
+	<string name="importTitle">Import from .csv</string>
+	<string name="importSummary">Import data from .csv files on the SD card</string>
+	<string name="importSuccessful">Import successful</string>
+	<string name="importFailed">Import failed</string>
+	<string name="importDialogTitle">Importing...</string>
+	<string name="importDialogText">Please wait while importing data</string>
+	<string name="importAlertText">Are you sure that you want to import the data from the SD card?</string>
+
+	<string name="interfaceTypeCell">Cell</string>
+	<string name="interfaceTypeWifi">Wi-Fi</string>
+	<string name="interfaceTypeBluetooth">Bluetooth</string>
+
+	<string name="menuInterfaceTitle">Interface</string>
+	<string name="menuInterfaceAdd">Add a counter</string>
+	<string name="menuInterfaceAddDone">New counter added</string>
+	<string name="menuInterfaceReset">Reset all</string>
+	<string name="menuInterfaceResetDone">Reset done</string>
+	<string name="menuInterfaceGraph">Show graph</string>
+	
+	<string name="dialogInterfaceResetTitle">Reset all</string>
+	<string name="dialogInterfaceResetText">Are you sure?</string>
+	
+	<string name="menuCounterTitle">Counter</string>
+	<string name="menuCounterChange">Change counter type</string>
+	<string name="menuCounterChangeDone">Counter type changed</string>
+	<string name="menuCounterRemove">Remove counter</string>
+	<string name="menuCounterRemoveDone">Counter removed</string>
+	<string name="menuCounterStartDate">Set start date</string>
+	<string name="menuCounterStartDay">Set start day</string>
+	<string name="menuCounterSetDuration">Set duration</string>
+	<string name="menuCounterSetAlert">Set data alert</string>
+	
+	<string name="dialogCounterTypeTitle">Select counter type</string>
+	<string name="dialogCounterDurationTitle">Select counter duration</string>
+	<string name="dialogCounterMonthlyTitle">Select the reset date</string>
+	<string name="dialogCounterMonthlyChanged">Date changed</string>
+	<string name="dialogCounterWeeklyTitle">Select the reset day</string>
+	<string name="dialogCounterWeeklyChanged">Day changed</string>
+	
+	<string name="dialogCounterLimitTitle">Set notification value</string>
+	<string name="dialogCounterLimitText">Set the notification limit. To disable
+		notification, just erase the value or set it to 0.</string>
+	<string name="dialogCounterLimitWrong">Wrong number format</string>
+	
+	<string name="dialogDetailsStartDate">Start date:</string>
+	<string name="dialogDetailsEndDate">End date:</string>
+	<string name="dialogDetailsReceived">Received:</string>
+	<string name="dialogDetailsSent">Sent:</string>
+	<string name="dialogDetailsTotal">Total:</string>
+	<string name="dialogDetailsAlert">Alert:</string>
+	<string name="dialogDetailsByte">%1$s (%2$s%%)</string>
+	<string name="dialogDetailsNoAlert">no alert defined</string>
+	
+	<!-- e.g. Cell exceeds the limit of 100 MB for Total -->
+	<string name="notifyExceed">%1$s exceeds the limit of %2$s %3$s for %4$s</string>
+	<!-- e.g. Cell exceeds the defined limit -->
+	<string name="notifyExceedTitle">%1$s exceeds the defined limit</string>
+
+	<!-- Preferences -->
+	<string name="preferences">Preferences</string>
+	<string name="prefsCategoryAdvancedTitle">Advanced preferences</string>
+	<string name="prefsCatImportExportTitle">Import/Export</string>
+	<string name="prefsCatImportExportSummary">Import and export data to and from the SD card</string>
+	<string name="prefsWifiUpdateTitle">WiFi slow update rate</string>
+	<string name="prefsWifiUpdateSummaryOn">Update every hour. Require less power but less accurate</string>
+	<string name="prefsWifiUpdateSummaryOff">Update every 30 seconds. Require more power but more accurate</string>
+	<string name="prefsDebugTitle">Debug</string>
+	<string name="prefsDebugSummary">Show debug information in the notification area</string>
+
+	<!-- Graph activity -->
+	<string name="graphReceivedLabel">Received</string>
+	<string name="graphSentLabel">Sent</string>
+	<string name="graphYTitle">kBytes</string>
+
+</resources>

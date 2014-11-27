@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- By Khalid EL BOUKHARI -->
+<resources>
+    <string name="app_name">(رسائل قصيرة متعددة) Multi Sms</string>
+	<string name="send">إرسال</string>
+	<string name="add">إضافة</string>
+	<string name="contacts">جهات الاتصال</string>
+	<string name="ok">موافق</string>
+	<string name="cancel">إلغاء</string>
+	<string name="nocontacts"> لا جهات الاتصال</string>
+	<string name="nogroups">!! لا توجد مجموعات</string>
+	<string name="sending">...إرسال رسالة</string>
+	<string name="wait">...الرجاء الانتظار ريث الإرسال</string>
+	<string name="entermessage">أدخل رسالتك</string>
+	<string name="entergroupname">اسم المجموعة</string>
+	<string name="to">إلى</string>
+	<string name="refresh">تحديث</string>
+	<string name="remove_all">إزالة جميع</string>
+	<string name="remove">محو</string>
+	<string name="add_group">إضافة مجموعة</string>
+	<string name="delivery">إقرار بالإستلام</string>
+	<string name="nodelivery">لا إقرار بالإستلام </string>
+	<string name="enabledelivery">طلب إقرار بالإستلام </string>
+	<string name="create_group">إنشاء مجموعة</string>
+	<string name="remove_group">حذف هذه المجموعة</string>
+	<string name="edit_group">تحرير هذه المجموعة</string>
+	<string name="noName">لا إسم</string>
+	<string name="select_all">إختيار الكل</string>
+	<string name="deselect_all"> حذف إختيار الكل </string>
+	<string name="message_sent">البريد المرسل</string>
+	<string name="enter_number">إدخال رقم أو استخدام رمز الاتصال</string>
+	<string name="warning_many_message">أنت على وشك إرسال أكثر من 50 رسالة في وقت واحد، وهذا يمكن أن يسبب خطأ من شأنه أن يتلف التطبيق،لذا سيتم إرسال الرسائل 50 تلو الأخرى مع وقفة بين كل مجموعة. هل ترغب في الاستمرار؟</string>
+	<string name="more_message">مستعد ل 50 رسالة إضافية؟</string>
+</resources>

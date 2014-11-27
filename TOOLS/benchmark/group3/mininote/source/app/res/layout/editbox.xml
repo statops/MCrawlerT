@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/editboxlayout"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+  
+  　<ScrollView 
+    android:id="@+id/ScrollView01" 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    android:fastScrollEnabled="true"
+    android:fillViewport="true" 
+     >
+	<EditText
+	    android:id="@+id/editbox"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:focusableInTouchMode="true"
+	    android:gravity="top"
+	    android:maxLength="16843104"
+	    android:imeOptions="flagNoFullscreen"
+	    
+	/>
+	</ScrollView>
+
+</LinearLayout>
+<!-- 
+		android:imeOptions="flagNoExtractUi"
+	    android:maxLength="4194304"
+	    android:maxLength="-1"
+	    global attribute resource symbol maxWidth.
+	    android:maxLength="16843104"
+	    
+ -->
+ 

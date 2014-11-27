@@ -1,0 +1,98 @@
+v25=1.2
+New "Week View"
+Rewritten internal caching layer
+Improved support for Zimbra
+Improved handling of very large calendars
+Various improvements to Month View
+Many, many bug fixes
+List of changes displayed on upgrade
+v28=1.21
+Fix handling of some invalid repeat rules
+Save/restore viewed date across Week/Month Views
+Updated Spanish & Catalan translations
+v29=1.22
+Fix Digest Authentication against Apple Calendarserver
+Fix various sync issues, especially for Bedework and Apple Calendarserver
+Fix force close when choosing 'Cancel' while modifying an alarm.
+Fix force close in calculating image widths in week view.
+v29=1.23
+Improve server discovery timeout problems
+Improve sync speed for larger calendars
+Trigger immediate 'should we sync' if sync times are changed
+Add Support for sync with Google Calendar via CalDAV
+Increase server discovery timeouts to try and improve resilience
+v32=1.3
+Improved server discovery process
+Add initial support for tasks (VTODO) in CalDAV  
+Improved underlying XML Parsing
+Fixed bug where default audio sound would not play on some devices.
+Stopped alarm from playing during a phone call (Requires new 'READ PHONE STATE' Permission)
+Server discovery is much simpler and more reliable
+Timezones are now fully supported.
+Event editing is redesigned.
+Events now support custom alarms.
+Memory footprint is improved.
+New desktop widget showing upcoming events.
+Upgrade notes now available from Settings menu.
+... and many bug fixes.
+v33=1.31
+Fix possible force-close deleting event.
+Fix force-close on "Today" in Year View.
+Fix interpretation of "Eastern Time" timezone alias.
+Basic one-way CardDAV sync to contacts (under development). 
+v34=1.32
+Opening event from desktop widget gave wrong time on event.
+Updated German and Brazilian translations.
+Added a few more timezone aliases.
+Fixed some bugs in CardDAV contacts sync
+Don't force screen into Portrait mode.
+Fix display of Calendars & Addressbooks list on Android 3.x/4.x
+v35=1.33
+Finished events now correctly disappear from widget
+Fixed major force-close problem becoming apparent over new year.
+All finished events should now disappear from widget correctly.
+Changed 'simple' configuration to work from a URL rather than server + path.
+Updated translations for nl_BE,fr & de. 
+Android Contacts data should now update for changes in the linked CardDAV addressbook data.
+v36=1.34
+Fixed a bug in Digest authentication, which is often used with SabreDAV (including OwnCloud and others using this).
+Corrected typo in French translation.
+Copied nl_NL translation from the nl_BE translation on advice from a native nl_NL speaker.
+Fix display of messages when advanced configuration settings is used but they still don't work.
+Handle discovery of CardDAV addressbooks where addressbook-home-set differs from calendar-home-set.
+Fix handling of domain names with two parts.
+Fix force close processing invalid VCARD data in contacts sync adaptor.      
+v50=1.51
+Rewritten internal cache service.  Performance should generally be vastly improved.
+Interpose server setup screen if no servers are configured.
+Various fixes to SSL Certificate validation.
+New setting to disable certificate validation.
+v54=1.54
+Fix handling of Alarm on/off state for collections.
+Fix force close on creation of Note/Todo when no default calendar is assigned.
+v55=1.55
+Fix display of Alarm text where VALARM does not contain a DESCRIPTION property.
+v56=1.56
+Set worker priority to THREAD_MIN per recommendation from Matthieu Cargnelli.
+Correct calculation of week in month, thanks to Richard Hector.
+Fix for events crossing month end boundaries from Manuel Vögele.
+v57=1.57
+Many fixes to Notes / Tasks editing and context menus.
+Fix week view context menu.
+Adjust edit layouts to use more hints and fewer prompts.
+Stop week view from blinking on/off during sync.
+Fix occasional force close problem when closing week view.
+Download timezone definitions from a timezone server.
+v58=1.58
+Fix several force close issues.
+Start custom alarm at 5 minutes rather than 0 minutes, which is already covered.
+Pulled updated translations from Transifex.
+v59=1.59
+Fix some more obscure issues with invalid events.
+Properly handle deletion of related records on collection deletion.
+Fixed display of end-to-start events in Week View.
+Updated translations for Spanish & Italian.
+v60=1.60
+Fix two Null Pointer Exceptions in handling certain events with no end date, including one force close.
+Tweaked layout for event title in event edit. 
+Add translations in Japanese and Russian.

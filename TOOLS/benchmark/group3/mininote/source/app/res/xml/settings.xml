@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceCategory android:title="@string/category_common">
+		<CheckBoxPreference
+			android:key="@string/prefShowButtonsKey"
+			android:title="@string/prefShowButtons"
+			android:summary="@string/prefShowButtonsSummary"
+		/>
+		<ListPreference
+			android:key="@string/prefPWResetTimerKey"
+			android:title="@string/prefPWResetTimer"
+			android:summary="@string/prefPWResetTimerSummary"
+			android:entries="@array/timer_list_entries"
+			android:entryValues="@array/timer_list_entryvalues"
+		/>
+	</PreferenceCategory>
+	<PreferenceCategory android:title="@string/category_dir">
+		<PreferenceScreen 
+			android:title="@string/prefInitDir"
+			android:summary="@string/prefInitDir"
+			android:key="@string/prefInitDirKey">
+		</PreferenceScreen>
+		<!-- リストによる設定 --> 
+		<CheckBoxPreference
+			android:key="@string/prefListFoldersFirstKey"
+			android:title="@string/prefListFoldersFirst"
+			android:summary="@string/prefListFoldersFirstSummary"
+		/>
+		<PreferenceScreen 
+			android:key="@string/prefFontSizeOnListKey"
+			android:title="@string/prefFontSizeOnList"
+			android:summary="@string/prefFontSizeOnListSummary"
+		/>
+		<PreferenceScreen 
+			android:key="@string/prefDefaultFolderNameKey"
+			android:title="@string/prefDefaultFolderName"
+			android:summary="@string/prefDefaultFolderNameSummary"
+		/>
+		
+		
+	</PreferenceCategory>
+	<PreferenceCategory android:title="@string/category_edit">
+		<ListPreference
+			android:key="@string/prefCharsetNameKey"
+			android:title="@string/prefCharsetName"
+			android:summary="@string/prefCharsetNameSummary"
+			android:entries="@array/charset_list_entries"
+			android:entryValues="@array/charset_list_entryvalues"
+		/>
+		<ListPreference
+			android:key="@string/prefLineBreakCodeKey"
+			android:title="@string/prefLineBreakCode"
+			android:summary="@string/prefLineBreakCodeSummary"
+			android:entries="@array/line_break_code_entries"
+			android:entryValues="@array/line_break_code_entryvalues"
+		/>
+
+		<CheckBoxPreference
+			android:key="@string/prefSyncTitleKey"
+			android:title="@string/prefSyncTitle"
+			android:summary="@string/prefSyncTitleSummary"
+		/>
+		<CheckBoxPreference
+			android:key="@string/prefAutoSaveKey"
+			android:title="@string/prefAutoSave"
+			android:summary="@string/prefAutoSaveSummary"
+		/>
+	
+
+		<CheckBoxPreference
+			android:key="@string/prefViewerModeKey"
+			android:title="@string/prefViewerMode"
+			android:summary="@string/prefViewerMode"
+		/>
+
+		<CheckBoxPreference
+			android:key="@string/prefNoTitleBarKey"
+			android:title="@string/prefNoTitleBar"
+			android:summary="@string/prefNoTitleBarSummary"
+		/>
+
+		<PreferenceScreen 
+			android:key="@string/prefFontSizeKey"
+			android:title="@string/prefFontSize"
+			android:summary="@string/prefFontSizeSummary"
+		/>	
+		<ListPreference
+			android:key="@string/prefTypefaceKey"
+			android:title="@string/prefTypeface"
+			android:summary="@string/prefTypefaceSummary"
+			android:entries="@array/typeface_entries"
+			android:entryValues="@array/typeface_entryvalues"
+		/>
+
+
+		<PreferenceScreen 
+			android:title="@string/prefTemplateText"
+			android:summary="@string/prefTemplateTextSummary"
+			android:key="@string/prefTemplateTextKeyPrefix">
+		</PreferenceScreen>
+
+		<PreferenceScreen 
+			android:key="@string/prefAutoLinkKey"
+			android:title="@string/prefAutoLink"
+			android:summary="@string/prefAutoLinkSummary"
+		/>
+
+	</PreferenceCategory>
+
+
+</PreferenceScreen>

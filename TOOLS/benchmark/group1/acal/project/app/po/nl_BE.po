@@ -1,0 +1,1354 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+#   <zenlord@gmail.com>, 2011.
+# zenlord <zenlord@gmail.com>, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: aCal\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-08-19 17:18+1200\n"
+"PO-Revision-Date: 2012-08-19 05:21+0000\n"
+"Last-Translator: Andrew McMillan <andrew@mcmillan.net.nz>\n"
+"Language-Team: Dutch (Belgium) (http://www.transifex.com/projects/p/acal/language/nl_BE/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: nl_BE\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+# SourceFileStart:../res/values/strings.xml
+# Strings that should not be localised belong in unlocalisable_strings.xml
+msgid "theDayEachWeekStartsWith"
+msgstr "De dag waarmee elke week begint"
+
+msgid "firstDayOfWeek"
+msgstr "Eerste dag van de week"
+
+msgid "ok"
+msgstr "OK"
+
+msgid "cancel"
+msgstr "Annuleren"
+
+msgid "setButtonLabel"
+msgstr "Stel in"
+
+msgid "appDescription"
+msgstr "Een kalender voor Android die uw afspraken, taken, notities en contacten bewaart op een externe CalDAV / CardDAV server, zoals davical (Zie: www.davical.org)"
+
+msgid "appDescriptionTasks"
+msgstr "Een takenlijst voor Android die uw taken bewaart op een externe CalDAV / CardDAV server, zoals davical (Zie: www.davical.org)"
+
+msgid "appDescriptionNotes"
+msgstr ""
+
+msgid "Active"
+msgstr "Actief"
+
+msgid "Add_Server"
+msgstr "Server toevoegen"
+
+msgid "A_name_for_this_server_configuration"
+msgstr "Een naam om te gebruiken voor deze server configuratie"
+
+msgid "Authentication_Type"
+msgstr "Authenticatie Type"
+
+msgid "Simple_Path"
+msgstr "Eenvoudig Pad"
+
+msgid "Simple_User_URL"
+msgstr "Gebruikers URL"
+
+msgid "Server_URL"
+msgstr ""
+
+msgid "Enter_a_brief_summary_of_the_event"
+msgstr "Geef een korte samenvatting van de afspraak"
+
+msgid "Name"
+msgstr "Naam"
+
+msgid "Force_full_resync"
+msgstr "Forceer hersynchronisatie"
+
+msgid "Password"
+msgstr "Wachtwoord"
+
+msgid "Save"
+msgstr "Bewaren"
+
+msgid "Settings"
+msgstr "Instellingen"
+
+msgid "Server_Name"
+msgstr "Servernaam"
+
+msgid "Server_Options"
+msgstr "Serveropties"
+
+msgid "Collection_Options"
+msgstr "Collectie-opties"
+
+msgid "Colour"
+msgstr "Kleur"
+
+msgid "Default_timezone"
+msgstr "Standaard Tijdzone"
+
+msgid "DefaultAlarmTone"
+msgstr "Standaard notificatiegeluid"
+
+msgid "Server_Path"
+msgstr "Serverpad"
+
+msgid "Server_Port"
+msgstr "Serverpoort"
+
+msgid "Summary"
+msgstr "Samenvatting"
+
+msgid "Sync_collection_now"
+msgstr "Nu synchroniseren"
+
+msgid "Disable_collection"
+msgstr "Collectie uitschakelen"
+
+msgid "The_authentication_type_used"
+msgstr "Het authenticatie type gebruikt door de server"
+
+msgid "The_password_to_use"
+msgstr "Het wachtwoord te gebruiken voor authenticatie met de server"
+
+msgid "The_path_on_the_server"
+msgstr "Het pad op de server, zoals &quot;/caldav.php/user/&quot;"
+
+msgid "A_URL_or_domain_name"
+msgstr "Een URL of domeinnaam voor uw agendaserver"
+
+msgid "The_servers_hostname"
+msgstr "De volledige hostnaam van de server zoals &quot;calendar.davical.com&quot;"
+
+msgid "The_username_to_use"
+msgstr "De gebruikersnaam om te gebruiken voor authenticatie met de server"
+
+msgid "Username"
+msgstr "Gebruikersnaam"
+
+msgid "Use_SSL"
+msgstr "SSL gebruiken"
+
+msgid "Whether_this_server_is_active"
+msgstr "Of deze server actief moet worden gebruikt"
+
+msgid "Whether_to_use_encryption"
+msgstr "Of encryptie moet gebruikt worden voor de verbinding met de server"
+
+msgid "appActivityEventCreate"
+msgstr "Nieuwe Afspraak"
+
+msgid "appActivityServerConfigList"
+msgstr "Servers"
+
+msgid "appActivityServerConfiguration"
+msgstr ""
+
+msgid "appActivityAddServerList"
+msgstr "Server Sjablonen"
+
+msgid "appActivityCollectionConfigList"
+msgstr "Kalenders en Adresboeken"
+
+msgid "appActivityDebugSettings"
+msgstr "Instellingen voor foutopsporing"
+
+msgid "appActivitySettings"
+msgstr "Instellingen"
+
+msgid "appActivityPreference"
+msgstr "Voorkeuren"
+
+msgid "The_port_to_connect_to"
+msgstr "De poort om verbinding te maken met de server"
+
+msgid "A_name_for_this_collection"
+msgstr "Een naam voor deze collectie"
+
+msgid "pActive_addressbook"
+msgstr "Gebruikt Adresboek"
+
+msgid "pActive_for_events"
+msgstr "Gebruikt voor Afspraken"
+
+msgid "pActive_for_journal"
+msgstr "Gebruikt voor Notities"
+
+msgid "pActive_for_tasks"
+msgstr "Gebruikt voor Taken"
+
+msgid "pUse_Alarms"
+msgstr "Gebruik notificaties in deze collectie?"
+
+msgid "Use_Alarms"
+msgstr "Notificaties ingeschakeld"
+
+msgid "Active_addressbook"
+msgstr "Wordt deze collectie gebruikt om contactpersonen te bewaren?"
+
+msgid "Active_for_events"
+msgstr "Wordt deze collectie gebruikt om afspraken in te bewaren?"
+
+msgid "Active_for_journal"
+msgstr "Wordt deze collectie gebruikt om notities te bewaren?"
+
+msgid "Active_for_tasks"
+msgstr "Wordt deze collectie gebruikt om taken te bewaren?"
+
+msgid "The_colour_associated_with_this_collection"
+msgstr "De kleur voor gegevens uit deze collectie"
+
+msgid "The_timezone_new_events_default_to"
+msgstr "De tijdzone die wordt gebruikt voor nieuwe afspraken in deze collectie"
+
+msgid "pMax_age_on_3g"
+msgstr "Sync minuten op 3g"
+
+msgid "The_maximum_age_for_data_while_on_3g"
+msgstr "De maximale tijd (in minuten) voordat u update via 3G"
+
+msgid "pMax_age_on_wifi"
+msgstr "Sync minuten op WiFi"
+
+msgid "The_maximum_age_for_data_while_on_wifi"
+msgstr "De maximale tijd (in minuten) voordat u update via WiFi"
+
+msgid "Use_alarms_from_this_calendar"
+msgstr "Moeten notificaties in deze kalender worden weergegeven?"
+
+msgid "Monday"
+msgstr "Maandag"
+
+msgid "Tuesday"
+msgstr "Dinsdag"
+
+msgid "Wednesday"
+msgstr "Woensdag"
+
+msgid "Thursday"
+msgstr "Donderdag"
+
+msgid "Friday"
+msgstr "Vrijdag"
+
+msgid "Saturday"
+msgstr "Zaterdag"
+
+msgid "Sunday"
+msgstr "Zondag"
+
+msgid "Mon"
+msgstr "Ma"
+
+msgid "Tue"
+msgstr "Di"
+
+msgid "Wed"
+msgstr "Woe"
+
+msgid "Thu"
+msgstr "Do"
+
+msgid "Fri"
+msgstr "Vrij"
+
+msgid "Sat"
+msgstr "Zat"
+
+msgid "Sun"
+msgstr "Zon"
+
+msgid "chMon"
+msgstr "M"
+
+msgid "chTue"
+msgstr "D"
+
+msgid "chWed"
+msgstr "W"
+
+msgid "chThu"
+msgstr "D"
+
+msgid "chFri"
+msgstr "V"
+
+msgid "chSat"
+msgstr "Z"
+
+msgid "chSun"
+msgstr "Z"
+
+msgid "January"
+msgstr "januari"
+
+msgid "February"
+msgstr "februari"
+
+msgid "March"
+msgstr "maart"
+
+msgid "April"
+msgstr "april"
+
+msgid "May"
+msgstr "mei"
+
+msgid "June"
+msgstr "juni"
+
+msgid "July"
+msgstr "juli"
+
+msgid "August"
+msgstr "augustus"
+
+msgid "September"
+msgstr "september"
+
+msgid "October"
+msgstr "oktober"
+
+msgid "November"
+msgstr "november"
+
+msgid "December"
+msgstr "december"
+
+msgid "thJan"
+msgstr "Jan"
+
+msgid "thFeb"
+msgstr "Feb"
+
+msgid "thMar"
+msgstr "Maa"
+
+msgid "thApr"
+msgstr "Apr"
+
+msgid "thMay"
+msgstr "Mei"
+
+msgid "thJun"
+msgstr "Jun"
+
+msgid "thJul"
+msgstr "Jul"
+
+msgid "thAug"
+msgstr "Aug"
+
+msgid "thSep"
+msgstr "Sep"
+
+msgid "thOct"
+msgstr "Okt"
+
+msgid "thNov"
+msgstr "Nov"
+
+msgid "thDec"
+msgstr "Dec"
+
+# If the user is displaying AM/PM we need a single character to display e.g.
+# 9a for 9:00am in the morning
+msgid "oneCharMorning"
+msgstr "a"
+
+# If the user is displaying AM/PM we need a single character to display e.g.
+# 1p for 1:00pm in the afternoon
+msgid "oneCharAfternoon"
+msgstr "p"
+
+msgid "abbrevMorning"
+msgstr "AM"
+
+msgid "abbrevAfternoon"
+msgstr "PM"
+
+msgid "YearViewSize_PrefTitle"
+msgstr "Aantal weer te geven maanden in Jaar-weergave"
+
+msgid "YearViewSize_PrefSummary"
+msgstr "Het aantal maanden dat wordt weergegeven in Jaar-weergave"
+
+msgid "Snooze_PrefTitle"
+msgstr "Snooze-tijd"
+
+msgid "Snooze_PrefSummary"
+msgstr "Hoeveel minuten worden notificaties uitgesteld wanneer de snooze-knop wordt ingedrukt?"
+
+msgid "prefDefaultEventsCollection_Title"
+msgstr ""
+
+msgid "prefDefaultEventsCollection_Summary"
+msgstr ""
+
+msgid "prefDefaultTasksCollection_Title"
+msgstr ""
+
+msgid "prefDefaultTasksCollection_Summary"
+msgstr ""
+
+msgid "prefDefaultNotesCollection_Title"
+msgstr ""
+
+msgid "prefDefaultNotesCollection_Summary"
+msgstr ""
+
+msgid "DefaultAlarmTone_PrefTitle"
+msgstr "Standaard alarmgeluid"
+
+msgid "DefaultAlarmTone_PrefSummary"
+msgstr "Het standaard geluid voor notificaties."
+
+msgid "AlarmVolumeType_PrefTitle"
+msgstr "Instelling voor Alarm-volume"
+
+msgid "AlarmVolumeType_PrefSummary"
+msgstr "De instelling waarmee het volume van het alarm kan geregeld worden"
+
+msgid "AlarmBellVolume"
+msgstr "Alarm-volume"
+
+msgid "MediaPlayerVolume"
+msgstr "Media-volume"
+
+msgid "prefWorkdayStart_Title"
+msgstr "Aanvang werkdag"
+
+msgid "prefWorkdayStart_Summary"
+msgstr "De werkdag vangt aan om"
+
+msgid "prefWorkdayFinish_Title"
+msgstr "Einde werkdag"
+
+msgid "prefWorkdayFinish_Summary"
+msgstr "De werkdag eindigt om"
+
+msgid "prefWeekViewLinesPerHour_Title"
+msgstr "Rijhoogte"
+
+msgid "prefWeekViewLinesPerHour_Summary"
+msgstr "De hoogte van ieder uur van de dag in week-weergave"
+
+msgid "prefWeekViewDayWidth_Title"
+msgstr "Kolombreedte"
+
+msgid "prefWeekViewDayWidth_Summary"
+msgstr "De breedte van elke dag-kolom in de week-weergave"
+
+msgid "Today"
+msgstr "Vandaag"
+
+msgid "Year"
+msgstr "Jaar"
+
+msgid "Month"
+msgstr "Maand"
+
+msgid "Week"
+msgstr "Week"
+
+msgid "Edit"
+msgstr "Bewerken"
+
+msgid "Apply"
+msgstr "Toepassen"
+
+msgid "Advanced"
+msgstr "Geavanceerd"
+
+msgid "Simple"
+msgstr "Eenvoudig"
+
+msgid "Add"
+msgstr "Toevoegen"
+
+msgid "UnNamedServer"
+msgstr "Naamloze Server"
+
+msgid "LocationPrompt"
+msgstr "Locatie:"
+
+msgid "NotesPrompt"
+msgstr "Opmerkingen:"
+
+msgid "AlarmsPrompt"
+msgstr "Notificaties:"
+
+msgid "RepeatsPrompt"
+msgstr "Herhaling:"
+
+msgid "AllDayPrompt"
+msgstr "Activiteit duurt hele dag:"
+
+msgid "FromPrompt"
+msgstr "Van:"
+
+msgid "TodoFromPrompt"
+msgstr "Start op:"
+
+msgid "UntilPrompt"
+msgstr "Tot:"
+
+msgid "DuePrompt"
+msgstr "Vervaldag:"
+
+msgid "CompletedPrompt"
+msgstr "Voltooid:"
+
+msgid "DaysPrompt"
+msgstr "Dagen:"
+
+msgid "StartPrompt"
+msgstr "Start:"
+
+msgid "CompletePrompt"
+msgstr "Compleet:"
+
+msgid "CollectionPrompt"
+msgstr "Agenda:"
+
+msgid "defaultCalendar"
+msgstr "Standaard kalender"
+
+msgid "theCalendarForNewEvents"
+msgstr "De standaard kalender om te gebruiken voor nieuwe afspraken."
+
+msgid "TwelveTwentyfour_PrefTitle"
+msgstr "Gebruik 24-uurs formaat"
+
+msgid "TwelveTwentyfour_OnSummary"
+msgstr "14:00"
+
+msgid "TwelveTwentyfour_OffSummary"
+msgstr "2:00pm"
+
+msgid "OnlyOnce"
+msgstr "Geen herhaling"
+
+msgid "EveryWeekday"
+msgstr "Iedere weekdag"
+
+msgid "EveryWeekend"
+msgstr "Ieder weekend"
+
+msgid "EveryDay"
+msgstr "Dagelijks"
+
+msgid "EveryWeek"
+msgstr "Wekelijks"
+
+msgid "EveryMonth"
+msgstr "Maandelijks"
+
+msgid "EveryYear"
+msgstr "Jaarlijks"
+
+msgid "EveryNDays"
+msgstr "Iedere %s dagen"
+
+msgid "EveryNWeeks"
+msgstr "Iedere %s weken"
+
+msgid "EveryNMonths"
+msgstr "Iedere %s maanden"
+
+msgid "EveryNYears"
+msgstr "Iedere %s jaren"
+
+msgid "EveryMonday"
+msgstr "Iedere maandag"
+
+msgid "EveryTuesday"
+msgstr "Iedere dinsdag"
+
+msgid "EveryWednesday"
+msgstr "Iedere woensdag"
+
+msgid "EveryThursday"
+msgstr "Iedere donderdag"
+
+msgid "EveryFriday"
+msgstr "Iedere vrijdag"
+
+msgid "EverySaturday"
+msgstr "Iedere zaterdag"
+
+msgid "EverySunday"
+msgstr "Iedere zondag"
+
+msgid "EveryNthOfTheMonth"
+msgstr "Iedere %s van de maand"
+
+msgid "EveryMonthOnTheNthSomeday"
+msgstr "Op de %s van iedere maand"
+
+msgid "CustomRepeatRule"
+msgstr "Aangepaste herhaling"
+
+msgid "EventSaved"
+msgstr "Afspraak bewaard."
+
+msgid "ModifiedAllInstances"
+msgstr "Alle instanties van deze afspraak bijgewerkt."
+
+msgid "ModifiedOneInstance"
+msgstr "Eén instantie van deze afspraak bijgewerkt."
+
+msgid "ModifiedThisAndFuture"
+msgstr "Deze en alle toekomstige instanties van deze afspraak bijgewerkt."
+
+msgid "ErrorSavingEvent"
+msgstr "Fout bij het bewaren van afspraak - probeer opnieuw."
+
+msgid "NewEventTitle"
+msgstr "Nieuwe Afspraak"
+
+msgid "ChooseACollection"
+msgstr "Kies een Collectie"
+
+msgid "ChooseAlarmTime"
+msgstr "Tijdstip voor notificatie"
+
+msgid "ChooseInstancesToChange"
+msgstr "Welke instanties moeten worden gewijzigd?"
+
+msgid "ChooseRepeatFrequency"
+msgstr "Kies een Herhaal Frequentie"
+
+msgid "Add_Alarm"
+msgstr "Notificatie toevoegen"
+
+msgid "errorMustHaveActiveCalendar"
+msgstr "Kan afspraak niet bijwerken zonder een actieve kalender."
+
+msgid "errorSavingServerConfig"
+msgstr "Fout bij opslaan van server configuratie"
+
+msgid "errorSavingFile"
+msgstr "Fout bij bewaren naar bestand"
+
+msgid "ServerDataSaved"
+msgstr "Server-gegevens geschreven. Bestandsnaam:"
+
+msgid "NewManualServerConfiguration"
+msgstr "Handmatige configuratie"
+
+msgid "ManualServerConfigurationBlurb"
+msgstr "Handmatig invoeren van de server informatie"
+
+msgid "SavedServerConfigurationBlurb"
+msgstr "Een bewaarde serverconfiguratie"
+
+msgid "AllDaysInPeriod"
+msgstr "De hele dag, van %1$s tot %2$s"
+
+msgid "ForTheWholeDay"
+msgstr "De hele dag"
+
+msgid "alarmAtEventTime"
+msgstr "Bij aanvang van de afspraak"
+
+msgid "alarm10MinutesPrior"
+msgstr "10 minuten voor de activiteit"
+
+msgid "alarm15MinutesPrior"
+msgstr "15 minuten ervoor"
+
+msgid "alarm30MinutesPrior"
+msgstr "30 minuten voor de activiteit"
+
+msgid "alarm1HourPrior"
+msgstr "1 uur voor de activiteit"
+
+msgid "alarm2HoursPrior"
+msgstr "2 uren voor de activiteit"
+
+msgid "alarmCustom"
+msgstr "Aangepaste notificatie"
+
+msgid "alarmsDisabledNote"
+msgstr "(Alle notificaties zijn uitgeschakeld voor deze kalender)"
+
+msgid "changeThisInstance"
+msgstr "Enkel deze instantie"
+
+msgid "changeAllInstances"
+msgstr "Alle instanties"
+
+msgid "changeThisAndFuture"
+msgstr "Deze en alle toekomstige instanties"
+
+msgid "internetNotAvailable"
+msgstr "Het internet is momenteel niet beschikbaar"
+
+msgid "couldNotDiscoverPort"
+msgstr "Kon HTTP-poort voor CalDAV-server niet vinden"
+
+msgid "couldNotDiscoverPrincipal"
+msgstr "Kon Principaal-pad niet vinden - de ingevoerde waarden worden gebruikt."
+
+msgid "foundPrincipalPath"
+msgstr "Principaal-pad van server gevonden op &quot;%s&quot;"
+
+msgid "serverSupportsCalDAV"
+msgstr "Server ondersteunt CalDAV."
+
+msgid "serverHasDAVNoCalDAV"
+msgstr "De server ondersteunt DAV en uw gebruikersnaam en wachtwoord werken, maar er werd geen ondersteuning gevonden voor CalDAV."
+
+msgid "serverLacksCalDAV"
+msgstr "Server ondersteunt geen CalDAV."
+
+msgid "serverFailedValidation"
+msgstr "Er is een fout opgetreden bij het valideren van de server:"
+
+msgid "saveSettingsAnyway"
+msgstr "Wilt u deze instellingen toch bewaren?"
+
+msgid "serverValidationSuccess"
+msgstr "Server werd gevalideerd."
+
+msgid "authenticationFailed"
+msgstr "Niet in staat om te authenticeren bij server."
+
+msgid "WeekViewPreferences"
+msgstr "Instellingen van Week-weergave"
+
+msgid "AlarmPreferences"
+msgstr "Alarm instellingen"
+
+msgid "GeneralPreferences"
+msgstr "Algemene instellingen"
+
+msgid "checkServer"
+msgstr "Validatie-server"
+
+msgid "checkServer_Connecting"
+msgstr "Verbinding maken met server. Even geduld aub ..."
+
+msgid "checkServer_Internet"
+msgstr "Controle van de internetverbinding"
+
+msgid "checkServer_SearchingForServer"
+msgstr "CalDAV-server zoeken op &quot;%s&quot;"
+
+msgid "checkServer_DiscoveryCancelled"
+msgstr "Zoektocht naar server werd onderbroken"
+
+msgid "serverRecordAlreadyExists"
+msgstr "Er bestaat reeds een server voor dat protocol, poort, host, pad en gebruikersnaam"
+
+msgid "newEventFromThis"
+msgstr "Kopiëren naar een nieuwe afspraak"
+
+msgid "Delete"
+msgstr "Verwijderen"
+
+msgid "deleteAllInstances"
+msgstr "Verwijder alle gevallen"
+
+msgid "deleteThisInstance"
+msgstr "Verwijder enkel dit geval"
+
+msgid "deleteThisAndFuture"
+msgstr "Verwijder deze en toekomstige gevallen"
+
+msgid "newAllDayEventOn"
+msgstr "Nieuwe afspraak op %s"
+
+msgid "newHourEventAt"
+msgstr "Nieuwe afspraak om %s"
+
+msgid "editSomeEvent"
+msgstr "Bewerk: %s"
+
+msgid "copySomeEvent"
+msgstr "Kopieer: %s"
+
+msgid "deleteSomeEvent"
+msgstr "Verwijder: %s"
+
+msgid "noCollectionsFound"
+msgstr "Geen agenda's gevonden"
+
+msgid "aCalVersionChanges"
+msgstr "Welkom bij een nieuwe versie van Acal!"
+
+msgid "newWithVersion"
+msgstr "Veranderingen in versie %s"
+
+msgid "newVersionSeen"
+msgstr "Bedankt, toon het me nu!"
+
+msgid "Due"
+msgstr "Vervaldag"
+
+msgid "All"
+msgstr "Alle"
+
+msgid "Todo"
+msgstr "Todo"
+
+msgid "Events"
+msgstr "Afspraken"
+
+msgid "Tasks"
+msgstr "Taken"
+
+msgid "Journals"
+msgstr ""
+
+msgid "Unscheduled"
+msgstr "Niet gepland"
+
+msgid "ChooseAction"
+msgstr "Kies Actie"
+
+msgid "SetCompleted"
+msgstr "Markeer als Voltooid"
+
+msgid "newTaskFromThis"
+msgstr "Kopiëren naar Nieuwe taak"
+
+msgid "dueTasksTitle"
+msgstr "Taken die vervallen binnen de week"
+
+msgid "incompleteTasksTitle"
+msgstr "Onvolledige Taken"
+
+msgid "incompleteTasksDue"
+msgstr "Onvoltooide taken die binnen de week vervallen"
+
+msgid "allTasksTitle"
+msgstr "Alle taken"
+
+msgid "NewTaskTitle"
+msgstr "Nieuwe Taak"
+
+msgid "TaskSaved"
+msgstr "Taak bewaard."
+
+msgid "TaskModifiedAll"
+msgstr "Alle instanties van deze taak bijgewerkt."
+
+msgid "TaskModifiedOne"
+msgstr "Eén instantie van deze taak bijgewerkt."
+
+msgid "TaskModifiedThisAndFuture"
+msgstr "Deze en alle toekomstige instanties van deze taak bijgewerkt."
+
+msgid "TaskErrorSaving"
+msgstr "Fout bij het bewaren van taakgegevens - probeer aub opnieuw."
+
+msgid "username"
+msgstr "Gebruikersnaam:"
+
+msgid "password"
+msgstr "Wachtwoord:"
+
+msgid "setRepeatRule"
+msgstr "Stel Herhaling in"
+
+msgid "eventName"
+msgstr "Afspraak Naam"
+
+msgid "plus"
+msgstr "+"
+
+msgid "url"
+msgstr "URL:"
+
+msgid "todoName"
+msgstr "Todo Naam:"
+
+msgid "IsADate"
+msgstr "Is een Datum"
+
+msgid "NotSet"
+msgstr "Niet ingesteld"
+
+msgid "Exactly"
+msgstr "Exact"
+
+msgid "Start"
+msgstr "Start"
+
+msgid "Finish"
+msgstr "Einde"
+
+msgid "Before"
+msgstr "Voor"
+
+msgid "After"
+msgstr "Na"
+
+msgid "Custom"
+msgstr "Aangepast"
+
+msgid "floatingTime"
+msgstr ""
+
+msgid "SetCustomAlarm"
+msgstr "Stel een aangepast alarm in"
+
+msgid "showUpdateInformation"
+msgstr "Toon Update Informatie"
+
+msgid "General_aCal_Information"
+msgstr "Algemene aCal Informatie"
+
+msgid "aCal_Website"
+msgstr "De <b>aCal</b> website is %s"
+
+msgid "aCal_IRC_Channel"
+msgstr "Je kan chatten met de aCal auteurs via IRC in &lt;a href=\"irc://irc.oftc.net/#acal\">\"#acal op irc.oftc.net&lt;/a>"
+
+msgid "aCal_Mailing_Lists"
+msgstr "De &lt;em>aCal&lt;/em> mailing lists zijn openbaar en je kan je abonneren op &lt;a href=\"http://lists.acal.me/\">lists.acal.me&lt;/a>. Ook de archieven kan je daar raadplegen."
+
+msgid "aCal_is_Free_Software"
+msgstr "aCal is \"Vrije Software\", uitgebracht onder een General Public License v3 of recenter.  De &lt;a href=\"http://gitorious.org/acal\">broncode &lt;/a> kan gedownload worden via Gitorious."
+
+msgid "TaskMarkedComplete"
+msgstr "Taak gemarkeerd als voltooid."
+
+msgid "TaskDeleted"
+msgstr "Taak verwijderd."
+
+msgid "endsAt"
+msgstr "Eindigt %s"
+
+msgid "Finished"
+msgstr ""
+
+msgid "days"
+msgstr "Dagen"
+
+msgid "noScheduledEvents"
+msgstr "Geen geplande afspraken"
+
+msgid "Event"
+msgstr ""
+
+msgid "Task"
+msgstr ""
+
+msgid "weekends"
+msgstr ""
+
+msgid "weekdays"
+msgstr ""
+
+msgid "JournalDatePrompt"
+msgstr ""
+
+msgid "AppearancePreferences"
+msgstr ""
+
+msgid "prefThemeButtonColour_Summary"
+msgstr ""
+
+msgid "prefThemeButtonColour_Title"
+msgstr ""
+
+msgid "Saving"
+msgstr ""
+
+msgid "Loading"
+msgstr ""
+
+msgid "Deleting"
+msgstr ""
+
+msgid "ConfigureServer"
+msgstr ""
+
+msgid "errorConfigMustHaveName"
+msgstr ""
+
+msgid "errorConfigMustHaveUserName"
+msgstr ""
+
+msgid "errorConfigMustHavePassword"
+msgstr ""
+
+msgid "errorConfigMustHaveURL"
+msgstr ""
+
+msgid "Skip"
+msgstr ""
+
+msgid "Configure"
+msgstr ""
+
+msgid "prefAllowSelfSignedCerts_PrefTitle"
+msgstr ""
+
+msgid "prefAllowSelfSignedCerts_OnSummary"
+msgstr ""
+
+msgid "prefAllowSelfSignedCerts_OffSummary"
+msgstr ""
+
+msgid "SslCertificateError"
+msgstr ""
+
+msgid "prefTzServerBaseUrl_Title"
+msgstr ""
+
+msgid "prefIgnoreValarmDescription_PrefTitle"
+msgstr ""
+
+msgid "prefIgnoreValarmDescription_OnSummary"
+msgstr ""
+
+msgid "prefIgnoreValarmDescription_OffSummary"
+msgstr ""
+
+msgid "note_title_hint"
+msgstr ""
+
+msgid "note_text_hint"
+msgstr ""
+
+msgid "event_name_hint"
+msgstr ""
+
+msgid "event_location_hint"
+msgstr ""
+
+msgid "event_notes_hint"
+msgstr ""
+
+msgid "todo_name_hint"
+msgstr ""
+
+msgid "todo_description_hint"
+msgstr ""
+
+msgid "todo_location_hint"
+msgstr ""
+
+msgid "first_name_hint"
+msgstr ""
+
+msgid "surname_hint"
+msgstr ""
+
+msgid "phone_prompt"
+msgstr ""
+
+msgid "phone_hint"
+msgstr ""
+
+msgid "email_prompt"
+msgstr ""
+
+msgid "email_hint"
+msgstr ""
+
+msgid "postal_address_prompt"
+msgstr ""
+
+msgid "street_hint"
+msgstr ""
+
+msgid "city_hint"
+msgstr ""
+
+msgid "country_hint"
+msgstr ""
+
+msgid "postcode_hint"
+msgstr ""
+
+msgid "organisation_prompt"
+msgstr ""
+
+msgid "company_hint"
+msgstr ""
+
+msgid "job_title_hint"
+msgstr ""
+
+msgid "contact_picture_description"
+msgstr ""
+
+msgid "icon_add_description"
+msgstr "Toevoegen"
+
+msgid "icon_delete_description"
+msgstr "Verwijderen"
+
+msgid "Home"
+msgstr ""
+
+msgid "Work"
+msgstr ""
+
+msgid "Mobile"
+msgstr ""
+
+msgid "Other"
+msgstr ""
+
+msgid "WorkFax"
+msgstr ""
+
+msgid "HomeFax"
+msgstr ""
+
+msgid "Pager"
+msgstr ""
+
+msgid "newJournalFromThis"
+msgstr ""
+
+msgid "ErrorDeletingJournal"
+msgstr ""
+
+msgid "ErrorDeletingTask"
+msgstr ""
+
+msgid "ErrorCompletingTask"
+msgstr ""
+
+# SourceFileEnd:../res/values/strings.xml
+# SourceFileStart:../res/values/timezonenames.xml
+msgid "tzNameAfricaCairo"
+msgstr "Afrika/Caïro"
+
+msgid "tzNameAfricaCasablanca"
+msgstr "Afrika/Casablanca"
+
+msgid "tzNameAfricaHarare"
+msgstr "Afrika/Harare"
+
+msgid "tzNameAfricaNairobi"
+msgstr "Afrika/Nairobi"
+
+msgid "tzNameAfricaNdjamena"
+msgstr "Afrika/Ndjamena"
+
+msgid "tzNameAmericaAnchorage"
+msgstr "Amerika/Anchorage"
+
+msgid "tzNameAmericaArgentinaBuenos_Aires"
+msgstr "Amerika/Argentinië/Buenos Aires"
+
+msgid "tzNameAmericaBogota"
+msgstr "Amerika/Bogota"
+
+msgid "tzNameAmericaChicago"
+msgstr "Amerika/Chicago"
+
+msgid "tzNameAmericaDenver"
+msgstr "Amerika/Denver"
+
+msgid "tzNameAmericaGodthab"
+msgstr "Amerika/Godthab"
+
+msgid "tzNameAmericaHalifax"
+msgstr "Amerika/Halifax"
+
+msgid "tzNameAmericaIndianaIndianapolis"
+msgstr "Amerika/Indiana/Indianapolis"
+
+msgid "tzNameAmericaLa_Paz"
+msgstr "Amerika/La Paz"
+
+msgid "tzNameAmericaLos_Angeles"
+msgstr "Amerika/Los Angeles"
+
+msgid "tzNameAmericaNew_York"
+msgstr "Amerika/New York"
+
+msgid "tzNameAmericaNoronha"
+msgstr "Amerika/Noronha"
+
+msgid "tzNameAmericaPanama"
+msgstr "Amerika/Panama"
+
+msgid "tzNameAmericaPhoenix"
+msgstr "Amerika/Phoenix"
+
+msgid "tzNameAmericaRegina"
+msgstr "Amerika/Regina"
+
+msgid "tzNameAmericaSantiago"
+msgstr "Amerika/Santiago"
+
+msgid "tzNameAmericaSao_Paulo"
+msgstr "Amerika/Sao Paulo"
+
+msgid "tzNameAmericaSt_Johns"
+msgstr "Amerika/St Johns"
+
+msgid "tzNameAmericaTegucigalpa"
+msgstr "Amerika/Tegucigalpa"
+
+msgid "tzNameAsiaBaghdad"
+msgstr "Azië/Baghdad"
+
+msgid "tzNameAsiaBangkok"
+msgstr "Azië/Bangkok"
+
+msgid "tzNameAsiaColombo"
+msgstr "Azië/Colombo"
+
+msgid "tzNameAsiaDhaka"
+msgstr "Azië/Dhaka"
+
+msgid "tzNameAsiaIrkutsk"
+msgstr "Azië/Irkoetsk"
+
+msgid "tzNameAsiaJerusalem"
+msgstr "Azië/Jeruzalem"
+
+msgid "tzNameAsiaKabul"
+msgstr "Azië/Kaboel"
+
+msgid "tzNameAsiaKarachi"
+msgstr "Azië/Karachi"
+
+msgid "tzNameAsiaKathmandu"
+msgstr "Azië/Kathmandu"
+
+msgid "tzNameAsiaKolkata"
+msgstr "Azië/Kolkata"
+
+msgid "tzNameAsiaKrasnoyarsk"
+msgstr "Azië/Krasnoyarsk"
+
+msgid "tzNameAsiaMagadan"
+msgstr "Azië/Magadan"
+
+msgid "tzNameAsiaMuscat"
+msgstr "Azië/Muscat"
+
+msgid "tzNameAsiaNovosibirsk"
+msgstr "Azië/Novosibirsk"
+
+msgid "tzNameAsiaRangoon"
+msgstr "Azië/Rangoon"
+
+msgid "tzNameAsiaRiyadh"
+msgstr "Azië/Riyaad"
+
+msgid "tzNameAsiaSeoul"
+msgstr "Azië/Seoul"
+
+msgid "tzNameAsiaShanghai"
+msgstr "Azië/Shanghai"
+
+msgid "tzNameAsiaSingapore"
+msgstr "Azië/Singapore"
+
+msgid "tzNameAsiaTaipei"
+msgstr "Azië/Taipei"
+
+msgid "tzNameAsiaTehran"
+msgstr "Azië/Teheran"
+
+msgid "tzNameAsiaTokyo"
+msgstr "Azië/Tokio"
+
+msgid "tzNameAsiaVladivostok"
+msgstr "Azië/Vladivostok"
+
+msgid "tzNameAsiaYakutsk"
+msgstr "Azië/Yakoetsk"
+
+msgid "tzNameAsiaYekaterinburg"
+msgstr "Azië/Jekatarineburg"
+
+msgid "tzNameAsiaYerevan"
+msgstr "Azië/Yerevan"
+
+msgid "tzNameAtlanticAzores"
+msgstr "Atlantic/Azoren"
+
+msgid "tzNameAtlanticCape_Verde"
+msgstr "Atlantic/Kaap Verde"
+
+msgid "tzNameAustraliaAdelaide"
+msgstr "Australië/Adelaide"
+
+msgid "tzNameAustraliaBrisbane"
+msgstr "Australië/Brisbane"
+
+msgid "tzNameAustraliaDarwin"
+msgstr "Australië/Darwin"
+
+msgid "tzNameAustraliaHobart"
+msgstr "Australië/Hobart"
+
+msgid "tzNameAustraliaPerth"
+msgstr "Australië/Perth"
+
+msgid "tzNameAustraliaSydney"
+msgstr "Australië/Sydney"
+
+msgid "tzNameEuropeAthens"
+msgstr "Europa/Athene"
+
+msgid "tzNameEuropeBerlin"
+msgstr "Europa/Berlijn"
+
+msgid "tzNameEuropeBucharest"
+msgstr "Europa/Boekarest"
+
+msgid "tzNameEuropeHelsinki"
+msgstr "Europa/Helsinki"
+
+msgid "tzNameEuropeLisbon"
+msgstr "Europa/Lissabon"
+
+msgid "tzNameEuropeLondon"
+msgstr "Europa/Londen"
+
+msgid "tzNameEuropeMoscow"
+msgstr "Europa/Moskou"
+
+msgid "tzNameEuropeParis"
+msgstr "Europa/Parijs"
+
+msgid "tzNameEuropePrague"
+msgstr "Europa/Praag"
+
+msgid "tzNamePacificApia"
+msgstr "Pacific/Apia"
+
+msgid "tzNamePacificAuckland"
+msgstr "Pacific/Auckland"
+
+msgid "tzNamePacificFiji"
+msgstr "Pacific/Fiji"
+
+msgid "tzNamePacificGuam"
+msgstr "Pacific/Guam"
+
+msgid "tzNamePacificHonolulu"
+msgstr "Pacific/Honolulu"
+
+msgid "tzNamePacificKwajalein"
+msgstr "Pacific/Kwajalein"
+
+msgid "tzNamePacificTongatapu"
+msgstr "Pacific/Tongatapu"

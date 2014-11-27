@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/ContactEditLayout"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@drawable/morphossbg"
+	android:baselineAligned="false"
+	android:orientation="vertical"
+	tools:context=".activity.ContactEdit" >
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical" >
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical" >
+			<ImageView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:contentDescription="@string/contact_picture_description"
+				android:src="@drawable/icon" />
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal" >
+				<EditText
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:hint="@string/first_name_hint" />
+				<ImageView
+					android:layout_width="32dp"
+					android:layout_height="32dp"
+					android:background="#00444444"
+					android:contentDescription="@string/contact_picture_description"
+					android:scaleType="fitXY"
+					android:src="@drawable/completed" />
+			</LinearLayout>
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal" >
+				<EditText
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:hint="@string/surname_hint" />
+				<ImageView
+					android:layout_width="32dp"
+					android:layout_height="32dp"
+					android:layout_gravity="center"
+					android:contentDescription="@string/contact_picture_description"
+					android:padding="0dp"
+					android:scaleType="centerInside"
+					android:src="@drawable/expander_ic_minimized" />
+			</LinearLayout>
+		</LinearLayout>
+		<ImageView
+			android:layout_width="match_parent"
+			android:layout_height="1dp"
+			android:background="#f0404040"
+			android:contentDescription="@string/empty"
+			android:src="@android:drawable/divider_horizontal_bright" />
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical" >
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center_vertical"
+				android:orientation="horizontal" >
+				<TextView
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="12dp"
+					android:layout_marginTop="12dp"
+					android:layout_weight="1"
+					android:gravity="left|center_vertical"
+					android:paddingLeft="12dp"
+					android:text="@string/phone_prompt"
+					android:textColor="@android:color/black"
+					android:textSize="18dp" />
+				<ImageView
+					android:layout_width="32dp"
+					android:layout_height="32dp"
+					android:contentDescription="@string/icon_add_description"
+					android:padding="1dp"
+					android:scaleType="fitXY"
+					android:src="@android:drawable/ic_input_add" />
+			</LinearLayout>
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center_vertical"
+				android:orientation="horizontal" >
+				<Spinner
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="40"
+					android:entries="@array/phone_types" />
+				<EditText
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="60"
+					android:hint="@string/phone_hint" />
+				<ImageView
+					android:layout_width="32dp"
+					android:layout_height="32dp"
+					android:contentDescription="@string/icon_delete_description"
+					android:padding="2dp"
+					android:scaleType="centerInside"
+					android:src="@android:drawable/ic_delete" />
+			</LinearLayout>
+		</LinearLayout>
+		<ImageView
+			android:layout_width="match_parent"
+			android:layout_height="1dp"
+			android:background="#f0404040"
+			android:contentDescription="@string/empty"
+			android:src="@android:drawable/divider_horizontal_bright" />
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical" >
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center_vertical"
+				android:orientation="horizontal" >
+				<TextView
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="12dp"
+					android:layout_marginTop="12dp"
+					android:layout_weight="1"
+					android:gravity="left|center_vertical"
+					android:paddingLeft="12dp"
+					android:text="@string/email_prompt"
+					android:textColor="@android:color/black"
+					android:textSize="18dp" />
+				<ImageView
+					android:layout_width="32dp"
+					android:layout_height="32dp"
+					android:contentDescription="@string/icon_add_description"
+					android:padding="1dp"
+					android:scaleType="fitXY"
+					android:src="@android:drawable/ic_input_add" />
+			</LinearLayout>
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center_vertical"
+				android:orientation="horizontal" >
+				<Spinner
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="40"
+					android:entries="@array/phone_types" />
+				<EditText
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="60"
+					android:hint="@string/email_hint" />
+				<ImageView
+					android:layout_width="32dp"
+					android:layout_height="32dp"
+					android:contentDescription="@string/icon_delete_description"
+					android:padding="2dp"
+					android:scaleType="fitXY"
+					android:src="@android:drawable/ic_delete" />
+			</LinearLayout>
+		</LinearLayout>
+		<ImageView
+			android:layout_width="match_parent"
+			android:layout_height="1dp"
+			android:background="#f0404040"
+			android:contentDescription="@string/empty"
+			android:src="@android:drawable/divider_horizontal_bright" />
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical" >
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center_vertical"
+				android:orientation="horizontal" >
+				<TextView
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="12dp"
+					android:layout_marginTop="12dp"
+					android:layout_weight="1"
+					android:gravity="left|center_vertical"
+					android:paddingLeft="12dp"
+					android:text="@string/postal_address_prompt"
+					android:textColor="@android:color/black"
+					android:textSize="18dp" />
+				<ImageView
+					android:layout_width="32dp"
+					android:layout_height="32dp"
+					android:contentDescription="@string/icon_add_description"
+					android:padding="1dp"
+					android:scaleType="fitXY"
+					android:src="@android:drawable/ic_input_add" />
+			</LinearLayout>
+		</LinearLayout>
+		<ImageView
+			android:layout_width="match_parent"
+			android:layout_height="1dp"
+			android:background="#f0404040"
+			android:contentDescription="@string/empty"
+			android:src="@android:drawable/divider_horizontal_bright" />
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical" >
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center_vertical"
+				android:orientation="horizontal" >
+				<TextView
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="12dp"
+					android:layout_marginTop="12dp"
+					android:layout_weight="1"
+					android:gravity="left|center_vertical"
+					android:paddingLeft="12dp"
+					android:text="@string/organisation_prompt"
+					android:textColor="@android:color/black"
+					android:textSize="18dp" />
+				<ImageView
+					android:layout_width="32dp"
+					android:layout_height="32dp"
+					android:contentDescription="@string/icon_add_description"
+					android:padding="1dp"
+					android:scaleType="fitXY"
+					android:src="@android:drawable/ic_input_add" />
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+</ScrollView>

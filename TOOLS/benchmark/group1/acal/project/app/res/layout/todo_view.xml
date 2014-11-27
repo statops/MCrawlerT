@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/TodoViewLayout"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@drawable/morphossbg"
+	android:orientation="vertical" >
+	<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/TodoViewBelowTitleLayout"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_weight="1"
+		android:orientation="horizontal" >
+		<!-- Color bar -->
+		<LinearLayout
+			android:id="@+id/TodoViewColourBar"
+			android:layout_width="13sp"
+			android:layout_height="fill_parent"
+			android:background="#704080f0" />
+		<RelativeLayout
+			android:id="@+id/TodoViewContentArea"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_gravity="right"
+			android:layout_weight="1"
+			android:isScrollContainer="true" >
+			<ScrollView
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:layout_alignParentRight="true"
+				android:layout_alignParentTop="true" >
+				<RelativeLayout
+					android:id="@+id/TodoViewDataLayout"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:orientation="vertical" >
+					<!-- Todo Name -->
+					<TextView
+						android:id="@+id/TodoName"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:paddingBottom="10sp"
+						android:paddingLeft="10sp"
+						android:text="@string/todoName"
+						android:textSize="30sp" />
+					<!-- Time content -->
+					<TextView
+						android:id="@+id/TodoTimeContent"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@+id/TodoName"
+						android:paddingBottom="10sp"
+						android:paddingLeft="10sp"
+						android:textSize="24sp" />
+					<!-- Location Label and Button -->
+					<RelativeLayout
+						android:id="@+id/TodoLocationLayout"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:layout_below="@+id/TodoTimeContent"
+						android:paddingBottom="15sp" >
+						<!-- Location Label -->
+						<TextView
+							android:id="@+id/TodoLocationLabel"
+							style="@style/todo_view_label"
+							android:layout_width="fill_parent"
+							android:layout_height="wrap_content"
+							android:paddingBottom="2sp"
+							android:text="@string/LocationPrompt" />
+						<!-- Find on map button -->
+						<Button
+							android:id="@+id/TodoFindOnMapButton"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_alignParentRight="true"
+							android:layout_gravity="center"
+							android:background="@drawable/map_icon"
+							android:includeFontPadding="true"
+							android:padding="0sp" />
+						<TextView
+							android:id="@+id/TodoLocationContent"
+							style="@style/todo_view_content"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_below="@+id/TodoLocationLabel" />
+					</RelativeLayout>
+					<!-- End location label and button -->
+					<RelativeLayout
+						android:id="@+id/TodoNotesLayout"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:layout_below="@+id/TodoLocationLayout"
+						android:paddingBottom="15sp" >
+						<!-- Notes label and content -->
+						<TextView
+							android:id="@+id/TodoNotesLabel"
+							style="@style/todo_view_label"
+							android:layout_width="fill_parent"
+							android:layout_height="wrap_content"
+							android:layout_below="@+id/TodoLocationLayout"
+							android:text="@string/NotesPrompt" />
+						<TextView
+							android:id="@+id/TodoNotesContent"
+							style="@style/todo_view_content"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_below="@+id/TodoNotesLabel" />
+					</RelativeLayout>
+					<RelativeLayout
+						android:id="@+id/TodoAlarmsLayout"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:layout_below="@+id/TodoNotesLayout"
+						android:paddingBottom="15sp" >
+						<!-- Notes label and content -->
+						<TextView
+							android:id="@+id/TodoAlarmsLabel"
+							style="@style/todo_view_label"
+							android:layout_width="fill_parent"
+							android:layout_height="wrap_content"
+							android:layout_below="@+id/TodoNotesLayout"
+							android:text="@string/AlarmsPrompt" />
+						<TextView
+							android:id="@+id/TodoAlarmsContent"
+							style="@style/todo_view_content"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_below="@+id/TodoAlarmsLabel" />
+						<TextView
+							android:id="@+id/CalendarAlarmsDisabled"
+							style="@style/todo_view_note"
+							android:layout_width="fill_parent"
+							android:layout_height="wrap_content"
+							android:layout_below="@+id/TodoAlarmsContent"
+							android:layout_gravity="center_horizontal"
+							android:text="@string/alarmsDisabledNote"
+							android:visibility="gone" />
+					</RelativeLayout>
+					<RelativeLayout
+						android:id="@+id/TodoRepeatsLayout"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:layout_below="@+id/TodoAlarmsLayout" >
+						<!-- Notes label and content -->
+						<TextView
+							android:id="@+id/TodoRepeatsLabel"
+							style="@style/todo_view_label"
+							android:layout_width="fill_parent"
+							android:layout_height="wrap_content"
+							android:layout_below="@+id/TodoAlarmsLayout"
+							android:text="@string/RepeatsPrompt" />
+						<TextView
+							android:id="@+id/TodoRepeatsContent"
+							style="@style/todo_view_content"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_below="@+id/TodoRepeatsLabel" />
+					</RelativeLayout>
+				</RelativeLayout>
+			</ScrollView>
+		</RelativeLayout>
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/button_layout"
+		android:layout_width="fill_parent"
+		android:layout_height="36sp"
+		android:layout_gravity="bottom"
+		android:background="@color/bottom_bg"
+		android:gravity="bottom" >
+		<!-- Color bar -->
+		<LinearLayout
+			android:id="@+id/TodoViewColourBarBottom"
+			android:layout_width="13sp"
+			android:layout_height="fill_parent"
+			android:background="#704080f0" />
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:paddingLeft="1sp"
+			android:paddingRight="1sp" >
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:background="@color/themed_button_colour" >
+				<Button
+					android:id="@+id/todo_edit_button"
+					style="@style/themed_bottom_button"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:text="@string/Edit"
+					android:width="90sp" />
+			</LinearLayout>
+		</LinearLayout>
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:paddingLeft="1sp"
+			android:paddingRight="1sp" >
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:background="@color/themed_button_colour" >
+				<Button
+					android:id="@+id/todo_add_button"
+					style="@style/themed_add_button"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:gravity="bottom|center_horizontal"
+					android:padding="0sp"
+					android:text="@string/plus"
+					android:width="90sp" />
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

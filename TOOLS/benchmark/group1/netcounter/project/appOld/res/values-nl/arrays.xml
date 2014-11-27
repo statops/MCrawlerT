@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string-array name="counterTypes">
+		<item>Totaal</item>
+		<item>Maand</item>
+		<item>Vorige maand</item>
+		<item>Week</item>
+		<item>Laatste dagen</item>
+		<item>Een dag</item>
+	</string-array>
+
+	<array name="counterTypesPos">
+		<item>0</item>
+		<item>1</item>
+		<item>5</item>
+		<item>4</item>
+		<item>2</item>
+		<item>3</item>
+	</array>
+
+	<string-array name="counterSingleDay">
+		<item>Vandaag</item>
+		<item>Gisteren</item>
+		<item>2 dagen geleden</item>
+		<item>3 dagen geleden</item>
+		<item>4 dagen geleden</item>
+		<item>5 dagen geleden</item>
+		<item>6 dagen geleden</item>
+		<item>7 dagen geleden</item>
+	</string-array>
+
+	<string-array name="counterLastDays">
+		<item>7 dagen</item>
+		<item>14 dagen</item>
+		<item>30 dagen</item>
+	</string-array>
+
+	<string-array name="counterMonthly">
+		<item>1 maand</item>
+		<item>2 maanden</item>
+		<item>3 maanden</item>
+		<item>4 maanden</item>
+		<item>5 maanden</item>
+		<item>6 maanden</item>
+		<item>7 maanden</item>
+		<item>8 maanden</item>
+		<item>9 maanden</item>
+		<item>10 maanden</item>
+		<item>11 maanden</item>
+		<item>12 maanden</item>
+	</string-array>
+
+	<string-array name="counterWeeklyStart">
+		<item>Zondag</item>
+		<item>Maandag</item>
+		<item>Dinsdag</item>
+		<item>Woensdag</item>
+		<item>Donderdag</item>
+		<item>Vrijdag</item>
+		<item>Zaterdag</item>
+	</string-array>
+
+	<string-array name="counterWeekly">
+		<item>1 week</item>
+		<item>2 weken</item>
+		<item>3 weken</item>
+		<item>4 weken</item>
+	</string-array>
+
+	<string-array name="byteUnits">
+		<item>B</item>
+		<item>KB</item>
+		<item>MB</item>
+		<item>GB</item>
+		<item>TB</item>
+	</string-array>
+
+	<array name="byteValues">
+		<item>1</item>
+		<item>1024</item>
+		<item>1048576</item>
+		<item>1073741824</item>
+		<item>1099511627776</item>
+	</array>
+
+</resources>

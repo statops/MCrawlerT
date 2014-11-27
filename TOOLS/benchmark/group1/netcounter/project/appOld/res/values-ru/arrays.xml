@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string-array name="graphTypes">
+		<item>30 дней</item>
+		<item>12 месяцев</item>
+	</string-array>
+
+	<string-array name="counterTypes">
+		<item>Всего</item>
+		<item>Ежемесячно</item>
+		<item>Last month</item>
+		<item>Еженедельно</item>
+		<item>Последние дни</item>
+		<item>Ежедневно</item>
+	</string-array>
+
+	<array name="counterTypesPos">
+		<item>0</item>
+		<item>1</item>
+		<item>5</item>
+		<item>4</item>
+		<item>2</item>
+		<item>3</item>
+	</array>
+
+	<string-array name="counterSingleDay">
+		<item>Сегодня</item>
+		<item>Вчера</item>
+		<item>2 дня</item>
+		<item>3 дня</item>
+		<item>4 дня</item>
+		<item>5 дня</item>
+		<item>6 дня</item>
+		<item>7 дня</item>
+	</string-array>
+
+	<string-array name="counterLastDays">
+		<item>7 дней</item>
+		<item>14 дней</item>
+		<item>30 дней</item>
+	</string-array>
+
+	<string-array name="counterMonthly">
+		<item>1 месяц</item>
+		<item>2 месяца</item>
+		<item>3 месяца</item>
+		<item>4 месяца</item>
+		<item>5 меяцев</item>
+		<item>6 месяцев</item>
+		<item>7 месяцев</item>
+		<item>8 месяцев</item>
+		<item>9 месяцев</item>
+		<item>10 месяцев</item>
+		<item>11 месяцев</item>
+		<item>12 месяцев</item>
+	</string-array>
+
+	<string-array name="counterWeeklyStart">
+		<item>Воскресенье</item>
+		<item>Понедельник</item>
+		<item>Вторник</item>
+		<item>Среда</item>
+		<item>Четверг</item>
+		<item>Пятница</item>
+		<item>Суббота</item>
+	</string-array>
+
+	<string-array name="counterWeekly">
+		<item>1 неделя</item>
+		<item>2 недели</item>
+		<item>3 недели</item>
+		<item>4 недели</item>
+	</string-array>
+
+	<string-array name="byteUnits">
+		<item>байт</item>
+		<item>Кб</item>
+		<item>Мб</item>
+		<item>Гб</item>
+		<item>Тб</item>
+	</string-array>
+
+	<array name="byteValues">
+		<item>1</item>
+		<item>1024</item>
+		<item>1048576</item>
+		<item>1073741824</item>
+		<item>1099511627776</item>
+	</array>
+
+</resources>

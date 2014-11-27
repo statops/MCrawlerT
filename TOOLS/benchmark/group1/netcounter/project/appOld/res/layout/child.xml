@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	android:paddingLeft="36dip" android:orientation="horizontal"
+	android:paddingBottom="6dip" android:paddingTop="6dip">
+
+	<TextView android:id="@+id/inter" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="Interface"
+		android:textStyle="bold" android:textSize="14sp"
+		android:layout_weight="1" />
+	<TextView android:id="@+id/total_bytes" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="total_bytes"
+		android:textSize="14sp" android:layout_weight="1" />
+
+</LinearLayout>

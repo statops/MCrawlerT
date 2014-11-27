@@ -1,0 +1,1353 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+#   <bvp-yar@ya.ru>, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: aCal\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-08-19 17:18+1200\n"
+"PO-Revision-Date: 2012-08-30 06:20+0000\n"
+"Last-Translator: bvp <bvp-yar@ya.ru>\n"
+"Language-Team: Russian (http://www.transifex.com/projects/p/acal/language/ru/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ru\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+# SourceFileStart:../res/values/strings.xml
+# Strings that should not be localised belong in unlocalisable_strings.xml
+msgid "theDayEachWeekStartsWith"
+msgstr "Первый день недели"
+
+msgid "firstDayOfWeek"
+msgstr "Первый день недели"
+
+msgid "ok"
+msgstr "ОК"
+
+msgid "cancel"
+msgstr "Отмена"
+
+msgid "setButtonLabel"
+msgstr ""
+
+msgid "appDescription"
+msgstr "Календарь для Android сохраняет ваши события, задачи, заметки и контакты на удалённом CalDAV / CardDAV сервере, таком как DAViCal (Смотрите: www.davical.org)"
+
+msgid "appDescriptionTasks"
+msgstr ""
+
+msgid "appDescriptionNotes"
+msgstr ""
+
+msgid "Active"
+msgstr "Активный"
+
+msgid "Add_Server"
+msgstr "Добавить сервер"
+
+msgid "A_name_for_this_server_configuration"
+msgstr ""
+
+msgid "Authentication_Type"
+msgstr "Тип авторизации"
+
+msgid "Simple_Path"
+msgstr ""
+
+msgid "Simple_User_URL"
+msgstr ""
+
+msgid "Server_URL"
+msgstr ""
+
+msgid "Enter_a_brief_summary_of_the_event"
+msgstr ""
+
+msgid "Name"
+msgstr "Имя"
+
+msgid "Force_full_resync"
+msgstr ""
+
+msgid "Password"
+msgstr "Пароль"
+
+msgid "Save"
+msgstr "Сохранить"
+
+msgid "Settings"
+msgstr "Настройки"
+
+msgid "Server_Name"
+msgstr "Имя сервера"
+
+msgid "Server_Options"
+msgstr ""
+
+msgid "Collection_Options"
+msgstr ""
+
+msgid "Colour"
+msgstr "Цвет"
+
+msgid "Default_timezone"
+msgstr "Временная зона по-умолчанию"
+
+msgid "DefaultAlarmTone"
+msgstr ""
+
+msgid "Server_Path"
+msgstr "Путь сервера"
+
+msgid "Server_Port"
+msgstr "Порт сервера"
+
+msgid "Summary"
+msgstr ""
+
+msgid "Sync_collection_now"
+msgstr "Синхронизировать сейчас"
+
+msgid "Disable_collection"
+msgstr "Отключить коллекцию"
+
+msgid "The_authentication_type_used"
+msgstr "Тип авторизации используемый сервером"
+
+msgid "The_password_to_use"
+msgstr "Пароль используемый для авторизации на сервере"
+
+msgid "The_path_on_the_server"
+msgstr ""
+
+msgid "A_URL_or_domain_name"
+msgstr ""
+
+msgid "The_servers_hostname"
+msgstr ""
+
+msgid "The_username_to_use"
+msgstr "Имя пользователя используемое для авторизации на сервере"
+
+msgid "Username"
+msgstr "Имя пользователя"
+
+msgid "Use_SSL"
+msgstr "Использовать SSL"
+
+msgid "Whether_this_server_is_active"
+msgstr ""
+
+msgid "Whether_to_use_encryption"
+msgstr ""
+
+msgid "appActivityEventCreate"
+msgstr "Новое событие"
+
+msgid "appActivityServerConfigList"
+msgstr "Серверы"
+
+msgid "appActivityServerConfiguration"
+msgstr ""
+
+msgid "appActivityAddServerList"
+msgstr "Шаблон сервера"
+
+msgid "appActivityCollectionConfigList"
+msgstr "Календари и Контакты"
+
+msgid "appActivityDebugSettings"
+msgstr ""
+
+msgid "appActivitySettings"
+msgstr "Настройки"
+
+msgid "appActivityPreference"
+msgstr "Настройки"
+
+msgid "The_port_to_connect_to"
+msgstr ""
+
+msgid "A_name_for_this_collection"
+msgstr ""
+
+msgid "pActive_addressbook"
+msgstr ""
+
+msgid "pActive_for_events"
+msgstr ""
+
+msgid "pActive_for_journal"
+msgstr ""
+
+msgid "pActive_for_tasks"
+msgstr ""
+
+msgid "pUse_Alarms"
+msgstr ""
+
+msgid "Use_Alarms"
+msgstr ""
+
+msgid "Active_addressbook"
+msgstr ""
+
+msgid "Active_for_events"
+msgstr ""
+
+msgid "Active_for_journal"
+msgstr ""
+
+msgid "Active_for_tasks"
+msgstr ""
+
+msgid "The_colour_associated_with_this_collection"
+msgstr ""
+
+msgid "The_timezone_new_events_default_to"
+msgstr ""
+
+msgid "pMax_age_on_3g"
+msgstr ""
+
+msgid "The_maximum_age_for_data_while_on_3g"
+msgstr ""
+
+msgid "pMax_age_on_wifi"
+msgstr ""
+
+msgid "The_maximum_age_for_data_while_on_wifi"
+msgstr ""
+
+msgid "Use_alarms_from_this_calendar"
+msgstr ""
+
+msgid "Monday"
+msgstr "Понедельник"
+
+msgid "Tuesday"
+msgstr "Вторник"
+
+msgid "Wednesday"
+msgstr "Среда"
+
+msgid "Thursday"
+msgstr "Четверг"
+
+msgid "Friday"
+msgstr "Пятница"
+
+msgid "Saturday"
+msgstr "Суббота"
+
+msgid "Sunday"
+msgstr "Воскресенье"
+
+msgid "Mon"
+msgstr "Пн"
+
+msgid "Tue"
+msgstr "Вт"
+
+msgid "Wed"
+msgstr ""
+
+msgid "Thu"
+msgstr ""
+
+msgid "Fri"
+msgstr ""
+
+msgid "Sat"
+msgstr ""
+
+msgid "Sun"
+msgstr ""
+
+msgid "chMon"
+msgstr ""
+
+msgid "chTue"
+msgstr ""
+
+msgid "chWed"
+msgstr ""
+
+msgid "chThu"
+msgstr ""
+
+msgid "chFri"
+msgstr ""
+
+msgid "chSat"
+msgstr ""
+
+msgid "chSun"
+msgstr ""
+
+msgid "January"
+msgstr "Январь"
+
+msgid "February"
+msgstr "Февраль"
+
+msgid "March"
+msgstr "Март"
+
+msgid "April"
+msgstr "Апрель"
+
+msgid "May"
+msgstr "Май"
+
+msgid "June"
+msgstr "Июнь"
+
+msgid "July"
+msgstr "Июль"
+
+msgid "August"
+msgstr "Август"
+
+msgid "September"
+msgstr "Сентябрь"
+
+msgid "October"
+msgstr "Октябрь"
+
+msgid "November"
+msgstr "Ноябрь"
+
+msgid "December"
+msgstr "Декабрь"
+
+msgid "thJan"
+msgstr ""
+
+msgid "thFeb"
+msgstr ""
+
+msgid "thMar"
+msgstr ""
+
+msgid "thApr"
+msgstr ""
+
+msgid "thMay"
+msgstr ""
+
+msgid "thJun"
+msgstr ""
+
+msgid "thJul"
+msgstr ""
+
+msgid "thAug"
+msgstr ""
+
+msgid "thSep"
+msgstr ""
+
+msgid "thOct"
+msgstr ""
+
+msgid "thNov"
+msgstr ""
+
+msgid "thDec"
+msgstr ""
+
+# If the user is displaying AM/PM we need a single character to display e.g.
+# 9a for 9:00am in the morning
+msgid "oneCharMorning"
+msgstr ""
+
+# If the user is displaying AM/PM we need a single character to display e.g.
+# 1p for 1:00pm in the afternoon
+msgid "oneCharAfternoon"
+msgstr ""
+
+msgid "abbrevMorning"
+msgstr ""
+
+msgid "abbrevAfternoon"
+msgstr ""
+
+msgid "YearViewSize_PrefTitle"
+msgstr ""
+
+msgid "YearViewSize_PrefSummary"
+msgstr ""
+
+msgid "Snooze_PrefTitle"
+msgstr ""
+
+msgid "Snooze_PrefSummary"
+msgstr ""
+
+msgid "prefDefaultEventsCollection_Title"
+msgstr "Календарь событий по-умолчанию"
+
+msgid "prefDefaultEventsCollection_Summary"
+msgstr ""
+
+msgid "prefDefaultTasksCollection_Title"
+msgstr "Календарь для зачад по-умолчанию"
+
+msgid "prefDefaultTasksCollection_Summary"
+msgstr ""
+
+msgid "prefDefaultNotesCollection_Title"
+msgstr "Календарь для заметок по-умолчанию"
+
+msgid "prefDefaultNotesCollection_Summary"
+msgstr ""
+
+msgid "DefaultAlarmTone_PrefTitle"
+msgstr ""
+
+msgid "DefaultAlarmTone_PrefSummary"
+msgstr ""
+
+msgid "AlarmVolumeType_PrefTitle"
+msgstr ""
+
+msgid "AlarmVolumeType_PrefSummary"
+msgstr ""
+
+msgid "AlarmBellVolume"
+msgstr ""
+
+msgid "MediaPlayerVolume"
+msgstr ""
+
+msgid "prefWorkdayStart_Title"
+msgstr ""
+
+msgid "prefWorkdayStart_Summary"
+msgstr ""
+
+msgid "prefWorkdayFinish_Title"
+msgstr ""
+
+msgid "prefWorkdayFinish_Summary"
+msgstr ""
+
+msgid "prefWeekViewLinesPerHour_Title"
+msgstr ""
+
+msgid "prefWeekViewLinesPerHour_Summary"
+msgstr ""
+
+msgid "prefWeekViewDayWidth_Title"
+msgstr ""
+
+msgid "prefWeekViewDayWidth_Summary"
+msgstr ""
+
+msgid "Today"
+msgstr "Сегодня"
+
+msgid "Year"
+msgstr "Год"
+
+msgid "Month"
+msgstr "Месяц"
+
+msgid "Week"
+msgstr "Неделя"
+
+msgid "Edit"
+msgstr "Правка"
+
+msgid "Apply"
+msgstr "Применить"
+
+msgid "Advanced"
+msgstr "Расширенное"
+
+msgid "Simple"
+msgstr ""
+
+msgid "Add"
+msgstr "Добавить"
+
+msgid "UnNamedServer"
+msgstr ""
+
+msgid "LocationPrompt"
+msgstr "Где:"
+
+msgid "NotesPrompt"
+msgstr "Заметки:"
+
+msgid "AlarmsPrompt"
+msgstr ""
+
+msgid "RepeatsPrompt"
+msgstr ""
+
+msgid "AllDayPrompt"
+msgstr "Весь день:"
+
+msgid "FromPrompt"
+msgstr "От:"
+
+msgid "TodoFromPrompt"
+msgstr ""
+
+msgid "UntilPrompt"
+msgstr "Пока:"
+
+msgid "DuePrompt"
+msgstr ""
+
+msgid "CompletedPrompt"
+msgstr ""
+
+msgid "DaysPrompt"
+msgstr ""
+
+msgid "StartPrompt"
+msgstr ""
+
+msgid "CompletePrompt"
+msgstr ""
+
+msgid "CollectionPrompt"
+msgstr ""
+
+msgid "defaultCalendar"
+msgstr "Календарь по-умолчанию"
+
+msgid "theCalendarForNewEvents"
+msgstr ""
+
+msgid "TwelveTwentyfour_PrefTitle"
+msgstr "Использовать 24-часовой формат"
+
+msgid "TwelveTwentyfour_OnSummary"
+msgstr "14:00"
+
+msgid "TwelveTwentyfour_OffSummary"
+msgstr ""
+
+msgid "OnlyOnce"
+msgstr ""
+
+msgid "EveryWeekday"
+msgstr ""
+
+msgid "EveryWeekend"
+msgstr ""
+
+msgid "EveryDay"
+msgstr "Ежедневно"
+
+msgid "EveryWeek"
+msgstr "Ежедневно"
+
+msgid "EveryMonth"
+msgstr "Ежемесячно"
+
+msgid "EveryYear"
+msgstr "Ежегодно"
+
+msgid "EveryNDays"
+msgstr "Каждые %s дней"
+
+msgid "EveryNWeeks"
+msgstr "Каждые %s недель"
+
+msgid "EveryNMonths"
+msgstr "Каждые %s месяцев"
+
+msgid "EveryNYears"
+msgstr "Каждые %s лет"
+
+msgid "EveryMonday"
+msgstr "Каждый понедельник"
+
+msgid "EveryTuesday"
+msgstr "Каждый вторник"
+
+msgid "EveryWednesday"
+msgstr "Каждую среду"
+
+msgid "EveryThursday"
+msgstr "Каждый четверг"
+
+msgid "EveryFriday"
+msgstr "Каждую пятницу"
+
+msgid "EverySaturday"
+msgstr "Каждую субботу"
+
+msgid "EverySunday"
+msgstr "Каждое воскресенье"
+
+msgid "EveryNthOfTheMonth"
+msgstr ""
+
+msgid "EveryMonthOnTheNthSomeday"
+msgstr ""
+
+msgid "CustomRepeatRule"
+msgstr ""
+
+msgid "EventSaved"
+msgstr ""
+
+msgid "ModifiedAllInstances"
+msgstr ""
+
+msgid "ModifiedOneInstance"
+msgstr ""
+
+msgid "ModifiedThisAndFuture"
+msgstr ""
+
+msgid "ErrorSavingEvent"
+msgstr ""
+
+msgid "NewEventTitle"
+msgstr ""
+
+msgid "ChooseACollection"
+msgstr ""
+
+msgid "ChooseAlarmTime"
+msgstr ""
+
+msgid "ChooseInstancesToChange"
+msgstr ""
+
+msgid "ChooseRepeatFrequency"
+msgstr ""
+
+msgid "Add_Alarm"
+msgstr ""
+
+msgid "errorMustHaveActiveCalendar"
+msgstr ""
+
+msgid "errorSavingServerConfig"
+msgstr ""
+
+msgid "errorSavingFile"
+msgstr ""
+
+msgid "ServerDataSaved"
+msgstr ""
+
+msgid "NewManualServerConfiguration"
+msgstr ""
+
+msgid "ManualServerConfigurationBlurb"
+msgstr ""
+
+msgid "SavedServerConfigurationBlurb"
+msgstr ""
+
+msgid "AllDaysInPeriod"
+msgstr ""
+
+msgid "ForTheWholeDay"
+msgstr ""
+
+msgid "alarmAtEventTime"
+msgstr ""
+
+msgid "alarm10MinutesPrior"
+msgstr ""
+
+msgid "alarm15MinutesPrior"
+msgstr ""
+
+msgid "alarm30MinutesPrior"
+msgstr ""
+
+msgid "alarm1HourPrior"
+msgstr ""
+
+msgid "alarm2HoursPrior"
+msgstr ""
+
+msgid "alarmCustom"
+msgstr ""
+
+msgid "alarmsDisabledNote"
+msgstr ""
+
+msgid "changeThisInstance"
+msgstr ""
+
+msgid "changeAllInstances"
+msgstr ""
+
+msgid "changeThisAndFuture"
+msgstr ""
+
+msgid "internetNotAvailable"
+msgstr ""
+
+msgid "couldNotDiscoverPort"
+msgstr ""
+
+msgid "couldNotDiscoverPrincipal"
+msgstr ""
+
+msgid "foundPrincipalPath"
+msgstr ""
+
+msgid "serverSupportsCalDAV"
+msgstr ""
+
+msgid "serverHasDAVNoCalDAV"
+msgstr ""
+
+msgid "serverLacksCalDAV"
+msgstr ""
+
+msgid "serverFailedValidation"
+msgstr ""
+
+msgid "saveSettingsAnyway"
+msgstr ""
+
+msgid "serverValidationSuccess"
+msgstr ""
+
+msgid "authenticationFailed"
+msgstr ""
+
+msgid "WeekViewPreferences"
+msgstr ""
+
+msgid "AlarmPreferences"
+msgstr ""
+
+msgid "GeneralPreferences"
+msgstr ""
+
+msgid "checkServer"
+msgstr ""
+
+msgid "checkServer_Connecting"
+msgstr ""
+
+msgid "checkServer_Internet"
+msgstr ""
+
+msgid "checkServer_SearchingForServer"
+msgstr ""
+
+msgid "checkServer_DiscoveryCancelled"
+msgstr ""
+
+msgid "serverRecordAlreadyExists"
+msgstr ""
+
+msgid "newEventFromThis"
+msgstr ""
+
+msgid "Delete"
+msgstr ""
+
+msgid "deleteAllInstances"
+msgstr ""
+
+msgid "deleteThisInstance"
+msgstr ""
+
+msgid "deleteThisAndFuture"
+msgstr ""
+
+msgid "newAllDayEventOn"
+msgstr ""
+
+msgid "newHourEventAt"
+msgstr ""
+
+msgid "editSomeEvent"
+msgstr ""
+
+msgid "copySomeEvent"
+msgstr ""
+
+msgid "deleteSomeEvent"
+msgstr ""
+
+msgid "noCollectionsFound"
+msgstr ""
+
+msgid "aCalVersionChanges"
+msgstr ""
+
+msgid "newWithVersion"
+msgstr ""
+
+msgid "newVersionSeen"
+msgstr ""
+
+msgid "Due"
+msgstr ""
+
+msgid "All"
+msgstr ""
+
+msgid "Todo"
+msgstr ""
+
+msgid "Events"
+msgstr ""
+
+msgid "Tasks"
+msgstr ""
+
+msgid "Journals"
+msgstr ""
+
+msgid "Unscheduled"
+msgstr ""
+
+msgid "ChooseAction"
+msgstr ""
+
+msgid "SetCompleted"
+msgstr ""
+
+msgid "newTaskFromThis"
+msgstr ""
+
+msgid "dueTasksTitle"
+msgstr ""
+
+msgid "incompleteTasksTitle"
+msgstr ""
+
+msgid "incompleteTasksDue"
+msgstr ""
+
+msgid "allTasksTitle"
+msgstr ""
+
+msgid "NewTaskTitle"
+msgstr ""
+
+msgid "TaskSaved"
+msgstr ""
+
+msgid "TaskModifiedAll"
+msgstr ""
+
+msgid "TaskModifiedOne"
+msgstr ""
+
+msgid "TaskModifiedThisAndFuture"
+msgstr ""
+
+msgid "TaskErrorSaving"
+msgstr ""
+
+msgid "username"
+msgstr ""
+
+msgid "password"
+msgstr ""
+
+msgid "setRepeatRule"
+msgstr ""
+
+msgid "eventName"
+msgstr ""
+
+msgid "plus"
+msgstr ""
+
+msgid "url"
+msgstr ""
+
+msgid "todoName"
+msgstr ""
+
+msgid "IsADate"
+msgstr ""
+
+msgid "NotSet"
+msgstr ""
+
+msgid "Exactly"
+msgstr ""
+
+msgid "Start"
+msgstr ""
+
+msgid "Finish"
+msgstr ""
+
+msgid "Before"
+msgstr ""
+
+msgid "After"
+msgstr ""
+
+msgid "Custom"
+msgstr ""
+
+msgid "floatingTime"
+msgstr ""
+
+msgid "SetCustomAlarm"
+msgstr ""
+
+msgid "showUpdateInformation"
+msgstr ""
+
+msgid "General_aCal_Information"
+msgstr ""
+
+msgid "aCal_Website"
+msgstr ""
+
+msgid "aCal_IRC_Channel"
+msgstr ""
+
+msgid "aCal_Mailing_Lists"
+msgstr ""
+
+msgid "aCal_is_Free_Software"
+msgstr ""
+
+msgid "TaskMarkedComplete"
+msgstr ""
+
+msgid "TaskDeleted"
+msgstr ""
+
+msgid "endsAt"
+msgstr ""
+
+msgid "Finished"
+msgstr ""
+
+msgid "days"
+msgstr ""
+
+msgid "noScheduledEvents"
+msgstr ""
+
+msgid "Event"
+msgstr ""
+
+msgid "Task"
+msgstr ""
+
+msgid "weekends"
+msgstr ""
+
+msgid "weekdays"
+msgstr ""
+
+msgid "JournalDatePrompt"
+msgstr ""
+
+msgid "AppearancePreferences"
+msgstr ""
+
+msgid "prefThemeButtonColour_Summary"
+msgstr ""
+
+msgid "prefThemeButtonColour_Title"
+msgstr ""
+
+msgid "Saving"
+msgstr "Сохранение..."
+
+msgid "Loading"
+msgstr "Загрузка..."
+
+msgid "Deleting"
+msgstr "Удаление..."
+
+msgid "ConfigureServer"
+msgstr "Настроить сервер"
+
+msgid "errorConfigMustHaveName"
+msgstr "У конфигурации должно быть имя."
+
+msgid "errorConfigMustHaveUserName"
+msgstr "Конфигурация должна содержать имя пользователя."
+
+msgid "errorConfigMustHavePassword"
+msgstr "Конфигурация должна содержать пароль."
+
+msgid "errorConfigMustHaveURL"
+msgstr "Конфигурация должна содержать домен или URL сервера."
+
+msgid "Skip"
+msgstr "Пропустить"
+
+msgid "Configure"
+msgstr "Настроить"
+
+msgid "prefAllowSelfSignedCerts_PrefTitle"
+msgstr "Разрешить самоподписанные сертификаты"
+
+msgid "prefAllowSelfSignedCerts_OnSummary"
+msgstr "Разрешено"
+
+msgid "prefAllowSelfSignedCerts_OffSummary"
+msgstr "Отклонено"
+
+msgid "SslCertificateError"
+msgstr "Проблема при проверке SSL сертификата."
+
+msgid "prefTzServerBaseUrl_Title"
+msgstr "Адрес сервера временной зоны"
+
+msgid "prefIgnoreValarmDescription_PrefTitle"
+msgstr ""
+
+msgid "prefIgnoreValarmDescription_OnSummary"
+msgstr ""
+
+msgid "prefIgnoreValarmDescription_OffSummary"
+msgstr ""
+
+msgid "note_title_hint"
+msgstr "Дайте название вашей заметке"
+
+msgid "note_text_hint"
+msgstr "Ввведите заметку здесь"
+
+msgid "event_name_hint"
+msgstr "Введите имя для события"
+
+msgid "event_location_hint"
+msgstr ""
+
+msgid "event_notes_hint"
+msgstr ""
+
+msgid "todo_name_hint"
+msgstr "Введите имя вашей задачи"
+
+msgid "todo_description_hint"
+msgstr "Введите описание вашей задачи"
+
+msgid "todo_location_hint"
+msgstr ""
+
+msgid "first_name_hint"
+msgstr "Имя"
+
+msgid "surname_hint"
+msgstr "Отчество"
+
+msgid "phone_prompt"
+msgstr "Телефон"
+
+msgid "phone_hint"
+msgstr "Телефон"
+
+msgid "email_prompt"
+msgstr "Электронная почта"
+
+msgid "email_hint"
+msgstr "Электронная почта"
+
+msgid "postal_address_prompt"
+msgstr "Почтовый адрес"
+
+msgid "street_hint"
+msgstr "Улица"
+
+msgid "city_hint"
+msgstr "Город"
+
+msgid "country_hint"
+msgstr "Страна"
+
+msgid "postcode_hint"
+msgstr "Индекс"
+
+msgid "organisation_prompt"
+msgstr "Организация"
+
+msgid "company_hint"
+msgstr "Компания"
+
+msgid "job_title_hint"
+msgstr "Заголовок"
+
+msgid "contact_picture_description"
+msgstr "Картинка контакта"
+
+msgid "icon_add_description"
+msgstr "Добавить"
+
+msgid "icon_delete_description"
+msgstr "Удалить"
+
+msgid "Home"
+msgstr "Дом"
+
+msgid "Work"
+msgstr "Рабочий"
+
+msgid "Mobile"
+msgstr "Мобильный"
+
+msgid "Other"
+msgstr "Другое"
+
+msgid "WorkFax"
+msgstr "Рабочий факс"
+
+msgid "HomeFax"
+msgstr "Домашний факс"
+
+msgid "Pager"
+msgstr "Пейджер"
+
+msgid "newJournalFromThis"
+msgstr "Копировать в новую заметку"
+
+msgid "ErrorDeletingJournal"
+msgstr ""
+
+msgid "ErrorDeletingTask"
+msgstr ""
+
+msgid "ErrorCompletingTask"
+msgstr ""
+
+# SourceFileEnd:../res/values/strings.xml
+# SourceFileStart:../res/values/timezonenames.xml
+msgid "tzNameAfricaCairo"
+msgstr ""
+
+msgid "tzNameAfricaCasablanca"
+msgstr ""
+
+msgid "tzNameAfricaHarare"
+msgstr ""
+
+msgid "tzNameAfricaNairobi"
+msgstr ""
+
+msgid "tzNameAfricaNdjamena"
+msgstr ""
+
+msgid "tzNameAmericaAnchorage"
+msgstr ""
+
+msgid "tzNameAmericaArgentinaBuenos_Aires"
+msgstr ""
+
+msgid "tzNameAmericaBogota"
+msgstr ""
+
+msgid "tzNameAmericaChicago"
+msgstr ""
+
+msgid "tzNameAmericaDenver"
+msgstr ""
+
+msgid "tzNameAmericaGodthab"
+msgstr ""
+
+msgid "tzNameAmericaHalifax"
+msgstr ""
+
+msgid "tzNameAmericaIndianaIndianapolis"
+msgstr ""
+
+msgid "tzNameAmericaLa_Paz"
+msgstr ""
+
+msgid "tzNameAmericaLos_Angeles"
+msgstr ""
+
+msgid "tzNameAmericaNew_York"
+msgstr ""
+
+msgid "tzNameAmericaNoronha"
+msgstr ""
+
+msgid "tzNameAmericaPanama"
+msgstr ""
+
+msgid "tzNameAmericaPhoenix"
+msgstr ""
+
+msgid "tzNameAmericaRegina"
+msgstr ""
+
+msgid "tzNameAmericaSantiago"
+msgstr ""
+
+msgid "tzNameAmericaSao_Paulo"
+msgstr ""
+
+msgid "tzNameAmericaSt_Johns"
+msgstr ""
+
+msgid "tzNameAmericaTegucigalpa"
+msgstr ""
+
+msgid "tzNameAsiaBaghdad"
+msgstr ""
+
+msgid "tzNameAsiaBangkok"
+msgstr ""
+
+msgid "tzNameAsiaColombo"
+msgstr ""
+
+msgid "tzNameAsiaDhaka"
+msgstr ""
+
+msgid "tzNameAsiaIrkutsk"
+msgstr ""
+
+msgid "tzNameAsiaJerusalem"
+msgstr ""
+
+msgid "tzNameAsiaKabul"
+msgstr ""
+
+msgid "tzNameAsiaKarachi"
+msgstr ""
+
+msgid "tzNameAsiaKathmandu"
+msgstr ""
+
+msgid "tzNameAsiaKolkata"
+msgstr ""
+
+msgid "tzNameAsiaKrasnoyarsk"
+msgstr ""
+
+msgid "tzNameAsiaMagadan"
+msgstr ""
+
+msgid "tzNameAsiaMuscat"
+msgstr ""
+
+msgid "tzNameAsiaNovosibirsk"
+msgstr ""
+
+msgid "tzNameAsiaRangoon"
+msgstr ""
+
+msgid "tzNameAsiaRiyadh"
+msgstr ""
+
+msgid "tzNameAsiaSeoul"
+msgstr ""
+
+msgid "tzNameAsiaShanghai"
+msgstr ""
+
+msgid "tzNameAsiaSingapore"
+msgstr ""
+
+msgid "tzNameAsiaTaipei"
+msgstr ""
+
+msgid "tzNameAsiaTehran"
+msgstr ""
+
+msgid "tzNameAsiaTokyo"
+msgstr ""
+
+msgid "tzNameAsiaVladivostok"
+msgstr ""
+
+msgid "tzNameAsiaYakutsk"
+msgstr ""
+
+msgid "tzNameAsiaYekaterinburg"
+msgstr ""
+
+msgid "tzNameAsiaYerevan"
+msgstr ""
+
+msgid "tzNameAtlanticAzores"
+msgstr ""
+
+msgid "tzNameAtlanticCape_Verde"
+msgstr ""
+
+msgid "tzNameAustraliaAdelaide"
+msgstr ""
+
+msgid "tzNameAustraliaBrisbane"
+msgstr ""
+
+msgid "tzNameAustraliaDarwin"
+msgstr ""
+
+msgid "tzNameAustraliaHobart"
+msgstr ""
+
+msgid "tzNameAustraliaPerth"
+msgstr ""
+
+msgid "tzNameAustraliaSydney"
+msgstr ""
+
+msgid "tzNameEuropeAthens"
+msgstr ""
+
+msgid "tzNameEuropeBerlin"
+msgstr ""
+
+msgid "tzNameEuropeBucharest"
+msgstr ""
+
+msgid "tzNameEuropeHelsinki"
+msgstr ""
+
+msgid "tzNameEuropeLisbon"
+msgstr ""
+
+msgid "tzNameEuropeLondon"
+msgstr ""
+
+msgid "tzNameEuropeMoscow"
+msgstr ""
+
+msgid "tzNameEuropeParis"
+msgstr ""
+
+msgid "tzNameEuropePrague"
+msgstr ""
+
+msgid "tzNamePacificApia"
+msgstr ""
+
+msgid "tzNamePacificAuckland"
+msgstr ""
+
+msgid "tzNamePacificFiji"
+msgstr ""
+
+msgid "tzNamePacificGuam"
+msgstr ""
+
+msgid "tzNamePacificHonolulu"
+msgstr ""
+
+msgid "tzNamePacificKwajalein"
+msgstr ""
+
+msgid "tzNamePacificTongatapu"
+msgstr ""

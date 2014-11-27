@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	android:orientation="vertical">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	android:orientation="horizontal" android:background="#0099CC" >
+		<Button
+ 	    android:id="@+id/okContacts"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:drawableLeft="@drawable/accept"
+	    android:text="@string/ok"
+	    android:background="#0099CC"
+	    android:textColor="#FFFFFF"
+	    android:paddingRight="10dp"
+	     >
+		</Button>
+		<View  android:layout_height="fill_parent" android:layout_width="1dp" android:layout_margin="2dp" android:background="#33B5E5"/>
+			 <!--   <LinearLayout
+            android:layout_height="fill_parent"
+            android:layout_width="1dp"
+            android:background="#EEEEEE" android:margin="" >
+        </LinearLayout>-->
+		</LinearLayout>
+
+
+	
+	<ListView android:id="@+id/android:list" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:choiceMode="multipleChoice" android:fillViewport="true" />
+	<TextView android:id="@+id/android:empty"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:text="@string/nocontacts" />
+
+
+</LinearLayout>

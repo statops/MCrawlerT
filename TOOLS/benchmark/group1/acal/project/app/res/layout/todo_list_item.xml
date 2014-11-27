@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/TodoListItem"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="horizontal" >
+	<LinearLayout
+		android:id="@+id/TodoListItemColorBar"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_weight="20"
+		android:background="#0000FF" >
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/TodoListItemText"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_weight="1"
+		android:background="#FFFFFFFF"
+		android:orientation="vertical" >
+		<RelativeLayout
+			android:id="@+id/TodoListItemTitleFields"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="right"
+			android:gravity="right" >
+			<LinearLayout
+				android:id="@+id/TodoListItemIcons"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentRight="true"
+				android:layout_gravity="right"
+				android:gravity="right" >
+				<ImageView
+					android:id="@+id/TodoListItemCompleted"
+					android:layout_width="26sp"
+					android:layout_height="26sp"
+					android:layout_gravity="right"
+					android:src="@drawable/completed"
+					android:visibility="gone" />
+				<ImageView
+					android:id="@+id/TodoListItemAlarmBell"
+					android:layout_width="26sp"
+					android:layout_height="26sp"
+					android:layout_gravity="right"
+					android:layout_toLeftOf="@id/TodoListItemCompleted"
+					android:src="@drawable/alarmbell"
+					android:visibility="gone" />
+				<ImageView
+					android:id="@+id/TodoListItemRepeating"
+					android:layout_width="26sp"
+					android:layout_height="26sp"
+					android:layout_gravity="right"
+					android:layout_toLeftOf="@id/TodoListItemAlarmBell"
+					android:src="@drawable/repeating"
+					android:visibility="gone" />
+			</LinearLayout>
+			<TextView
+				android:id="@+id/TodoListItemTitle"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_toLeftOf="@id/TodoListItemIcons"
+				android:layout_weight="1"
+				android:paddingLeft="10sp"
+				android:textColor="#0000FF"
+				android:textSize="24sp" />
+		</RelativeLayout>
+		<TextView
+			android:id="@+id/TodoListItemTime"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:paddingLeft="10sp"
+			android:textColor="#000000"
+			android:textSize="18sp" />
+		<TextView
+			android:id="@+id/TodoListItemLocation"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:paddingLeft="10sp"
+			android:textColor="#000000"
+			android:textSize="16sp" />
+	</LinearLayout>
+</LinearLayout>

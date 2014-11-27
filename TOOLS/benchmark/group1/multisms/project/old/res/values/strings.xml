@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Multi Sms</string>
+	<string name="send">Send</string>
+	<string name="add">Add</string>
+	<string name="contacts">Contacts</string>
+	<string name="ok">Ok</string>
+	<string name="cancel">Cancel</string>
+	<string name="nocontacts">No Contacts!!</string>
+	<string name="nogroups">No Groups!!</string>
+	<string name="sending">Sending message...</string>
+	<string name="wait">Please wait while sending...</string>
+	<string name="entermessage">Enter your message</string>
+	<string name="entergroupname">Enter Group Name</string>
+	<string name="nodelivery">No delivery reports available</string>
+	<string name="enabledelivery">Enable delivery reports</string>
+	<string name="to">To</string>
+	<string name="refresh">Refresh</string>
+	<string name="remove_all">Remove All</string>
+	<string name="remove">Remove</string>
+	<string name="add_group">Add from group</string>
+	<string name="delivery">Delivery reports</string>
+	<string name="create_group">Create a new group</string>
+	<string name="remove_group">Remove this group</string>
+	<string name="edit_group">Edit this group</string>
+	<string name="noName">no Name</string>
+	<string name="select_all">Select all</string>
+	<string name="deselect_all">Deselect all</string>
+	<string name="message_sent">Message(s) sent</string>
+	<string name="enter_number">Enter a phone number or use the contact icon</string>
+	<string name="warning_many_message">You are about to sent more than 50 Messages. As it may produce an Android error that may crash the application, they will be send by chunk of 50 with a pause between each chunk. Do you want to continue ?</string>
+	<string name="more_message">Are you ready for 50 more messages?</string>
+</resources>

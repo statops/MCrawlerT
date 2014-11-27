@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:orientation="vertical">
+
+   <EditText
+	  android:id="@+id/dialog_keyword"
+      android:layout_height="wrap_content"
+      android:layout_width="fill_parent"
+      android:layout_marginLeft="10dip"
+      android:layout_marginRight="10dip"
+      android:singleLine="true"
+      android:textAppearance="?android:attr/textAppearanceLarge" 
+	  android:hint="@string/searchwordbox_hint"
+    />
+
+	<RadioGroup android:id="@+id/radiogroup_id"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		>
+		<RadioButton android:id="@+id/radiobutton_forward"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/btn_search_forward"
+			android:checked="true"
+			android:layout_weight="1"
+		/>
+		<RadioButton android:id="@+id/radiobutton_backward"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:text="@string/btn_search_backward"
+			android:layout_weight="1"
+		/>
+　　</RadioGroup>
+
+	<CheckBox
+		android:id="@+id/checkbox_id"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:checked="true"
+		android:text="@string/search_encrypt_checkbox"
+	/>
+
+
+</LinearLayout>

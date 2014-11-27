@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Note: The space placed at last of strings is ignored  -->
+<!-- <string name="menu_new">New </string> is same as <string name="menu_new">New</string>  -->
+<resources>
+    <string name="menu_new">Создать</string>
+    <string name="menu_open">Открыть</string>
+    <string name="menu_close">Закрыть</string>
+    <string name="menu_save">Сохранить</string>
+    <string name="menu_save_as">Как...</string>
+    <string name="menu_preferences">Настройки</string>
+    <string name="menu_new_folder">Новая папка</string>
+    <string name="menu_search">Поиск</string>
+    <string name="menu_edit">Правка</string>
+    <string name="menu_show_ime">Клавиатура</string>
+    <string name="menu_context_menu">Контекст</string>
+    <string name="menu_insert_text">Вставка</string>
+    <string name="proc_open">Открытие файла</string>
+    <string name="proc_save">Сохранение файла</string>
+    <string name="file_access_error">Доступ запрещён</string>
+    <string name="file_proc_successed">Обработка выполнена</string>
+    <string name="pass_input_text">Введите пароль</string>
+    <string name="encrypt_check">Зашифровать</string>
+    <string name="password_not_match">Пароли не совпадают</string>
+    <string name="password_empty">Пароль отключён</string>
+
+    <string name="longclick_menu_title">Действия</string>
+    <string name="longclick_menu_open">Открыть</string>
+    <string name="longclick_menu_edit">Правка</string>
+    <string name="longclick_menu_delete">Удалить</string>
+    <string name="longclick_menu_cancel">Отмена</string>
+    <string name="longclick_menu_rename">Переименовать</string>
+    <string name="longclick_menu_copy">Копировать</string>
+    <string name="longclick_menu_move">Переместить</string>
+    <string name="longclick_menu_delete_confirm">Подтвердите удаление</string>
+    <string name="longclick_menu_up">Выше</string>
+    <string name="longclick_menu_down">Ниже</string>
+    <string name="alert_dialog_ok">OK</string>
+    <string name="alert_dialog_yes">Да</string>
+    <string name="alert_dialog_no">Нет</string>
+    <string name="alert_dialog_cancel">Отмена</string>
+    
+    
+    <string name="folder_name_input">Введите имя папки</string>
+    <string name="file_name_input">Введите имя файла</string>
+    <string name="input_name_empty">Имя не может быть пустым</string>
+    <string name="done_rename_file">Переименование выполнено</string>
+    <string name="done_move_file">Перемещение выполнено</string>
+
+    <string name="error_file_cannot_copy">Копирование невозможно</string>
+    <string name="error_file_cannot_read">Не удалось открыть файл</string>
+    <string name="error_file_already_exists">Объект с таким именем уже существует</string>
+    <string name="error_operation_failed">Сбой операции</string>
+    
+    
+    <string name="default_new_folder_name">Папка</string>
+    <string name="alert_overwrite">Заменить существующий файл?</string>
+    <string name="alert_no_template_text">Шаблон не может быть пустым</string>
+    <string name="alert_close_modified_file">Сохранить изменения?</string>
+    
+    <string name="alert_text_trancated">Текст усечён (файл слишком велик?)</string><!-- if truncated after reading file-->
+    <string name="notify_file_save">Сохранено</string><!--toast when file saved. "save: file.txt"  -->
+    <string name="alert_regex_syntax_error">Синтаксическая ошибка</string><!-- syntax error in search box-->
+    <string name="alert_general_error">Ошибка</string><!-- General error."Error \nblablablabla" e.g. save to "/" cause FileNotFoundException-->
+    <string name="alert_cannot_openfile">Не удалось открыть файл</string><!-- Can not open file: file.unknown_type-->
+    <string name="alert_initdir_is_not_exist">Папка не найдена</string><!-- Initial directory is not exist at launching app.-->
+    <string name="notify_now_in_progress">Подождите...</string>
+    
+    
+    
+    
+    <string name="btn_search">Поиск</string>
+    <string name="notFound">Нет совпадений</string>
+
+	<string name="BottomMenu_updir">Наверх</string>
+    <string name="BottomMenu_menu">Меню</string>
+    <string name="BottomMenu_save">Сохранить</string>
+    <string name="BottomMenu_close">Закрыть</string>
+
+    <!-- for Settings activity -->
+    <string name="settings_input_text_empty">Введите текст</string>
+    
+
+	<!--  Preferences -->
+	<string name="category_common">Общие</string>
+	<string name="category_dir">Обзор файлов</string>
+	<string name="category_edit">Редактор заметок</string>
+	<string name="category_autolink">Активные ссылки</string>
+	
+    <string name="prefInitDir">Домашняя папка</string>
+    <string name="prefInitDirSummary">Папка</string>
+    <string name="title_select_folder">Выберите папку</string>
+    
+    
+    <string name="prefDefaultFolderName">Имя новой папки</string>
+    <string name="prefDefaultFolderNameSummary">Создать как </string>
+    
+    
+    <string name="prefPWResetTimer">Кэшировать пароль</string>
+    <!-- <string name="prefPWResetTimerSummary">Время до повторного запроса пароля</string> -->
+    <string name="prefPWResetTimerSummary">мин.</string>
+    
+    <string name="prefCharsetName">Кодировка</string>
+    <string name="prefCharsetNameSummary">Кодировка символов</string>
+
+    <string name="prefSyncTitle">Имя как 1-я строка</string>
+    <string name="prefSyncTitleSummary">Переименовать файл при изменении первой строки</string>
+    <string name="prefSyncTitleSummaryOn">Переименовать файл при изменении первой строки</string>
+    <string name="prefSyncTitleSummaryOff">Не изменять имя файла при изменении первой строки</string>
+    
+    <string name="prefShowButtons">Нижние кнопки</string>
+    <string name="prefShowButtonsSummary">Показать кнопки (Наверх, Закрыть, Меню)</string>
+    <string name="prefShowButtonsSummaryOn">Показать кнопки (Наверх, Закрыть, Меню)</string>
+    <string name="prefShowButtonsSummaryOff">Скрыть кнопки (Наверх, Закрыть, Меню)</string>
+
+    <string name="prefFontSize">Размер шрифта</string>
+    <string name="prefFontSizeSummary">Высота буквы</string>
+    <string name="prefFontSizeSampleText">Размер (ТП)</string>
+
+    <string name="prefLineBreakCode">Конец строки</string>
+    <string name="prefLineBreakCodeSummary">Символ возврата каретки</string>
+
+    <string name="prefListFoldersFirst">Папки перед файлами</string>
+    <string name="prefListFoldersFirstSummary">Отображать папки первыми в списке</string>
+
+    <string name="prefViewerMode">Режим чтения</string>
+    <string name="prefViewerModeSummary">Скрыть клавиатуру (включение через контекстное меню)</string>
+
+
+    <string name="prefAutoSave">Автосохранение</string>
+    <string name="prefAutoSaveSummary">Сохранять документ при закрытии или сворачивании программы</string>
+
+    <string name="prefTypeface">Стиль шрифта</string>
+    <string name="prefTypefaceSummary">Обычный/Моноширинный/Без засечек/С засечками</string>
+
+    <string name="prefTemplateText">Шаблоны для вставки</string>
+    <string name="prefTemplateTextSummary">Обычный текст или штамп времени</string>
+
+    <string name="prefAutoLink">Активные ссылки</string>
+    <string name="prefAutoLinkSummary">Преобразование URL, Email, номера телефона в активные ссылки</string>
+
+    <string name="prefAutoLinkWeb">Сетевой URL</string>
+    <string name="prefAutoLinkWebSummary">http://www.site...</string>
+
+    <string name="prefAutoLinkEmail">Адрес Email</string>
+    <string name="prefAutoLinkEmailSummary">user@domain...</string>
+
+    <string name="prefAutoLinkTel">Номер телефона</string>
+    <string name="prefAutoLinkTelSummary">8-800-0000...</string>
+
+    <string name="prefNoTitleBar">Скрыть заголовок</string>
+    <string name="prefNoTitleBarSummary">Окно без заголовка в режиме редактора</string>
+
+
+    <string name="prefFontSizeOnList">Размер шрифта</string>
+    <string name="prefFontSizeOnListSummary">Высота буквы</string>
+    <string name="prefFontSizeOnListSampleText">Размер (ТП)</string>
+
+
+	<!-- for grep activity -->
+    <string name="btn_search_backward">Назад</string>
+    <string name="btn_search_forward">Далее</string>
+
+    <string name="search_encrypt_checkbox">В зашифрованных</string>
+    <string name="searchwordbox_hint">Текст для поиска</string>
+    <string name="input_searchword">Искать текст</string>
+    <string name="seachword_empty">Введите текст в поле поиска</string>
+
+    <string name="notify_now_searching">Выполняется поиск...</string>
+    
+    
+    <!--  for template list activity -->
+    <string name="template_list_title">Шаблоны</string>
+    <string name="text_timeformat">Время</string>
+    <string name="edit_template_title">Изменение шаблона</string>
+    <string name="add_template_text">\nДобавить новый\n</string>
+    <string name="text_timeformat_example">Примеры</string>
+    
+    <!-- Erro Message in MyUtil class -->
+    <string name="util_error_invalid_filesize1">Неверный формат файла</string><!-- chi file invalid.(less than 32 byte) -->
+    <string name="util_error_invalid_filesize2">Неверный размер файла (не кратен 8)</string><!-- Invalid file size (not multiples of 8) -->
+    <string name="util_error_invalid_fileheader">Неверный криптоалгоритм файла</string><!-- Invalid file header (not start with BF01) -->
+    <string name="util_error_passdigest_is_null">Ошибка ввода пароля</string><!-- password Digest is null -->
+    <string name="util_error_md5_check_sum_error">Пароль неверен</string><!-- check sum error with got password -->
+    
+    <string name="util_error_file_already_exists">Объект с таким именем уже существует</string><!-- when create dir or rename file -->
+    
+    
+ </resources>
+

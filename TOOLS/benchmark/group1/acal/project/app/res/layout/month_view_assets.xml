@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:padding="0sp" >
+	<com.morphoss.acal.views.MonthDayBox
+		android:id="@+id/DayColumnHeader"
+		style="@style/MonthDayColumnHeader"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:visibility="gone" />
+	<com.morphoss.acal.views.MonthDayBox
+		android:id="@+id/DayBoxInMonth"
+		style="@style/MonthDayInMonth"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:visibility="gone" />
+	<com.morphoss.acal.views.MonthDayBox
+		android:id="@+id/DayBoxOutMonth"
+		style="@style/MonthDayOutMonth"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:visibility="gone" />
+	<com.morphoss.acal.views.MonthDayBox
+		android:id="@+id/DayBoxOutMonthHighlighted"
+		style="@style/MonthDayOutMonthHighlighted"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:visibility="gone" />
+	<com.morphoss.acal.views.MonthDayBox
+		android:id="@+id/DayBoxHighlightDay"
+		style="@style/MonthDayHighlightDay"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:visibility="gone" />
+</LinearLayout>

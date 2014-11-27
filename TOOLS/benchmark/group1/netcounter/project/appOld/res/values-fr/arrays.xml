@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string-array name="graphTypes">
+		<item>Derniers 30 jours</item>
+		<item>Derniers 12 mois</item>
+	</string-array>
+
+	<string-array name="counterTypes">
+		<item>Total</item>
+		<item>Mensuel</item>
+		<item>Dernier mois</item>
+		<item>Hebdomadaire</item>
+		<item>Derniers jours</item>
+		<item>Un jour</item>
+	</string-array>
+
+	<array name="counterTypesPos">
+		<item>0</item>
+		<item>1</item>
+		<item>5</item>
+		<item>4</item>
+		<item>2</item>
+		<item>3</item>
+	</array>
+
+	<string-array name="counterLastMonth">
+		<item>Dernier mois</item>
+		<item>Avant-dernier mois</item>
+	</string-array>
+
+	<string-array name="counterSingleDay">
+		<item>Aujourd\'hui</item>
+		<item>Hier</item>
+		<item>Il y a 2 jours</item>
+		<item>Il y a 3 jours</item>
+		<item>Il y a 4 jours</item>
+		<item>Il y a 5 jours</item>
+		<item>Il y a 6 jours</item>
+		<item>Il y a 7 jours</item>
+	</string-array>
+
+	<string-array name="counterLastDays">
+		<item>7 jours</item>
+		<item>14 jours</item>
+		<item>30 jours</item>
+	</string-array>
+
+	<string-array name="counterMonthly">
+		<item>1 mois</item>
+		<item>2 mois</item>
+		<item>3 mois</item>
+		<item>4 mois</item>
+		<item>5 mois</item>
+		<item>6 mois</item>
+		<item>7 mois</item>
+		<item>8 mois</item>
+		<item>9 mois</item>
+		<item>10 mois</item>
+		<item>11 mois</item>
+		<item>12 mois</item>
+	</string-array>
+
+	<string-array name="counterWeeklyStart">
+		<item>Dimanche</item>
+		<item>Lundi</item>
+		<item>Mardi</item>
+		<item>Mercredi</item>
+		<item>Jeudi</item>
+		<item>Vendredi</item>
+		<item>Samedi</item>
+	</string-array>
+
+	<string-array name="counterWeekly">
+		<item>1 semaine</item>
+		<item>2 semaines</item>
+		<item>3 semaines</item>
+		<item>4 semaines</item>
+	</string-array>
+
+	<string-array name="byteUnits">
+		<item>o</item>
+		<item>Ko</item>
+		<item>Mo</item>
+		<item>Go</item>
+		<item>To</item>
+	</string-array>
+
+	<array name="byteValues">
+		<item>1</item>
+		<item>1024</item>
+		<item>1048576</item>
+		<item>1073741824</item>
+		<item>1099511627776</item>
+	</array>
+
+</resources>

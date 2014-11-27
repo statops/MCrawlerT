@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="appName">NetCounter</string>
+	<string name="appDescription">Network traffic counter</string>
+	<string name="appAuthor">door Cyril Jaquier</string>
+	<string name="appLoading">Laden...</string>
+	<string name="appRefresh">Vernieuwen</string>
+
+	<string name="yes">Ja</string>
+	<string name="no">Nee</string>
+	<string name="ok">OK</string>
+	<string name="cancel">Annuleren</string>
+	<string name="close">Sluiten</string>
+
+	<string name="helpTitle">Help</string>
+	<string name="helpClose">Sluiten</string>
+	<string name="helpText">
+		NetCounter vernieuwt en slaat de statistieken met een vaste interval op in een database. De service die de data bijhoudt draait op de achtergrond en wordt automatisch opgestart als de telefoon opnieuw opstart.\n\nVerschillende teller kunnen worden ingesteld voor elk type netwerkverbinding. Een teller geeft slechts de data weer, je kunt een teller dus verwijderen en aanmaken zonder data te verliezen. \n\nOm een nieuwe teller toe te voegen, druk lang op een van de beschikbare netwerktypen, er verschijnt dan een menu. Hier kies je voor \"Teller toevoegen\". Om een teller te verwijderen, druk lang op een teller en kies voor \"Teller verwijderen\". \n\nOm het type teller (\"Totaal\", \"Laatste dagen\", \"Een dag\", \"Maand\") te veranderen, druk lang op de teller en kies voor \"Type wijzigen\".\n\nSommige tellers kunnen voor een bepaalde periode worden ingesteld. Bijvoorbeeld de teller \"Een dag\" kan gebruikt worden om een \"Vandaag\" of \"Gisteren\" teller weer te geven.\n\nVoor elke teller kan een waarschuwing worden ingesteld. Als de ingestelde waarde overschreden wordt, wordt er een melding weergegeven.\n\nOm alle data voor een netwerktype te resetten, druk lang op het gewenste netwerktype en kies voor \"Alles resetten\". Dit verwijdert <b>ALLE</b> data van het geselecteerde netwerktype, dus denk goed na voor je hiervoor kiest.\n\nHet is mogelijk om een startdatum voor de teller "\Maand\" in te stellen. Momenteel is alleen de dag van de maand nodig en is standaard ingesteld op de 1e. Om een andere datum in te stellen, druk lang op de teller \"Maand\" en kies voor \"Startdatum instellen\".\n\n
+	</string>
+
+	<string name="aboutTitle">Over</string>
+	<string name="aboutDonation">Doneren</string>
+	<string name="aboutDonationUrl">https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=1662582</string>
+	<string name="aboutClose">Sluiten</string>
+	<string name="aboutHomepage">Homepage</string>
+	<string name="aboutHomepageUrl">http://www.jaqpot.net/netcounter/</string>
+	<string name="aboutText">
+		NetCounter v%1$s is een eenvoudige netwerkverkeerteller met
+		instelbare tellers.\n\nBezoek de homepage voor meer informatie.
+		\n\nCopyright (C) 2009 Cyril Jaquier\n\nDit programma
+		wordt verstrekt in de hoop dat het behulpzaam kan zijn, echter komt
+		deze software ZONDER ENIGE GARANTIE; zelfs zonder de impliciete garantie van WERKING of
+		GEBRUIK VOOR EEN BEPAALD DOEL. Bekijk ook de GNU
+		General Public License voor meer detais.\n\nDe
+		applicatie-iconen zijn van Everaldo.com en worden
+		verstrekt onder LGPL.\n\nVertalingen\n
+		Czech: Petr Bláha &lt;pb@P3T3.org&gt;\n
+		German: Thomas Putschbach &lt;android@tpju.de&gt;\n
+		Italian: Fabio Bonomi Boseggia\n
+		French: Cyril Jaquier\n
+		Chinese Traditional: Bernie Garden\n
+		Dutch: Harold Gabriel, Bram Schoenmakers\n\n
+	</string>
+
+	<string name="exportTitle">Exporteren als .csv</string>
+	<string name="exportSuccessful">Exporteren als %1$s gelukt</string>
+	<string name="exportFailed">Exporteren is mislukt</string>
+
+	<string name="interfaceTypeCell">Cell</string>
+	<string name="interfaceTypeWifi">WiFi</string>
+	<string name="interfaceTypeBluetooth">Bluetooth</string>
+
+	<string name="menuInterfaceTitle">Netwerktype</string>
+	<string name="menuInterfaceAdd">Teller toevoegen</string>
+	<string name="menuInterfaceAddDone">Nieuwe teller toegevoegd</string>
+	<string name="menuInterfaceReset">Alles resetten</string>
+	<string name="menuInterfaceResetDone">Resetten klaar</string>
+	
+	<string name="dialogInterfaceResetTitle">Alles resetten</string>
+	<string name="dialogInterfaceResetText">Weet je het zeker?</string>
+	
+	<string name="menuCounterTitle">Teller</string>
+	<string name="menuCounterChange">Tellertype wijzigen</string>
+	<string name="menuCounterChangeDone">Tellertype gewijzigd</string>
+	<string name="menuCounterRemove">Teller verwijderen</string>
+	<string name="menuCounterRemoveDone">Teller verwijderd</string>
+	<string name="menuCounterStartDate">Startdatum instellen</string>
+	<string name="menuCounterStartDay">Startdag instellen</string>
+	<string name="menuCounterSetDuration">Periode instellen</string>
+	<string name="menuCounterSetAlert">Datawaarschuwing instellen</string>
+
+	<string name="dialogCounterTypeTitle">Kies het tellertype</string>
+	<string name="dialogCounterDurationTitle">Kies de tellerperiode</string>
+	<string name="dialogCounterMonthlyTitle">Kies de resetdatum</string>
+	<string name="dialogCounterMonthlyChanged">Datum veranderd</string>
+	<string name="dialogCounterWeeklyTitle">Kies de resetdag</string>
+	<string name="dialogCounterWeeklyChanged">Dag veranderd</string>
+	
+	<string name="dialogCounterLimitTitle">Waarschuwingswaarde instellen</string>
+	<string name="dialogCounterLimitText">Stel de waarschuwingslimiet in. Om een melding uit te
+		schakelen, wis de waarde of zet het op 0.</string>
+	<string name="dialogCounterLimitWrong">Wrong number format</string>
+	
+	<string name="dialogDetailsReceived">Ontvangen:</string>
+	<string name="dialogDetailsSent">Verzonden:</string>
+	<string name="dialogDetailsTotal">Totaal:</string>
+	<string name="dialogDetailsAlert">Waarschuwing:</string>
+	<string name="dialogDetailsByte">%1$s (%2$s%%)</string>
+	<string name="dialogDetailsNoAlert">geen waarschuwing ingesteld</string>
+	
+	<!-- e.g. Cell exceeds the limit of 100 MB for Total -->
+	<string name="notifyExceed">%1$s overschrijdt het limiet van %2$s %3$s van %4$s</string>
+	<!-- e.g. Cell exceeds the defined limit -->
+	<string name="notifyExceedTitle">%1$s overschrijdt de ingestelde limiet</string>
+
+</resources>

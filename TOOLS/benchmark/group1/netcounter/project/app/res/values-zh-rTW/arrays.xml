@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string-array name="counterTypes">
+		<item>全部</item>
+		<item>月</item>
+		<item>Last month</item>
+		<item>週</item>
+		<item>前幾天</item>
+		<item>天</item>
+	</string-array>
+
+	<array name="counterTypesPos">
+		<item>0</item>
+		<item>1</item>
+		<item>5</item>
+		<item>4</item>
+		<item>2</item>
+		<item>3</item>
+	</array>
+
+	<string-array name="counterSingleDay">
+		<item>今天</item>
+		<item>昨天</item>
+		<item>2天前</item>
+		<item>3天前</item>
+		<item>4天前</item>
+		<item>5天前</item>
+		<item>6天前</item>
+		<item>7天前</item>
+	</string-array>
+
+	<string-array name="counterLastDays">
+		<item>7天</item>
+		<item>14天</item>
+		<item>30天</item>
+	</string-array>
+
+	<string-array name="counterMonthly">
+		<item>1個月</item>
+		<item>2個月</item>
+		<item>3個月</item>
+		<item>4個月</item>
+		<item>5個月</item>
+		<item>6個月</item>
+		<item>7個月</item>
+		<item>8個月</item>
+		<item>9個月</item>
+		<item>10個月</item>
+		<item>11個月</item>
+		<item>12個月</item>
+	</string-array>
+
+	<string-array name="counterWeeklyStart">
+		<item>星期日</item>
+		<item>星期一</item>
+		<item>星期二</item>
+		<item>星期三</item>
+		<item>星期四</item>
+		<item>星期五</item>
+		<item>星期六</item>
+	</string-array>
+
+	<string-array name="counterWeekly">
+		<item>1個星期</item>
+		<item>2個星期</item>
+		<item>3個星期</item>
+		<item>4個星期</item>
+	</string-array>
+
+	<string-array name="byteUnits">
+		<item>B</item>
+		<item>KB</item>
+		<item>MB</item>
+		<item>GB</item>
+		<item>TB</item>
+	</string-array>
+
+	<array name="byteValues">
+		<item>1</item>
+		<item>1024</item>
+		<item>1048576</item>
+		<item>1073741824</item>
+		<item>1099511627776</item>
+	</array>
+
+</resources>

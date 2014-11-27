@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+  <ScrollView 
+      android:layout_width="fill_parent"
+      android:layout_height="0dp"
+      android:layout_weight="1"
+      android:fillViewport="true">
+    <TableLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:id="@+id/Table"
+        android:stretchColumns="1"
+        android:shrinkColumns="1" 
+        android:background="@drawable/border">      
+
+      <TableRow>
+        <TextView android:text="@string/label" />
+        <EditText
+            android:layout_span="2"
+            android:id="@+id/Label" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" />
+      </TableRow>
+
+      <TableRow>
+        <TextView android:text="@string/description" />
+        <EditText
+            android:layout_span="2"
+            android:id="@+id/Description" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" />
+      </TableRow>
+      
+      <TableRow>
+        <TextView android:text="@string/opening_balance"/>
+         <EditText
+             android:layout_span="2"
+             android:inputType="phone" 
+             android:id="@+id/Opening_balance" 
+             android:layout_width="wrap_content" 
+             android:layout_height="wrap_content" 
+             android:numeric="decimal" />
+      </TableRow>
+      
+      <TableRow>
+      <TextView android:text="@string/currency" />
+	        <AutoCompleteTextView 
+	            android:completionThreshold="1" 
+	            android:id="@+id/Currency" 
+	            android:maxLength="3"
+	            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz" />
+          <Button 
+              android:id="@+id/Select" 
+              android:text="@string/select" />
+      </TableRow>
+    </TableLayout>
+  </ScrollView>
+  <LinearLayout
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      style="@android:style/ButtonBar">
+    <Button
+         android:layout_width="0dip"
+         android:layout_height="wrap_content"
+         android:layout_weight="1"
+         android:id="@+id/Confirm" 
+         android:text="@string/done"/>
+    <Button
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/Cancel" 
+        android:text="@string/cancel"/>
+  </LinearLayout>
+</LinearLayout>

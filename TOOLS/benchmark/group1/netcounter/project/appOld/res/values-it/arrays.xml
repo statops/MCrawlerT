@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string-array name="counterTypes">
+		<item>Totale</item>
+		<item>Mensile</item>
+		<item>Last month</item>
+		<item>Settimanale</item>
+		<item>Ultimi giorni</item>
+		<item>Giorno singolo</item>
+	</string-array>
+
+	<array name="counterTypesPos">
+		<item>0</item>
+		<item>1</item>
+		<item>5</item>
+		<item>4</item>
+		<item>2</item>
+		<item>3</item>
+	</array>
+
+	<string-array name="counterSingleDay">
+		<item>Oggi</item>
+		<item>Ieri</item>
+		<item>2 giorni fa</item>
+		<item>3 giorni fa</item>
+		<item>4 giorni fa</item>
+		<item>5 giorni fa</item>
+		<item>6 giorni fa</item>
+		<item>7 giorni fa</item>
+	</string-array>
+
+	<string-array name="counterLastDays">
+		<item>7 giorni</item>
+		<item>14 giorni</item>
+		<item>30 giorni</item>
+	</string-array>
+
+	<string-array name="counterMonthly">
+		<item>1 mese</item>
+		<item>2 mesi</item>
+		<item>3 mesi</item>
+		<item>4 mesi</item>
+		<item>5 mesi</item>
+		<item>6 mesi</item>
+		<item>7 mesi</item>
+		<item>8 mesi</item>
+		<item>9 mesi</item>
+		<item>10 mesi</item>
+		<item>11 mesi</item>
+		<item>12 mesi</item>
+	</string-array>
+
+	<string-array name="counterWeeklyStart">
+		<item>Domenica</item>
+		<item>Lunedì</item>
+		<item>Martedì</item>
+		<item>Mercoledì</item>
+		<item>Giovedì</item>
+		<item>Venerdì</item>
+		<item>Sabato</item>
+	</string-array>
+
+	<string-array name="counterWeekly">
+		<item>1 settimana</item>
+		<item>2 settimane</item>
+		<item>3 settimane</item>
+		<item>4 settimane</item>
+	</string-array>
+
+	<string-array name="byteUnits">
+		<item>B</item>
+		<item>KB</item>
+		<item>MB</item>
+		<item>GB</item>
+		<item>TB</item>
+	</string-array>
+
+	<array name="byteValues">
+		<item>1</item>
+		<item>1024</item>
+		<item>1048576</item>
+		<item>1073741824</item>
+		<item>1099511627776</item>
+	</array>
+
+</resources>

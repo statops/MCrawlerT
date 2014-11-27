@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical" >
+	<LinearLayout
+		android:id="@+id/AlarmTitleSection"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_weight="5"
+		android:background="#000" >
+		<TextView
+			android:id="@+id/AlarmTitle"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:gravity="center"
+			android:textColor="#fff"
+			android:textSize="60dp"
+			android:textStyle="bold"
+			android:typeface="monospace" />
+	</LinearLayout>
+	<RelativeLayout
+		android:id="@+id/AlarmCenterSection"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_weight="50"
+		android:background="@drawable/morphossbg" >
+		<LinearLayout
+			android:id="@+id/AlarmColorBarSection"
+			android:layout_width="12dp"
+			android:layout_height="fill_parent"
+			android:background="#00f" >
+		</LinearLayout>
+		<ScrollView
+			android:id="@+id/AlarmContentScroller"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_alignParentTop="true"
+			android:layout_toRightOf="@id/AlarmColorBarSection"
+			android:layout_weight="1" >
+			<LinearLayout
+				android:id="@+id/AlarmContentSection"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_weight="20"
+				android:orientation="vertical" >
+				<LinearLayout
+					android:id="@+id/AlarmContentTitle"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_weight="1" >
+					<TextView
+						android:id="@+id/AlarmContentTitleTextView"
+						android:layout_width="fill_parent"
+						android:layout_height="fill_parent"
+						android:gravity="center"
+						android:textColor="#00f"
+						android:textSize="36dp" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/AlarmContentLocation"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_weight="3"
+					android:orientation="horizontal"
+					android:paddingBottom="10dp"
+					android:paddingTop="10dp" >
+					<LinearLayout
+						android:id="@+id/AlarmContentLocationText"
+						android:layout_width="wrap_content"
+						android:layout_height="fill_parent"
+						android:layout_weight="80" >
+						<TextView
+							android:id="@+id/AlarmContentLocationTextView1"
+							android:layout_width="fill_parent"
+							android:layout_height="wrap_content"
+							android:layout_marginBottom="12dp"
+							android:layout_marginTop="12dp"
+							android:gravity="left"
+							android:paddingLeft="20dp"
+							android:textColor="#000"
+							android:textSize="20dp" />
+					</LinearLayout>
+					<LinearLayout
+						android:id="@+id/AlarmContentLocationIcon"
+						android:layout_width="wrap_content"
+						android:layout_height="fill_parent"
+						android:layout_weight="20" >
+						<ImageView
+							android:id="@+id/map_button"
+							android:layout_width="fill_parent"
+							android:layout_height="fill_parent"
+							android:scaleType="fitCenter"
+							android:src="@drawable/map_icon" />
+					</LinearLayout>
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/AlarmContentTime"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="5dp"
+					android:layout_marginTop="5dp"
+					android:layout_weight="1"
+					android:paddingBottom="5dp" >
+					<TextView
+						android:id="@+id/AlarmContentTimeTextView1"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:gravity="left"
+						android:paddingLeft="20dp"
+						android:textColor="#000"
+						android:textSize="24dp" />
+				</LinearLayout>
+			</LinearLayout>
+		</ScrollView>
+		<LinearLayout
+			android:id="@+id/AlarmContentButtons"
+			android:layout_width="wrap_content"
+			android:layout_height="108dp"
+			android:layout_alignParentBottom="true"
+			android:layout_alignParentRight="true"
+			android:layout_below="@id/AlarmContentScroller"
+			android:layout_gravity="bottom"
+			android:layout_toRightOf="@id/AlarmColorBarSection"
+			android:gravity="bottom" >
+			<LinearLayout
+				android:id="@+id/AlarmContentButtonContainter1"
+				android:layout_width="wrap_content"
+				android:layout_height="fill_parent"
+				android:layout_weight="10"
+				android:gravity="center" >
+				<ImageView
+					android:id="@+id/snooze_button"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:scaleType="fitCenter"
+					android:src="@drawable/alarm_snooze_button" />
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/AlarmContentButtonContainer2"
+				android:layout_width="wrap_content"
+				android:layout_height="fill_parent"
+				android:layout_weight="10"
+				android:gravity="center" >
+				<ImageView
+					android:id="@+id/dismiss_button"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:scaleType="fitCenter"
+					android:src="@drawable/alarm_dismiss_button" />
+			</LinearLayout>
+		</LinearLayout>
+	</RelativeLayout>
+</LinearLayout>

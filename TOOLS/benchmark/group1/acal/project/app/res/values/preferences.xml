@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="prefDefaultView">prefDefaultView</string>
+	<string name="prefTwelveTwentyfour">prefTwelveTwentyfour</string>
+	<string name="YearViewSize_PrefKey">YearViewNumMonths</string>
+	<string name="prefSnoozeDuration">SnoozeTime</string>
+	<string name="DefaultAlarmTone_PrefKey">DefaultAlarmTone</string>
+	<string name="AlarmVolumeType_PrefKey">AlarmVolumeType</string>
+	<string name="prefWorkdayStart">prefWorkdayStart</string>
+	<string name="prefWorkdayFinish">prefWorkdayFinish</string>
+	<string name="prefWeekViewLinesPerHour">prefWeekViewLinesPerHour</string>
+	<string name="prefWeekViewDayWidth">prefWeekViewDayWidth</string>
+	<string name="prefSelectedDate">prefSelectedDate</string>
+	<string name="prefDisplayedMonth">prefDisplayedMonth</string>
+	<string name="prefSavedSelectedDate">prefSavedSelectedDate</string>
+	<string name="prefThemeButtonColour">prefThemeButtonColour</string>
+	<string name="prefLastRevision">LastRevision</string>
+	<string name="prefServerIsConfigured">ServerIsConfigured</string>
+	<string name="prefApprovedCertificates">ApprovedCertificates</string>
+	<string name="prefUnapprovedCertificates">UnapprovedCertificates</string>
+	<string name="prefAllowSelfSignedCerts">AllowSelfSignedCerts</string>
+	<string name="prefTzServerBaseUrl">TzServerBaseUrl</string>
+	<string name="prefIgnoreValarmDescription">IgnoreValarmDescription</string>
+	<string name="prefDefaultEventsCollection">DefaultEventsCollection</string>
+	<string name="prefDefaultTasksCollection">DefaultTasksCollection</string>
+	<string name="prefDefaultNotesCollection">DefaultNotesCollection</string>
+</resources>

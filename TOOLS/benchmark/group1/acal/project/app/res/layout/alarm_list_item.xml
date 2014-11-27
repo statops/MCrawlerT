@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/AlarmListItem"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="#0abe" >
+	<LinearLayout
+		android:id="@+id/alarms_list_item_container"
+		android:layout_width="wrap_content"
+		android:layout_height="36sp"
+		android:layout_gravity="left|center_vertical"
+		android:layout_weight="1"
+		android:gravity="left"
+		android:orientation="horizontal" >
+		<TextView
+			android:id="@+id/AlarmListItemTitle"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:gravity="left|center_vertical"
+			android:paddingLeft="14sp"
+			android:text="@string/alarm15MinutesPrior"
+			android:textColor="#000"
+			android:textSize="20sp" />
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/delete_button_container"
+		android:layout_width="wrap_content"
+		android:layout_height="36sp"
+		android:layout_gravity="right|center_vertical"
+		android:gravity="right|center_vertical"
+		android:paddingLeft="5sp"
+		android:paddingRight="14sp" >
+		<ImageView
+			android:id="@+id/delete_button"
+			android:layout_width="36sp"
+			android:layout_height="36sp"
+			android:layout_gravity="right|center_vertical"
+			android:contentDescription="@string/Delete"
+			android:padding="1sp"
+			android:paddingRight="0sp"
+			android:scaleType="fitXY"
+			android:src="@drawable/red_x" />
+	</LinearLayout>
+</TableRow>

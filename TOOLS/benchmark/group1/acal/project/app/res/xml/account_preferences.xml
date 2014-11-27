@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+	android:key="acal_contacts_account"
+	android:summary="Choose an aCal Account to sync Contacts from"
+	android:title="aCal Account" >
+	<intent
+		android:action="com.morphoss.acal.activity.CollectionConfigList.ACTION_CHOOSE"
+		android:targetClass="com.morphoss.acal.activity.CollectionConfigList"
+		android:targetPackage="com.morphoss.acal" />
+</PreferenceScreen>

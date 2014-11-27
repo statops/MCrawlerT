@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/EventViewLayout"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@drawable/morphossbg"
+	android:orientation="vertical" >
+	<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/EventViewBelowTitleLayout"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_weight="1"
+		android:orientation="horizontal" >
+		<!-- Colour bar -->
+		<LinearLayout
+			android:id="@+id/EventViewColourBar"
+			android:layout_width="13sp"
+			android:layout_height="fill_parent"
+			android:background="#704080f0" />
+		<RelativeLayout
+			android:id="@+id/EventViewContentArea"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_gravity="right"
+			android:layout_weight="1"
+			android:isScrollContainer="true" >
+			<ScrollView
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:layout_alignParentRight="true"
+				android:layout_alignParentTop="true" >
+				<RelativeLayout
+					android:id="@+id/EventViewDataLayout"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:orientation="vertical" >
+					<!-- Event Name -->
+					<TextView
+						android:id="@+id/EventName"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:paddingBottom="10sp"
+						android:paddingLeft="10sp"
+						android:text="@string/eventName"
+						android:textSize="30sp" />
+					<!-- Time content -->
+					<TextView
+						android:id="@+id/EventTimeContent"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@+id/EventName"
+						android:paddingBottom="10sp"
+						android:paddingLeft="10sp"
+						android:textSize="24sp" />
+					<!-- Location Label and Button -->
+					<RelativeLayout
+						android:id="@+id/EventLocationLayout"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:layout_below="@+id/EventTimeContent"
+						android:paddingBottom="15sp" >
+						<!-- Location Label -->
+						<TextView
+							android:id="@+id/EventLocationLabel"
+							style="@style/event_view_label"
+							android:layout_width="fill_parent"
+							android:layout_height="wrap_content"
+							android:paddingBottom="2sp"
+							android:text="@string/LocationPrompt" />
+						<!-- Find on map button -->
+						<Button
+							android:id="@+id/EventFindOnMapButton"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_alignParentRight="true"
+							android:layout_gravity="center"
+							android:background="@drawable/map_icon"
+							android:includeFontPadding="true"
+							android:padding="0sp" />
+						<TextView
+							android:id="@+id/EventLocationContent"
+							style="@style/event_view_content"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_below="@+id/EventLocationLabel" />
+					</RelativeLayout>
+					<!-- End location label and button -->
+					<RelativeLayout
+						android:id="@+id/EventNotesLayout"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:layout_below="@+id/EventLocationLayout"
+						android:paddingBottom="15sp" >
+						<!-- Notes label and content -->
+						<TextView
+							android:id="@+id/EventNotesLabel"
+							style="@style/event_view_label"
+							android:layout_width="fill_parent"
+							android:layout_height="wrap_content"
+							android:layout_below="@+id/EventLocationLayout"
+							android:text="@string/NotesPrompt" />
+						<TextView
+							android:id="@+id/EventNotesContent"
+							style="@style/event_view_content"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_below="@+id/EventNotesLabel" />
+					</RelativeLayout>
+					<RelativeLayout
+						android:id="@+id/EventAlarmsLayout"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:layout_below="@+id/EventNotesLayout"
+						android:paddingBottom="15sp" >
+						<!-- Notes label and content -->
+						<TextView
+							android:id="@+id/EventAlarmsLabel"
+							style="@style/event_view_label"
+							android:layout_width="fill_parent"
+							android:layout_height="wrap_content"
+							android:layout_below="@+id/EventNotesLayout"
+							android:text="@string/AlarmsPrompt" />
+						<TextView
+							android:id="@+id/EventAlarmsContent"
+							style="@style/event_view_content"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_below="@+id/EventAlarmsLabel" />
+						<TextView
+							android:id="@+id/CalendarAlarmsDisabled"
+							style="@style/event_view_note"
+							android:layout_width="fill_parent"
+							android:layout_height="wrap_content"
+							android:layout_below="@+id/EventAlarmsContent"
+							android:layout_gravity="center_horizontal"
+							android:text="@string/alarmsDisabledNote"
+							android:visibility="gone" />
+					</RelativeLayout>
+					<RelativeLayout
+						android:id="@+id/EventRepeatsLayout"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:layout_below="@+id/EventAlarmsLayout" >
+						<!-- Notes label and content -->
+						<TextView
+							android:id="@+id/EventRepeatsLabel"
+							style="@style/event_view_label"
+							android:layout_width="fill_parent"
+							android:layout_height="wrap_content"
+							android:text="@string/RepeatsPrompt" />
+						<TextView
+							android:id="@+id/EventRepeatsContent"
+							style="@style/event_view_content"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_below="@+id/EventRepeatsLabel" />
+					</RelativeLayout>
+					<RelativeLayout
+						android:id="@+id/EventCollectionLayout"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:layout_below="@+id/EventRepeatsLayout"
+						android:paddingTop="15sp" >
+						<!-- Notes label and content -->
+						<TextView
+							android:id="@+id/EventCollectionLabel"
+							style="@style/event_view_label"
+							android:layout_width="fill_parent"
+							android:layout_height="wrap_content"
+							android:text="@string/CollectionPrompt" />
+						<TextView
+							android:id="@+id/EventCollectionContent"
+							style="@style/event_view_content"
+							android:layout_width="fill_parent"
+							android:layout_height="wrap_content"
+							android:layout_below="@+id/EventCollectionLabel"
+							android:text="My Little Collection" />
+					</RelativeLayout>
+				</RelativeLayout>
+			</ScrollView>
+		</RelativeLayout>
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/button_layout"
+		android:layout_width="fill_parent"
+		android:layout_height="36sp"
+		android:layout_gravity="bottom"
+		android:background="@color/bottom_bg" >
+		<!-- Colour bar -->
+		<LinearLayout
+			android:id="@+id/EventViewColourBarBottom"
+			android:layout_width="13sp"
+			android:layout_height="fill_parent"
+			android:background="#704080f0" />
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:paddingLeft="1sp"
+			android:paddingRight="1sp" >
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:background="@color/themed_button_colour" >
+				<Button
+					android:id="@+id/event_today_button"
+					style="@style/themed_bottom_button"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:includeFontPadding="true"
+					android:padding="0sp"
+					android:text="@string/Today"
+					android:width="90sp" />
+			</LinearLayout>
+		</LinearLayout>
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:paddingLeft="1sp"
+			android:paddingRight="1sp" >
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:background="@color/themed_button_colour" >
+				<Button
+					android:id="@+id/event_edit_button"
+					style="@style/themed_bottom_button"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:includeFontPadding="true"
+					android:padding="0sp"
+					android:text="@string/Edit"
+					android:width="90sp" />
+			</LinearLayout>
+		</LinearLayout>
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:paddingLeft="1sp"
+			android:paddingRight="1sp" >
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:background="@color/themed_button_colour" >
+				<Button
+					android:id="@+id/event_add_button"
+					style="@style/themed_add_button"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:gravity="bottom|center_horizontal"
+					android:includeFontPadding="true"
+					android:padding="0sp"
+					android:text="@string/plus"
+					android:width="90sp" />
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

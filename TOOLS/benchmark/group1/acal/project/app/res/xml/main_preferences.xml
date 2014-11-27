@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+	<PreferenceScreen android:title="@string/GeneralPreferences" >
+		<CheckBoxPreference
+			android:key="@string/prefDefaultView"
+			android:summaryOff="Month View"
+			android:summaryOn="Week View"
+			android:title="aCal Opens in Week View" />
+		<CheckBoxPreference
+			android:key="@string/prefTwelveTwentyfour"
+			android:summaryOff="@string/TwelveTwentyfour_OffSummary"
+			android:summaryOn="@string/TwelveTwentyfour_OnSummary"
+			android:title="@string/TwelveTwentyfour_PrefTitle" />
+		<CheckBoxPreference
+			android:key="@string/prefAllowSelfSignedCerts"
+			android:summaryOff="@string/prefAllowSelfSignedCerts_OffSummary"
+			android:summaryOn="@string/prefAllowSelfSignedCerts_OnSummary"
+			android:title="@string/prefAllowSelfSignedCerts_PrefTitle" />
+		<!-- This Preference is dynamically populated in AcalPreferences.java -->
+		<ListPreference
+			android:enabled="false"
+			android:key="@string/prefDefaultEventsCollection"
+			android:selectable="false"
+			android:summary="@string/prefDefaultEventsCollection_Summary"
+			android:title="@string/prefDefaultEventsCollection_Title" />
+		<ListPreference
+			android:enabled="false"
+			android:key="@string/prefDefaultTasksCollection"
+			android:selectable="false"
+			android:summary="@string/prefDefaultTasksCollection_Summary"
+			android:title="@string/prefDefaultTasksCollection_Title" />
+		<ListPreference
+			android:enabled="false"
+			android:key="@string/prefDefaultNotesCollection"
+			android:selectable="false"
+			android:summary="@string/prefDefaultNotesCollection_Summary"
+			android:title="@string/prefDefaultNotesCollection_Title" />
+		<ListPreference
+			android:defaultValue="@string/Monday"
+			android:enabled="true"
+			android:entries="@array/DaysOfWeek"
+			android:entryValues="@array/DaysOfWeekOrdinal"
+			android:key="@string/firstDayOfWeek"
+			android:selectable="true"
+			android:summary="@string/theDayEachWeekStartsWith"
+			android:title="@string/firstDayOfWeek" >
+		</ListPreference>
+		<EditTextPreference
+			android:defaultValue="@string/davicalOrgTzUrl"
+			android:enabled="true"
+			android:key="@string/prefTzServerBaseUrl"
+			android:selectable="true"
+			android:summary="@string/davicalOrgTzUrl"
+			android:title="@string/prefTzServerBaseUrl_Title" />
+	</PreferenceScreen>
+	<PreferenceScreen android:title="@string/AlarmPreferences" >
+		<CheckBoxPreference
+			android:key="@string/prefIgnoreValarmDescription"
+			android:summaryOff="@string/prefIgnoreValarmDescription_OffSummary"
+			android:summaryOn="@string/prefIgnoreValarmDescription_OnSummary"
+			android:title="@string/prefIgnoreValarmDescription_PrefTitle" />
+		<EditTextPreference
+			android:defaultValue="10"
+			android:enabled="true"
+			android:key="@string/prefSnoozeDuration"
+			android:selectable="true"
+			android:summary="@string/Snooze_PrefSummary"
+			android:title="@string/Snooze_PrefTitle" />
+		<ListPreference
+			android:enabled="false"
+			android:key="@string/DefaultAlarmTone_PrefKey"
+			android:selectable="false"
+			android:summary="@string/DefaultAlarmTone_PrefSummary"
+			android:title="@string/DefaultAlarmTone_PrefTitle" >
+		</ListPreference>
+		<ListPreference
+			android:defaultValue="ALARM"
+			android:enabled="true"
+			android:entries="@array/AlarmVolumeType_PrefEntries"
+			android:entryValues="@array/AlarmVolumeType_PrefValues"
+			android:key="@string/AlarmVolumeType_PrefKey"
+			android:selectable="true"
+			android:summary="@string/AlarmVolumeType_PrefSummary"
+			android:title="@string/AlarmVolumeType_PrefTitle" >
+		</ListPreference>
+	</PreferenceScreen>
+	<PreferenceScreen android:title="@string/WeekViewPreferences" >
+		<com.morphoss.acal.TimePickerPreference
+			android:defaultValue="9:00"
+			android:enabled="true"
+			android:key="@string/prefWorkdayStart"
+			android:selectable="true"
+			android:summary="@string/prefWorkdayStart_Summary"
+			android:title="@string/prefWorkdayStart_Title" />
+		<com.morphoss.acal.TimePickerPreference
+			android:defaultValue="17:00"
+			android:enabled="true"
+			android:key="@string/prefWorkdayFinish"
+			android:selectable="true"
+			android:summary="@string/prefWorkdayFinish_Summary"
+			android:title="@string/prefWorkdayFinish_Title" />
+		<EditTextPreference
+			android:defaultValue="1.7"
+			android:enabled="true"
+			android:inputType="numberDecimal"
+			android:key="@string/prefWeekViewLinesPerHour"
+			android:selectable="true"
+			android:summary="@string/prefWeekViewLinesPerHour_Summary"
+			android:title="@string/prefWeekViewLinesPerHour_Title" />
+		<EditTextPreference
+			android:defaultValue="70"
+			android:enabled="true"
+			android:inputType="number"
+			android:key="@string/prefWeekViewDayWidth"
+			android:selectable="true"
+			android:summary="@string/prefWeekViewDayWidth_Summary"
+			android:title="@string/prefWeekViewDayWidth_Title" />
+	</PreferenceScreen>
+	<PreferenceScreen android:title="@string/AppearancePreferences" >
+		<ListPreference
+			android:defaultValue="6"
+			android:enabled="true"
+			android:entries="@array/YearViewSize_PrefEntries"
+			android:entryValues="@array/YearViewSize_PrefEntries"
+			android:key="@string/YearViewSize_PrefKey"
+			android:selectable="true"
+			android:summary="@string/YearViewSize_PrefSummary"
+			android:title="@string/YearViewSize_PrefTitle" />
+		<com.morphoss.acal.activity.ColourPickerPreference
+			android:defaultValue="-53216"
+			android:enabled="true"
+			android:key="@string/prefThemeButtonColour"
+			android:persistent="true"
+			android:selectable="true"
+			android:summary="@string/prefThemeButtonColour_Summary"
+			android:title="@string/prefThemeButtonColour_Title" />
+	</PreferenceScreen>
+</PreferenceScreen>

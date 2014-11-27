@@ -1,0 +1,1354 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Andrew McMillan <andrew@mcmillan.net.nz>, 2011.
+# marc0s <marc0s@fsfe.org>, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: aCal\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-08-19 17:18+1200\n"
+"PO-Revision-Date: 2012-08-19 05:21+0000\n"
+"Last-Translator: Andrew McMillan <andrew@mcmillan.net.nz>\n"
+"Language-Team: Catalan (http://www.transifex.com/projects/p/acal/language/ca/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ca\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+# SourceFileStart:../res/values/strings.xml
+# Strings that should not be localised belong in unlocalisable_strings.xml
+msgid "theDayEachWeekStartsWith"
+msgstr "El dia amb el què comença la setmana"
+
+msgid "firstDayOfWeek"
+msgstr "Primer dia de la setmana"
+
+msgid "ok"
+msgstr "D'acord"
+
+msgid "cancel"
+msgstr "Cancel·lar"
+
+msgid "setButtonLabel"
+msgstr ""
+
+msgid "appDescription"
+msgstr "Aplicació de calendari per a Android que guarda les teves cites, tasques, notes i contactes a un servidor CalDAV/CardDAV remot, com DAViCal (veure: www.davical.org)"
+
+msgid "appDescriptionTasks"
+msgstr ""
+
+msgid "appDescriptionNotes"
+msgstr ""
+
+msgid "Active"
+msgstr "Actiu"
+
+msgid "Add_Server"
+msgstr "Afegir servidor"
+
+msgid "A_name_for_this_server_configuration"
+msgstr "Un nom per aquesta configuració"
+
+msgid "Authentication_Type"
+msgstr "Tipus d'autenticació"
+
+msgid "Simple_Path"
+msgstr "Camí simple"
+
+msgid "Simple_User_URL"
+msgstr ""
+
+msgid "Server_URL"
+msgstr ""
+
+msgid "Enter_a_brief_summary_of_the_event"
+msgstr "Introdueix una breu descripció de la cita"
+
+msgid "Name"
+msgstr "Nom"
+
+msgid "Force_full_resync"
+msgstr "Forçar sincronització"
+
+msgid "Password"
+msgstr "Contrasenya"
+
+msgid "Save"
+msgstr "Guardar"
+
+msgid "Settings"
+msgstr "Paràmetres"
+
+msgid "Server_Name"
+msgstr "Nom del servidor"
+
+msgid "Server_Options"
+msgstr "Opcions del servidor"
+
+msgid "Collection_Options"
+msgstr "Opcions de la col·lecció"
+
+msgid "Colour"
+msgstr "Color"
+
+msgid "Default_timezone"
+msgstr "Zona horària predeterminada"
+
+msgid "DefaultAlarmTone"
+msgstr "So d'alarma predeterminat"
+
+msgid "Server_Path"
+msgstr "Camí al servidor"
+
+msgid "Server_Port"
+msgstr "Port del servidor"
+
+msgid "Summary"
+msgstr "Resum"
+
+msgid "Sync_collection_now"
+msgstr "Sincronitzar la col·leció ara"
+
+msgid "Disable_collection"
+msgstr "Desactivar la col·lecció"
+
+msgid "The_authentication_type_used"
+msgstr "El tipus d'autenticació utilitzat"
+
+msgid "The_password_to_use"
+msgstr "La contrasenya a utilitzar"
+
+msgid "The_path_on_the_server"
+msgstr "El camí al servidor"
+
+msgid "A_URL_or_domain_name"
+msgstr ""
+
+msgid "The_servers_hostname"
+msgstr "El nom del servidor"
+
+msgid "The_username_to_use"
+msgstr "L'usuari a utilitzar"
+
+msgid "Username"
+msgstr "Nom d'usuari"
+
+msgid "Use_SSL"
+msgstr "Utilizar SSL"
+
+msgid "Whether_this_server_is_active"
+msgstr "Si aquest servidor és actiu o no"
+
+msgid "Whether_to_use_encryption"
+msgstr "Si cal utilitzar xifrat"
+
+msgid "appActivityEventCreate"
+msgstr "Nova cita"
+
+msgid "appActivityServerConfigList"
+msgstr "Servidors"
+
+msgid "appActivityServerConfiguration"
+msgstr ""
+
+msgid "appActivityAddServerList"
+msgstr "Plantilles de servidor"
+
+msgid "appActivityCollectionConfigList"
+msgstr "Calendaris i llibretes d'adreces"
+
+msgid "appActivityDebugSettings"
+msgstr "Paràmetres de depuració"
+
+msgid "appActivitySettings"
+msgstr "Paràmetres"
+
+msgid "appActivityPreference"
+msgstr "Paràmetres"
+
+msgid "The_port_to_connect_to"
+msgstr "El port a connectar-se"
+
+msgid "A_name_for_this_collection"
+msgstr "Un nom per aquesta col·lecció"
+
+msgid "pActive_addressbook"
+msgstr "Llibreta d'adreces activa"
+
+msgid "pActive_for_events"
+msgstr "Actiu per cites"
+
+msgid "pActive_for_journal"
+msgstr "Actiu per notes"
+
+msgid "pActive_for_tasks"
+msgstr "Actiu per tasques"
+
+msgid "pUse_Alarms"
+msgstr "Utilitzar alarmes a aquesta col·lecció?"
+
+msgid "Use_Alarms"
+msgstr "Utilitzar alarmes"
+
+msgid "Active_addressbook"
+msgstr "S'utilitza aquesta col·lecció per guardar-hi adreces?"
+
+msgid "Active_for_events"
+msgstr "S'utilitza aquesta col·lecció per guardar-hi cites?"
+
+msgid "Active_for_journal"
+msgstr "S'utilitza aquesta col·lecció per guardar-hi notes?"
+
+msgid "Active_for_tasks"
+msgstr "S'utilitza aquesta col·lecció per guardar-hi tasques?"
+
+msgid "The_colour_associated_with_this_collection"
+msgstr "El color associat a aquesta col·lecció"
+
+msgid "The_timezone_new_events_default_to"
+msgstr "La zona horària predeterminada per nous esdeveniments"
+
+msgid "pMax_age_on_3g"
+msgstr "Minuts de sincronització en 3G"
+
+msgid "The_maximum_age_for_data_while_on_3g"
+msgstr "El temps màxim (en minuts) per esperar a actualitzar les dades, en 3G"
+
+msgid "pMax_age_on_wifi"
+msgstr "Minuts de sincronització en wifi"
+
+msgid "The_maximum_age_for_data_while_on_wifi"
+msgstr "El temps màxim (en minuts) per esperar a actualitzar les dades, en wifi"
+
+msgid "Use_alarms_from_this_calendar"
+msgstr "S'ha de mostrar les alarmes d'aquest calendari?"
+
+msgid "Monday"
+msgstr "Dilluns"
+
+msgid "Tuesday"
+msgstr "Dimarts"
+
+msgid "Wednesday"
+msgstr "Dimecres"
+
+msgid "Thursday"
+msgstr "Dijous"
+
+msgid "Friday"
+msgstr "Divendres"
+
+msgid "Saturday"
+msgstr "Dissabte"
+
+msgid "Sunday"
+msgstr "Diumenge"
+
+msgid "Mon"
+msgstr "Dl"
+
+msgid "Tue"
+msgstr "Dm"
+
+msgid "Wed"
+msgstr "Dc"
+
+msgid "Thu"
+msgstr "Dj"
+
+msgid "Fri"
+msgstr "Dv"
+
+msgid "Sat"
+msgstr "Ds"
+
+msgid "Sun"
+msgstr "Dg"
+
+msgid "chMon"
+msgstr "Dl"
+
+msgid "chTue"
+msgstr "Dm"
+
+msgid "chWed"
+msgstr "Dc"
+
+msgid "chThu"
+msgstr "Dj"
+
+msgid "chFri"
+msgstr "Dv"
+
+msgid "chSat"
+msgstr "Ds"
+
+msgid "chSun"
+msgstr "Dg"
+
+msgid "January"
+msgstr "Gener"
+
+msgid "February"
+msgstr "Febrer"
+
+msgid "March"
+msgstr "Març"
+
+msgid "April"
+msgstr "Abril"
+
+msgid "May"
+msgstr "Maig"
+
+msgid "June"
+msgstr "Juny"
+
+msgid "July"
+msgstr "Juliol"
+
+msgid "August"
+msgstr "Agost"
+
+msgid "September"
+msgstr "Setembre"
+
+msgid "October"
+msgstr "Octubre"
+
+msgid "November"
+msgstr "Novembre"
+
+msgid "December"
+msgstr "Desembre"
+
+msgid "thJan"
+msgstr "Gen"
+
+msgid "thFeb"
+msgstr "Feb"
+
+msgid "thMar"
+msgstr "Mar"
+
+msgid "thApr"
+msgstr "Abr"
+
+msgid "thMay"
+msgstr "Mai"
+
+msgid "thJun"
+msgstr "Jun"
+
+msgid "thJul"
+msgstr "Jul"
+
+msgid "thAug"
+msgstr "Ago"
+
+msgid "thSep"
+msgstr "Set"
+
+msgid "thOct"
+msgstr "Oct"
+
+msgid "thNov"
+msgstr "Nov"
+
+msgid "thDec"
+msgstr "Des"
+
+# If the user is displaying AM/PM we need a single character to display e.g.
+# 9a for 9:00am in the morning
+msgid "oneCharMorning"
+msgstr "Caràcter per hores de matí"
+
+# If the user is displaying AM/PM we need a single character to display e.g.
+# 1p for 1:00pm in the afternoon
+msgid "oneCharAfternoon"
+msgstr "Caràcter per hores de tarda"
+
+msgid "abbrevMorning"
+msgstr ""
+
+msgid "abbrevAfternoon"
+msgstr ""
+
+msgid "YearViewSize_PrefTitle"
+msgstr "Nombre de mesos a la vista anual"
+
+msgid "YearViewSize_PrefSummary"
+msgstr "El nombre de mesos que són visibles a la vista mensual"
+
+msgid "Snooze_PrefTitle"
+msgstr "Temps a postposar"
+
+msgid "Snooze_PrefSummary"
+msgstr "Quants minuts es postposarà l'alarma quan s'apreti el botó de postposar"
+
+msgid "prefDefaultEventsCollection_Title"
+msgstr ""
+
+msgid "prefDefaultEventsCollection_Summary"
+msgstr ""
+
+msgid "prefDefaultTasksCollection_Title"
+msgstr ""
+
+msgid "prefDefaultTasksCollection_Summary"
+msgstr ""
+
+msgid "prefDefaultNotesCollection_Title"
+msgstr ""
+
+msgid "prefDefaultNotesCollection_Summary"
+msgstr ""
+
+msgid "DefaultAlarmTone_PrefTitle"
+msgstr "So d'alarma predeterminat"
+
+msgid "DefaultAlarmTone_PrefSummary"
+msgstr "El so a utilitzar per les alarmes de forma predeterminada"
+
+msgid "AlarmVolumeType_PrefTitle"
+msgstr ""
+
+msgid "AlarmVolumeType_PrefSummary"
+msgstr ""
+
+msgid "AlarmBellVolume"
+msgstr ""
+
+msgid "MediaPlayerVolume"
+msgstr ""
+
+msgid "prefWorkdayStart_Title"
+msgstr "Inici de la jornada laboral"
+
+msgid "prefWorkdayStart_Summary"
+msgstr "Quan començar la jornada laboral"
+
+msgid "prefWorkdayFinish_Title"
+msgstr "Final de la jornada laboral"
+
+msgid "prefWorkdayFinish_Summary"
+msgstr "Quan acabar la jornada laboral"
+
+msgid "prefWeekViewLinesPerHour_Title"
+msgstr "Alçada de les files"
+
+msgid "prefWeekViewLinesPerHour_Summary"
+msgstr "L'alçada de cada una de les hores del dia a la vista setmanal"
+
+msgid "prefWeekViewDayWidth_Title"
+msgstr "Amplada de columna"
+
+msgid "prefWeekViewDayWidth_Summary"
+msgstr "L'amplada de cada un dels dies a la vista setmanal"
+
+msgid "Today"
+msgstr "Avui"
+
+msgid "Year"
+msgstr "Any"
+
+msgid "Month"
+msgstr "Mes"
+
+msgid "Week"
+msgstr "Setmana"
+
+msgid "Edit"
+msgstr "Editar"
+
+msgid "Apply"
+msgstr "Aplicar"
+
+msgid "Advanced"
+msgstr "Avançat"
+
+msgid "Simple"
+msgstr "Simple"
+
+msgid "Add"
+msgstr "Afegir"
+
+msgid "UnNamedServer"
+msgstr "Servidor sense nom"
+
+msgid "LocationPrompt"
+msgstr "Localització:"
+
+msgid "NotesPrompt"
+msgstr "Notes:"
+
+msgid "AlarmsPrompt"
+msgstr "Alarmes:"
+
+msgid "RepeatsPrompt"
+msgstr "Repeticions:"
+
+msgid "AllDayPrompt"
+msgstr "Cita de tot un dia:"
+
+msgid "FromPrompt"
+msgstr "Des de:"
+
+msgid "TodoFromPrompt"
+msgstr ""
+
+msgid "UntilPrompt"
+msgstr "Fins a:"
+
+msgid "DuePrompt"
+msgstr ""
+
+msgid "CompletedPrompt"
+msgstr ""
+
+msgid "DaysPrompt"
+msgstr ""
+
+msgid "StartPrompt"
+msgstr ""
+
+msgid "CompletePrompt"
+msgstr ""
+
+msgid "CollectionPrompt"
+msgstr ""
+
+msgid "defaultCalendar"
+msgstr "Calendari predeterminat"
+
+msgid "theCalendarForNewEvents"
+msgstr "El calendari a utilitzar per les noves cites de forma predeterminada"
+
+msgid "TwelveTwentyfour_PrefTitle"
+msgstr "Utilitzar el format 24 hores"
+
+msgid "TwelveTwentyfour_OnSummary"
+msgstr "14:00"
+
+msgid "TwelveTwentyfour_OffSummary"
+msgstr "2:00pm"
+
+msgid "OnlyOnce"
+msgstr "Un sol cop"
+
+msgid "EveryWeekday"
+msgstr "Cada dia laborable"
+
+msgid "EveryWeekend"
+msgstr "Cada cap de setmana"
+
+msgid "EveryDay"
+msgstr "Cada dia"
+
+msgid "EveryWeek"
+msgstr "Cada setmana"
+
+msgid "EveryMonth"
+msgstr "Cada mes"
+
+msgid "EveryYear"
+msgstr "Cada any"
+
+msgid "EveryNDays"
+msgstr "Cada N dies"
+
+msgid "EveryNWeeks"
+msgstr "Cada N setmanes"
+
+msgid "EveryNMonths"
+msgstr "Cada N mesos"
+
+msgid "EveryNYears"
+msgstr "Cada N anys"
+
+msgid "EveryMonday"
+msgstr "Cada dilluns"
+
+msgid "EveryTuesday"
+msgstr "Cada dimarts"
+
+msgid "EveryWednesday"
+msgstr "Cada dimecres"
+
+msgid "EveryThursday"
+msgstr "Cada dijous"
+
+msgid "EveryFriday"
+msgstr "Cada divendres"
+
+msgid "EverySaturday"
+msgstr "Cada dissabte"
+
+msgid "EverySunday"
+msgstr "Cada diumenge"
+
+msgid "EveryNthOfTheMonth"
+msgstr "Cada %s del mes"
+
+msgid "EveryMonthOnTheNthSomeday"
+msgstr "El %s de cada mes"
+
+msgid "CustomRepeatRule"
+msgstr "Repetició personalitzada"
+
+msgid "EventSaved"
+msgstr "Cita guardada."
+
+msgid "ModifiedAllInstances"
+msgstr "Modificades totes les instàncies d'aquesta cita."
+
+msgid "ModifiedOneInstance"
+msgstr "Modificada la instància d'aquesta cita."
+
+msgid "ModifiedThisAndFuture"
+msgstr "Modificades aquesta i totes les instàncies futures d'aquesta cita."
+
+msgid "ErrorSavingEvent"
+msgstr "Error guardant cita - si us plau torneu-ho a intentar."
+
+msgid "NewEventTitle"
+msgstr "Nova cita"
+
+msgid "ChooseACollection"
+msgstr "Escull una col·lecció"
+
+msgid "ChooseAlarmTime"
+msgstr "Escull l'hora de l'alarma"
+
+msgid "ChooseInstancesToChange"
+msgstr "Quines són les instàncies a canviar?"
+
+msgid "ChooseRepeatFrequency"
+msgstr "Escull una freqüència de repetició"
+
+msgid "Add_Alarm"
+msgstr "Afegir alarma"
+
+msgid "errorMustHaveActiveCalendar"
+msgstr "No es pot editar una cita sense un calendari actiu."
+
+msgid "errorSavingServerConfig"
+msgstr "Error guardant configuració del servidor"
+
+msgid "errorSavingFile"
+msgstr "Error guardant fitxer"
+
+msgid "ServerDataSaved"
+msgstr "Dades del servidor guardades. Nom de fitxer:"
+
+msgid "NewManualServerConfiguration"
+msgstr "Configuració manual"
+
+msgid "ManualServerConfigurationBlurb"
+msgstr "Entrar la informació del servidor manualment"
+
+msgid "SavedServerConfigurationBlurb"
+msgstr "Una configuració de servidor guardada"
+
+msgid "AllDaysInPeriod"
+msgstr "Tot el dia, desde %1$s fins a %2$s"
+
+msgid "ForTheWholeDay"
+msgstr "Tot el dia"
+
+msgid "alarmAtEventTime"
+msgstr "A l'hora de la cita"
+
+msgid "alarm10MinutesPrior"
+msgstr "10 minuts abans"
+
+msgid "alarm15MinutesPrior"
+msgstr ""
+
+msgid "alarm30MinutesPrior"
+msgstr "30 minuts abans"
+
+msgid "alarm1HourPrior"
+msgstr "Una hora abans"
+
+msgid "alarm2HoursPrior"
+msgstr "Dues hores abans"
+
+msgid "alarmCustom"
+msgstr "Alarma personalitzada"
+
+msgid "alarmsDisabledNote"
+msgstr "(totes les alarmes deshabilitades per aquest calendari)"
+
+msgid "changeThisInstance"
+msgstr "Només aquesta instància"
+
+msgid "changeAllInstances"
+msgstr "Totes les instàncies"
+
+msgid "changeThisAndFuture"
+msgstr "Aquesta i totes les futures"
+
+msgid "internetNotAvailable"
+msgstr "Internet no es troba disponible"
+
+msgid "couldNotDiscoverPort"
+msgstr "No s'ha pogut trobar el port HTTP pel servidor CalDAV"
+
+msgid "couldNotDiscoverPrincipal"
+msgstr "No s'ha pogut trobar el camí a la identitat - utilitzant els valors donats"
+
+msgid "foundPrincipalPath"
+msgstr "S'ha trobat el path de la identitat a &quot;%s&quot;"
+
+msgid "serverSupportsCalDAV"
+msgstr "El servidor suporta CalDAV"
+
+msgid "serverHasDAVNoCalDAV"
+msgstr ""
+
+msgid "serverLacksCalDAV"
+msgstr "El servidor no suporta CalDAV"
+
+msgid "serverFailedValidation"
+msgstr "Hi ha hagut un error validant el servidor:"
+
+msgid "saveSettingsAnyway"
+msgstr "Vols gravar els paràmetres igualment?"
+
+msgid "serverValidationSuccess"
+msgstr "La validació del servidor ha estat satisfactòria."
+
+msgid "authenticationFailed"
+msgstr "Impossible d'autenticar amb el servidor"
+
+msgid "WeekViewPreferences"
+msgstr "Configuració de la vista setmanal"
+
+msgid "AlarmPreferences"
+msgstr ""
+
+msgid "GeneralPreferences"
+msgstr ""
+
+msgid "checkServer"
+msgstr "Validant servidor"
+
+msgid "checkServer_Connecting"
+msgstr "Connectant al servidor, sisplau espereu..."
+
+msgid "checkServer_Internet"
+msgstr "Comprovant connectivitat a internet"
+
+msgid "checkServer_SearchingForServer"
+msgstr ""
+
+msgid "checkServer_DiscoveryCancelled"
+msgstr ""
+
+msgid "serverRecordAlreadyExists"
+msgstr ""
+
+msgid "newEventFromThis"
+msgstr "Copiar a nova cita"
+
+msgid "Delete"
+msgstr "Esborrar"
+
+msgid "deleteAllInstances"
+msgstr "Esborrar totes les instàncies"
+
+msgid "deleteThisInstance"
+msgstr "Esborrar aquesta instància"
+
+msgid "deleteThisAndFuture"
+msgstr "Esborrar aquesta instància i les futures"
+
+msgid "newAllDayEventOn"
+msgstr "Nova cita el %s"
+
+msgid "newHourEventAt"
+msgstr "Nova cita a les %s"
+
+msgid "editSomeEvent"
+msgstr "Editar: %s"
+
+msgid "copySomeEvent"
+msgstr "Copiar: %s"
+
+msgid "deleteSomeEvent"
+msgstr "Esborrar: %s"
+
+msgid "noCollectionsFound"
+msgstr "No s'ha trobat cap calendari"
+
+msgid "aCalVersionChanges"
+msgstr "Benvingut a la nova versió d'aCal!"
+
+msgid "newWithVersion"
+msgstr "Canvis a la versió %s"
+
+msgid "newVersionSeen"
+msgstr "Gràcies, ensenya'm el calendari!"
+
+msgid "Due"
+msgstr ""
+
+msgid "All"
+msgstr ""
+
+msgid "Todo"
+msgstr ""
+
+msgid "Events"
+msgstr ""
+
+msgid "Tasks"
+msgstr ""
+
+msgid "Journals"
+msgstr ""
+
+msgid "Unscheduled"
+msgstr ""
+
+msgid "ChooseAction"
+msgstr ""
+
+msgid "SetCompleted"
+msgstr ""
+
+msgid "newTaskFromThis"
+msgstr ""
+
+msgid "dueTasksTitle"
+msgstr ""
+
+msgid "incompleteTasksTitle"
+msgstr ""
+
+msgid "incompleteTasksDue"
+msgstr ""
+
+msgid "allTasksTitle"
+msgstr ""
+
+msgid "NewTaskTitle"
+msgstr ""
+
+msgid "TaskSaved"
+msgstr ""
+
+msgid "TaskModifiedAll"
+msgstr ""
+
+msgid "TaskModifiedOne"
+msgstr ""
+
+msgid "TaskModifiedThisAndFuture"
+msgstr ""
+
+msgid "TaskErrorSaving"
+msgstr ""
+
+msgid "username"
+msgstr ""
+
+msgid "password"
+msgstr ""
+
+msgid "setRepeatRule"
+msgstr ""
+
+msgid "eventName"
+msgstr ""
+
+msgid "plus"
+msgstr ""
+
+msgid "url"
+msgstr ""
+
+msgid "todoName"
+msgstr ""
+
+msgid "IsADate"
+msgstr ""
+
+msgid "NotSet"
+msgstr ""
+
+msgid "Exactly"
+msgstr ""
+
+msgid "Start"
+msgstr ""
+
+msgid "Finish"
+msgstr ""
+
+msgid "Before"
+msgstr ""
+
+msgid "After"
+msgstr ""
+
+msgid "Custom"
+msgstr ""
+
+msgid "floatingTime"
+msgstr ""
+
+msgid "SetCustomAlarm"
+msgstr ""
+
+msgid "showUpdateInformation"
+msgstr ""
+
+msgid "General_aCal_Information"
+msgstr ""
+
+msgid "aCal_Website"
+msgstr ""
+
+msgid "aCal_IRC_Channel"
+msgstr ""
+
+msgid "aCal_Mailing_Lists"
+msgstr ""
+
+msgid "aCal_is_Free_Software"
+msgstr ""
+
+msgid "TaskMarkedComplete"
+msgstr ""
+
+msgid "TaskDeleted"
+msgstr ""
+
+msgid "endsAt"
+msgstr ""
+
+msgid "Finished"
+msgstr ""
+
+msgid "days"
+msgstr ""
+
+msgid "noScheduledEvents"
+msgstr ""
+
+msgid "Event"
+msgstr ""
+
+msgid "Task"
+msgstr ""
+
+msgid "weekends"
+msgstr ""
+
+msgid "weekdays"
+msgstr ""
+
+msgid "JournalDatePrompt"
+msgstr ""
+
+msgid "AppearancePreferences"
+msgstr ""
+
+msgid "prefThemeButtonColour_Summary"
+msgstr ""
+
+msgid "prefThemeButtonColour_Title"
+msgstr ""
+
+msgid "Saving"
+msgstr ""
+
+msgid "Loading"
+msgstr ""
+
+msgid "Deleting"
+msgstr ""
+
+msgid "ConfigureServer"
+msgstr ""
+
+msgid "errorConfigMustHaveName"
+msgstr ""
+
+msgid "errorConfigMustHaveUserName"
+msgstr ""
+
+msgid "errorConfigMustHavePassword"
+msgstr ""
+
+msgid "errorConfigMustHaveURL"
+msgstr ""
+
+msgid "Skip"
+msgstr ""
+
+msgid "Configure"
+msgstr ""
+
+msgid "prefAllowSelfSignedCerts_PrefTitle"
+msgstr ""
+
+msgid "prefAllowSelfSignedCerts_OnSummary"
+msgstr ""
+
+msgid "prefAllowSelfSignedCerts_OffSummary"
+msgstr ""
+
+msgid "SslCertificateError"
+msgstr ""
+
+msgid "prefTzServerBaseUrl_Title"
+msgstr ""
+
+msgid "prefIgnoreValarmDescription_PrefTitle"
+msgstr ""
+
+msgid "prefIgnoreValarmDescription_OnSummary"
+msgstr ""
+
+msgid "prefIgnoreValarmDescription_OffSummary"
+msgstr ""
+
+msgid "note_title_hint"
+msgstr ""
+
+msgid "note_text_hint"
+msgstr ""
+
+msgid "event_name_hint"
+msgstr ""
+
+msgid "event_location_hint"
+msgstr ""
+
+msgid "event_notes_hint"
+msgstr ""
+
+msgid "todo_name_hint"
+msgstr ""
+
+msgid "todo_description_hint"
+msgstr ""
+
+msgid "todo_location_hint"
+msgstr ""
+
+msgid "first_name_hint"
+msgstr ""
+
+msgid "surname_hint"
+msgstr ""
+
+msgid "phone_prompt"
+msgstr ""
+
+msgid "phone_hint"
+msgstr ""
+
+msgid "email_prompt"
+msgstr ""
+
+msgid "email_hint"
+msgstr ""
+
+msgid "postal_address_prompt"
+msgstr ""
+
+msgid "street_hint"
+msgstr ""
+
+msgid "city_hint"
+msgstr ""
+
+msgid "country_hint"
+msgstr ""
+
+msgid "postcode_hint"
+msgstr ""
+
+msgid "organisation_prompt"
+msgstr ""
+
+msgid "company_hint"
+msgstr ""
+
+msgid "job_title_hint"
+msgstr ""
+
+msgid "contact_picture_description"
+msgstr ""
+
+msgid "icon_add_description"
+msgstr "Afegir"
+
+msgid "icon_delete_description"
+msgstr "Esborrar"
+
+msgid "Home"
+msgstr ""
+
+msgid "Work"
+msgstr ""
+
+msgid "Mobile"
+msgstr ""
+
+msgid "Other"
+msgstr ""
+
+msgid "WorkFax"
+msgstr ""
+
+msgid "HomeFax"
+msgstr ""
+
+msgid "Pager"
+msgstr ""
+
+msgid "newJournalFromThis"
+msgstr ""
+
+msgid "ErrorDeletingJournal"
+msgstr ""
+
+msgid "ErrorDeletingTask"
+msgstr ""
+
+msgid "ErrorCompletingTask"
+msgstr ""
+
+# SourceFileEnd:../res/values/strings.xml
+# SourceFileStart:../res/values/timezonenames.xml
+msgid "tzNameAfricaCairo"
+msgstr ""
+
+msgid "tzNameAfricaCasablanca"
+msgstr ""
+
+msgid "tzNameAfricaHarare"
+msgstr ""
+
+msgid "tzNameAfricaNairobi"
+msgstr ""
+
+msgid "tzNameAfricaNdjamena"
+msgstr ""
+
+msgid "tzNameAmericaAnchorage"
+msgstr ""
+
+msgid "tzNameAmericaArgentinaBuenos_Aires"
+msgstr ""
+
+msgid "tzNameAmericaBogota"
+msgstr ""
+
+msgid "tzNameAmericaChicago"
+msgstr ""
+
+msgid "tzNameAmericaDenver"
+msgstr ""
+
+msgid "tzNameAmericaGodthab"
+msgstr ""
+
+msgid "tzNameAmericaHalifax"
+msgstr ""
+
+msgid "tzNameAmericaIndianaIndianapolis"
+msgstr ""
+
+msgid "tzNameAmericaLa_Paz"
+msgstr ""
+
+msgid "tzNameAmericaLos_Angeles"
+msgstr ""
+
+msgid "tzNameAmericaNew_York"
+msgstr ""
+
+msgid "tzNameAmericaNoronha"
+msgstr ""
+
+msgid "tzNameAmericaPanama"
+msgstr ""
+
+msgid "tzNameAmericaPhoenix"
+msgstr ""
+
+msgid "tzNameAmericaRegina"
+msgstr ""
+
+msgid "tzNameAmericaSantiago"
+msgstr ""
+
+msgid "tzNameAmericaSao_Paulo"
+msgstr ""
+
+msgid "tzNameAmericaSt_Johns"
+msgstr ""
+
+msgid "tzNameAmericaTegucigalpa"
+msgstr ""
+
+msgid "tzNameAsiaBaghdad"
+msgstr ""
+
+msgid "tzNameAsiaBangkok"
+msgstr ""
+
+msgid "tzNameAsiaColombo"
+msgstr ""
+
+msgid "tzNameAsiaDhaka"
+msgstr ""
+
+msgid "tzNameAsiaIrkutsk"
+msgstr ""
+
+msgid "tzNameAsiaJerusalem"
+msgstr ""
+
+msgid "tzNameAsiaKabul"
+msgstr ""
+
+msgid "tzNameAsiaKarachi"
+msgstr ""
+
+msgid "tzNameAsiaKathmandu"
+msgstr ""
+
+msgid "tzNameAsiaKolkata"
+msgstr ""
+
+msgid "tzNameAsiaKrasnoyarsk"
+msgstr ""
+
+msgid "tzNameAsiaMagadan"
+msgstr ""
+
+msgid "tzNameAsiaMuscat"
+msgstr ""
+
+msgid "tzNameAsiaNovosibirsk"
+msgstr ""
+
+msgid "tzNameAsiaRangoon"
+msgstr ""
+
+msgid "tzNameAsiaRiyadh"
+msgstr ""
+
+msgid "tzNameAsiaSeoul"
+msgstr ""
+
+msgid "tzNameAsiaShanghai"
+msgstr ""
+
+msgid "tzNameAsiaSingapore"
+msgstr ""
+
+msgid "tzNameAsiaTaipei"
+msgstr ""
+
+msgid "tzNameAsiaTehran"
+msgstr ""
+
+msgid "tzNameAsiaTokyo"
+msgstr ""
+
+msgid "tzNameAsiaVladivostok"
+msgstr ""
+
+msgid "tzNameAsiaYakutsk"
+msgstr ""
+
+msgid "tzNameAsiaYekaterinburg"
+msgstr ""
+
+msgid "tzNameAsiaYerevan"
+msgstr ""
+
+msgid "tzNameAtlanticAzores"
+msgstr ""
+
+msgid "tzNameAtlanticCape_Verde"
+msgstr ""
+
+msgid "tzNameAustraliaAdelaide"
+msgstr ""
+
+msgid "tzNameAustraliaBrisbane"
+msgstr ""
+
+msgid "tzNameAustraliaDarwin"
+msgstr ""
+
+msgid "tzNameAustraliaHobart"
+msgstr ""
+
+msgid "tzNameAustraliaPerth"
+msgstr ""
+
+msgid "tzNameAustraliaSydney"
+msgstr ""
+
+msgid "tzNameEuropeAthens"
+msgstr ""
+
+msgid "tzNameEuropeBerlin"
+msgstr ""
+
+msgid "tzNameEuropeBucharest"
+msgstr ""
+
+msgid "tzNameEuropeHelsinki"
+msgstr ""
+
+msgid "tzNameEuropeLisbon"
+msgstr ""
+
+msgid "tzNameEuropeLondon"
+msgstr ""
+
+msgid "tzNameEuropeMoscow"
+msgstr ""
+
+msgid "tzNameEuropeParis"
+msgstr ""
+
+msgid "tzNameEuropePrague"
+msgstr ""
+
+msgid "tzNamePacificApia"
+msgstr ""
+
+msgid "tzNamePacificAuckland"
+msgstr ""
+
+msgid "tzNamePacificFiji"
+msgstr ""
+
+msgid "tzNamePacificGuam"
+msgstr ""
+
+msgid "tzNamePacificHonolulu"
+msgstr ""
+
+msgid "tzNamePacificKwajalein"
+msgstr ""
+
+msgid "tzNamePacificTongatapu"
+msgstr ""

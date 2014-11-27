@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/top_node"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<TextView android:id="@+id/status1" android:layout_width="fill_parent"
+		android:layout_height="30px" android:text="TextView" android:gravity="left"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentLeft="true">
+	</TextView>
+</RelativeLayout>

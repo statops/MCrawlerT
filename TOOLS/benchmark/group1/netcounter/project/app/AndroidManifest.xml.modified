@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="22" android:versionName="0.14.1" package="net.jaqpot.netcounter">
+
+	<uses-sdk android:minSdkVersion="3" android:targetSdkVersion="4"/>
+
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+	<uses-permission android:name="android.permission.WAKE_LOCK"/>
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+	<supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true"/>
+
+	<application android:debuggable="false" android:description="@string/appDescription" android:enabled="true" android:icon="@drawable/icon" android:label="@string/appName" android:name="NetCounterApplication">
+
+		<!--
+			<meta-data android:name="com.a0soft.gphone.aTrackDog.testVersion"
+			android:value="16" />
+		-->
+		<meta-data android:name="com.a0soft.gphone.aTrackDog.webURL" android:value="http://www.jaqpot.net/netcounter"/>
+
+		<activity android:label="@string/appName" android:launchMode="singleTask" android:name=".activity.NetCounterActivity">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN"/>
+				<category android:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+		<activity android:label="@string/appName" android:name=".activity.NetCounterPreferences"/>
+		<activity android:name=".activity.BarGraphActivity"/>
+
+		<service android:name=".service.NetCounterService"/>
+
+		<receiver android:name=".service.OnBootReceiver">
+			<intent-filter>
+				<action android:name="android.intent.action.BOOT_COMPLETED"/>
+			</intent-filter>
+		</receiver>
+		<receiver android:name=".service.OnAlarmReceiver"/>
+
+	<receiver android:name="net.jaqpot.netcounter.EmmaInstrument.SMSInstrumentedReceiver">
+<intent-filter>
+<action android:name="edu.gatech.m3.emma.COLLECT_COVERAGE"/>
+</intent-filter>
+</receiver>
+<activity android:label="EmmaInstrumentationActivity" android:name="net.jaqpot.netcounter.EmmaInstrument.InstrumentedActivity"/>
+</application>
+
+<instrumentation android:handleProfiling="true" android:label="EmmaInstrumentation" android:name="net.jaqpot.netcounter.EmmaInstrument.EmmaInstrumentation" android:targetPackage="net.jaqpot.netcounter"/>
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+</manifest>

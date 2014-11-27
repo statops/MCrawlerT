@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/week_view_entire"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@drawable/morphossbg"
+	android:orientation="vertical" >
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal" >
+		<LinearLayout
+			style="@style/WV_header_corner_box"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="10"
+			android:orientation="vertical" >
+			<TextView
+				android:id="@+id/week_view_corner"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent" />
+			<TextView
+				android:id="@+id/week_view_corner2"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent" />
+		</LinearLayout>
+		<com.morphoss.acal.weekview.WeekViewHeader
+			android:id="@+id/week_view_header"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_weight="1" />
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_weight="1"
+		android:orientation="horizontal" >
+		<com.morphoss.acal.weekview.WeekViewSideBar
+			android:id="@+id/week_view_sidebar"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_weight="10" />
+		<com.morphoss.acal.weekview.WeekViewDays
+			android:id="@+id/week_view_days"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_weight="1" />
+	</LinearLayout><LinearLayout
+		android:id="@+id/button_layout"
+		android:layout_width="fill_parent"
+		android:layout_height="36sp"
+		android:background="@color/bottom_bg"
+		android:gravity="bottom" >
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:paddingLeft="1sp"
+			android:paddingRight="1sp" >
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:background="@color/themed_button_colour" >
+				<Button
+					android:id="@+id/week_today_button"
+					style="@style/themed_bottom_button"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:gravity="center"
+					android:text="@string/Today" />
+			</LinearLayout>
+		</LinearLayout>
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:paddingLeft="1sp"
+			android:paddingRight="1sp" >
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:background="@color/themed_button_colour" >
+				<Button
+					android:id="@+id/week_month_button"
+					style="@style/themed_bottom_button"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:gravity="center"
+					android:text="@string/Month" />
+			</LinearLayout>
+		</LinearLayout>
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:paddingLeft="1sp"
+			android:paddingRight="1sp" >
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="36sp"
+				android:background="@color/themed_button_colour" >
+				<Button
+					android:id="@+id/week_add_button"
+					style="@style/themed_add_button"
+					android:layout_width="fill_parent"
+					android:layout_height="36sp"
+					android:gravity="bottom|center_horizontal"
+					android:text="@string/plus" />
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:padding="6dip">
+
+	<TableLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:orientation="vertical">
+
+		<TableRow android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:orientation="horizontal">
+			<TextView android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:text="@string/dialogDetailsStartDate"
+				android:paddingRight="10dip">
+			</TextView>
+			<TextView android:id="@+id/dlg_start_date"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:text="dlg_start_date">
+			</TextView>
+		</TableRow>
+
+		<TableRow android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:orientation="horizontal">
+			<TextView android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:text="@string/dialogDetailsEndDate"
+				android:paddingRight="10dip">
+			</TextView>
+			<TextView android:id="@+id/dlg_end_date"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:text="dlg_end_date">
+			</TextView>
+		</TableRow>
+
+		<View android:layout_width="fill_parent" android:layout_height="2dip"
+			android:background="#FF909090" android:layout_marginTop="4dip"
+			android:layout_marginBottom="4dip" />
+
+		<TableRow android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:orientation="horizontal">
+			<TextView android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:text="@string/dialogDetailsReceived"
+				android:paddingRight="10dip">
+			</TextView>
+			<TextView android:id="@+id/dlg_received"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:text="dlg_received">
+			</TextView>
+		</TableRow>
+
+		<TableRow android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:orientation="horizontal">
+			<TextView android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:text="@string/dialogDetailsSent"
+				android:paddingRight="10dip">
+			</TextView>
+			<TextView android:id="@+id/dlg_sent" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="dlg_sent">
+			</TextView>
+		</TableRow>
+
+		<TableRow android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:orientation="horizontal">
+			<TextView android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:text="@string/dialogDetailsTotal"
+				android:paddingRight="10dip">
+			</TextView>
+			<TextView android:id="@+id/dlg_total" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="dlg_total">
+			</TextView>
+		</TableRow>
+
+		<View android:layout_width="fill_parent" android:layout_height="2dip"
+			android:background="#FF909090" android:layout_marginTop="4dip"
+			android:layout_marginBottom="4dip" />
+
+		<TableRow android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:orientation="horizontal">
+			<TextView android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:text="@string/dialogDetailsAlert"
+				android:paddingRight="10dip">
+			</TextView>
+			<TextView android:id="@+id/dlg_alert" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="dlg_alert">
+			</TextView>
+		</TableRow>
+
+	</TableLayout>
+
+</ScrollView>

@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="appName">NetCounter</string>
+	<string name="appDescription">Nätverkstrafik räknare</string>
+	<string name="appAuthor">av Cyril Jaquier</string>
+	<string name="appLoading">Laddar...</string>
+	<string name="appRefresh">Uppdatera</string>
+ 
+	<string name="yes">Ja</string>
+	<string name="no">Nej</string>
+	<string name="ok">Ok</string>
+	<string name="cancel">Avbryt</string>
+	<string name="close">Stäng</string>
+ 
+	<string name="helpTitle">Hjälp</string>
+	<string name="helpClose">Stäng</string>
+	<string name="helpText">
+		NetCounter sparar och uppdaterar sin statistik med jämna mellanrum till en 
+		databas. Tjänsten, som registrerar värden, körs i bakgrunden och startas 
+		automatiskt när du startar om enheten.\n\nFlera räknare kan definieras för 
+		varje nätverksgränssnitt. En räknare är en översikt över värden så du kan ta 
+		bort och återskapa räknare utan förlust av information.\n\nFör att kunna 
+		lägga till en ny räknare, lång klicka på gränssnittsobjektet. En snabbmeny 
+		visas, välj \"Lägg till räknare\". För att ta bort räknaren, lång klicka på 
+		den och välj \"Ta bort räknare\".\n\nFör att ändra räknartypen (\"Totalt\", 
+		\"Sista dagarna\", \"Enskild dag\", \"Månadsvis\"), lång klicka på den igen 
+		och välj \"Ändra typ\".\n\nNågra av räknarna stödjer ett varaktighetsvärde.
+		T.ex. \"Enskild dag\" räknaren kan användas för att visa en \"Idag\" eller 
+		en \"Igår\" räknare. Bara ange varaktighetstiden till ett lämpligt värde.
+		\n\nEn varning kan definieras för varje räknare. Om det definierade värdet 
+		överskrids, kommer ett meddelande att visas.\n\nFör att återställa alla 
+		värden för ett gränssnitt, lång klicka på gränssnittet och välj \"Återställ
+		allt\". Detta kommer att radera
+		<b>ALLA</b>
+		värden för gränssnittet så tänk efter innan du väljer detta.\n\nDet är 
+		möjligt att definiera startdatum för data planeringen för \"Månadsvis\" 
+		räknaren. För närvarande är det endast dagen i månaden som krävs och 
+		standard för den 1e. För att ange en annan dag, lång klicka på 
+		\"Månadsvis\" räknaren och välj \"Ange startdatum\".\n\n
+	</string>
+
+	<string name="helpWhatsNew">
+		Denna <b>nya utgåva</b> av NetCounter innehåller följande ändringar:\n\n
+ 		- Motorola Droid support.\n\n
+ 		Var snäll <b>besök också hemsidan</b> och <b>läs FAQ</b>.
+ 	</string>
+
+	<string name="aboutTitle">Om</string>
+	<string name="aboutDonation">Donera</string>
+	<string name="aboutDonationUrl">https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=1662582</string>
+	<string name="aboutClose">Stäng</string>
+	<string name="aboutHomepage">Hemsida</string>
+	<string name="aboutHomepageUrl">http://www.jaqpot.net/netcounter/</string>
+	<string name="aboutText">
+		NetCounter v%1$s är en enkel nätverkstrafik räknare med användarkonfigurerbara 
+		räknare.\n\nFör ytterligare information, besök gärna hemsidan.\n\n
+		Copyright (C) 2009 Cyril Jaquier\n\nDetta program distribueras med förhoppning 
+		att det kommer att vara användbart, men UTAN NÅGRA GARANTIER; inte ens 
+		underförstådd garanti för FÖRSÄLJNINGSBARHET eller LÄMPLIGHET FÖR ETT VISST 
+		ÄNDAMÅL. Se GNU General Public Licensen för mer detaljer.\n\nApplikationens 
+		ikoner är från Everaldo.com och distribueras under LGPL.\n\nÖversättningar\n
+		Checkiska: Petr Bláha &lt;pb@P3T3.org&gt;\n
+		Tyska: Thomas Putschbach &lt;android@tpju.de&gt;\n
+		Italienska: Fabio Bonomi Boseggia\n
+		Franska: Cyril Jaquier\n
+		Traditionell kinesiska: Bernie Garden\n
+		Svenska: Tibor Baranyi\n\n
+	</string>
+		 
+	<string name="exportTitle">Exportera till .csv</string>
+	<string name="exportSummary">Exportera alla värden till en .csv fil på SD kortet</string>
+	<string name="exportSuccessful">Exportering till %1$s lyckades</string>
+	<string name="exportFailed">Exportering misslyckades</string>
+	<string name="exportDialogTitle">Exporterar...</string>
+	<string name="exportDialogText">Vänta medan värden exporteras</string>
+	 
+	<string name="importTitle">Importera från .csv</string>
+	<string name="importSummary">Importera värden från .csv filer på SD kortet</string>
+	<string name="importSuccessful">Importering lyckades</string>
+	<string name="importFailed">Importering misslyckades</string>
+	<string name="importDialogTitle">Importerar...</string>
+	<string name="importDialogText">Vänta medan värden importeras</string>
+	<string name="importAlertText">Är du säker på att du vill importera värden från SD kortet?</string>
+
+	<string name="interfaceTypeCell">Cell</string>
+	<string name="interfaceTypeWifi">Wi-Fi</string>
+	<string name="interfaceTypeBluetooth">Bluetooth</string>
+	 
+	<string name="menuInterfaceTitle">Gränssnitt</string>
+	<string name="menuInterfaceAdd">Lägg till en räknare</string>
+	<string name="menuInterfaceAddDone">Ny räknare tillagd</string>
+	<string name="menuInterfaceReset">Återställ allt</string>
+	<string name="menuInterfaceResetDone">Återställning färdigt</string>
+	<string name="menuInterfaceGraph">Visa diagram</string>
+	 
+	<string name="dialogInterfaceResetTitle">Återställ allt</string>
+	<string name="dialogInterfaceResetText">Är du säker?</string>
+	 
+	<string name="menuCounterTitle">Räknare</string>
+	<string name="menuCounterChange">Ändra typ av räknare</string>
+	<string name="menuCounterChangeDone">Typ av räknare ändrad</string>
+	<string name="menuCounterRemove">Ta bort räknare</string>
+	<string name="menuCounterRemoveDone">Räknare borttagen</string>
+	<string name="menuCounterStartDate">Ange startdatum</string>
+	<string name="menuCounterStartDay">Ange startdag</string>
+	<string name="menuCounterSetDuration">Ange varaktighet</string>
+	<string name="menuCounterSetAlert">Ange varning</string>
+	 
+	<string name="dialogCounterTypeTitle">Välj typ av räknare</string>
+	<string name="dialogCounterDurationTitle">Välj varaktighet för räknare</string>
+	<string name="dialogCounterMonthlyTitle">Välj återställningsdatum</string>
+	<string name="dialogCounterMonthlyChanged">Datum ändrad</string>
+	<string name="dialogCounterWeeklyTitle">Välj återställningsdag</string>
+	<string name="dialogCounterWeeklyChanged">Dag ändrad</string>
+	 
+	<string name="dialogCounterLimitTitle">Ange förvarningsvärde</string>
+	<string name="dialogCounterLimitText">Ange förvarningsgräns. För att
+		inaktivera förvarning, radera värdet eller ange 0.</string>
+	<string name="dialogCounterLimitWrong">Felaktigt nummer format</string>
+
+	<string name="dialogDetailsStartDate">Startdatum:</string>
+	<string name="dialogDetailsEndDate">Slutdatum:</string>
+	<string name="dialogDetailsReceived">Mottaget:</string>
+	<string name="dialogDetailsSent">Skickat:</string>
+	<string name="dialogDetailsTotal">Totalt:</string>
+	<string name="dialogDetailsAlert">Varning:</string>
+	<string name="dialogDetailsByte">%1$s (%2$s%%)</string>
+	<string name="dialogDetailsNoAlert">Ingen varning definierad</string>
+	 
+	<!-- e.g. Cell exceeds the limit of 100 MB for Total -->
+	<string name="notifyExceed">%1$s överskrider gränsen %2$s %3$s för %4$s</string>
+	<!-- e.g. Cell exceeds the defined limit -->
+	<string name="notifyExceedTitle">%1$s överskrider den definierade gränsen</string>
+	 
+	<!-- Preferences -->
+	<string name="preferences">Inställningar</string>
+	<string name="prefsCategoryAdvancedTitle">Avancerade inställningar</string>
+	<string name="prefsCatImportExportTitle">Importera/Exportera</string>
+	<string name="prefsCatImportExportSummary">Importera och exportera värden till och från SD kortet</string>
+	<string name="prefsWifiUpdateTitle">WiFi låg uppdateringshastighet</string>
+	<string name="prefsWifiUpdateSummaryOn">Uppdatera varje timme. Kräver mindre ström men noggrannheten är sämre</string>
+	<string name="prefsWifiUpdateSummaryOff">Uppdatera var 30e sekund. Kräver mer ström men noggrannheten är större</string>
+	  
+	<!-- Graph activity -->
+	<string name="graphReceivedLabel">Mottaget</string>
+	<string name="graphSentLabel">Skickat</string>
+	<string name="graphYTitle">kBytes</string>
+ 
+</resources>

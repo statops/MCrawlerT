@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="appName">NetCounter</string>
+	<string name="appDescription">網路流量統計</string>
+	<string name="appAuthor">by Cyril Jaquier</string>
+	<string name="appLoading">載入中</string>
+	<string name="appRefresh">更新</string>
+
+	<string name="yes">Yes</string>
+	<string name="no">No</string>
+	<string name="ok">確定</string>
+	<string name="cancel">取消</string>
+	<string name="close">關閉</string>
+
+	<string name="helpTitle">說明</string>
+	<string name="helpClose">關閉</string>
+	<string name="helpText">
+	    NetCounter將規律的區間流量統計寫進資料庫裡。
+	          它的功能是在背景運作而且當你開機的時候會自動啟動。
+	    \n每一種網路形式都可以定義許多種不同的計算週期。
+	    \n它的資料形態是只是一種檢示，所以你可以刪除及重新建立不同的計算週期而不影響裡面原本的計算資料。
+	    \n長壓計算週期的項目就會出現選單，
+	          新增請選取\"新增計算週期\"
+	          刪除請選取\"刪除計算週期\"
+	          改變計算週期請選取\"改變計算週期"。
+	    \n\n有些計算週期提供區間值。
+	    \n例如:\"一天\"可以用來顯示\"今天\"或者\"昨天\"。
+	    \n每一個計算週期都可以設定提醒, 當到達設定的最大值的時候，就會出現提醒。
+	    \n要重設所有的設定的時候只要長壓它的網路介面並選取\"重設"\即可清掉所有的資料。
+	          當你要新增流量計算項目的時候，只要長壓住流量型式的項目就會出現選單，撰擇\"新增流量計算項目\"即可。
+	          要移除流量計算項目，如上長壓後選\"Remove counter\"。
+	    \n要改變計算的週期(\"全部\",\"過去幾天\",\"天\",\"月\")的時候，長壓流量計算項目選擇\"改變計算週期\"。  
+	          有些計算週期有提供區間設定，例如週期(\"天\")可以被用來顯示\"今天\"或者是\"昨天\"的流量。
+	          每一個流量計算都可以設定警示，如果到達設定的警示值，就會出現提醒。
+	          如果要重新計算所有的流量，長壓流量計算的形式，選擇\"重設\"，所有的資料都會歸零。
+	          執行此動作時請小心，此動作無法回復。
+	          在"月"的計算週期可以設定"開始日期"，預設值是1號，要改變開始日期的時候，只要長壓\"月\"的計算週期，選擇\"設定計算週期\"即可。
+	</string>
+
+	<string name="aboutTitle">關於</string>
+	<string name="aboutDonation">贊助</string>
+	<string name="aboutDonationUrl">https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=1662582</string>
+	<string name="aboutClose">關閉</string>
+	<string name="aboutHomepage">首頁</string>
+	<string name="aboutHomepageUrl">http://www.jaqpot.net/netcounter/</string>
+	<string name="aboutText">
+		NetCounter v%1$s is a simple network traffic counter with
+		user-configurable counters.\n\nFor further information, please visit
+		the homepage.\n\nCopyright (C) 2009 Cyril Jaquier\n\nThis program is
+		distributed in the hope that it will be useful, but WITHOUT ANY
+		WARRANTY; without even the implied warranty of MERCHANTABILITY or
+		FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License
+		for more details.\n\nThe application icons are from Everaldo.com and
+		are distributed under LGPL.\n\nTranslations\n
+		Czech: Petr Bláha &lt;pb@P3T3.org&gt;\n
+		German: Thomas Putschbach &lt;android@tpju.de&gt;\n
+		Italian: Fabio Bonomi Boseggia\n
+		French: Cyril Jaquier\n
+		Chinese Traditional: Bernie Garden\n\n
+	</string>
+
+	<string name="exportTitle">匯出成CSV檔</string>
+	<string name="exportSuccessful">成功匯出到 %1$s</string>
+	<string name="exportFailed">匯出失敗</string>
+
+	<string name="interfaceTypeCell">3G/2G</string>
+	<string name="interfaceTypeWifi">無線網路</string>
+	<string name="interfaceTypeBluetooth">Bluetooth</string>
+
+	<string name="menuInterfaceTitle">網路介面</string>
+	<string name="menuInterfaceAdd">新增流量計算項目</string>
+	<string name="menuInterfaceAddDone">已新增流量統計</string>
+	<string name="menuInterfaceReset">全部重設</string>
+	<string name="menuInterfaceResetDone">重設完成</string>
+	
+	<string name="dialogInterfaceResetTitle">全部重設</string>
+	<string name="dialogInterfaceResetText">您確定嗎?</string>
+	
+	<string name="menuCounterTitle">流量計算</string>
+	<string name="menuCounterChange">改變計算週期</string>
+	<string name="menuCounterChangeDone">計算週期已改變</string>
+	<string name="menuCounterRemove">移除流量計算項目</string>
+	<string name="menuCounterRemoveDone">流量統計已移除</string>
+	<string name="menuCounterStartDate">設定開始日期</string>
+	<string name="menuCounterStartDay">設定開始日</string>
+	<string name="menuCounterSetDuration">設定區間</string>
+	<string name="menuCounterSetAlert">設定警示</string>
+	
+	<string name="dialogCounterTypeTitle">選擇計算週期</string>
+	<string name="dialogCounterDurationTitle">選擇計算區間</string>
+	<string name="dialogCounterMonthlyTitle">選擇重設日期</string>
+	<string name="dialogCounterMonthlyChanged">日期已改變</string>
+	<string name="dialogCounterWeeklyTitle">選擇重設日期</string>
+	<string name="dialogCounterWeeklyChanged">日期已改變</string>
+	
+	<string name="dialogCounterLimitTitle">設定警示值</string>
+	<string name="dialogCounterLimitText">設定提醒，如果不要提醒的話將值設成0即可</string>
+	<string name="dialogCounterLimitWrong">錯誤的數字格式</string>
+	
+	<string name="dialogDetailsReceived">下載:</string>
+	<string name="dialogDetailsSent">上傳:</string>
+	<string name="dialogDetailsTotal">全部:</string>
+	<string name="dialogDetailsAlert">警示值:</string>
+	<string name="dialogDetailsByte">%1$s (%2$s%%)</string>
+	<string name="dialogDetailsNoAlert">未定義警示值</string>
+	
+	<!-- e.g. Cell exceeds the limit of 100 MB for Total -->
+	<string name="notifyExceed">%1$s 到達警示值 %2$s %3$s for %4$s</string>
+	<!-- e.g. Cell exceeds the defined limit -->
+	<string name="notifyExceedTitle">%1$s 到達警示值</string>
+
+</resources>

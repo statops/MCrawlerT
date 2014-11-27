@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/upcoming_row"
+	android:layout_width="@dimen/widgetRowWidth"
+	android:layout_height="@dimen/widgetRowHeight"
+	android:layout_marginLeft="1dip"
+	android:orientation="horizontal" >
+	<ImageView
+		android:id="@+id/upcoming_row_image"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent" />
+</LinearLayout>

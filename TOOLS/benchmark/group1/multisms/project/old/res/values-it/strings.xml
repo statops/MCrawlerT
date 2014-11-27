@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- By Egidio Pignatelli -->
+<resources>
+    <string name="app_name">Multi Sms</string>
+	<string name="send">Invia</string>
+	<string name="add">Aggiungi</string>
+	<string name="contacts">Contatti</string>
+	<string name="ok">Ok</string>
+	<string name="cancel">Annulla</string>
+	<string name="nocontacts">Nessun contatto!!</string>
+	<string name="nogroups">Nessun gruppo!!</string>
+	<string name="sending">Invio i messaggi...</string>
+	<string name="wait">Invio in corso. Prego, attendi...</string>
+	<string name="entermessage">Scrivi il messaggio</string>
+	<string name="entergroupname">Scrivi il nome del Gruppo</string>
+	<string name="nodelivery">Nessuna ricevuta di ritorno disponibile</string>
+	<string name="enabledelivery">Abilita ricevute di ritorno</string>
+	<string name="to">A</string>
+	<string name="refresh">Aggiorna</string>
+	<string name="remove_all">Rimuovi tutto</string>
+	<string name="remove">Rimuovi</string>
+	<string name="add_group">Aggiungi da un gruppo</string>
+	<string name="delivery">Ricevute di ritorno</string>
+	<string name="create_group">Crea un nuovo gruppo</string>
+	<string name="remove_group">Cancella questo gruppo</string>
+	<string name="edit_group">Modifica questo gruppo</string>
+	<string name="noName">Nessun Nome</string>
+	<string name="select_all">Seleziona tutto</string>
+	<string name="deselect_all">Deseleziona tutto</string>
+	<string name="message_sent">Messaggi inviati</string>
+	<string name="enter_number">Scrivi un numero di telefono, o usa le icone dei contatti</string>
+	<string name="warning_many_message">Stai per spedire piu\' di 50 messaggi. Dato che questo potrebbe mandare Android in errore, causando il blocco di questa applicazione, i messaggi saranno inviati a blocchi di 50, con una pausa dopo ogni blocco. Vuoi proseguire?</string>
+	<string name="more_message">Sei pronto per i prossimi 50 messaggi?</string>
+</resources>

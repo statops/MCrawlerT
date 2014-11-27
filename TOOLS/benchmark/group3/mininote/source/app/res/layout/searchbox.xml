@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/searchBox"
+  android:orientation="horizontal"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content">
+ 	<ImageView  
+		android:id="@+id/FindCancelBtn"  
+		android:layout_width="wrap_content"   
+		android:layout_height="fill_parent"  
+		android:src="@android:drawable/ic_menu_close_clear_cancel"
+		android:clickable="true"
+		android:focusable="true"
+	    android:scaleType="fitCenter"/> 
+  	<EditText
+	    android:id="@+id/editSearchWord"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_weight="1"
+		android:singleLine="true"
+		android:focusable="true"
+		android:hint="@string/input_searchword"
+	/>
+ 	<ImageView  
+		android:id="@+id/btnFindBackward"  
+		android:layout_width="wrap_content"   
+		android:layout_height="fill_parent"  
+		android:src="@android:drawable/ic_media_rew"
+		android:clickable="true"
+		android:focusable="true"
+	    android:scaleType="fitCenter"
+	    android:paddingLeft="10sp"
+	    android:paddingRight="10sp"
+	    /> 
+ 	<ImageView  
+		android:id="@+id/btnFind"  
+		android:layout_width="wrap_content"   
+		android:layout_height="fill_parent"  
+		android:src="@android:drawable/ic_media_ff"
+		android:clickable="true"
+		android:focusable="true"
+	    android:scaleType="fitCenter"
+	    android:paddingLeft="10sp"
+	    android:paddingRight="10sp"
+	    /> 
+
+<!--
+  	<Button
+	    android:id="@+id/btnFindBackward"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/btn_search_backward_sign"
+	/>
+  	<Button
+	    android:id="@+id/btnFind"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/btn_search_forward_sign"
+	/>
+-->  
+  
+</LinearLayout>

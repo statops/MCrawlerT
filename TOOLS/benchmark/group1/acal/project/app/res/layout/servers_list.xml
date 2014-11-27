@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical" >
+	<ListView
+		android:id="@id/android:list"
+		android:layout_width="fill_parent"
+		android:layout_height="0px"
+		android:layout_weight="1"
+		android:gravity="top|left" />
+	<LinearLayout
+		android:id="@+id/ButtonContainer"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/themed_button_colour" >
+		<Button
+			android:id="@+id/AddServerButton"
+			style="@style/themed_bottom_button"
+			android:layout_width="fill_parent"
+			android:layout_height="75sp"
+			android:layout_gravity="center_vertical|center_horizontal"
+			android:gravity="center_vertical|center_horizontal"
+			android:text="@string/Add_Server"
+			android:textSize="36sp" />
+	</LinearLayout>
+</LinearLayout>

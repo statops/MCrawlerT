@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/JournalViewLayout"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@drawable/morphossbg"
+	android:orientation="vertical" >
+	<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/JournalViewBelowTitleLayout"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_weight="1"
+		android:orientation="horizontal" >
+		<!-- Color bar -->
+		<LinearLayout
+			android:id="@+id/JournalViewColourBar"
+			android:layout_width="13sp"
+			android:layout_height="fill_parent"
+			android:background="#704080f0" />
+		<!-- Color bar stops -->
+		<!-- content -->
+		<LinearLayout
+			android:id="@+id/JournalViewContentArea"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_gravity="right"
+			android:isScrollContainer="true"
+			android:orientation="vertical" >
+			<!-- journal name thingy -->
+			<TextView
+				android:id="@+id/JournalName"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:paddingBottom="10sp"
+				android:paddingLeft="10sp"
+				android:textSize="30sp" >
+			</TextView>
+			<!-- journal name thingy end -->
+			<!-- journal date thingy -->
+			<TextView
+				android:id="@+id/JournalTimeContent"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:paddingBottom="10sp"
+				android:paddingLeft="10sp"
+				android:textSize="20sp" >
+			</TextView>
+			<!-- journal date thingy end -->
+			<!-- scroll view of note thingy -->
+			<ScrollView
+				android:layout_width="fill_parent"
+				android:layout_height="0dp"
+				android:layout_weight="1" >
+				<TextView
+					android:id="@+id/JournalNotesContent"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:paddingLeft="10sp"
+					android:textColor="@android:color/black"
+					android:textSize="20sp" >
+				</TextView>
+			</ScrollView>
+			<!-- scroll view of note thingy end -->
+			<!-- actual button -->
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:paddingLeft="1sp"
+				android:paddingRight="1sp" >
+				<LinearLayout
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:background="@color/themed_button_colour" >
+					<Button
+						android:id="@+id/journal_edit_button"
+						style="@style/themed_bottom_button"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center"
+						android:text="@string/Edit"
+						android:width="90sp" />
+				</LinearLayout>
+			</LinearLayout>
+			<!-- actual button stops -->
+			<!-- content end -->
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

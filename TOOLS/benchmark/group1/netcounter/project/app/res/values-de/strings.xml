@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="appName">NetCounter</string>
+	<string name="appDescription">Datenverbrauchs-Zähler
+	</string>
+	<string name="appAuthor">von Cyril Jaquier</string>
+	<string name="appLoading">Wird aktualisiert...</string>
+	<string name="appRefresh">Aktualisieren</string>
+	<string name="appWhatsNew">Was ist Neu?</string>
+
+	<string name="yes">Ja</string>
+	<string name="no">Nein</string>
+	<string name="ok">Ok</string>
+	<string name="cancel">Abbrechen</string>
+	<string name="close">Schließen</string>
+
+	<string name="helpTitle">Hilfe</string>
+	<string name="helpClose">Schließen</string>
+	<string name="helpText">
+		Allgemeine Beschreibung\n\nNetCounter zeichnet den durch das Android
+		Handy verursachten Datentraffic in einer Datenbank auf und
+		aktualisiert die Datenstatistik in regelmäßigen Abständen. Das
+		Programm läuft resourcenschonend im Hintergrund und startet
+		selbstständig beim Hochfahren des Android Handys. Es können mehrere
+		Zähler (z.B. Tagesverbrauch, Monatsverbrauch, Gesamtverbrauch) für
+		jedes Netzwerk festgelegt werden. Die Zähler zeigen den jeweiligen
+		Datenverbrauch an. Das Löschen eines bereits angelegten Zählers hat
+		keinen Einfluss auf die Datenstatistik, so dass beliebig viele Zähler
+		angelegt und wieder gelöscht werden können, ohne dass die
+		aufgezeichneten Verbrauchsdaten verloren
+		gehen.\n\nBedienungsanleitung\n\nUm einen neuen Zähler einzurichten,
+		lang auf das jeweilige Netzwerk-Logo (z.B. W-LAN Logo) klicken. Es
+		erscheint ein Kontextmenü mit mehreren Auswahlmöglichkeiten. Um einen
+		neuen Zähler festzulegen, den Menüpunkt \"Neuen Zähler hinzufügen\"
+		auswählen. Um den Zähler zu entfernen \"Zähler Entfernen\"
+		wählen.\n\nUm den Typ des Zählers zu ändern, zur Verfügung stehen
+		\"Gesamt\", \"Mehrere Tage\", \"Ein Tag\", \"Monat\", den Menüpunkt
+		\"Zählertyp ändern\" auswählen.\n\nBei einigen Zählern ist das
+		gewünschte Zeitintervall frei definierbar, so kann der \"Ein Tag\"
+		Zähler beispielsweise als Verbrauchszähler für \"Heute\" oder
+		\"Gestern\" verwendet werden. Die gewünschte Zeitspanne einfach im
+		Menü \"Zeitintervall festlegen\" auswählen. Es ist weiterhin möglich,
+		den Starttag für den \"Monat\" Zähler festzulegen. Standardmäßig ist
+		der Monatserste eingestellt, um den Wert zu ändern lange auf den
+		Zähler klicken und den Menüpunkt \"Startdatum festlegen\"
+		wählen.\n\nFür jeden Zähler kann ein Alarm eingestellt werden, was
+		z.B. gerade bei begrenzten Datentarifen sinnvoll ist. Wenn das
+		eingestellte Limit überschritten ist, wird eine Hinweismeldung
+		ausgegeben.\n\nUm alle Daten für ein bestimmtes Netzwerk
+		<b>dauerhaft</b>
+		(Vorgang kann nicht rückgängig gemacht werden, auch nicht durch
+		Neuanlegen eines bestimmen Zählers) zu löschen , lange auf den
+		jeweiligen Zähler klicken und den Menüpunkt \"Alles löschen\"
+		auswählen.\n\n
+	</string>
+
+ 	<string name="helpWhatsNew">
+		Dieses <b>neue Release</b> von NetCounter bringt die folgenden Änderungen:\n\n
+		- Improved Dutch translation. Thanks to Bram Schoenmakers.\n\n
+		- Updated Swedish translation. Thanks to Tibor Baranyi.\n\n
+		- Network interfaces should be automatically discovered now. Should work for most devices.
+		Contact me if yours does not. Thanks to everyone who submitted a patch to support
+		their devices (Matti, Jon, Tristan, Samuel, Bram, Marco, Thilo and many others)\n\n
+		Besuche Sie bitte auch <b>die Website</b> und <b>lesen Sie die FAQ</b>.
+	</string>
+
+	<string name="aboutTitle">Info</string>
+	<string name="aboutDonation">Spende</string>
+	<string name="aboutDonationUrl">https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=1662582</string> 
+	<string name="aboutClose">Schließen</string> 
+	<string name="aboutHomepage">Homepage</string> 
+	<string name="aboutHomepageUrl">http://www.jaqpot.net/netcounter/</string> 
+	<string name="aboutText"> 
+		NetCounter v%1$s ist ein Datenverbrauchs-Zähler mit größtenteils frei
+		definierbaren Zählern.\n\nFür weitere Informationen besuchen Sie bitte
+		die Homepage des Autors.\n\nCopyright (C) 2009 Cyril Jaquier\n\nDie
+		Veröffentlichung dieses Programms erfolgt in der Hoffnung, daß es Ihnen
+		von Nutzen sein wird, aber OHNE IRGENDEINE GARANTIE, sogar ohne die
+		implizite Garantie der MARKTREIFE oder der VERWENDBARKEIT FÜR EINEN
+		BESTIMMTEN ZWECK. Details finden Sie in der GNU General Public License.
+		\n\nDie verwendeten Icons sind von Everaldo.com und werden unter LGPL
+		vertrieben.\n\nÜbersetzungen:\n
+		Deutsch: Thomas Putschbach &lt;android@tpju.de&gt;\n
+		Czech: Petr Bláha &lt;pb@P3T3.org&gt;\n
+		Italienisch: Fabio Bonomi Boseggia\n
+		Französisch: Cyril Jaquier\n
+		Chinese Traditional: Bernie Garden\n\n
+	</string>
+	
+	<string name="exportTitle">Exportiere nach .csv</string>
+	<string name="exportSummary">Exportiere alle Daten in eine .csv Datei auf der SD-Karte</string>
+	<string name="exportSuccessful">Export nach %1$s erfolgreich</string>
+	<string name="exportFailed">Export fehlgeschlagen</string>
+	<string name="exportDialogTitle">Exportiere...</string>
+	<string name="exportDialogText">Bitte warten während die Daten exportiert werden</string>
+
+	<string name="importTitle">Importiere aus .csv</string>
+	<string name="importSummary">Importiere Daten aus einer .csv Datei auf der SD-Karte</string>
+	<string name="importSuccessful">Import erfolgreich</string>
+	<string name="importFailed">Import fehlgeschlagen</string>
+	<string name="importDialogTitle">Importiere...</string>
+	<string name="importDialogText">Bitte warten während die Daten importiert werden</string>
+	<string name="importAlertText">Sind Sie sicher, dass Sie die Daten von der SD-Karte importieren wollen?</string>
+
+	<string name="interfaceTypeCell">GSM</string> 
+	<string name="interfaceTypeWifi">W-LAN</string> 
+	<string name="interfaceTypeBluetooth">Bluetooth</string>
+
+	<string name="menuInterfaceTitle">Netzwerk</string> 
+	<string name="menuInterfaceAdd">Zähler hinzufügen</string> 
+	<string name="menuInterfaceAddDone">Neuer Zähler wurde hinzugefügt</string> 
+	<string name="menuInterfaceReset">Alle Daten löschen</string> 
+	<string name="menuInterfaceResetDone">Alle Daten gelöscht</string> 
+	<string name="menuInterfaceGraph">Zeige Diagramm</string>
+	 
+	<string name="dialogInterfaceResetTitle">Alle Daten löschen</string> 
+	<string name="dialogInterfaceResetText">Sind Sie sicher?</string> 
+	 
+	<string name="menuCounterTitle">Zähler</string> 
+	<string name="menuCounterChange">Zählertyp ändern</string> 
+	<string name="menuCounterChangeDone">Zählertyp geändert</string> 
+	<string name="menuCounterRemove">Zähler entfernen</string> 
+	<string name="menuCounterRemoveDone">Zähler entfernt</string> 
+	<string name="menuCounterStartDate">Startdatum festlegen</string> 
+	<string name="menuCounterStartDay">Starttag festlegen</string>
+	<string name="menuCounterSetDuration">Zeitintervall festlegen</string> 
+	<string name="menuCounterSetAlert">Alarm festlegen</string> 
+	 
+	<string name="dialogCounterTypeTitle">Zeitintervall festlegen</string> 
+	<string name="dialogCounterDurationTitle">Zeitintervall auswählen</string> 
+	<string name="dialogCounterMonthlyTitle">Rücksetzdatum auswählen</string> 
+	<string name="dialogCounterMonthlyChanged">Datum geändert</string> 
+	<string name="dialogCounterWeeklyTitle">Rücksetztag auswählen</string>
+	<string name="dialogCounterWeeklyChanged">Tag geändert</string>
+	 
+	<string name="dialogCounterLimitTitle">Alarme einstellen</string> 
+	<string name="dialogCounterLimitText">Alarmwert einstellen. Um den Alarm zu löschen, Wert löschen oder auf 0 setzen.</string> 
+	<string name="dialogCounterLimitWrong">Falsches Zahlenformat</string> 
+	
+	<string name="dialogDetailsStartDate">Startdatum:</string>
+	<string name="dialogDetailsEndDate">Enddatum:</string>
+	<string name="dialogDetailsReceived">Empfangen:</string> 
+	<string name="dialogDetailsSent">Gesendet:</string> 
+	<string name="dialogDetailsTotal">Gesamt:</string> 
+	<string name="dialogDetailsAlert">Alarm:</string> 
+	<string name="dialogDetailsByte">%1$s (%2$s%%)</string> 
+	<string name="dialogDetailsNoAlert">kein Alarm festgelegt</string> 
+	 
+	<!-- e.g. Datenlimit Mobil von 100 MB für Zeitintervall Monat überschritten --> 
+	<string name="notifyExceed">Datenlimit %1$s von insgesamt %2$s %3$s für Zeitintervall %4$s überschritten</string> 
+	<!-- e.g. Datenlimit Mobil überschritten --> 
+	<string name="notifyExceedTitle">Datenlimit %1$s überschritten</string> 
+
+	<!-- Preferences -->
+	<string name="preferences">Einstellungen</string>
+	<string name="prefsCategoryAdvancedTitle">Erweiterte Einstellungen</string>
+	<string name="prefsCatImportExportTitle">Import/Export</string>
+	<string name="prefsCatImportExportSummary">Importiere und exportiere Daten auf und von der SD-Karte</string>
+	<string name="prefsWifiUpdateTitle">W-LAN langsame Update Rate</string>
+	<string name="prefsWifiUpdateSummaryOn">Aktualisiere jede Stunde. Benötigt weniger Akku, ist aber weniger genau</string>
+	<string name="prefsWifiUpdateSummaryOff">Aktualisiere alle 30 Sekunden. Benötigt mehr Akku, ist aber genauer</string>
+	<string name="prefsDebugTitle">Debug</string>
+	<string name="prefsDebugSummary">Zeige Debug Informationen im Benachrichtigungsbereich an</string>
+
+	<!-- Graph activity -->
+	<string name="graphReceivedLabel">Empfangen</string>
+	<string name="graphSentLabel">Gesendet</string>
+	<string name="graphYTitle">kByte</string>
+
+</resources>

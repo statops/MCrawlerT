@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string-array name="timer_list_entries">
+	<item>1 min</item>
+	<item>3 min</item>
+	<item>5 min</item>
+	<item>15 min</item>
+	<item>30 min</item>
+	<item>60 min</item>
+</string-array>
+<string-array name="charset_list_entries">
+	<item>utf-8</item>
+	<item>Shift-JIS</item>
+	<item>windows-1250</item>
+	<item>windows-1251</item>
+	<item>gb18030</item>
+	<item>euc-kr</item>
+	<item>iso-2022-kr</item>
+</string-array>
+<string-array name="line_break_code_entries">
+	<item>Auto detected</item>
+	<item>CRLF(Windows)</item>
+	<item>LF(Linux/android)</item>
+	<item>CR(Mac)</item>
+</string-array>
+<string-array name="typeface_entries">
+	<item>default</item>
+	<item>monospace</item>
+	<item>sans serif</item>
+	<item>serif</item>
+</string-array>
+</resources>

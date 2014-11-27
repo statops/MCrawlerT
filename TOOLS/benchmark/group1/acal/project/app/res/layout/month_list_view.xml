@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="#00000000" >
+	<TextView
+		android:id="@+id/month_list_title"
+		style="@style/MonthTitleBar"
+		android:layout_width="fill_parent"
+		android:layout_height="24sp"
+		android:background="@drawable/titlebg"
+		android:gravity="center"
+		android:tileMode="repeat" />
+	<ListView
+		android:id="@+id/month_default_list"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_below="@id/month_list_title"
+		android:background="#00000000"
+		android:cacheColorHint="#ffffffff"
+		android:horizontalSpacing="2dp"
+		android:numColumns="1"
+		android:stretchMode="columnWidth"
+		android:verticalSpacing="2dp" >
+	</ListView>
+</RelativeLayout>

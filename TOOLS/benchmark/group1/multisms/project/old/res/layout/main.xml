@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<LinearLayout android:layout_height="wrap_content"
+		android:layout_gravity="center_vertical" android:gravity="center_horizontal"
+		android:orientation="horizontal" android:layout_width="fill_parent">
+
+	    	<LinearLayout android:layout_height="wrap_content"
+		android:layout_gravity="center_vertical"
+		android:orientation="vertical" android:layout_width="wrap_content">
+		<Button android:background="@drawable/add_person"
+			android:id="@+id/contacts" android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:padding="3dp" ></Button>
+		<View  android:layout_width="fill_parent" android:layout_height="1dp" android:layout_margin="3dp" android:background="#EBEBEB"/>
+		<Button android:background="@drawable/add_group"
+			android:id="@+id/groups" android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:padding="3dp"></Button>
+		
+	</LinearLayout>
+
+		<EditText
+		    android:id="@+id/numbers"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:hint="@string/to"
+		    android:inputType="phone"
+		    android:lines="2"
+		    android:maxLines="2" />
+
+	</LinearLayout>
+
+	<EditText android:id="@+id/editor" android:layout_width="fill_parent"
+		android:layout_height="0dip" android:autoText="true"
+		android:capitalize="sentences" android:layout_weight="1"
+		android:hint="@string/entermessage"
+		android:nextFocusRight="@+id/send"
+		android:inputType="textShortMessage|textAutoCorrect|textCapSentences|textMultiLine"
+		android:maxLength="2000">
+		<requestFocus />
+	</EditText>
+
+	<CheckBox android:text="@string/enabledelivery" android:id="@+id/deliveryCheckBox"
+		android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true"></CheckBox>
+	<Button android:text="@string/send" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:id="@+id/send">
+	</Button>
+
+
+
+</LinearLayout>

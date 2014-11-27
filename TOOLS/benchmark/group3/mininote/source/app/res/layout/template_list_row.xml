@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	android:id="@+id/item_container"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	
+
+	xmlns:android="http://schemas.android.com/apk/res/android">
+  
+<!--   
+  	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	>
+  		<TextView
+		android:text="系統"
+		android:id="@+id/item_keitou"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textColor="#ffffff"
+		android:background="#333333"
+		
+		android:textSize="18sp"
+		 />
+  		<TextView
+		android:text="起点"
+		android:id="@+id/item_kiten"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textColor="#ffffff"
+		android:textSize="18sp"
+		 />
+  		<TextView
+		android:text="終点"
+		android:id="@+id/item_syuuten"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textColor="#ffffff"
+		android:textSize="18sp"
+		 />
+	</LinearLayout>
+-->
+  	<TextView
+		android:text="template text..."
+		android:id="@+id/item_template"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:textAppearance="@android:style/TextAppearance.Large"
+		android:ellipsize="end"
+		android:padding="5sp"
+		
+		 />
+		
+</LinearLayout>
+<!-- 	android:orientation="vertical" -->

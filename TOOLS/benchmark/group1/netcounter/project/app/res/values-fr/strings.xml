@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="appName">NetCounter</string>
+	<string name="appDescription">Compteur de trafic réseau</string>
+	<string name="appAuthor">par Cyril Jaquier</string>
+	<string name="appLoading">Chargement...</string>
+	<string name="appRefresh">Rafraîchir</string>
+
+	<string name="yes">Oui</string>
+	<string name="no">Non</string>
+	<string name="ok">Ok</string>
+	<string name="cancel">Annuler</string>
+	<string name="close">Fermer</string>
+
+	<string name="helpTitle">Aide</string>
+	<string name="helpClose">Fermer</string>
+	<string name="helpText">
+		
+	</string>
+	<string name="helpWhatsNew">
+	</string>
+
+	<string name="aboutTitle">Au sujet</string>
+	<string name="aboutDonation">Donation</string>
+	<string name="aboutDonationUrl">https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=1662582</string>
+	<string name="aboutClose">Fermer</string>
+	<string name="aboutHomepage">Homepage</string>
+	<string name="aboutHomepageUrl">http://www.jaqpot.net/netcounter/</string>
+	<string name="aboutText">
+		
+	</string>
+
+	<string name="exportTitle">Exporter vers .csv</string>
+	<string name="exportSummary">Exporter toutes les données dans un fichier .csv sur la carte SD</string>
+	<string name="exportSuccessful">Exportation vers %1$s réussie</string>
+	<string name="exportFailed">L\'exportation a échoué</string>
+	<string name="exportDialogTitle">Exportation...</string>
+	<string name="exportDialogText">Merci de patienter durant l\'exportation des données</string>
+	
+	<string name="importTitle">Importer depuis .csv</string>
+	<string name="importSummary">Importer les données depuis les fichiers .csv de la carte SD</string>
+	<string name="importSuccessful">Importation réussie</string>
+	<string name="importFailed">L\'imporatation a échoué</string>
+	<string name="importDialogTitle">Importation...</string>
+	<string name="importDialogText">Merci de patienter durant l\'importation des données</string>
+	<string name="importAlertText">Êtes-vous certain de vouloir importer les données de la carte SD ?</string>
+
+	<string name="interfaceTypeCell">Mobile</string>
+	<string name="interfaceTypeWifi">Wi-Fi</string>
+	<string name="interfaceTypeBluetooth">Bluetooth</string>
+
+	<string name="menuInterfaceTitle">Interface</string>
+	<string name="menuInterfaceAdd">Ajouter un compteur</string>
+	<string name="menuInterfaceAddDone">Compteur ajouté</string>
+	<string name="menuInterfaceReset">Tout réinitialiser</string>
+	<string name="menuInterfaceResetDone">Réinitialisation terminée</string>
+	<string name="menuInterfaceGraph">Afficher graphique</string>
+	
+	<string name="dialogInterfaceResetTitle">Tout réinitialiser</string>
+	<string name="dialogInterfaceResetText">Êtes-vous certain?</string>
+	
+	<string name="menuCounterTitle">Compteur</string>
+	<string name="menuCounterChange">Changer le type du compteur</string>
+	<string name="menuCounterChangeDone">Type du compteur changé</string>
+	<string name="menuCounterRemove">Supprimer le compteur</string>
+	<string name="menuCounterRemoveDone">Compteur supprimé</string>
+	<string name="menuCounterStartDate">Définir la date de début</string>
+	<string name="menuCounterStartDay">Définir le jour de début</string>
+	<string name="menuCounterSetDuration">Définir la durée</string>
+	<string name="menuCounterSetAlert">Définir l\'alerte</string>
+	
+	<string name="dialogCounterTypeTitle">Choisir le type du compteur</string>
+	<string name="dialogCounterDurationTitle">Choisir la durée du compteur</string>
+	<string name="dialogCounterMonthlyTitle">Choisir la date de début</string>
+	<string name="dialogCounterMonthlyChanged">Date changée</string>
+	<string name="dialogCounterWeeklyTitle">Choisir le jour de début</string>
+	<string name="dialogCounterWeeklyChanged">Jour changé</string>
+	
+	<string name="dialogCounterLimitTitle">Définir la valeur d\'alerte</string>
+	<string name="dialogCounterLimitText">Définissez la valeur de l\'alerte. Pour supprimer l\'alerte, effacer la valeur ou la définir à 0.</string>
+	<string name="dialogCounterLimitWrong">Mauvais format de nombre</string>
+	
+	<string name="dialogDetailsStartDate">Date de début :</string>
+	<string name="dialogDetailsEndDate">Date de fin :</string>
+	<string name="dialogDetailsReceived">Reçu :</string>
+	<string name="dialogDetailsSent">Envoyé :</string>
+	<string name="dialogDetailsTotal">Total :</string>
+	<string name="dialogDetailsAlert">Alerte :</string>
+	<string name="dialogDetailsByte">%1$s (%2$s%%)</string>
+	<string name="dialogDetailsNoAlert">aucune alerte définie</string>
+	
+	<!-- e.g. Cell exceeds the limit of 100 MB for Total -->
+	<string name="notifyExceed">%1$s a dépassé la limite de %2$s %3$s pour %4$s</string>
+	<!-- e.g. Cell exceeds the defined limit -->
+	<string name="notifyExceedTitle">%1$s a dépassé la limite définie</string>
+	
+	<!-- Preferences -->
+	<string name="preferences">Préférences</string>
+	<string name="prefsCategoryAdvancedTitle">Préférences avancées</string>
+	<string name="prefsCatImportExportTitle">Importer/Exporter</string>
+	<string name="prefsCatImportExportSummary">Importer et exporter les données de et vers la carte SD</string>
+	<string name="prefsWifiUpdateTitle">Rafraîchissement lent du WiFi</string>
+	<string name="prefsWifiUpdateSummaryOn">Mettre à jour chaque heure. Nécessite moins de puissance mais est moins précis</string>
+	<string name="prefsWifiUpdateSummaryOff">Mettre à jour toutes les 30 secondes. Nécessite plus de puissance mais est plus précis</string>
+	<string name="prefsDebugTitle">Debug</string>
+	<string name="prefsDebugSummary">Montrer les informations de debug dans la zone de notification</string>
+
+	<!-- Graph activity -->
+	<string name="graphReceivedLabel">Reçu</string>
+	<string name="graphSentLabel">Envoyé</string>
+	<string name="graphYTitle">kOctets</string>
+
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:id="@+id/BottomBar"
+	    android:orientation="horizontal"
+	    android:layout_gravity="center_horizontal"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+		
+	>
+		<Button
+		    android:id="@+id/LeftButton"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text="Left"
+			android:layout_gravity="center_horizontal"
+		/>
+		<Button
+		    android:id="@+id/RightButton"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text="Right"
+			android:layout_gravity="center_horizontal"
+		/>
+</LinearLayout>

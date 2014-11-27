@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string-array name="counterTypes">
+		<item>Celkem</item>
+		<item>Měsíčně</item>
+		<item>Last month</item>
+		<item>Týdně</item>
+		<item>Za X dnů</item>
+		<item>Za jeden den</item>
+	</string-array>
+
+	<array name="counterTypesPos">
+		<item>0</item>
+		<item>1</item>
+		<item>5</item>
+		<item>4</item>
+		<item>2</item>
+		<item>3</item>
+	</array>
+
+	<string-array name="counterSingleDay">
+		<item>Dnes</item>
+		<item>Včera</item>
+		<item>Před 2 dny</item>
+		<item>Před 3 dny</item>
+		<item>Před 4 dny</item>
+		<item>Před 5 dny</item>
+		<item>Před 6 dny</item>
+		<item>Před 7 dny</item>
+	</string-array>
+
+	<string-array name="counterLastDays">
+		<item>7 dnů</item>
+		<item>14 dnů</item>
+		<item>30 dnů</item>
+	</string-array>
+
+	<string-array name="counterMonthly">
+		<item>1 měsíc</item>
+		<item>2 měsíce</item>
+		<item>3 měsíce</item>
+		<item>4 měsíce</item>
+		<item>5 měsíců</item>
+		<item>6 měsíců</item>
+		<item>7 měsíců</item>
+		<item>8 měsíců</item>
+		<item>9 měsíců</item>
+		<item>10 měsíců</item>
+		<item>11 měsíců</item>
+		<item>12 měsíců</item>
+	</string-array>
+
+	<string-array name="counterWeeklyStart">
+		<item>Neděle</item>
+		<item>Pondělí</item>
+		<item>Úterý</item>
+		<item>Středa</item>
+		<item>Čtvrtek</item>
+		<item>Pátek</item>
+		<item>Sobota</item>
+	</string-array>
+
+	<string-array name="counterWeekly">
+		<item>1 týden</item>
+		<item>2 týdny</item>
+		<item>3 týdny</item>
+		<item>4 týdny</item>
+	</string-array>
+
+	<string-array name="byteUnits">
+		<item>B</item>
+		<item>KB</item>
+		<item>MB</item>
+		<item>GB</item>
+		<item>TB</item>
+	</string-array>
+
+	<array name="byteValues">
+		<item>1</item>
+		<item>1024</item>
+		<item>1048576</item>
+		<item>1073741824</item>
+		<item>1099511627776</item>
+	</array>
+
+</resources>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- 
+    <string name="menu_new">新規メモ</string>
+    <string name="menu_open">開く</string>
+    <string name="menu_close">閉じる</string>
+    <string name="menu_save">保存</string>
+    <string name="menu_save_as">名前を付けて保存</string>
+    <string name="menu_preferences">設定</string>
+    <string name="menu_new_folder">新規フォルダー</string>
+    <string name="menu_search">検索</string>
+    <string name="menu_edit">編集</string>
+    <string name="menu_show_ime">IMEを表示</string>
+    <string name="menu_context_menu">コンテキストメニュー</string>
+    <string name="menu_insert_text">テキスト挿入</string>
+    <string name="proc_open">ファイルを開いています。</string>
+    <string name="proc_save">ファイルを保存しています。</string>
+    <string name="file_access_error">アクセスに失敗しました。</string>
+    <string name="file_proc_successed">完了しました。</string>
+    <string name="pass_input_text">パスワード入力</string>
+    <string name="encrypt_check">暗号化</string>
+    <string name="menu_convert_encoding">S-JIS -> UTF-8</string>
+    <string name="convert_encoding_buttons_title">S-JISからUTF-8への変換</string>
+    <string name="password_not_match">パスワードが一致しません。もう一度試してください。</string>
+    <string name="password_empty">パスワードが空です。</string>
+
+    <string name="longclick_menu_title">Action</string>
+    <string name="longclick_menu_open">開く</string>
+    <string name="longclick_menu_edit">編集</string>
+    <string name="longclick_menu_delete">削除</string>
+    <string name="longclick_menu_cancel">キャンセル</string>
+    <string name="longclick_menu_rename">リネーム</string>
+    <string name="longclick_menu_copy">コピー</string>
+    <string name="longclick_menu_move">移動</string>
+    <string name="longclick_menu_delete_confirm">ファイルを削除してもよいですか？</string>
+    
+    <string name="folder_name_input">フォルダー名入力</string>
+    <string name="file_name_input">ファイル名入力</string>
+    <string name="input_name_empty">名前が空です。</string>
+    <string name="done_rename_file">リネーム完了</string>
+    <string name="done_move_file">フィアル移動完了</string>
+
+    <string name="error_file_cannot_copy">コピーできません。</string>
+    <string name="error_file_cannot_read">ファイルを読み込めません。</string>
+    <string name="error_file_already_exists">ファイル/フォルダは既に存在します。</string>
+    <string name="error_operation_failed">処理失敗</string>
+    
+    <string name="default_new_folder_name">NewFolder</string>
+    <string name="alert_overwrite">ファイルを上書きしますか？</string>
+    <string name="alert_no_template_text">テンプレートテキストがありません。</string>
+    <string name="alert_close_modified_file">このメモは変更されています。保存しますか？</string>
+    
+    <string name="alert_text_trancated">テキストの一部が削除されました。(サイズが大きすぎるかもしれません。)</string>
+    <string name="notify_file_save">保存しました。:</string>
+    <string name="alert_regex_syntax_error">正規表現の構文エラー</string>
+    <string name="alert_general_error">エラー</string>
+    <string name="alert_cannot_openfile">ファイルを開けません。:</string>
+    <string name="alert_initdir_is_not_exist">が存在しません。</string>
+    <string name="notify_now_in_progress">処理中です...</string>
+    
+    
+    <string name="btn_search">検索</string>
+    <string name="btn_search_backward_sign">  &lt;&lt;  </string>
+    <string name="btn_search_forward_sign">  &gt;&gt;  </string>
+    <string name="notFound">みつかりません。</string>
+    
+    
+    <string name="BottomMenu_updir">上へ</string>
+    <string name="BottomMenu_menu">メニュー</string>
+    <string name="BottomMenu_save">保存</string>
+    <string name="BottomMenu_close">閉じる</string>
+
+    <string name="alert_dialog_ok">OK</string>
+    <string name="alert_dialog_yes">はい</string>
+    <string name="alert_dialog_no">いいえ</string>
+    <string name="alert_dialog_cancel">キャンセル</string>
+    
+ 
+    <string name="settings_input_text_empty">入力値が空です</string>
+
+
+    
+	<string name="category_common">共通</string>
+	<string name="category_dir">ファイルブラウザ</string>
+	<string name="category_edit">メモ閲覧</string>
+	<string name="category_autolink">自動リンク設定</string>
+	
+    <string name="prefInitDir">初期フォルダー</string>
+    <string name="prefInitDirSummary">フォルダー</string>
+    <string name="title_select_folder">フォルダー選択</string>
+    
+    
+	<string name="prefDefaultFolderName">デフォルトフォルダー名</string>
+    <string name="prefDefaultFolderNameSummary">フォルダ作成時のデフォルト:</string>
+    
+    <string name="prefPWResetTimer">パスワードタイマー(分)</string>
+    <string name="prefPWResetTimerSummary">分間</string>
+
+    <string name="prefCharsetName">文字コード</string>
+    <string name="prefCharsetNameSummary">文字コード</string>
+
+    <string name="prefSyncTitle">ファイル名とタイトルを同期する。</string>
+    <string name="prefSyncTitleSummary">先頭行が変更されていたらファイル名を変更する</string>
+    <string name="prefSyncTitleSummaryOn">先頭行変更時、ファイル名を変更します。</string>
+    <string name="prefSyncTitleSummaryOff">先頭行変更時、ファイル名を変更しません。</string>
+    
+    <string name="prefShowButtons">下部のボタン表示</string>
+    <string name="prefShowButtonsSummary">ボタン表示(上へ/メニュー,閉じる/メニュー)</string>
+    <string name="prefShowButtonsSummaryOn">ボタン表示(上へ/メニュー,閉じる/メニュー)</string>
+    <string name="prefShowButtonsSummaryOff">ボタン非表示(上へ/メニュー,閉じる/メニュー)</string>
+
+    <string name="prefFontSize">文字サイズ</string>
+    <string name="prefFontSizeSummary">文字サイズ</string>
+    <string name="prefFontSizeSampleText">サイズ(sp)</string>
+
+    <string name="prefLineBreakCode">改行コード</string>
+    <string name="prefLineBreakCodeSummary">改行コード</string>
+
+    <string name="prefListFoldersFirst">フォルダーを先頭に表示</string>
+    <string name="prefListFoldersFirstSummary">ファイルよりもフォルダーを先頭に表示する。</string>
+
+    <string name="prefViewerMode">ビューワーモード</string>
+    <string name="prefViewerModeSummary">IMEを表示しない(コンテキストメニューから表示できます。)</string>
+
+
+    <string name="prefAutoSave">自動保存モード</string>
+    <string name="prefAutoSaveSummary">メモを自動で保存します。(閉じる時とアプリがバックグラウンドに移行した時)</string>
+
+    <string name="prefTypeface">フォント</string>
+    <string name="prefTypefaceSummary">default/monospace/sans serif/serif</string>
+
+    <string name="prefTemplateText">テンプレート文字列設定</string>
+    <string name="prefTemplateTextSummary">通常文字列/日時表示(例 yyyy/MM/dd))</string>
+
+    <string name="prefAutoLink">自動リンクモード</string>
+    <string name="prefAutoLinkSummary">URL/Email/電話番号をリンク表示にします。</string>
+
+    <string name="prefAutoLinkWeb">Web URL</string>
+    <string name="prefAutoLinkWebSummary">例:http://www....</string>
+
+    <string name="prefAutoLinkEmail">Email Address</string>
+    <string name="prefAutoLinkEmailSummary">例:user@domain..</string>
+
+    <string name="prefAutoLinkTel">電話番号</string>
+    <string name="prefAutoLinkTelSummary">例:090-0000....</string>
+
+
+    <string name="prefNoTitleBar">タイトルバーなし</string>
+    <string name="prefNoTitleBarSummary">タイトルバー表示をオフにします。</string>
+ 
+    <string name="prefFontSizeOnList">文字サイズ</string>
+    <string name="prefFontSizeOnListSummary">文字サイズ</string>
+    <string name="prefFontSizeOnListSampleText">サイズ(sp)</string>
+
+    
+
+
+    
+
+    <string name="btn_search_backward">後方検索</string>
+    <string name="btn_search_forward">前方検索</string>
+
+    <string name="search_encrypt_checkbox">暗号化ファイルを含める</string>
+    <string name="searchwordbox_hint">検索文字</string>
+    <string name="input_searchword">検索文字入力</string>
+    <string name="seachword_empty">検索文字が空です。</string>
+    <string name="notify_now_searching">検索中...</string>
+
+    
+    
+    <string name="template_list_title">テンプレート文字列リスト</string>
+    <string name="text_timeformat">日時形式</string>
+    <string name="edit_template_title">テンプレート文字列を編集</string>
+    <string name="add_template_text">\nテンプレート追加\n</string>
+    <string name="text_timeformat_example">サンプル</string>
+ -->
+ </resources>
+

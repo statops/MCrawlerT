@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<acal xmlns="urn:com:morphoss:acalconfig">
+  <dav_server>
+    <friendly_name>Morphoss Hosted DAViCal</friendly_name>
+    <config_values>
+      <signup_url>http://www.morphoss.com/products/davical/hosted</signup_url>
+      <supplied_user_url>https://yourname.davical.com/</supplied_user_url>
+      <active>1</active>
+    </config_values>
+  </dav_server>
+</acal>

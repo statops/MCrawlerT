@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="DaysOfWeek">
+		<item>@string/Monday</item>
+		<item>@string/Tuesday</item>
+		<item>@string/Wednesday</item>
+		<item>@string/Thursday</item>
+		<item>@string/Friday</item>
+		<item>@string/Saturday</item>
+		<item>@string/Sunday</item>
+	</string-array>
+	<string-array name="DaysOfWeekOrdinal">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+		<item>4</item>
+		<item>5</item>
+		<item>6</item>
+	</string-array>
+	<string-array name="YearViewSize_PrefEntries">
+		<item>2</item>
+		<item>3</item>
+		<item>4</item>
+		<item>6</item>
+		<item>8</item>
+		<item>9</item>
+		<item>12</item>
+	</string-array>
+	<string-array name="AlarmVolumeType_PrefEntries">
+		<item>@string/AlarmBellVolume</item>
+		<item>@string/MediaPlayerVolume</item>
+	</string-array>
+	<string-array name="AlarmVolumeType_PrefValues">
+		<item>ALARM</item>
+		<item>MEDIA</item>
+	</string-array>
+	<string-array name="RelativeAlarmTimes">
+		<item>@string/alarmAtEventTime</item>
+		<item>@string/alarm10MinutesPrior</item>
+		<item>@string/alarm15MinutesPrior</item>
+		<item>@string/alarm30MinutesPrior</item>
+		<item>@string/alarm1HourPrior</item>
+		<item>@string/alarm2HoursPrior</item>
+		<item>@string/Custom</item>
+		<item>@string/cancel</item>
+	</string-array>
+	<string-array name="EventChangeAffectingFirst">
+		<item>@string/changeThisInstance</item>
+		<item>@string/changeAllInstances</item>
+	</string-array>
+	<string-array name="EventChangeAffectingOther">
+		<item>@string/changeThisInstance</item>
+		<item>@string/changeThisAndFuture</item>
+	</string-array>
+	<string-array name="TodoChangeAffecting">
+		<item>@string/changeThisInstance</item>
+		<item>@string/changeAllInstances</item>
+		<item>@string/changeThisAndFuture</item>
+	</string-array>
+</resources>

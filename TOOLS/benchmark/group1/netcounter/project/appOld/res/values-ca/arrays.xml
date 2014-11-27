@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string-array name="counterTypes">
+		<item>Total</item>
+		<item>Mensual</item>
+		<item>Last month</item>
+		<item>Setmanal</item>
+		<item>Darrers dies</item>
+		<item>Un únic dia</item>
+	</string-array>
+
+	<array name="counterTypesPos">
+		<item>0</item>
+		<item>1</item>
+		<item>5</item>
+		<item>4</item>
+		<item>2</item>
+		<item>3</item>
+	</array>
+
+	<string-array name="counterSingleDay">
+		<item>Avui</item>
+		<item>Ahir</item>
+		<item>Fa 2 dies</item>
+		<item>Fa 3 dies</item>
+		<item>Fa 4 dies</item>
+		<item>Fa 5 dies</item>
+		<item>Fa 6 dies</item>
+		<item>Fa 7 dies</item>
+	</string-array>
+
+	<string-array name="counterLastDays">
+		<item>7 dies</item>
+		<item>14 dies</item>
+		<item>30 dies</item>
+	</string-array>
+
+	<string-array name="counterMonthly">
+		<item>1 mes</item>
+		<item>2 mesos</item>
+		<item>3 mesos</item>
+		<item>4 mesos</item>
+		<item>5 mesos</item>
+		<item>6 mesos</item>
+		<item>7 mesos</item>
+		<item>8 mesos</item>
+		<item>9 mesos</item>
+		<item>10 mesos</item>
+		<item>11 mesos</item>
+		<item>12 mesos</item>
+	</string-array>
+
+	<string-array name="counterWeeklyStart">
+		<item>Diumenge</item>
+		<item>Dilluns</item>
+		<item>Dimarts</item>
+		<item>Dimecres</item>
+		<item>Dijous</item>
+		<item>Divendres</item>
+		<item>Dissabte</item>
+	</string-array>
+
+	<string-array name="counterWeekly">
+		<item>1 setmana</item>
+		<item>2 setmanes</item>
+		<item>3 setmanes</item>
+		<item>4 setmanes</item>
+	</string-array>
+
+	<string-array name="byteUnits">
+		<item>B</item>
+		<item>KB</item>
+		<item>MB</item>
+		<item>GB</item>
+		<item>TB</item>
+	</string-array>
+
+	<array name="byteValues">
+		<item>1</item>
+		<item>1024</item>
+		<item>1048576</item>
+		<item>1073741824</item>
+		<item>1099511627776</item>
+	</array>
+
+</resources>

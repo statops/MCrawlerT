@@ -1,0 +1,11 @@
+android.permission.ACCESS_WIFI_STATE:
+
+android.permission.WAKE_LOCK:
+	This is the dominator of all the permissions , the app uses this during the start activity.
+	Start -> Crash
+	A3T :
+		A3T will be able to expose this.
+		
+android.permission.RECEIVE_BOOT_COMPLETED:
+
+android.permission.WRITE_EXTERNAL_STORAGE

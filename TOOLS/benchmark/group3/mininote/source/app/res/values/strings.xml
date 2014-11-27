@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Hello World, MainActivity!</string>
+	<string name="app_name">miniNoteViewer</string>
+	<string name="up_one_level">..</string>
+	<string name="current_dir">.</string>
+    <string name="menu_new">New</string>
+    <string name="menu_open">Open</string>
+    <string name="menu_close">Close</string>
+    <string name="menu_save">Save</string>
+    <string name="menu_save_as">Save As..</string>
+    <string name="menu_preferences">Preferences</string>
+    <string name="menu_new_folder">New Folder</string>
+    <string name="menu_search">Find</string>
+    <string name="menu_edit">Edit</string>
+    <string name="menu_show_ime">Show the IME</string>
+    <string name="menu_context_menu">Context Menu</string>
+    <string name="menu_insert_text">Insert Text</string>
+    <string name="proc_open">File Opening..</string>
+    <string name="proc_save">File Saving..</string>
+    <string name="file_access_error">Failed to access</string>
+    <string name="file_proc_successed">Process succeeded</string>
+    <string name="pass_input_text">Input Password</string>
+    <string name="encrypt_check">Encrypt?</string>
+    <string name="menu_convert_encoding">S-JIS -> UTF-8</string>
+    <string name="convert_encoding_buttons_title">Convert S-JIS -> UTF-8</string>
+    <string name="password_not_match">Password is not match.Try again.</string>
+    <string name="password_empty">Password is empty.</string>
+
+
+    <string name="longclick_menu_title">Action</string>
+    <string name="longclick_menu_open">Open</string>
+    <string name="longclick_menu_edit">Edit</string>
+    <string name="longclick_menu_delete">Delete</string>
+    <string name="longclick_menu_cancel">Cancel</string>
+    <string name="longclick_menu_rename">Rename to ..</string>
+    <string name="longclick_menu_copy">Copy to..</string>
+    <string name="longclick_menu_move">Move to..</string>
+    <string name="longclick_menu_delete_confirm">Do you really want to delete the file ?</string>
+    <string name="longclick_menu_up">Up</string>
+    <string name="longclick_menu_down">Down</string>
+    
+    
+    <string name="folder_name_input">Input Folder Name.</string>
+    <string name="file_name_input">Input File Name.</string>
+    <string name="input_name_empty">Name is empty.</string>
+    <string name="done_rename_file">File rename done.</string>
+    <string name="done_move_file">File move done.</string>
+
+    <string name="error_file_cannot_copy">Can not copy.</string>
+    <string name="error_file_cannot_read">Can not read the file</string>
+    <string name="error_file_already_exists">File/Folder already exists</string>
+    <string name="error_operation_failed">Operation Failed.</string>
+    
+    <string name="default_new_folder_name">NewFolder</string>
+    <string name="alert_overwrite">Overwrite this file?</string>
+    <string name="alert_no_template_text">No Template Text.</string>
+    <string name="alert_close_modified_file">This note has been modified. Save changes?</string>
+    
+    <string name="alert_text_trancated">Text was truncated.(maybe too large.)</string><!-- if truncated after reading file-->
+    <string name="notify_file_save">save</string><!--toast when file saved. "save: file.txt"  -->
+    <string name="alert_regex_syntax_error">Syntax error</string><!-- syntax error in search box-->
+    <string name="alert_general_error">Error</string><!-- General error."Error \nblablablabla" e.g. save to "/" cause FileNotFoundException-->
+    <string name="alert_cannot_openfile">Can not open file</string><!-- Can not open file: file.unknown_type-->
+    <string name="alert_initdir_is_not_exist">is not exist.</string><!-- Initial directory is not exist at launching app.-->
+    <string name="notify_now_in_progress">Now in progress...</string>
+    
+    
+    <string name="btn_search">Find</string>
+    <string name="btn_search_backward_sign">  &lt;&lt;  </string>
+    <string name="btn_search_forward_sign">  &gt;&gt;  </string>
+    <string name="notFound">String Not Found</string>
+    <string name="BottomMenu_updir">go up</string>
+    <string name="BottomMenu_menu">menu</string>
+    <string name="BottomMenu_save">save</string>
+    <string name="BottomMenu_close">close</string>
+
+    <string name="alert_dialog_ok">OK</string>
+    <string name="alert_dialog_yes">Yes</string>
+    <string name="alert_dialog_no">No</string>
+    <string name="alert_dialog_cancel">Cancel</string>
+    
+
+    <!-- for Settings activity -->
+    <string name="settings_input_text_empty">Input text is empty.</string>
+    
+
+	<!--  Preferences -->
+	<string name="category_common">Common</string>
+	<string name="category_dir">File Browser View</string>
+	<string name="category_edit">Note View</string>
+	<string name="category_autolink">Auto Link Setting</string>
+	
+    <string name="prefInitDirKey">InitDir</string>
+    <string name="prefInitDir">Initial Folder</string>
+    <string name="prefInitDirSummary">Folder</string>
+    <string name="title_select_folder">Select Folder</string>
+    
+    
+    <string name="prefDefaultFolderNameKey">defaultFolderName</string>
+    <string name="prefDefaultFolderName">Default Folder Name</string>
+    <string name="prefDefaultFolderNameSummary">Create new folder as </string>
+    
+    <string name="prefPWResetTimerKey">PWResetTimer</string>
+    <string name="prefPWResetTimer">Password Timer(min)</string>
+    <!-- <string name="prefPWResetTimerSummary">Expired time of input password</string> -->
+    <string name="prefPWResetTimerSummary">minutes</string>
+    
+    <string name="prefCharsetNameKey">prefCharsetName</string>
+    <string name="prefCharsetName">Character Sets</string>
+    <string name="prefCharsetNameSummary">Character Set</string>
+
+    <string name="prefSyncTitleKey">PrefSyncTitle</string>
+    <string name="prefSyncTitle">Sync file name and title</string>
+    <string name="prefSyncTitleSummary">Rename file if headline changed</string>
+    <string name="prefSyncTitleSummaryOn">Rename file if headline changed</string>
+    <string name="prefSyncTitleSummaryOff">Don\'t rename file if headline changed</string>
+    
+    <string name="prefShowButtonsKey">showButtons</string>
+    <string name="prefShowButtons">Show Buttons on Bottom</string>
+    <string name="prefShowButtonsSummary">Show Buttons(up dir/menu,close/menu)</string>
+    <string name="prefShowButtonsSummaryOn">Show Buttons(up dir/menu,close/menu)</string>
+    <string name="prefShowButtonsSummaryOff">Hide Buttons(up dir/menu, close/menu)</string>
+
+    <string name="prefFontSizeKey">fontSize</string>
+    <string name="prefFontSize">Text Size</string>
+    <string name="prefFontSizeSummary">Text Size</string>
+    <string name="prefFontSizeSampleText">Size(sp)</string>
+
+    <string name="prefLineBreakCodeKey">prefLineBreakCode</string>
+    <string name="prefLineBreakCode">Line Break Character</string>
+    <string name="prefLineBreakCodeSummary">Line Break Character</string>
+
+    <string name="prefListFoldersFirstKey">prefListFoldersFirst</string>
+    <string name="prefListFoldersFirst">List Folders First</string>
+    <string name="prefListFoldersFirstSummary">List folders first at sorting list</string>
+
+    <string name="prefViewerModeKey">prefViewerMode</string>
+    <string name="prefViewerMode">Viewer Mode</string>
+    <string name="prefViewerModeSummary">Hide the IME(Select \"Show the IME\" in context menu to show the IME.)</string>
+
+
+    <string name="prefAutoSaveKey">prefAutoSave</string>
+    <string name="prefAutoSave">Auto Save Mode</string>
+    <string name="prefAutoSaveSummary">Automatically save file.(save at closing and at going to background.)</string>
+
+    <string name="prefTypefaceKey">prefTypeface</string>
+    <string name="prefTypeface">Font Style</string>
+    <string name="prefTypefaceSummary">default/monospace/sans serif/serif</string>
+
+    <string name="prefTemplateTextKeyPrefix">prefTemplateText</string>
+    <string name="prefTemplateText">Set Template Texts</string>
+    <string name="prefTemplateTextSummary">normal text/date format(ex. yyyy/MM/dd))</string>
+
+    <string name="prefAutoLinkKey">prefAutoLink</string>
+    <string name="prefAutoLink">Auto Link Mode</string>
+    <string name="prefAutoLinkSummary">URL/Email/PhoneNumber automatically converted to clickable links.</string>
+
+    <string name="prefAutoLinkWebKey">prefAutoLinkWeb</string>
+    <string name="prefAutoLinkWeb">Web URL</string>
+    <string name="prefAutoLinkWebSummary">ex:http://www....</string>
+
+    <string name="prefAutoLinkEmailKey">prefAutoLinkEmail</string>
+    <string name="prefAutoLinkEmail">Email Address</string>
+    <string name="prefAutoLinkEmailSummary">ex:user@domain..</string>
+
+    <string name="prefAutoLinkTelKey">prefAutoLinkTel</string>
+    <string name="prefAutoLinkTel">Phone Number</string>
+    <string name="prefAutoLinkTelSummary">ex:090-0000....</string>
+
+    <string name="prefFileListOrderKey">prefFileListOrder</string>
+
+
+    <string name="prefNoTitleBarKey">prefNoTitleBar</string>
+    <string name="prefNoTitleBar">No title at note view</string>
+    <string name="prefNoTitleBarSummary">Turning off the title at the note view.</string>
+
+
+    <string name="prefFontSizeOnListKey">fontSizeOnList</string>
+    <string name="prefFontSizeOnList">Text Size</string>
+    <string name="prefFontSizeOnListSummary">Text Size</string>
+    <string name="prefFontSizeOnListSampleText">Size(sp)</string>
+
+
+	<!-- for grep activity -->
+    <string name="btn_search_backward">Backward</string>
+    <string name="btn_search_forward">Forward</string>
+
+    <string name="search_encrypt_checkbox">include encrypted files.</string>
+    <string name="searchwordbox_hint">search word</string>
+    <string name="input_searchword">enter keyword</string>
+    <string name="seachword_empty">search word is empty.</string>
+    <string name="notify_now_searching">Now Searching...</string>
+    
+    <!--  for template list activity -->
+    <string name="template_list_title">Template Text List</string>
+    <string name="text_timeformat">Time Format</string>
+    <string name="edit_template_title">Edit Template Text</string>
+    <string name="add_template_text">\nAdd Template Text  \n</string>
+    <string name="text_timeformat_example">samples</string>
+ 
+    <!-- Erro Message in MyUtil class -->
+    <string name="util_error_invalid_filesize1">Invalid data</string><!-- chi file invalid.(less than 32 byte) -->
+    <string name="util_error_invalid_filesize2">Invalid data size (not mutiples of 8)</string><!-- Invalid file size (not mutiples of 8) -->
+    <string name="util_error_invalid_fileheader">This File is NOT Blowfish encrypt file.</string><!-- Invalid file header (not start with BF01) -->
+    <string name="util_error_passdigest_is_null">password input error.</string><!-- password Digest is null -->
+    <string name="util_error_md5_check_sum_error">Password is not correct.</string><!-- check sum error with got password -->
+    
+    <string name="util_error_file_already_exists">Folder/File already exists.</string><!-- when create dir or rename file -->
+ 
+ </resources>
+

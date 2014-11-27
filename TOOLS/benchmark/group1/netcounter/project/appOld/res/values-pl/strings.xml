@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="appName">NetCounter</string>
+	<string name="appDescription">Licznik transferu danych</string>
+	<string name="appAuthor">autor: Cyril Jaquier</string>
+	<string name="appLoading">Wczytywanie...</string>
+	<string name="appRefresh">Odśwież</string>
+
+	<string name="yes">Tak</string>
+	<string name="no">Nie</string>
+	<string name="ok">Ok</string>
+	<string name="cancel">Anuluj</string>
+	<string name="close">Zamknij</string>
+
+	<string name="helpTitle">Pomoc</string>
+	<string name="helpClose">Zamknij</string>
+	<string name="helpText">
+		NetCounter zapisuje i aktualizuje statystyki w regularnych odstępach czasu
+		do bazy danych. Serwis, który rejestruje dane działa w tle i jest
+		uruchamiany automatycznie po każdym ponownym uruchomieniu
+		urządzenia.\n\n Odrębne liczniki mogą zostać zdefiniowane dla każdego
+		z interfejsów sieciowych. Każdy licznik jest widokiem na zliczone dane,
+		a więc możesz skasować, a następnie ponownie utoworzyć licznik bez
+		utraty żadnych informacji.\n\nAby dodać nowy licznik, kliknij dłużej na
+		wybranej pozycji na swoim ekranie. Pojawi sie menu podręczne. Po prostu
+		wybierz \"Dodaj licznik\". Aby usunąć licznik, kliknij dłużej na nim i
+		wybierz \"Usuń licznik\".\n\nAby zmienić typ licznika (\"Całość\",
+		\"Ostatnie dni\", \"Pojedyńczy dzień\", \"Miesięcznie\"), kliknij dłużej na
+		nim i wybierz \"Zmień typ licznika\".\n\nNiektóre liczniki obsługują
+		przedział czasowy. Np. licznik \"Pojedyńczy dzień\" może być użyty do
+		pokazania licznika \"Dzisiaj\" lub \"Wczoraj\". Wystarczy ustawić przedział
+		czasowy na odpowiednią wartość.\n\nAlarm może być określony dla każdego
+		licznika osobno. Jeżeli określona wartość zostanie przekroczona, zostanie
+		wyświetlone powiadomienie.\n\nAby zresetować wszystkie dane, kliknij dłużej
+		na ekranie i wybierz \"Zresetuj wszystko\". Spowoduje to usunięcie
+		<b>WSZYSTKICH</b> danych dotąd zliczonych, a więc pomyśl dwa razy zanim
+		klikniesz.\n\nJest możliwość określenia daty startowej jeżeli posiadasz 
+		umowę abonamentową w liczniku \"Miesięcznie\". Obecnie, tylko dzień miesiąca
+		jest potrzebny i domyślnie jest ustawiony na 1 dzień miesiąca.Aby ustawić
+		inny dzień kliknij dłużej na liczniku \"Miesięcznie\" i wybierz \"Ustaw datę startową\".\n\n
+	</string>
+
+	<string name="aboutTitle">O Programie</string>
+	<string name="aboutDonation">Darowizna</string>
+	<string name="aboutDonationUrl">https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=1662582</string>
+	<string name="aboutClose">Zamknij</string>
+	<string name="aboutHomepage">Strona Domowa</string>
+	<string name="aboutHomepageUrl">http://www.jaqpot.net/netcounter/</string>
+	<string name="aboutText">
+		NetCounter v%1$s jest prostym licznikiem ruchu sieciowego
+		z możliwością konfigurowania każdego z poszczególnych liczników.\n\n
+		Aby uzyskać więcej informacji odwiedź stronę domową programu.\n\n
+		Prawa autorskie / Copyright (C) 2009 Cyril Jaquier\n\n
+		Ten program jest rozpowszechniany w nadziei, że będzie przydatny,
+		ale BEZ ŻADNEJ GWARANCJI; bez nawet domyślnej gwarancji PRZYDATNOŚCI HANDLOWEJ albo 
+		PRZYDATNOŚCI DO OKREŚLONEGO CELU. Zobacz Powszechna Licencja Publiczna GNU (GNU General
+		Public License) po więcej szczegółów.\n\n
+		Ikony użyte w aplikacji pochodzą z Everaldo.com 
+		i są rozprowadzane w ramach licenji LGPL.\n\n
+		Tłumaczenia\n
+		Czeski: Petr Bláha &lt;pb@P3T3.org&gt;\n
+		Niemiecki: Thomas Putschbach &lt;android@tpju.de&gt;\n
+		Włoski: Fabio Bonomi Boseggia\n
+		Polski: Jan Płoszczyca &lt;jan@ploszczyca.eu&gt;\n
+		Francuski: Cyril Jaquier\n
+		Chinese Traditional: Bernie Garden\n\n
+	</string>
+
+	<string name="exportTitle">Eksportuj do .csv</string>
+	<string name="exportSuccessful">Eksport do %1$s zakończony sukcesem</string>
+	<string name="exportFailed">Eksport nieudany</string>
+
+	<string name="interfaceTypeCell">Sieć komórkowa</string>
+	<string name="interfaceTypeWifi">Sieć radiowa</string>
+	<string name="interfaceTypeBluetooth">Bluetooth</string>
+
+	<string name="menuInterfaceTitle">Interfejs</string>
+	<string name="menuInterfaceAdd">Dodaj licznik</string>
+	<string name="menuInterfaceAddDone">Nowy licznik dodany</string>
+	<string name="menuInterfaceReset">Zresetuj wszystko</string>
+	<string name="menuInterfaceResetDone">Resetownie ukończone</string>
+	
+	<string name="dialogInterfaceResetTitle">Zresetuj wszystko</string>
+	<string name="dialogInterfaceResetText">Czy jesteś pewien?</string>
+	
+	<string name="menuCounterTitle">Licznik</string>
+	<string name="menuCounterChange">Zmień typ licznika</string>
+	<string name="menuCounterChangeDone">Typ licznika zmieniono</string>
+	<string name="menuCounterRemove">Usuń licznik</string>
+	<string name="menuCounterRemoveDone">Licznik usunięto</string>
+	<string name="menuCounterStartDate">Ustaw datę startową</string>
+	<string name="menuCounterStartDay">Ustaw dzień startu</string>
+	<string name="menuCounterSetDuration">Ustaw przedział czasowy</string>
+	<string name="menuCounterSetAlert">Ustaw Alarm</string>
+	
+	<string name="dialogCounterTypeTitle">Wybierz typ licznika</string>
+	<string name="dialogCounterDurationTitle">Wybierz przedział czasowy licznika</string>
+	<string name="dialogCounterMonthlyTitle">Wybierz datę kiedy zresetować</string>
+	<string name="dialogCounterMonthlyChanged">Data zmieniona</string>
+	<string name="dialogCounterWeeklyTitle">Wybierz dzień kiedy zresetować</string>
+	<string name="dialogCounterWeeklyChanged">Dzień zmieniony</string>
+	
+	<string name="dialogCounterLimitTitle">Ustaw wartość powiadomienia</string>
+	<string name="dialogCounterLimitText">Ustaw limit danych do powiadomienia. Aby anulować powiadomienia, poprostu skasuje wprowadzoną wartość lub ustaw ją na  0.</string>
+	<string name="dialogCounterLimitWrong">Niepoprawny format liczby</string>
+	
+	<string name="dialogDetailsReceived">Odebrano:</string>
+	<string name="dialogDetailsSent">Wysłano:</string>
+	<string name="dialogDetailsTotal">Całość:</string>
+	<string name="dialogDetailsAlert">Alarm:</string>
+	<string name="dialogDetailsByte">%1$s (%2$s%%)</string>
+	<string name="dialogDetailsNoAlert">nie zdefiniowano alarmu</string>
+	
+	<!-- e.g. Cell exceeds the limit of 100 MB for Total -->
+	<string name="notifyExceed">%1$s przekracza limit %2$s %3$s dla %4$s</string>
+	<!-- e.g. Cell exceeds the defined limit -->
+	<string name="notifyExceedTitle">%1$s przekracza zdefiniowany limit</string>
+
+</resources>

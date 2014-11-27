@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+	<string name="appName">NetCounter</string>
+	<string name="appDescription">Počítadlo síťového provozu</string>
+	<string name="appAuthor">autor Cyril Jaquier</string>
+	<string name="appLoading">Nahrávám...</string>
+	<string name="appRefresh">Obnovit</string>
+	<string name="appWhatsNew">Co je nového?</string>
+
+	<string name="yes">Ano</string>
+	<string name="no">Ne</string>
+	<string name="ok">Budiž</string>
+	<string name="cancel">Zrušit</string>
+	<string name="close">Zavřít</string>
+
+	<string name="helpTitle">Nápověda</string>
+	<string name="helpClose">Zavřít</string>
+	<string name="helpText">
+		NetCounter v pravidelných intervalech monitoruje síťová rozhraní
+		a naměřené údaje ukládá do databáze. Služba, která zaznamenává
+		data, běží na pozadí a je automaticky spouštěná při každém startu
+		zařízení.\n\nNetCounter umožňuje nastavit několik počítadel pro
+		každé síťové rozhraní. Počítadlo je virtuální zobrazení naměřených dat
+		, a proto je možné jednotlivá počítadla mazat a měnit bez ztráty
+		již nashromážděných údajů.\n\nPro přidání nového počítadla
+		dlouze klikněte na síťové rozhraní a zobrazí se kontextové menu.
+		Zde vyberte položku \"Přidat nové počítadlo\". Dlouhý klik na
+		již existující počítadlo zobrazí menu, kde můžete \"Nastavit typ
+		 počítadla\", aktivovat volbu \"Hlídat přenesená data\" nebo
+		\"Odstranit počítadlo\". Pro počítadlo můžete vybrat jeden z následujících
+		typů: \"Celkem\", \"Měsíčně\", \"Za poslední dny\" nebo \"Jeden den\".
+		\n\nNěkteré typy počítadel umožňují nastavit délku měřeného období.
+		Například počítadlo \"Jeden den\" může zobrazit \"Dnes\", \"Včera\"
+		atd.\n\nPro každé počítadlo je možné nastavit upozornění. Je-li
+		dosaženo nastavené hodnoty, v oznamovací liště se zobrazí varování.
+		\n\nVolba \"Vynulovat vše\" smaže <b>VŠECHNY</b> doposud naměřené
+		údaje bez možnosti jejich obnovy. Buďte proto opatrní při potvrzení
+		této volby!\n\nNetCounter také umožňuje u počítadla \"Měsíčně\"
+		nastavení začátku zúčtovacího období. Pro jeho nastavení dlouze
+		klikněte na počítadlo \"Měsíčně\" a z nabídky vyberte \"Nastavit 1.
+		den cyklu\". Jako výchozí hodnota je nastevn 1. den v měsíci.\n\n
+	</string>
+	<string name="helpWhatsNew">
+		Tato <b>nová verze</b> NetCounteru přináší tyto změny:\n\n
+		- Samsung I5700 (Spica) and Google Nexus One support.\n\n
+		- Updated Catalan translation. Thanks to Joan Montané.\n\n
+		- Added Swedish translation. Thanks to Tibor.\n\n
+		- Added "last month" counter as per users request.\n\n
+		- Hopefully fixed the CSV export issue on newer SDK.\n\n
+		Také, prosím, <b>navštivte domovskou stránku</b> a určitě si <b>přečtěte FAQ</b>.
+	</string>
+
+	<string name="aboutTitle">O programu</string>
+	<string name="aboutDonation">Podpořit autora</string>
+	<string name="aboutDonationUrl">https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=1662582</string>
+	<string name="aboutClose">Zavřít</string>
+	<string name="aboutHomepage">Domovská stránka</string>
+	<string name="aboutHomepageUrl">http://www.jaqpot.net/netcounter/</string>
+	<string name="aboutText">
+		NetCounter v%1$s je jednoduché počítadlo síťového provozu s
+		uživatelsky definovanými typy počítadel.\n\nPro další informace
+		navštivte domovskou stránku.\n\nCopyright (C) 2009 Cyril Jaquier\n\n
+		Tento program je šířen v naději, že bude užitečný, ale BEZ JAKÉKOLIV 
+		ZÁRUKY. Pro detaily si přečtěte GNU General Public License.\n\n
+		Ikony použité v aplikaci pocházejí z Everaldo.com a jsou šířeny
+		pod licencí LGPL.\n\nPřeklady\n
+		Čeština: Petr Bláha &lt;pb@P3T3.org&gt;\n
+		Francouzština: Cyril Jaquier\n
+		Italština: Fabio Bonomi Boseggia\n
+		Němčina: Thomas Putschbach &lt;android@tpju.de&gt;\n
+		Chinese Traditional: Bernie Garden\n\n
+	</string>
+
+	<string name="exportTitle">Exportovat do .csv</string>
+	<string name="exportSummary">Exportuje vše do souboru .csv na SD kartě</string>
+	<string name="exportSuccessful">Export do %1$s byl úspěšný</string>
+	<string name="exportFailed">Exportování selhalo</string>
+	<string name="exportDialogTitle">Exportuji...</string>
+	<string name="exportDialogText">Čekejte prosím, exportuji data</string>
+
+	<string name="importTitle">Importovat z .csv</string>
+	<string name="importSummary">Importuje vše ze souboru .csv na SD kartě</string>
+	<string name="importSuccessful">Import byl úspěšný</string>
+	<string name="importFailed">Import selhal</string>
+	<string name="importDialogTitle">Importuji...</string>
+	<string name="importDialogText">Čekejte prosím, importuji data</string>
+	<string name="importAlertText">Jste si jisti, že chcete importovat data z SD karty?</string>
+
+	<string name="interfaceTypeCell">Mobilní</string>
+	<string name="interfaceTypeWifi">Wi-Fi</string>
+	<string name="interfaceTypeBluetooth">Bluetooth</string>
+
+	<string name="menuInterfaceTitle">Interface</string>
+	<string name="menuInterfaceAdd">Přidat nové počítadlo</string>
+	<string name="menuInterfaceAddDone">Nové počítadlo přidáno</string>
+	<string name="menuInterfaceReset">Vynulovat vše</string>
+	<string name="menuInterfaceResetDone">Vynulováno</string>
+	<string name="menuInterfaceGraph">Zobrazit graf</string>
+	
+	<string name="dialogInterfaceResetTitle">Vynulovat vše</string>
+	<string name="dialogInterfaceResetText">Opravdu mám vše smazat?</string>
+	
+	<string name="menuCounterTitle">Počítadlo</string>
+	<string name="menuCounterChange">Nastavit typ počítadla</string>
+	<string name="menuCounterChangeDone">Typ počítadla nastaven</string>
+	<string name="menuCounterRemove">Odstranit počítadlo</string>
+	<string name="menuCounterRemoveDone">Počítadlo odstraněno</string>
+	<string name="menuCounterStartDate">Nastavit 1.den cyklu</string>
+	<string name="menuCounterStartDay">Nastavit výchozí den</string>
+	<string name="menuCounterSetDuration">Nastavit délku cyklu</string>
+	<string name="menuCounterSetAlert">Hlídat přenesená data</string>
+	
+	<string name="dialogCounterTypeTitle">Vybrat typ počítadla</string>
+	<string name="dialogCounterDurationTitle">Vybrat délku cyklu</string>
+	<string name="dialogCounterMonthlyTitle">Vybrat datum pro vynulování</string>
+	<string name="dialogCounterMonthlyChanged">Datum bylo nastaveno</string>
+	<string name="dialogCounterWeeklyTitle">Vybrat den pro vynulování</string>
+	<string name="dialogCounterWeeklyChanged">Den byl nastaven</string>
+	
+	<string name="dialogCounterLimitTitle">Nastavit limit přenesených dat</string>
+	<string name="dialogCounterLimitText">Pro zrušení upozornění smažte zadanou hodnotu nebo zadejte 0.</string>
+	<string name="dialogCounterLimitWrong">Nesprávný formát čísla</string>
+	
+	<string name="dialogDetailsStartDate">Od data:</string>
+	<string name="dialogDetailsEndDate">Do data:</string>
+	<string name="dialogDetailsReceived">Přijato:</string>
+	<string name="dialogDetailsSent">Odesláno:</string>
+	<string name="dialogDetailsTotal">Celkem:</string>
+	<string name="dialogDetailsAlert">Upozornění:</string>
+	<string name="dialogDetailsByte">%1$s (%2$s%%)</string>
+	<string name="dialogDetailsNoAlert">nebylo nastaveno</string>
+	
+	<!-- e.g. Cell exceeds the limit of 100 MB for Total -->
+	<string name="notifyExceed">%1$s bylo dosaženo %2$s %3$s z %4$s</string>
+	<!-- e.g. Cell exceeds the defined limit -->
+	<string name="notifyExceedTitle">%1$s bylo dosaženo nastaveného limitu</string>
+
+	<!-- Preferences -->
+	<string name="preferences">Nastavení</string>
+	<string name="prefsCategoryAdvancedTitle">Rozšířená nastavení</string>
+	<string name="prefsCatImportExportTitle">Import/Export</string>
+	<string name="prefsCatImportExportSummary">Import a export dat z/na SD karty</string>
+	<string name="prefsWifiUpdateTitle">WiFi pomalá aktualizace</string>
+	<string name="prefsWifiUpdateSummaryOn">Aktualizace jednou za hodinu. Menší přesnost, nízká spotřeba energie.</string>
+	<string name="prefsWifiUpdateSummaryOff">Aktualizace každých 30 sec. Vysoká přesnost, zvýšená spotřeba energie.</string>
+	<string name="prefsDebugTitle">Debug</string>
+	<string name="prefsDebugSummary">Zobrazí ladící informace v oznamovací oblasti</string>
+
+	<!-- Graph activity -->
+	<string name="graphReceivedLabel">Přijato</string>
+	<string name="graphSentLabel">Odesláno</string>
+	<string name="graphYTitle">kBytů</string>
+
+</resources>

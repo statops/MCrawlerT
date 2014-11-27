@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	android:paddingLeft="36dip" android:paddingBottom="8dip"
+	android:paddingTop="8dip">
+
+	<ImageView android:id="@+id/icon" android:src="@drawable/cell"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:layout_gravity="center" android:paddingRight="8dip" />
+
+	<TextView android:id="@+id/title_left" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="Title left"
+		android:textStyle="bold" android:textSize="16sp"
+		android:layout_weight="1.8" />
+	<TextView android:id="@+id/title_right" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="Title right"
+		android:textSize="10sp" android:layout_weight="1" android:textStyle="bold|italic" />
+
+</LinearLayout>

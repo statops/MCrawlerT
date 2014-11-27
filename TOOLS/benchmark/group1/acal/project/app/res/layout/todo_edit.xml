@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/TodoEditLayout"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@drawable/morphossbg"
+	android:orientation="vertical" >
+	<LinearLayout
+		android:id="@+id/TodoEditBelowTitleLayout"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:orientation="horizontal" >
+		<!-- Colour bar -->
+		<LinearLayout
+			android:id="@+id/TodoEditColourBar"
+			android:layout_width="13sp"
+			android:layout_height="fill_parent"
+			android:background="#704080f0" >
+		</LinearLayout>
+		<ScrollView
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1" >
+			<RelativeLayout
+				android:id="@+id/TodoEditDataLayout"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical" >
+				<!-- Todo Name -->
+				<EditText
+					android:id="@+id/TodoName"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="1dp"
+					android:hint="@string/todo_name_hint"
+					android:inputType="textCapSentences|textAutoCorrect|textEmailSubject"
+					android:textSize="24sp" >
+					<requestFocus />
+				</EditText>
+				<EditText
+					android:id="@+id/TodoNotesContent"
+					style="@style/todo_view_content"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_below="@+id/TodoName"
+					android:layout_marginBottom="1dp"
+					android:gravity="top"
+					android:hint="@string/todo_description_hint"
+					android:inputType="textMultiLine|textCapSentences|textLongMessage|textAutoCorrect"
+					android:minLines="3"
+					android:minWidth="100sp" >
+				</EditText>
+				<RelativeLayout
+					android:id="@+id/TodoDatesLayout"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_below="@+id/TodoNotesContent"
+					android:orientation="vertical"
+					android:paddingBottom="0sp" >
+					<!-- Until Content -->
+					<LinearLayout
+						android:id="@+id/TodoUntilLayout"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:paddingBottom="3sp" >
+						<!-- Until Label -->
+						<TextView
+							android:id="@+id/TodoDueLabel"
+							style="@style/todo_view_label"
+							android:layout_width="70dp"
+							android:layout_height="fill_parent"
+							android:gravity="center_vertical"
+							android:text="@string/DuePrompt" />
+						<LinearLayout
+							android:layout_width="0dp"
+							android:layout_height="wrap_content"
+							android:layout_marginRight="10sp"
+							android:layout_weight="3"
+							android:background="@color/themed_button_colour" >
+							<Button
+								android:id="@+id/TodoDueDateTime"
+								style="@style/themed_button_big"
+								android:layout_width="fill_parent"
+								android:layout_height="wrap_content"
+								android:minHeight="30sp"
+								android:text="@string/placeholderDateAndTime" />
+						</LinearLayout>
+					</LinearLayout>
+					<!-- From content -->
+					<LinearLayout
+						android:id="@+id/TodoFromLayout"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:layout_below="@+id/TodoUntilLayout"
+						android:paddingBottom="3sp" >
+						<TextView
+							android:id="@+id/TodoFromLabel"
+							style="@style/todo_view_label"
+							android:layout_width="70dp"
+							android:layout_height="fill_parent"
+							android:gravity="center_vertical"
+							android:text="@string/TodoFromPrompt" />
+						<LinearLayout
+							android:layout_width="0dp"
+							android:layout_height="wrap_content"
+							android:layout_marginRight="10sp"
+							android:layout_weight="3"
+							android:background="@color/themed_button_colour" >
+							<Button
+								android:id="@+id/TodoFromDateTime"
+								style="@style/themed_button_big"
+								android:layout_width="fill_parent"
+								android:layout_height="wrap_content"
+								android:minHeight="30sp"
+								android:text="@string/placeholderDateAndTime" />
+						</LinearLayout>
+					</LinearLayout>
+					<!-- Completed content -->
+					<RelativeLayout
+						android:id="@+id/TodoCompletedLayout"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:layout_below="@+id/TodoFromLayout" >
+						<LinearLayout
+							android:id="@+id/TodoCompletedDatesLayout"
+							android:layout_width="fill_parent"
+							android:layout_height="wrap_content"
+							android:paddingBottom="2sp" >
+							<TextView
+								android:id="@+id/TodoCompletedLabel"
+								style="@style/todo_view_label"
+								android:layout_width="70dp"
+								android:layout_height="fill_parent"
+								android:layout_gravity="center_vertical"
+								android:gravity="center_vertical"
+								android:text="@string/CompletedPrompt" />
+							<LinearLayout
+								android:layout_width="0dp"
+								android:layout_height="wrap_content"
+								android:layout_marginRight="10sp"
+								android:layout_weight="3"
+								android:background="@color/themed_button_colour" >
+								<Button
+									android:id="@+id/TodoCompletedDateTime"
+									style="@style/themed_button_big"
+									android:layout_width="fill_parent"
+									android:layout_height="wrap_content"
+									android:minHeight="30sp"
+									android:text="@string/placeholderDateAndTime" />
+							</LinearLayout>
+						</LinearLayout>
+						<LinearLayout
+							android:id="@+id/TodoCompletedPercent"
+							android:layout_width="fill_parent"
+							android:layout_height="wrap_content"
+							android:layout_below="@+id/TodoCompletedDatesLayout"
+							android:layout_centerVertical="true"
+							android:paddingBottom="0sp" >
+							<TextView
+								android:id="@+id/TodoPercentCompleteText"
+								style="@style/todo_view_label"
+								android:layout_width="70dp"
+								android:layout_height="fill_parent"
+								android:gravity="center_vertical|center_horizontal"
+								android:text="70%" />
+							<SeekBar
+								android:id="@+id/TodoPercentCompleteBar"
+								android:layout_width="fill_parent"
+								android:layout_height="wrap_content"
+								android:layout_gravity="center_vertical"
+								android:layout_marginRight="10sp"
+								android:indeterminate="false"
+								android:max="100" />
+						</LinearLayout>
+					</RelativeLayout>
+				</RelativeLayout>
+				<EditText
+					android:id="@+id/TodoLocationContent"
+					style="@style/todo_view_content"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_below="@id/TodoDatesLayout"
+					android:hint="@string/todo_location_hint"
+					android:inputType="textCapSentences|textPostalAddress|textAutoCorrect" />
+				<RelativeLayout
+					android:id="@+id/TodoAlarmsLayout"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_below="@id/TodoLocationContent"
+					android:paddingBottom="5sp" >
+					<LinearLayout
+						android:id="@+id/TodoAlarmsTopLayout"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:layout_gravity="left|center_vertical"
+						android:layout_marginLeft="15sp"
+						android:layout_marginRight="15sp"
+						android:background="@color/themed_button_colour" >
+						<Button
+							android:id="@+id/TodoAlarmsButton"
+							style="@style/themed_button"
+							android:layout_width="fill_parent"
+							android:layout_height="wrap_content"
+							android:text="@string/Add_Alarm" />
+					</LinearLayout>
+					<TableLayout
+						android:id="@+id/alarms_list_table"
+						android:layout_width="fill_parent"
+						android:layout_height="fill_parent"
+						android:layout_below="@+id/TodoAlarmsTopLayout" >
+					</TableLayout>
+				</RelativeLayout>
+				<LinearLayout
+					android:id="@+id/TodoRepeatsLayout"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_below="@+id/TodoAlarmsLayout"
+					android:paddingBottom="5sp" >
+					<LinearLayout
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:layout_gravity="left|center_vertical"
+						android:layout_marginLeft="15sp"
+						android:layout_marginRight="15sp"
+						android:background="@color/themed_button_colour" >
+						<Button
+							android:id="@+id/TodoRepeatsContent"
+							style="@style/todo_view_button"
+							android:layout_width="fill_parent"
+							android:layout_height="wrap_content"
+							android:layout_gravity="right|center_vertical"
+							android:text="@string/setRepeatRule" />
+					</LinearLayout>
+				</LinearLayout>
+				<!-- calandar select thingy -->
+				<LinearLayout
+					android:id="@+id/TodoCollectionLayout"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_below="@id/TodoRepeatsLayout"
+					android:paddingBottom="3sp" >
+					<TextView
+						android:id="@+id/TodoCollectionLabel"
+						style="@style/gen_label"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="left|center_vertical"
+						android:maxLines="1"
+						android:paddingRight="3sp"
+						android:text="@string/CollectionPrompt" />
+					<LinearLayout
+						android:id="@+id/TodoEditCollectionLayout"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginRight="5sp"
+						android:background="@color/themed_button_colour" >
+						<Spinner
+							android:id="@+id/TodoEditCollectionSelect"
+							style="@style/themed_button_big"
+							android:layout_width="0dp"
+							android:layout_height="30sp"
+							android:layout_gravity="left|center_vertical"
+							android:layout_weight="1"
+							android:ellipsize="end"
+							android:maxLines="1" />
+					</LinearLayout>
+				</LinearLayout>
+				<!-- calandar select thingy end -->
+			</RelativeLayout>
+		</ScrollView>
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/button_layout"
+		android:layout_width="fill_parent"
+		android:layout_height="36dp"
+		android:layout_gravity="bottom"
+		android:background="@color/bottom_bg"
+		android:baselineAligned="true"
+		android:gravity="bottom" >
+		<!-- Colour bar -->
+		<LinearLayout
+			android:id="@+id/EventEditColourBarBottom"
+			android:layout_width="13sp"
+			android:layout_height="fill_parent"
+			android:background="#704080f0" />
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:padding="0sp" >
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:background="@color/themed_button_colour"
+				android:padding="0sp" >
+				<Button
+					android:id="@+id/todo_apply_button"
+					style="@style/themed_bottom_button"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:includeFontPadding="true"
+					android:padding="0sp"
+					android:text="@string/Apply"
+					android:width="90sp" />
+			</LinearLayout>
+		</LinearLayout>
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:padding="0sp" >
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:background="@color/themed_button_colour"
+				android:padding="0sp" >
+				<Button
+					android:id="@+id/todo_cancel_button"
+					style="@style/themed_bottom_button"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:includeFontPadding="true"
+					android:padding="0sp"
+					android:text="@string/cancel"
+					android:width="90sp" />
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

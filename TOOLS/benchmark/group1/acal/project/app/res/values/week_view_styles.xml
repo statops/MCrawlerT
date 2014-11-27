@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<style name="WV_header_day_box">
+    <item name="android:gravity">top|center_horizontal</item>
+    <item name="android:textColor">#F0F0F0</item>
+    <item name="android:background">@drawable/titlebg</item>
+    <item name="android:tileMode">repeat</item>
+    <item name="android:textSize">14sp</item>
+    <item name="android:padding">1px</item>
+    <item name="android:paddingLeft">3dp</item>
+    <item name="android:textStyle">bold</item>
+</style>
+<style name="WV_header_multi_day_box">
+    <item name="android:gravity">top|left</item>
+    <item name="android:textColor">#F0F0F0</item>
+    <item name="android:tileMode">repeat</item>
+    <item name="android:padding">1px</item>
+    <item name="android:paddingLeft">3dp</item>
+</style>
+<style name="WV_event_box">
+    <item name="android:gravity">top|left</item>
+    <item name="android:padding">1px</item>
+    <item name="android:paddingLeft">3dp</item>
+    <item name="android:textColor">#F0F0F0</item>
+    <item name="android:tileMode">repeat</item>
+</style>
+<style name="WV_side_box">
+    <item name="android:gravity">top|right</item>
+    <item name="android:textColor">#000000</item>
+    <item name="android:background">@color/WeekViewSidebarBG</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:padding">1dp</item>
+</style>
+<style name="WV_side_box_half">
+    <item name="android:gravity">top|right</item>
+    <item name="android:textColor">#000000</item>
+    <item name="android:background">#F0F0F0</item>
+    <item name="android:padding">1dp</item>
+    <item name="android:textStyle">italic</item>
+</style>
+<style name="WV_header_corner_box">
+    <item name="android:background">@drawable/titlebg</item>
+    <item name="android:tileMode">repeat</item>
+</style>
+</resources>

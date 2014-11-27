@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:layout_alignParentBottom="true"
+	android:layout_alignParentTop="true" >
+	<TextView
+		android:id="@+id/month_grid_title"
+		style="@style/MonthTitleBar"
+		android:layout_width="fill_parent"
+		android:layout_height="24sp"
+		android:background="@drawable/titlebg"
+		android:gravity="center"
+		android:tileMode="repeat" />
+	<GridView
+		android:id="@+id/month_default_gridview"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_alignParentBottom="true"
+		android:layout_below="@id/month_grid_title"
+		android:layout_gravity="center_horizontal|center_vertical"
+		android:layout_weight="1"
+		android:gravity="center|center_horizontal|center_vertical"
+		android:horizontalSpacing="1dp"
+		android:numColumns="7"
+		android:verticalSpacing="1dp" >
+	</GridView>
+</RelativeLayout>

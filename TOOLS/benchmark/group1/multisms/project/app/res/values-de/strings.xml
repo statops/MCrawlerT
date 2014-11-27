@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- By moorhuhn -->
+<resources>
+  <string name="app_name">Multi Sms</string> 
+  <string name="send">Senden</string> 
+  <string name="add">Hinzufügen</string> 
+  <string name="contacts">Kontakte</string> 
+  <string name="ok">Ok</string> 
+  <string name="cancel">Abbrechen</string> 
+  <string name="nocontacts">Keine Kontakte!!</string> 
+  <string name="nogroups">Keine Gruppen!!</string> 
+  <string name="sending">Sende Nachricht...</string> 
+  <string name="wait">Please wait while sending...</string> 
+  <string name="entermessage">Geben Sie Ihre Nachricht ein</string> 
+  <string name="entergroupname">Geben Sie einen Gruppennamen ein</string> 
+  <string name="nodelivery">Keine Zustellungsberichte verfügbar</string> 
+  <string name="enabledelivery">Zustellungsberichte aktivieren</string> 
+  <string name="to">An</string> 
+  <string name="refresh">Aktualisieren</string> 
+  <string name="remove_all">Alle entfernen</string> 
+  <string name="remove">Entfernen</string> 
+  <string name="add_group">Von Gruppe hinzufügen</string> 
+  <string name="delivery">Zustellungsberichte</string> 
+  <string name="create_group">Eine neue Gruppe erstellen</string> 
+  <string name="remove_group">Diese Gruppe entfernen</string> 
+  <string name="edit_group">Diese Gruppe bearbeiten</string> 
+  <string name="noName">kein Name</string> 
+  <string name="select_all">Alle auswählen</string> 
+  <string name="deselect_all">Alle abwählen</string> 
+  <string name="message_sent">Nachricht(en) gesendet</string> 
+  <string name="enter_number">Eine Telefonnummer eingeben oder einen Kontakt auswählen</string> 
+  <string name="warning_many_message">Sie sind im Begriff mehr als 50 Nachrichten zu senden. Weil es einen Android Fehler verursachen würde, der die Anwendung beenden würde, werden sie als Stück von 50 mit einer Pause dazwischen gesendet. Wollen Sie fortfahren?</string>
+  <string name="more_message">Sind Sie bereit für 50 weitere Nachrichten?</string> 
+ </resources>

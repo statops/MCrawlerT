@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@drawable/morphossbg"
+	android:baselineAligned="false"
+	android:orientation="vertical"
+	android:weightSum="100" >
+	<LinearLayout
+		android:id="@+id/month_grid"
+		android:layout_width="fill_parent"
+		android:layout_height="0px"
+		android:layout_weight="50"
+		android:minHeight="200dp" >
+		<com.morphoss.acal.widget.AcalViewFlipper
+			android:id="@+id/month_grid_flipper"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent" />
+	</LinearLayout>
+	<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent"
+		android:layout_height="0px"
+		android:layout_weight="50"
+		android:minHeight="280dp" >
+		<com.morphoss.acal.widget.AcalViewFlipper
+			android:id="@+id/month_list_flipper"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent" />
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/button_layout"
+		android:layout_width="fill_parent"
+		android:layout_height="36sp"
+		android:background="@color/bottom_bg"
+		android:baselineAligned="false"
+		android:gravity="bottom" >
+		<LinearLayout
+			android:layout_width="0px"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"
+			android:background="#00000000"
+			android:gravity="center"
+			android:paddingLeft="1sp"
+			android:paddingRight="1sp" >
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:background="@color/themed_button_colour" >
+				<Button
+					android:id="@+id/month_today_button"
+					style="@style/themed_bottom_button"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:gravity="center"
+					android:text="@string/Today" />
+			</LinearLayout>
+		</LinearLayout>
+		<LinearLayout
+			android:layout_width="0px"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"
+			android:background="#00000000"
+			android:gravity="center"
+			android:paddingLeft="1sp"
+			android:paddingRight="1sp" >
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:background="@color/themed_button_colour" >
+				<Button
+					android:id="@+id/month_year_button"
+					style="@style/themed_bottom_button"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:gravity="center"
+					android:includeFontPadding="true"
+					android:padding="0sp"
+					android:text="@string/Year" />
+			</LinearLayout>
+		</LinearLayout>
+		<LinearLayout
+			android:layout_width="0px"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"
+			android:background="#00000000"
+			android:gravity="center"
+			android:paddingLeft="1sp"
+			android:paddingRight="1sp" >
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:background="@color/themed_button_colour" >
+				<Button
+					android:id="@+id/month_week_button"
+					style="@style/themed_bottom_button"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:gravity="center"
+					android:text="@string/Week" />
+			</LinearLayout>
+		</LinearLayout>
+		<LinearLayout
+			android:layout_width="0px"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"
+			android:background="#00000000"
+			android:gravity="center"
+			android:paddingLeft="1sp"
+			android:paddingRight="1sp" >
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="36sp"
+				android:background="@color/themed_button_colour" >
+				<Button
+					android:id="@+id/month_add_button"
+					style="@style/themed_add_button"
+					android:layout_width="fill_parent"
+					android:layout_height="36sp"
+					android:gravity="bottom|center_horizontal"
+					android:text="@string/plus" />
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

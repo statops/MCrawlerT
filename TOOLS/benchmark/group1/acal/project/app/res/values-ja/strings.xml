@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Strings that should not be localised belong in unlocalisable_strings.xml -->
+<resources>
+<string name="theDayEachWeekStartsWith">週はどの日から始まる</string>
+<string name="firstDayOfWeek">週の初め</string>
+<string name="ok">はい</string>
+<string name="cancel">いいえ</string>
+<string name="Add_Server">サーバーを加える</string>
+<string name="A_name_for_this_server_configuration">サーバーコンフィグの名前</string>
+<string name="Authentication_Type">認証タイプ</string>
+<string name="Simple_Path">簡単なパス</string>
+<string name="Name">名前</string>
+<string name="Force_full_resync">再同期をさせる</string>
+<string name="Password">パスワード</string>
+<string name="Save">保存</string>
+<string name="Settings">設定</string>
+<string name="Server_Name">サーバーの名前</string>
+<string name="Server_Options">サーバーオプション</string>
+<string name="Collection_Options">コレクションオプション</string>
+<string name="Colour">色</string>
+<string name="appActivitySettings">設定</string>
+<string name="Friday">金曜日</string>
+<string name="Saturday">土曜日</string>
+<string name="Sunday">日曜日</string>
+<string name="thJan">一月</string>
+<string name="thFeb">二月</string>
+<string name="thMar">三月</string>
+<string name="thApr">四月</string>
+<string name="thMay">五月</string>
+<string name="thJun">六月</string>
+<string name="thJul">七月</string>
+<string name="thAug">八月</string>
+<string name="thSep">九月</string>
+<string name="thOct">十月</string>
+<string name="thNov">十一月</string>
+<string name="thDec">十二月</string>
+	<!-- If the user is displaying AM/PM we need a single character to display e.g. 9a for 9:00am in the morning -->
+	<!-- If the user is displaying AM/PM we need a single character to display e.g. 1p for 1:00pm in the afternoon -->
+<string name="Today">今日</string>
+<string name="Year">年</string>
+<string name="Month">月</string>
+<string name="Week">週</string>
+<string name="UnNamedServer">無名前</string>
+<string name="AllDayPrompt">一日中</string>
+<string name="FromPrompt">から</string>
+<string name="UntilPrompt">まで</string>
+<string name="CompletedPrompt">完成：</string>
+<string name="TwelveTwentyfour_OnSummary">14：00</string>
+<string name="TwelveTwentyfour_OffSummary">午後2時</string>
+<string name="EveryWeekday">毎週日</string>
+<string name="EveryWeekend">毎週末</string>
+<string name="EveryDay">毎日</string>
+<string name="EveryWeek">毎週</string>
+<string name="EveryMonth">毎月</string>
+<string name="EveryYear">毎年</string>
+<string name="EveryNDays">毎%s日間</string>
+<string name="EveryNWeeks">毎%s週間</string>
+<string name="EveryNMonths">毎%s月間</string>
+<string name="EveryNYears">毎%s年間</string>
+<string name="EveryMonday">毎月曜日</string>
+<string name="EveryTuesday">毎火曜日</string>
+<string name="EveryWednesday">毎水曜日</string>
+<string name="EveryThursday">毎木曜日</string>
+<string name="EveryFriday">毎金曜日</string>
+<string name="EverySaturday">毎土曜日</string>
+<string name="EverySunday">毎日曜日</string>
+<string name="ForTheWholeDay">一日中</string>
+<string name="alarm10MinutesPrior">10分前</string>
+<string name="alarm30MinutesPrior">分前</string>
+<string name="alarm1HourPrior">1時間前</string>
+<string name="alarm2HoursPrior">２時間前</string>
+<string name="Delete">削除</string>
+<string name="deleteSomeEvent">削除:%s</string>
+<string name="noCollectionsFound">暦が見つけなかった</string>
+<string name="All">全部</string>
+	<string-array name="phone_types">
+		<item>@string/Home</item>
+		<item>@string/Mobile</item>
+		<item>@string/Work</item>
+		<item>@string/WorkFax</item>
+		<item>@string/HomeFax</item>
+		<item>@string/Pager</item>
+		<item>@string/Other</item>
+		<item>@string/Custom</item>
+	</string-array>
+	<string-array name="email_types">
+		<item>@string/Home</item>
+		<item>@string/Work</item>
+		<item>@string/Other</item>
+		<item>@string/Custom</item>
+	</string-array>
+</resources>

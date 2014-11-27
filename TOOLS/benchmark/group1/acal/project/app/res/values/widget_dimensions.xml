@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<dimen name="widgetRowHeight">18dp</dimen>
+	<dimen name="widgetRowWidth">294dp</dimen>
+	<dimen name="widgetFullWidth">296dp</dimen>
+	<dimen name="widgetFullHeight">74dp</dimen>
+	<dimen name="widgetTextSize">13dp</dimen>
+</resources>

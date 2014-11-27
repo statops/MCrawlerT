@@ -1,0 +1,116 @@
+What's in this version:
+
+2011-xx-xx Version 0.41
+
+
+2011-06-12 Version 0.40
+- update Russian translation.
+- added long click menu(Up/Down) in managing templates view.
+- added setting "default folder name".
+- optimization of text box focus on file operation.
+
+2011-03-23 Version 0.39
+- localize some error messages into Russian.
+- fixed issue that text was truncated at about 10k size on Galaxy.
+- fixed the issue that plain text file(.txt) starting with "BF01" was handled as encrypt file.
+- fixed NullPointerException in search function.
+
+2011-03-10 Version 0.38
+- added Russian GUI.(A few error messages is not localized yet.)
+
+2011-01-29 Version 0.37
+- added character set "euc-kr" and "iso-2022-kr".
+
+2011-12-28 Version 0.36
+- fix integration with Dropbox 2.0
+
+2011-11-29 Version 0.34
+- bug fix.(Auto save works when select "save as" menu)
+- added character set "gb18030".
+
+2011-11-24 Version 0.33
+- added character set "windows-1250".
+
+2011-11-19 Version 0.32
+- added the option of text size in file browser view.
+
+
+2011-11-05 Version 0.31
+- bug fix on input filename at saving file.
+
+
+2011-10-30 Version 0.30
+- added the option whether turning off the title at note view or not.
+- Dpad navigation on file list view.
+- Left-key work as Back-key(close note) when the cursor is at top of the note.
+
+2011-08-26 Version 0.29
+- add the item to change order(ascend/descend) on file list view.
+
+2011-07-29 Version 0.28
+- keep selected position on file list after the file opened.
+
+2011-07-11 Version 0.27
+- add the option "auto link mode" to make URL/Email/PhoneNumber clickable.
+
+2011-06-22 Version 0.26
+- fixed problem of time format.
+
+2011-06-20 Version 0.25
+- add the menu "insert text" to insert text.
+  (clipboard text,template text and time/date formated text)
+- add the option "edit template text".
+- add the option "font style"(default/monospace/sans serif/serif).
+- sort preference items into three groups.
+
+2011-06-16 Version 0.24
+- add handle GET_CONTENT action.(you can open from Dropbox's "New" menu.)
+- wrap long file name in file list view.
+- add icon image in file select view(after Save as.. menu).
+- add the option "Auto Save Mode".
+  (save at closing note view and at note view going to background.)
+- add the long click menu item "copy to ..".
+- add the long click menu item "move to ..".
+- fixed minor bugs.
+
+2011-05-10 Version 0.23
+- add backward search button on search function.
+- add the menu to search in a folder. 
+- add the option "Viewer Mode". It hides the IME on note view.
+  (Select "Show the IME" in context menu to show the IME.)
+
+2011-05-05 Version 0.22
+- fix the problem that the context menu "Select text/Copy all" didn't work.
+- change file list sorting to Ignore Case Sorting.
+- remove the menu "S-JIS -> UTF-8".(Please set a charset in Preferences.)
+
+2011-04-28 Version 0.21
+- add the option to list folders first.
+- fix the problem that changed text is dropped at screen rotation.
+
+2011-04-22 Version 0.20
+- add option for line break character.
+
+2011-04-14 Version 0.19
+- add fast scrolling effect on edit box.
+- add the option to change text size.
+
+2011-03-30 Version 0.18
+- soft keyboard doesn't pop up on open existing note.
+- add the option to hide buttons on bottom.
+- back-key become "go up" key on buttons hide mode.
+
+2011-02-16 Version 0.17
+- register .chi and text/* file type in Android.
+
+2011-02-11 Version 0.16
+- modify action when closing the note.
+
+2011-02-11 Version 0.15
+- When closing the note, notify that file has been modified.
+
+2011-02-08 Version 0.14
+- add character set "windows-1251".
+
+2011-01-29 Version 0.13
+- release on Android Market.

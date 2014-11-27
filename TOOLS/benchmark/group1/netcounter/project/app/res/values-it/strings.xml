@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="appName">NetCounter</string>
+	<string name="appDescription">Contatore del traffico dati</string>
+	<string name="appAuthor">di Cyril Jaquier</string>
+	<string name="appLoading">Caricamento...</string>
+	<string name="appRefresh">Aggiornamento</string>
+
+	<string name="yes">Si</string>
+	<string name="no">No</string>
+	<string name="ok">Ok</string>
+	<string name="cancel">Cancella</string>
+	<string name="close">Chiudi</string>
+
+	<string name="helpTitle">Aiuto</string>
+	<string name="helpClose">Chiudi</string>
+	<string name="helpText">
+		NetCounter salva ed aggiorna le proprie statistiche in un database ad
+		intervalli regolari. Il servizio che registra i dati gira in
+		background e si avviato automaticamente al riavvio del
+		dispositivo.\n\nPossono essere definiti diversi contatori per ogni
+		interfaccia di traffico dati. Ogni contatore è solo una modalità di
+		visualizzazione dei dati, è possibile cancellare e ricreare i
+		contatori senza perdita di informazioni.\n\nPer creare un nuovo
+		contatore fare un click lungo sull\'oggetto interfaccia. Comparirà un
+		menù Seleziona \"Aggiungi un contatore\". Per rimuovere il contatore,
+		fare un click lungo su questo e selezionare \"Cancella il
+		contatore\".\n\nPer cambiare il tipo di contatore (\"Totale\",
+		\"Ultimi giorni\", \"Giorno singolo\", \"Mensile\"), fare un click
+		lungo su questo e selezionare \"Cambia tipo\".\n\nAlcuni contatori
+		richiedono un parametro temporale. Per esempio il contatore \"Giorno
+		singolo\" si può impostare per mostrare il contatore \"Oggi\" o il
+		contatore \"Ieri\". Bisogna solo impostare il parametro temporale
+		appropriato.\n\nSi può definire un allarme per ogni contatore. Quando
+		venga superato il valore stabilito, sarà mostrata una notifica.\n\nPer
+		eliminare tutti i dati di una interfaccia, fare un click lungo sulla
+		interfaccia e selezionare \"Elimina tutto\". Ciò cancellerà
+		<b>TUTTI</b>
+		i dati di una inferfaccia; meglio pensarci bene prima di
+		farlo.\n\nE\'possibile definire una data di inizio per il contatore
+		\"Mensile\". Attualmente può essere impostato solo il giorno di in
+		inizio che, come valore predefinito, è impostato al primo del mese.
+		Per impostare una altra fare un click lungo sul contatore \"Mensile\"
+		e selezionare \"Imposta data di inizio\".\n\n
+	</string>
+
+	<string name="aboutTitle">Informazioni</string>
+	<string name="aboutDonation">Donazioni</string>
+	<string name="aboutDonationUrl">https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=1662582</string>
+	<string name="aboutClose">Chiudi</string>
+	<string name="aboutHomepage">Homepage</string>
+	<string name="aboutHomepageUrl">http://www.jaqpot.net/netcounter/</string>
+	<string name="aboutText">
+		NetCounter v%1$s è un semplice misuratore del traffico dati con contatori 
+		configurabili dall’utente.\n\nPer ulteriori informazioni, visita la homepage.
+		\n\nCopyright (C) 2009 Cyril Jaquier\n\nQuesto programma è distribuito nella 
+		speranza che sia utile, ma SENZA ALCUNA GARANZIA; senza neppure la 
+		garanzia implicita di COMMERCIABILITÀ o APPLICABILITÀ PER UN 
+		PARTICOLARE SCOPO. Si veda la Licenza Pubblica Generica GNU per avere 
+		maggiori dettagli.\n\nLe icone dell’applicazione provengono da Everaldo.com
+		e sono distribuite con LGPL.\n\nTranslations\n
+		German: Thomas Putschbach &lt;android@tpju.de&gt;\n
+		Czech: Petr Bláha &lt;pb@P3T3.org&gt;\n
+		Italian: Fabio Bonomi Boseggia\n
+		French: Cyril Jaquier\n
+		Chinese Traditional: Bernie Garden\n\n
+	</string>
+
+	<string name="exportTitle">Esporta in formato .csv</string>
+	<string name="exportSuccessful">Esportato in %1$s con successo</string>
+	<string name="exportFailed">Esportazione fallita</string>
+
+	<string name="interfaceTypeCell">Cellulare</string>
+	<string name="interfaceTypeWifi">Wi-Fi</string>
+	<string name="interfaceTypeBluetooth">Bluetooth</string>
+
+	<string name="menuInterfaceTitle">Interfaccia</string>
+	<string name="menuInterfaceAdd">Aggiungi un contatore</string>
+	<string name="menuInterfaceAddDone">Nuovo contatore aggiunto</string>
+	<string name="menuInterfaceReset">Cancella tutto</string>
+	<string name="menuInterfaceResetDone">Cancellazione eseguita</string>
+	
+	<string name="dialogInterfaceResetTitle">Cancella tutto</string>
+	<string name="dialogInterfaceResetText">Sei sicuro?</string>
+	
+	<string name="menuCounterTitle">Contatore</string>
+	<string name="menuCounterChange">Cambia il tipo di contatore</string>
+	<string name="menuCounterChangeDone">Cambiato il tipo di contatore</string>
+	<string name="menuCounterRemove">Cancella il contatore</string>
+	<string name="menuCounterRemoveDone">Cancellato il contatore</string>
+	<string name="menuCounterStartDate">Imposta data di inizio</string>
+	<string name="menuCounterStartDay">Imposta giorno di inizio</string>
+	<string name="menuCounterSetDuration">Imposta parametro temporale</string>
+	<string name="menuCounterSetAlert">Imposta allarme dati</string>
+	
+	<string name="dialogCounterTypeTitle">Seleziona il tipo di contatore</string>
+	<string name="dialogCounterDurationTitle">Seleziona la durata del contatore</string>
+	<string name="dialogCounterMonthlyTitle">Seleziona la data di reset</string>
+	<string name="dialogCounterMonthlyChanged">Data cambiata</string>
+	<string name="dialogCounterWeeklyTitle">Seleziona il giorno di reset</string>
+	<string name="dialogCounterWeeklyChanged">Giorno cambiato</string>
+	
+	<string name="dialogCounterLimitTitle">Seleziona il valore di notifica</string>
+	<string name="dialogCounterLimitText">Seleziona il limite delle notifiche. Per disabilitare
+		la notifica, cancella il valore o impostalo a 0.</string>
+	<string name="dialogCounterLimitWrong">Valore numerico errato</string>
+	
+	<string name="dialogDetailsReceived">In entrata:</string>
+	<string name="dialogDetailsSent">In uscita:</string>
+	<string name="dialogDetailsTotal">Totale:</string>
+	<string name="dialogDetailsAlert">Allarme:</string>
+	<string name="dialogDetailsByte">%1$s (%2$s%%)</string>
+	<string name="dialogDetailsNoAlert">nessun allarme impostato</string>
+	
+	<!-- e.g. Cell exceeds the limit of 100 MB for Total -->
+	<string name="notifyExceed">%1$s superato il limite di %2$s %3$s for %4$s</string>
+	<!-- e.g. Cell exceeds the defined limit -->
+	<string name="notifyExceedTitle">%1$s superato il limite impostato</string>
+
+</resources>

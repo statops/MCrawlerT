@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:padding="0sp" >
+	<TextView
+		android:id="@+id/YVmonth_title"
+		style="@style/YVTitleBar"
+		android:layout_width="fill_parent"
+		android:layout_height="24sp"
+		android:visibility="gone" >
+	</TextView>
+	<TextView
+		android:id="@+id/YVyear_title"
+		style="@style/YVTitleBar"
+		android:layout_width="fill_parent"
+		android:layout_height="22sp"
+		android:visibility="gone" >
+	</TextView>
+	<TextView
+		android:id="@+id/YVDayBoxColumnHeader"
+		style="@style/YVMonthDayColumnHeader"
+		android:layout_width="fill_parent"
+		android:layout_height="16sp"
+		android:visibility="gone" />
+	<TextView
+		android:id="@+id/YVDayBoxInMonth"
+		style="@style/YVMonthDayInMonth"
+		android:layout_width="fill_parent"
+		android:layout_height="14sp"
+		android:visibility="gone" />
+	<TextView
+		android:id="@+id/YVDayShadowed"
+		style="@style/YVDayShadowed"
+		android:layout_width="fill_parent"
+		android:layout_height="14sp"
+		android:visibility="gone" />
+</RelativeLayout>

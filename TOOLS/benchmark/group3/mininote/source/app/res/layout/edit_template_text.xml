@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:orientation="vertical">
+
+   <EditText
+	  android:id="@+id/dialog_edittext"
+      android:layout_height="wrap_content"
+      android:layout_width="fill_parent"
+      android:layout_marginLeft="10dip"
+      android:layout_marginRight="10dip"
+      android:scrollHorizontally="true"
+      android:singleLine="false"
+      android:lines="2"
+      android:capitalize="none"
+      android:gravity="fill_horizontal"
+      android:textAppearance="?android:attr/textAppearanceLarge" 
+    />
+      
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:orientation="horizontal"
+	    android:layout_gravity="center_horizontal"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	>
+      
+		<CheckBox
+			android:text="@string/text_timeformat"
+			android:id="@+id/timeformat_checkbox"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+    		android:layout_alignParentTop="true" 
+		/>
+	   	<Button
+			android:id="@+id/sampleButton"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/text_timeformat_example"
+		/>
+	</LinearLayout>
+</LinearLayout>

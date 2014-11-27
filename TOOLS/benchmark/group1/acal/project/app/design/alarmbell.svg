@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="128"
+   height="128"
+   id="svg3821"
+   version="1.1"
+   inkscape:version="0.48.1 r9760"
+   inkscape:export-filename="/home/karora/projects/acal/res/drawable/alarmbell.png"
+   inkscape:export-xdpi="45"
+   inkscape:export-ydpi="45"
+   sodipodi:docname="alarmbell.svg">
+  <defs
+     id="defs3823" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#000000"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="4.5409514"
+     inkscape:cx="22.42706"
+     inkscape:cy="51.67158"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     inkscape:document-units="px"
+     inkscape:grid-bbox="true"
+     inkscape:window-width="1427"
+     inkscape:window-height="982"
+     inkscape:window-x="64"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata3826">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     transform="translate(0,64)">
+    <path
+       id="path2985-0"
+       style="fill:#ffffff;stroke:#ff0101;stroke-width:0.02000000000000000;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;fill-opacity:1"
+       d="m 18.29819,5.3212462 c 0.994078,4.1308884 6.118278,5.7534608 6.118278,5.7534608 9.994174,5.286302 22.61255,12.035252 31.902279,16.948947 0.606237,0.320662 1.745088,3.249205 -3.787129,5.426097 -3.515386,1.383282 -5.444461,4.291567 -5.538954,9.524638 -0.112088,6.207495 2.986942,8.784369 6.790704,10.464117 3.576881,1.579557 7.381188,0.62781 10.52793,-1.837586 3.140383,-2.460413 5.23067,-7.526213 3.268833,-11.399937 -2.382354,-4.70405 -1.460933,-7.258752 0.485377,-6.19434 5.121253,2.800747 9.699786,5.286307 14.549679,7.851602 0,0 3.02551,2.573663 7.208302,0.459057 4.182792,-2.114606 2.012471,-8.538857 5.207945,-21.121037 3.195473,-12.5821779 12.293506,-30.1326139 13.891246,-39.918753 1.59774,-9.786139 -0.38259,-17.226553 -4.37694,-22.618914 -3.99434,-5.392361 -15.213948,-12.632444 -24.507799,-12.785336 -9.293852,-0.152891 -17.158833,3.909785 -23.218066,9.80986 -6.059233,5.900075 -15.201028,24.575475 -22.991188,32.195015 C 24.922127,-3.4103735 17.304111,1.1903578 18.29819,5.3212462 z M 33.323601,3.581509 82.413625,29.391727 c 0,0 0.233577,-4.593674 2.725061,-14.403893 2.491484,-9.810219 11.406325,-26.043795 12.652068,-33.673966 1.245743,-7.630171 1.401461,-11.367397 -1.712894,-15.571776 -3.114355,-4.204379 -10.28384,-8.635293 -16.194648,-8.875913 -5.910808,-0.240619 -11.678832,1.712897 -16.038929,7.163018 -4.360097,5.450121 -12.613139,20.710462 -17.44039,26.316302 -4.827251,5.605839 -13.080292,13.23601 -13.080292,13.23601 z M 0,-64 128,-64 128,64 0,64 z" />
+  </g>
+</svg>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="appName">NetCounter</string>
+	<string name="appDescription">Comptador de trànsit de dades</string>
+	<string name="appAuthor">per en Cyril Jaquier</string>
+	<string name="appLoading">S\'està carregant...</string>
+	<string name="appRefresh">Actualitza</string>
+        <string name="appWhatsNew">What\'s new?</string>
+
+	<string name="yes">Sí</string>
+	<string name="no">No</string>
+	<string name="ok">D\'acord</string>
+	<string name="cancel">Cancel·la</string>
+	<string name="close">Tanca</string>
+
+	<string name="helpTitle">Ajuda</string>
+	<string name="helpClose">Tanca</string>
+	<string name="helpText">
+		El NetCounter desa i actualitza les estadístiques en intervals regulars a una base de dades.
+		El servei que enregistra les dades s\'executa en segon pla i només s\'engega automàticament si 
+		reinicieu l\'aparell.\n\nEs poden definir diferents comptadors per a cada interfície de xarxa. 
+		Un comptador és una visualització de les dades emmagatzemades, per tant, podeu esborrar i 
+		crear comptadors sense que es perdi la informació.\n\nPer a afegir un comptador nou, mantingueu 
+		pitjat la interfície desitjada. Apareixerà un menú contextual. Només heu de seleccionar 
+		\"Afegeix un comptador\". Per a suprimir un comptador, mantingeu-lo pitjat i seleccioneu 
+		\"Suprimeix el comptador\".\n\nPer a canviar el tipus de comptador (\"Total\", \"Darrers dies\", 
+		\"Un únic dia\", \"Mensual\"), mantingueu-lo pitjat de nou i seleccioneu \"Canviar tipus\".\n\n
+		Alguns comptadors permeten establir el valor de durada. Per exemple, el comptador \"Un únic dia\" 
+		pot fer-se servir per a mostrar un comptador del tipus \"Avui\" o \"Ahir\". Només establiu la 
+		durada al valor que desitgeu.\n\nPodeu definir una alarma a cada comptador. Si s\'excedeix el 
+		valor definit, es mostrarà una notificació.\n\nPer a posar a zero les dades d\'una interfície, 
+		mantingueu-la pitjada i seleccioneu \"Esborra-ho tot\". Això esborrarà <b>TOTES</b> les dades 
+		de la interfície, així que rumieu-vos-ho dues voltes abans de fer-hi clic.\n\nPodeu definir la 
+		data d\'inici de facturació de la tarifa de dades per al comptador \"Mensual\". Ara mateix, només 
+		es necessita el día del mes i de forma predeterminada és el dia 1. Per a introduir una altra data, 
+		mantingueu pitjat el comptador \"Mensual\" i seleccioneu \"Introduïu la data d\'inici\".\n\n
+		</string>
+	
+
+	<string name="helpWhatsNew">
+		Aquesta <b>nova versió</b> del NetCounter té els següents canvis rellevants:\n\n
+		- Samsung I5700 (Spica) and Google Nexus One support.\n\n
+		- Updated Catalan translation. Thanks to Joan Montané.\n\n
+		- Added Swedish translation. Thanks to Tibor.\n\n
+		- Added "last month" counter as per users request.\n\n
+		- Hopefully fixed the CSV export issue on newer SDK.\n\n
+		Si us plau, <b>visiteu el lloc web</b> i <b>llegiu les PMF</b>.
+	</string>
+
+	<string name="aboutTitle">Quant a</string>
+	<string name="aboutDonation">Donacions</string>
+	<string name="aboutDonationUrl">https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=1662582</string>
+	<string name="aboutClose">Tanca</string>
+	<string name="aboutHomepage">Pàgina web</string>
+	<string name="aboutHomepageUrl">http://www.jaqpot.net/netcounter/</string>
+	<string name="aboutText">
+		El NetCounter v%1$s és un comptador de trànsit de dades amb comptadors definibles per l\'usuari.\n\nPer a més informació, visiteu la pàgina web.\n\nCopyright (C) 2009 Cyril Jaquier\n\nAquest programa és distribueix amb la intenció que us sigui útil, però SENSE CAP GARANTIA; ni la garantia implícita 
+		de COMERCIALITZACIÓ o APLICABILITAT PER A UN ÚS DETERMINAT. Vegeu la Llicència Pública General GNU per a més detalls.\n\nLes icones de l\'aplicació són d\'Everaldo.com i es distribueix sota llicència GPL.\n\nTraduccions\n
+		Alemany: Thomas Putschbach &lt;android@tpju.de&gt;\n
+		Català: Joan Montané
+		Espanyol: Antonio David Fernández Reyes &lt;antonio.david.android@gmail.com&gt;\n
+		Francès: Cyril Jaquier\n
+		Italià: Fabio Bonomi Boseggia\n
+		Neerlandès: Harold Gabriel
+		Txec: Petr Bláha &lt;pb@P3T3.org&gt;\n
+		Xinès tradicional: Bernie Garden\n
+	</string>
+
+	<string name="exportTitle">Exporta a .csv</string>
+
+	<string name="exportSummary">Exporta tot a un fitxer .csv a la targeta SD</string>
+	<string name="exportSuccessful">s\'han exportat les dades al fitxer %1$s correctament</string>
+	<string name="exportFailed">S\'ha produït un error durant l\'exportació de les dades</string>
+	<string name="exportDialogTitle">S\'està exportant...</string>
+	<string name="exportDialogText">ESpereu mentre s\'exporten les dades</string>
+	
+	<string name="importTitle">Importa des d\'un fitxer .csv</string>
+	<string name="importSummary">Importa dades des d\'un fitxer .csv a la targeta SD</string>
+	<string name="importSuccessful">Importació finalitzada correctament</string>
+	<string name="importFailed">La importació ha fallat</string>
+	<string name="importDialogTitle">S\'està important...</string>
+	<string name="importDialogText">Espereu mentre s\'importen dades</string>
+	<string name="importAlertText">Esteu segur de voler importar les dades de la targeta SD?</string> 
+
+        <string name="interfaceTypeCell">Connexió telefònica</string>
+	<string name="interfaceTypeWifi">Wi-Fi</string>
+	<string name="interfaceTypeBluetooth">Bluetooth</string>
+
+	<string name="menuInterfaceTitle">Interfície</string>
+	<string name="menuInterfaceAdd">Afegeix un comptador</string>
+	<string name="menuInterfaceAddDone">S\'ha afegit un comptador</string>
+	<string name="menuInterfaceReset">Esborra-ho tot</string>
+	<string name="menuInterfaceResetDone">S\'han esborrat totes les dades</string>
+	<string name="menuInterfaceGraph">Mostra el gràfic</string>
+	
+	<string name="dialogInterfaceResetTitle">Esborra-ho tot</string>
+	<string name="dialogInterfaceResetText">N\'esteu segur?</string>
+	
+	<string name="menuCounterTitle">Comptador</string>
+	<string name="menuCounterChange">Canvia el tipus de comptador</string>
+	<string name="menuCounterChangeDone">S\'ha canviat el tipus de comptador</string>
+	<string name="menuCounterRemove">Suprimeix el comptador</string>
+	<string name="menuCounterRemoveDone">S\'ha suprimit el comptador</string>
+	<string name="menuCounterStartDate">Introduïu la data d\'inici</string>
+	<string name="menuCounterStartDay">Introduïu la data de finalització</string>
+	<string name="menuCounterSetDuration">Introduïu la durada</string>
+	<string name="menuCounterSetAlert">Introduïu l\'alarma de dades</string>
+	
+	<string name="dialogCounterTypeTitle">Seleccioneu el tipus de comptador</string>
+	<string name="dialogCounterDurationTitle">Seleccioneu la durada del comptador</string>
+	<string name="dialogCounterMonthlyTitle">Seleccioneu la data de la posada a zero</string>
+	<string name="dialogCounterMonthlyChanged">S\'ha canviat la data</string>
+	<string name="dialogCounterWeeklyTitle">Seleccioneu el dia de posada zero</string>
+	<string name="dialogCounterWeeklyChanged">S\'ha canviat el dia</string>
+	
+	<string name="dialogCounterLimitTitle">Introduïu el valor de la notificació</string>
+	<string name="dialogCounterLimitText">Introduïu el límit de la notificació. Per a deshabilitar la notificació, simplement suprimiu el valor o poseu-lo a 0.</string>
+
+	<string name="dialogCounterLimitWrong">El format numèric no és correcte</string>
+	
+	<string name="dialogDetailsStartDate">Data inicial:</string>
+	<string name="dialogDetailsEndDate">Data final:</string>
+	<string name="dialogDetailsReceived">Rebut:</string>
+	<string name="dialogDetailsSent">Enviat:</string>
+	<string name="dialogDetailsTotal">Total:</string>
+	<string name="dialogDetailsAlert">Alarma:</string>
+	<string name="dialogDetailsByte">%1$s (%2$s%%)</string>
+	<string name="dialogDetailsNoAlert">no hi ha cap alarma definida</string>
+	
+	<!-- e.g. Cell exceeds the limit of 100 MB for Total -->
+	<string name="notifyExceed">%1$s ha superat el límit de %2$s %3$s per a %4$s</string>
+	<!-- e.g. Cell exceeds the defined limit -->
+	<string name="notifyExceedTitle">%1$s ha superat el límit definit</string>
+	<!-- Preferences -->
+	<string name="preferences">Preferències</string>
+	<string name="prefsCategoryAdvancedTitle">Preferències avançades</string>
+	<string name="prefsCatImportExportTitle">Importació/Exportació</string>
+	<string name="prefsCatImportExportSummary">Importa i exporta dades des de, i cap a, la targeta SD</string>
+	<string name="prefsWifiUpdateTitle">Freqüència d\'actualització de dades WiFi</string>
+	<string name="prefsWifiUpdateSummaryOn">Actualitza cada hora. Consumeix menys bateria però és menys acurat</string>
+	<string name="prefsWifiUpdateSummaryOff">Actualitza cada 30 segons. Consumeix més bateria però és més acurat</string>
+	<string name="prefsDebugTitle">Depuració</string>
+	<string name="prefsDebugSummary">Mostra la informació de depuració a l\'àrea de notificació</string>
+
+	<!-- Graph activity -->
+	<string name="graphReceivedLabel">Rebut</string>
+	<string name="graphSentLabel">Enviat</string>
+	<string name="graphYTitle">kBytes</string>
+
+</resources>

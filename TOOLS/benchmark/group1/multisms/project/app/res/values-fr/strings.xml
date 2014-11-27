@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Multi Sms</string>
+	<string name="send">Envoyer</string>
+	<string name="add">Ajouter</string>
+	<string name="contacts">Contacts</string>
+	<string name="ok">Ok</string>
+	<string name="cancel">Annuler</string>
+	<string name="nocontacts">Pas de contacts!!</string>
+	<string name="nogroups">Pas de groupes!!</string>
+	<string name="sending">Envoie d\'un message...</string>
+	<string name="wait">Veuillez patienter pendant l\'envoie...</string>
+	<string name="entermessage">Saisissez votre message</string>
+	<string name="entergroupname">Nom du groupe</string>
+	<string name="to">À</string>
+	<string name="refresh">Rafraichir</string>
+	<string name="remove_all">Tout supprimer</string>
+	<string name="remove">Supprimer</string>
+	<string name="add_group">Ajouter un groupe</string>
+	<string name="delivery">Accusé de réception</string>
+	<string name="nodelivery">Aucun accusé de réception</string>
+	<string name="enabledelivery">Accusé de récéption</string>
+	<string name="create_group">Créer un groupe</string>
+	<string name="remove_group">Supprimer ce groupe</string>
+	<string name="edit_group">Editer ce groupe</string>
+	<string name="noName">noName</string>
+	<string name="select_all">Selectionner tout</string>
+	<string name="deselect_all">DeSelectionner tout</string>
+	<string name="message_sent">Message(s) envoyé(s)</string>
+	<string name="enter_number">Entrez un numero ou utilisez l\'icone de contact</string>
+	<string name="warning_many_message">Vous etes sur le point d\'envoyer plus de 50 messages d\'un coup. Comme cela peut produire une erreur android qui ferait planter l\'application, les messages vont etre envoyés par paquet de 50 avec une pause entre chaque paquet. Voulez vous continuer ?</string>
+	<string name="more_message">Prêt pour 50 messages de plus?</string>
+</resources>

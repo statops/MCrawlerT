@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.morphoss.acal.desktop.ShowUpcomingRowLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="@dimen/widgetRowWidth"
+	android:layout_height="@dimen/widgetRowHeight"
+	android:orientation="horizontal"
+	android:paddingLeft="6dip"
+	android:paddingRight="6dip" >
+	<TextView
+		android:id="@+id/upcoming_time"
+		android:layout_width="75dip"
+		android:layout_height="@dimen/widgetRowHeight"
+		android:textSize="@dimen/widgetTextSize" />
+	<TextView
+		android:id="@+id/upcoming_summary"
+		android:layout_width="300dip"
+		android:layout_height="@dimen/widgetRowHeight"
+		android:textSize="@dimen/widgetTextSize" />
+</com.morphoss.acal.desktop.ShowUpcomingRowLayout>

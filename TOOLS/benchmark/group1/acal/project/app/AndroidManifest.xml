@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="60" android:versionName="1.60" package="com.morphoss.acal">
+	<uses-sdk android:minSdkVersion="4" android:targetSdkVersion="10"/>
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.PERSISTENT_ACTIVITY"/>
+	<uses-permission android:name="android.permission.READ_CALENDAR"/>
+	<uses-permission android:name="android.permission.READ_CONTACTS"/>
+	<uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+	<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+	<uses-permission android:name="android.permission.VIBRATE"/>
+	<uses-permission android:name="android.permission.WRITE_CALENDAR"/>
+	<uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+	<uses-permission android:name="android.permission.WAKE_LOCK"/>
+	<uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+	<uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+	<uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+	<uses-permission android:name="android.permission.READ_SYNC_SETTINGS"/>
+	<uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS"/>
+	<uses-feature android:name="android.hardware.wifi" android:required="false"/>
+	<uses-feature android:name="android.hardware.location.network" android:required="false"/>
+	<uses-feature android:name="android.hardware.location" android:required="false"/>
+	<supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true"/>
+	<application android:description="@string/appDescription" android:icon="@drawable/ic_launcher_events" android:label="@string/appName" android:name="com.morphoss.acal.AcalApplication" android:theme="@android:style/Theme.NoTitleBar">
+		<activity android:label="@string/appName" android:name="aCal">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN"/>
+				<category android:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+		<activity android:description="@string/appDescriptionTasks" android:icon="@drawable/ic_launcher_tasks" android:label="@string/appNameTasks" android:name="aCalTasks">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN"/>
+				<category android:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+		<activity android:description="@string/appDescriptionNotes" android:icon="@drawable/ic_launcher_journals" android:label="@string/appNameNotes" android:name="aCalNotes">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN"/>
+				<category android:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+		<activity android:exported="false" android:label="@string/appActivityMonthView" android:name=".activity.MonthView">
+			<intent-filter>
+				<action android:name="com.morphoss.acal.activity.MonthView"/>
+				<category android:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity android:exported="false" android:label="@string/appActivityYearView" android:launchMode="standard" android:name=".activity.YearView">
+			<intent-filter>
+				<action android:name="com.morphoss.acal.activity.YearView"/>
+				<category android:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity android:exported="false" android:label="@string/appActivityWeekView" android:launchMode="standard" android:name=".weekview.WeekViewActivity">
+			<intent-filter>
+				<action android:name="com.morphoss.acal.weekview.WeekViewActivity"/>
+				<category android:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity android:exported="false" android:label="@string/appActivityServerConfigList" android:launchMode="standard" android:name=".activity.serverconfig.ServerConfigList">
+			<intent-filter>
+				<action android:name="com.morphoss.acal.activity.serverconfig.ServerConfigList"/>
+				<category android:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity android:exported="false" android:label="@string/appActivityAddServerList" android:launchMode="standard" android:name=".activity.serverconfig.AddServerList">
+			<intent-filter>
+				<action android:name="com.morphoss.acal.activity.serverconfig.AddServerList"/>
+				<category android:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity android:exported="false" android:label="@string/appActivityCollectionConfigList" android:launchMode="standard" android:name=".activity.CollectionConfigList">
+			<intent-filter>
+				<action android:name="com.morphoss.acal.activity.CollectionConfigList"/>
+				<category android:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity android:exported="false" android:label="@string/appActivitySettings" android:launchMode="standard" android:name=".activity.Settings">
+			<intent-filter>
+				<action android:name="com.morphoss.acal.activity.Settings"/>
+				<category android:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity android:exported="false" android:label="@string/appActivityDebugSettings" android:launchMode="standard" android:name=".activity.DebugSettings">
+			<intent-filter>
+				<action android:name="com.morphoss.acal.activity.DebugSettings"/>
+				<category android:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity android:exported="false" android:launchMode="standard" android:name=".activity.serverconfig.ServerConfiguration">
+			<intent-filter>
+				<action android:name="com.morphoss.acal.activity.serverconfig.ServerConfiguration"/>
+				<category android:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity android:exported="false" android:launchMode="standard" android:name=".activity.serverconfig.NewServerConfiguration">
+			<intent-filter>
+				<action android:name="com.morphoss.acal.activity.serverconfig.NewServerConfiguration"/>
+				<category android:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity android:exported="false" android:launchMode="standard" android:name=".activity.CollectionConfiguration">
+			<intent-filter>
+				<action android:name="com.morphoss.acal.activity.CollectionConfiguration"/>
+				<category android:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity android:exported="false" android:launchMode="standard" android:name=".activity.EventView">
+			<intent-filter>
+				<action android:name="com.morphoss.acal.activity.EventView"/>
+				<category android:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity android:exported="false" android:icon="@drawable/ic_launcher_events" android:launchMode="standard" android:name=".activity.EventEdit">
+			<intent-filter>
+				<action android:name="com.morphoss.acal.activity.EventEdit"/>
+				<category android:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity android:exported="false" android:launchMode="standard" android:name=".activity.TodoListView">
+			<intent-filter>
+				<action android:name="com.morphoss.acal.activity.TodoListView"/>
+				<category android:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity android:exported="false" android:launchMode="standard" android:name=".activity.JournalListView">
+			<intent-filter>
+				<action android:name="com.morphoss.acal.activity.JournalListView"/>
+				<category android:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity android:exported="false" android:launchMode="standard" android:name=".activity.TodoView">
+			<intent-filter>
+				<action android:name="com.morphoss.acal.activity.TodoView"/>
+				<category android:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity android:exported="false" android:launchMode="standard" android:name=".activity.JournalView">
+			<intent-filter>
+				<action android:name="com.morphoss.acal.activity.JournalView"/>
+				<category android:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity android:exported="false" android:launchMode="standard" android:name=".activity.TodoEdit">
+			<intent-filter>
+				<action android:name="com.morphoss.acal.activity.TodoEdit"/>
+				<category android:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity android:exported="false" android:launchMode="standard" android:name=".activity.JournalEdit">
+			<intent-filter>
+				<action android:name="com.morphoss.acal.activity.JournalEdit"/>
+				<category android:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity android:exported="false" android:launchMode="standard" android:name=".activity.ShowUpgradeChanges">
+			<intent-filter>
+				<action android:name="com.morphoss.acal.activity.ShowUpgradeChanges"/>
+				<category android:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity android:exported="false" android:launchMode="singleTask" android:name=".activity.AlarmActivity">
+			<intent-filter>
+				<action android:name="com.morphoss.acal.activity.AlarmActivity"/>
+				<category android:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity android:exported="false" android:label="@string/appActivityPreference" android:launchMode="standard" android:name=".activity.AcalPreferences">
+			<intent-filter>
+				<action android:name="com.morphoss.acal.activity.AcalPreferences"/>
+				<category android:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity android:exported="false" android:label="Number Picker" android:name=".widget.Picker">
+			<intent-filter>
+				<action android:name="com.morphoss.acal.widget.Picker"/>
+				<category android:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<service android:exported="true" android:name=".service.ContactsSyncAdapterService" android:permission="android.permission.WRITE_CONTACTS" android:process=":contacts">
+			<intent-filter>
+				<action android:name="android.content.SyncAdapter"/>
+			</intent-filter>
+			<meta-data android:name="android.content.SyncAdapter" android:resource="@xml/sync_contacts"/>
+		</service>
+		<provider android:authorities="servers" android:exported="false" android:name="com.morphoss.acal.providers.Servers"/>
+		<provider android:authorities="pathsets" android:exported="false" android:name="com.morphoss.acal.providers.PathSets"/>
+		<provider android:authorities="timezones" android:exported="false" android:name="com.morphoss.acal.providers.Timezones"/>
+		<provider android:authorities="collections" android:exported="false" android:name="com.morphoss.acal.providers.DavCollections"/>
+		<service android:exported="false" android:name="com.morphoss.acal.service.aCalService">
+			<intent-filter>
+				<action android:name="com.morphoss.acal.service.aCalService"/>
+			</intent-filter>
+		</service>
+		<service android:exported="true" android:name="com.morphoss.acal.service.AcalAuthenticator" android:permission="android.permission.AUTHENTICATE_ACCOUNTS" android:process=":auth">
+			<intent-filter>
+				<action android:name="android.accounts.AccountAuthenticator"/>
+			</intent-filter>
+			<meta-data android:name="android.accounts.AccountAuthenticator" android:resource="@xml/authenticator"/>
+		</service>
+		<receiver android:name="com.morphoss.acal.receivers.StartUpIntentReceiver">
+			<intent-filter>
+				<action android:name="android.intent.action.BOOT_COMPLETED"/>
+				<category android:name="android.intent.category.HOME"/>
+			</intent-filter>
+		</receiver>
+		<receiver android:exported="false" android:name="com.morphoss.acal.desktop.ShowUpcomingWidgetProvider">
+			<intent-filter>
+				<action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+			</intent-filter>
+			<meta-data android:name="android.appwidget.provider" android:resource="@xml/show_upcoming_widget_info"/>
+		</receiver>
+		<receiver android:enabled="true" android:name=".receivers.TimezoneChangedReceiver">
+			<intent-filter>
+				<action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+			</intent-filter>
+		</receiver>
+		<receiver android:enabled="true" android:name=".receivers.iMIPReceiver">
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW"/>
+				<category android:name="android.intent.category.DEFAULT"/>
+				<data android:scheme="content"/>
+				<data android:scheme="file"/>
+				<data android:scheme="http"/>
+				<data android:scheme="webcal"/>
+				<data android:mimeType="application/ics"/>
+				<data android:mimeType="text/calendar"/>
+				<!-- the next two lines aren't working atm -->
+				<data android:mimeType="application/octet-stream" android:pathPattern=".*\\.ics"/>
+				<data android:mimeType="text/*" android:pathPattern=".*\\.ics"/>
+			</intent-filter>
+		</receiver>
+	<receiver android:name="com.morphoss.acal.EmmaInstrument.SMSInstrumentedReceiver">
+<intent-filter>
+<action android:name="edu.gatech.m3.emma.COLLECT_COVERAGE"/>
+</intent-filter>
+</receiver>
+<activity android:label="EmmaInstrumentationActivity" android:name="com.morphoss.acal.EmmaInstrument.InstrumentedActivity"/>
+</application>
+<instrumentation android:handleProfiling="true" android:label="EmmaInstrumentation" android:name="com.morphoss.acal.EmmaInstrument.EmmaInstrumentation" android:targetPackage="com.morphoss.acal"/>
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+</manifest>

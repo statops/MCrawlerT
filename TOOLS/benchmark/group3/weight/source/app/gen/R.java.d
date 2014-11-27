@@ -1,0 +1,27 @@
+/Users/Stassia/Documents/MCRAWLERT/OTHERTOOLS/Swithand/APK/weight/source/app/gen/es/senselesssolutions/gpl/weightchart/R.java \
+ : /Users/Stassia/Documents/MCRAWLERT/OTHERTOOLS/Swithand/APK/weight/source/app/res/drawable/ic_menu_archive.png \
+/Users/Stassia/Documents/MCRAWLERT/OTHERTOOLS/Swithand/APK/weight/source/app/res/drawable-hdpi/icon.png \
+/Users/Stassia/Documents/MCRAWLERT/OTHERTOOLS/Swithand/APK/weight/source/app/res/drawable-ldpi/icon.png \
+/Users/Stassia/Documents/MCRAWLERT/OTHERTOOLS/Swithand/APK/weight/source/app/res/drawable-mdpi/icon.png \
+/Users/Stassia/Documents/MCRAWLERT/OTHERTOOLS/Swithand/APK/weight/source/app/res/layout/ad_goal_weight.xml \
+/Users/Stassia/Documents/MCRAWLERT/OTHERTOOLS/Swithand/APK/weight/source/app/res/layout/ad_max_weight.xml \
+/Users/Stassia/Documents/MCRAWLERT/OTHERTOOLS/Swithand/APK/weight/source/app/res/layout/chart.xml \
+/Users/Stassia/Documents/MCRAWLERT/OTHERTOOLS/Swithand/APK/weight/source/app/res/layout/entries.xml \
+/Users/Stassia/Documents/MCRAWLERT/OTHERTOOLS/Swithand/APK/weight/source/app/res/layout/entry.xml \
+/Users/Stassia/Documents/MCRAWLERT/OTHERTOOLS/Swithand/APK/weight/source/app/res/layout/export_png.xml \
+/Users/Stassia/Documents/MCRAWLERT/OTHERTOOLS/Swithand/APK/weight/source/app/res/layout/height.xml \
+/Users/Stassia/Documents/MCRAWLERT/OTHERTOOLS/Swithand/APK/weight/source/app/res/layout/legend.xml \
+/Users/Stassia/Documents/MCRAWLERT/OTHERTOOLS/Swithand/APK/weight/source/app/res/layout/prompt.xml \
+/Users/Stassia/Documents/MCRAWLERT/OTHERTOOLS/Swithand/APK/weight/source/app/res/layout/row.xml \
+/Users/Stassia/Documents/MCRAWLERT/OTHERTOOLS/Swithand/APK/weight/source/app/res/menu/chart.xml \
+/Users/Stassia/Documents/MCRAWLERT/OTHERTOOLS/Swithand/APK/weight/source/app/res/menu/entries.xml \
+/Users/Stassia/Documents/MCRAWLERT/OTHERTOOLS/Swithand/APK/weight/source/app/res/menu/entry.xml \
+/Users/Stassia/Documents/MCRAWLERT/OTHERTOOLS/Swithand/APK/weight/source/app/res/values/strings.xml \
+/Users/Stassia/Documents/MCRAWLERT/OTHERTOOLS/Swithand/APK/weight/source/app/res/values-de/strings.xml \
+/Users/Stassia/Documents/MCRAWLERT/OTHERTOOLS/Swithand/APK/weight/source/app/res/values-el/strings.xml \
+/Users/Stassia/Documents/MCRAWLERT/OTHERTOOLS/Swithand/APK/weight/source/app/res/values-es/strings.xml \
+/Users/Stassia/Documents/MCRAWLERT/OTHERTOOLS/Swithand/APK/weight/source/app/res/values-nl/strings.xml \
+/Users/Stassia/Documents/MCRAWLERT/OTHERTOOLS/Swithand/APK/weight/source/app/res/values-no/strings.xml \
+/Users/Stassia/Documents/MCRAWLERT/OTHERTOOLS/Swithand/APK/weight/source/app/res/values-sv/strings.xml \
+/Users/Stassia/Documents/MCRAWLERT/OTHERTOOLS/Swithand/APK/weight/source/app/res/xml/preferences.xml \
+/Users/Stassia/Documents/MCRAWLERT/OTHERTOOLS/Swithand/APK/weight/source/app/bin/AndroidManifest.xml \
